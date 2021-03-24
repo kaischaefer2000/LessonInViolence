@@ -1,0 +1,279 @@
+/* music player */
+.player-container{
+    height: 190vw;
+}
+
+
+#background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* song container */
+.container {
+    position: absolute;
+    height: 82vw;
+    width: 70vw;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+    /* control bar box  */
+    .box {
+        position: absolute;
+        height: 50%;
+        width: 103%;
+        background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(85, 1, 1));
+        z-index: 4;
+        bottom: -17%;
+    }
+
+    /* album cover */
+    .thumbnail {
+        position: absolute;
+        width: 103%;
+        top: -7%;
+        transition: 1s;
+        z-index: 3;
+    }
+
+    /* track artist */
+    .song-artist {
+        position: absolute;
+        z-index: 4;
+        color: rgb(165, 0, 0);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 3.8vw;
+        bottom: 21%;
+        left: 24%;
+    }
+
+    /* track title */
+    .song-title {
+        position: absolute;
+        z-index: 4;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.42vw;
+        bottom: 16%;
+        left: 24%;
+    }
+
+    /* style for play and pause images */
+    .play-pause {
+        position: absolute;
+        height: 10vw;
+        width: 10vw;
+        filter: invert(1);
+        cursor: pointer;
+        bottom: 15%;
+        z-index: 4;
+        font-size: 53px;
+        left: 5%;
+    }
+
+    /* style for next and previous song images */
+    #download-song {
+        position: absolute;
+        height: 6vw;
+        width: 6vw;
+        filter: invert(1);
+        cursor: pointer;
+        bottom: 13.5%;
+        font-size: 40px;
+        z-index: 4;
+        right: 5%;
+        bottom: 18%;
+    }
+    
+    
+    /* style for current time of the track */
+    .currentTime {
+        position: absolute;
+        height: 10vw;
+        width: 10vw;
+        cursor: pointer;
+        bottom: -6.5%;
+        left: 17%;
+        z-index: 4;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: white;
+        align-items: center;
+    }
+    
+    /* style for the total length of the track */
+    .durationTime {
+        position: absolute;
+        height: 10vw;
+        width: 10vw;
+        cursor: pointer;
+        bottom: 1%;
+        right: 11%;
+        z-index: 4;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        align-items: center;
+        color: rgb(165, 0, 0);
+    }
+    
+    .progress-bar {
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+        z-index: 4;
+        height: 1vw;
+        background: #000000;
+        width: 44vw;
+        bottom: 7%;
+        border-radius: 30px;
+        left: 17%;
+    }
+
+    .progress-bar::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        margin-top: -3px;
+        margin-left: 0px;
+        height: 1.9vw;
+        width: 1.2vw;
+        border: 0;
+        background: -webkit-linear-gradient(45deg,  rgb(143, 143, 143), rgb(165, 0, 0));
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    /* style for the progress bar's runnable track */
+    .progress-bar::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        max-height: 5px;
+        border-radius: 30px;
+    }
+
+    /* style to remove blue shade of the progress bar when clicked on/selected */
+    .progress-bar:focus {
+        outline: none;
+    }
+
+
+    /* media querys songs */
+    @media(min-width: 576px){
+        .player-container{
+            height: 52vw;
+        }
+            .container {
+                position: absolute;
+                height: 45vw;
+                width: 37vw;
+            }
+
+            .song-artist {
+                font-size: 2vw;
+            }
+            .song-title {
+                font-size: 1.8vw;
+            }
+
+            .play-pause {
+                height: 5vw;
+                width: 5vw;
+            }
+
+            #download-song {
+                height: 3vw;
+                width: 3vw;
+            }
+
+            .currentTime {
+                height: 5vw;
+                width: 5vw;
+                bottom: -5.5%;
+            }
+
+            .durationTime {
+                height: 5vw;
+                width: 5vw;
+                bottom: 2.5%;
+            }
+
+            .progress-bar {
+                height: 0.5vw;
+                width: 23.5vw;
+                bottom: 7%;
+            }
+
+            .progress-bar::-webkit-slider-thumb {
+                height: 1.2vw;
+                width: 0.6vw;
+            }
+    }
+
+    @media(min-width: 992px){
+        .player-container{
+            height: 36vw;
+        }
+            .container {
+                position: absolute;
+                height: 31vw;
+                width: 25vw;
+            }
+
+            .song-artist {
+                font-size: 1.4vw;
+            }
+            .song-title {
+                font-size: 1.25vw;
+            }
+
+            .play-pause {
+                height: 3.2vw;
+                width: 3.2vw;
+            }
+
+            #download-song {
+                height: 2vw;
+                width: 2vw;
+            }
+
+            .currentTime {
+                height: 3vw;
+                width: 3vw;
+                bottom: -5%;
+            }
+
+            .durationTime {
+                height: 3vw;
+                width: 3vw;
+                bottom: 2.5%;
+            }
+
+            .progress-bar {
+                height: 0.4vw;
+                width: 16vw;
+                bottom: 6.5%;
+            }
+
+            .progress-bar::-webkit-slider-thumb {
+                height: 0.9vw;
+                width: 0.5vw;
+            }
+    }

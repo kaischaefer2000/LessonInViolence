@@ -1,0 +1,138 @@
+$primaryColor: rgb(236, 48, 48);
+
+
+/* info box */
+#info-box{
+    background-color: #000;
+    position: absolute;
+    width: 50%;
+    top: 35vw;
+    left: 25vw;
+    text-align: center;
+    padding-bottom: 1em;
+    box-shadow: 0px 0px 15px 11px rgba(0,0,0,0.90);
+    animation-name: infoBoxAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+    #info-box div:first-child{
+        padding: 4.3em 0em;
+    }
+
+        #info-box div:first-child a{
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            word-spacing: .3em;;
+        }
+
+    #info-box div:nth-child(2){
+        padding: 1.7em 0em;
+    }
+    
+        #info-box div:nth-child(2) a{
+            color: #FFF;
+            font-size: 1em;
+        }
+
+        #info-box span:nth-of-type(1){
+            font-weight: 700;
+            letter-spacing: 0.35em;
+            line-height: 3em;
+        }
+
+        #info-box span:nth-of-type(2){
+            font-size: 1.4em;
+        }
+
+        #info-box a:hover, #info-box a:focus{
+            color:rgb(194, 194, 194);
+        }
+    
+    @media(max-width: 1000px){
+        #info-box{
+            width: 60%;
+            left: 21vw;
+            padding-bottom:0em;
+            top: 36vw;
+        }
+
+        #info-box div:first-child{
+            padding: 3.5em 0em;
+        }
+
+        #info-box div:nth-child(2){
+            padding: 1em 0em;
+        }
+    }
+
+    @media(min-width: 750px){
+        @keyframes infoBoxAnimation{
+            0%   {  top: 36vw }
+            100% {  top: 34vw }
+        }
+    }
+
+    @media(max-width: 750px){
+        #info-box{
+            width: 90vw;
+            left: 7vw;
+            top: 38vw;
+            padding-bottom: 1em;
+        }
+    }
+
+    @media(max-width: 600px){
+        #info-box{
+            top: 40vw;
+        }
+
+        #info-box div:first-child a {
+            font-size: 1rem;
+        }
+
+        #info-box span:nth-of-type(2) {
+            font-size: 1rem;
+        }
+
+        #info-box div:nth-child(2) a {
+            font-size: 0.9rem;
+        }
+
+        #info-box div:first-child {
+            padding: 2.2em 0em;
+        }
+
+        #info-box div:nth-child(2) {
+            padding: 0em 0em;
+        }
+    }
+
+    @media(max-width: 450px){
+        #info-box{
+            top: 40vw;
+            padding-bottom: 0em;
+        }
+
+        #info-box div:first-child a {
+            font-size: 0.8rem;
+        }
+
+        #info-box span:nth-of-type(2) {
+            font-size: 0.8rem;
+        }
+
+        #info-box div:nth-child(2) a {
+            font-size: 0.7rem;
+        }
+
+        #info-box div:first-child {
+            padding: 2em 0em;
+        }
+
+        #info-box div:nth-child(2) {
+            padding: 0em 0em;
+        }
+    }

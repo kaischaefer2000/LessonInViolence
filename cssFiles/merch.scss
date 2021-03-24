@@ -1,0 +1,54 @@
+@import "./layout";
+@import "./infoBox";
+
+/* setting header picture */
+#hero-background {
+  @include heroBackground(url("../headers/header-merch-min.jpg"));
+}
+
+/* hiding page title */
+.hero h1 {
+  visibility: hidden;
+}
+
+/* info box stylings */
+#info-box {
+  div:first-child {
+    padding: 2.7em 0em 1.5em 0em;
+  }
+}
+
+@media (min-width: 750px) {
+  @keyframes infoBoxAnimation {
+    0% {
+      top: 40vw;
+    }
+    100% {
+      top: 35vw;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  #info-box {
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #info-box {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #info-box {
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+}

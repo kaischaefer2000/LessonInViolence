@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col">
+        <h2 id="demoTracks" class="heading">Demo Tracks</h2>
+    </div>
+</div>
+
+
+<!-- music player -->
+<div class="row player-container">
+
+    <!-- thrash metal mankind -->
+    <div class="col-12 col-sm-6 col-lg-4">
+
+        <img src="../audioPlayer/thrash-metal-mankind-thumbnail.jpg" id="background" />
+        <audio src="../audioPlayer/ThrashMetalMankind-demoversion.mp3" class="song" id="song1"></audio>
+
+        <div class="container">  
+            <div class="box"></div>      
+            <img src="../audioPlayer/thrash-metal-mankind-thumbnail.jpg" class="thumbnail" id="tmb1"/>
+
+            <img src="../audioPlayer/play.png" onclick="playPause()" class="play-pause" id="pp1" />
+            <a href="../audioPlayer/ThrashMetalMankind-demoversion.mp3" download ><img src="../audioPlayer/download-icon.png" id="download-song" /></a>
+
+            <div class="song-artist">Lesson in Violence</div>
+            <div class="song-title">Thrash Metal Mankind</div>
+
+            <input type="range" class="progress-bar" id="pb1" min="0" max="" value="0" onchange="changeProgressBar()" />
+
+            <div class="currentTime" id="ct1"></div>
+            <div class="durationTime" id="dt1"></div>
+        </div>
+
+    </div>
+
+    <!-- Time to kill song -->
+    <div class="col-12 col-sm-6 col-lg-4">
+        <img src="../audioPlayer/time-to-kill-thumbnail.jpg" id="background" />
+        <audio src="../audioPlayer/TimeToKill-demoversion.mp3" class="song" id="song2"></audio>
+
+        <div class="container">  
+            <div class="box"></div>      
+            <img src="../audioPlayer/time-to-kill-thumbnail.jpg" class="thumbnail" id="tmb2"/>
+
+            <img src="../audioPlayer/play.png" onclick="playPause2()" class="play-pause" id="pp2"/>
+            <a href="../audioPlayer/TimeToKill-demoversion.mp3" download ><img src="../audioPlayer/download-icon.png" id="download-song" /></a>
+
+            <div class="song-artist">Lesson in Violence</div>
+            <div class="song-title">Time to kill</div>
+
+            <input type="range" class="progress-bar" id="pb2" min="0" max="" value="0" onchange="changeProgressBar2()" />
+
+            <div class="currentTime" id="ct2"></div>
+            <div class="durationTime" id="dt2"></div>
+        </div>
+    </div>
+</div>

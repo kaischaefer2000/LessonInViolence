@@ -1,0 +1,227 @@
+/* navigation menu */
+header {
+  background-color: rgba(0, 0, 0, 0.788);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      display: inline-block;
+      letter-spacing: 0.04em;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin: 0.5em;
+      padding: 0.5em;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: rgb(150, 150, 150);
+      }
+    }
+
+    img {
+      height: 6em;
+      width: auto;
+      margin: 1em 1em;
+    }
+
+    #menuToggle input {
+      display: none;
+    }
+  }
+
+  #mobileLogo {
+    display: none;
+  }
+
+  .socialIcon {
+    display: none;
+  }
+}
+
+/* styling navigation for mobile devices */
+@media (max-width: 750px) {
+  /* mobile navigation menu */
+  header {
+    nav {
+      height: 3.5em;
+
+      #menuToggle {
+        display: block;
+        position: relative;
+        top: 1.2em;
+        left: 1em;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+
+        input {
+          display: block;
+          width: 2.4em;
+          height: 2em;
+          position: absolute;
+          cursor: pointer;
+          opacity: 0;
+          z-index: 2;
+          -webkit-touch-callout: none;
+        }
+
+        span {
+          display: block;
+          width: 2em;
+          height: 0.23em;
+          margin-bottom: 0.3em;
+          position: relative;
+          background: rgb(236, 48, 48);
+          z-index: 1;
+          transform-origin: 4px 0px;
+          transition: transform 0.28s cubic-bezier(0.72, 0.9, 0.44, 0.2),
+            opacity 0.01s ease;
+
+          &:first-child {
+            transform-origin: 0% 0%;
+          }
+
+          &:nth-last-child(2) {
+            transform-origin: 0% 100%;
+          }
+        }
+
+        input:checked ~ span {
+          opacity: 1;
+          transform: rotate(45deg) translate(-2px, -1px);
+          position: fixed;
+
+          &:nth-last-child(3) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+          }
+
+          &:nth-last-child(2) {
+            transform: translate(0, 16px) rotate(-45deg);
+          }
+        }
+
+        ul {
+          position: absolute;
+          position: fixed;
+          width: 13em;
+          height: 130vh;
+          margin: -100px 0 0 -50px;
+          padding: 2em;
+          padding-top: 9em;
+          background-color: rgb(15, 15, 15);
+          text-align: left;
+          -webkit-font-smoothing: antialiased;
+
+          /* to stop flickering of text in safari */
+          transform-origin: 0% 0%;
+          transform: translate(-100%, 0);
+          transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+          li {
+            padding: 10px 0;
+            font-size: 22px;
+            display: block;
+
+            &:nth-of-type(4) {
+              display: none;
+            }
+          }
+        }
+
+        input:checked ~ ul {
+          transform: none;
+        }
+      }
+    }
+
+    /* changing logo in top bar */
+    #mobileLogo {
+      display: inline-block;
+      width: 30%;
+      position: absolute;
+      margin: -3em 34vw 0em 34vw;
+    }
+
+    .hero h1 {
+      visibility: hidden;
+    }
+
+    .socialIcon {
+      padding-top: 1em;
+      font-size: 1.4em;
+      display: inline-block;
+      padding: 0;
+      margin-top: 1.8em;
+      margin-left: 0.6em;
+    }
+  }
+}
+
+/* mobile logo */
+@media (max-width: 550px) {
+  header {
+    #mobileLogo {
+      width: 40%;
+      margin-left: 28vw;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    nav {
+      #menuToggle {
+        left: 0.3em;
+
+        span {
+          height: 0.17em;
+          width: 1.8em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  header {
+    nav {
+      height: 3.2em;
+    }
+    #mobileLogo {
+      width: 48%;
+      margin-left: 22vw;
+      margin-top: -2.5em;
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  header {
+    nav {
+      #menuToggle {
+        left: 0em;
+        top: 1em;
+
+        span {
+          height: 0.14em;
+        }
+      }
+    }
+  }
+}

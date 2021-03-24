@@ -1,0 +1,120 @@
+@import "./musicPlayer";
+@import "./layout";
+
+/* overwriting layout.css */
+#hero-background {
+  @include heroBackground(url("../headers/header-downloads-version-2.jpg"));
+}
+
+/* hiding main title */
+#main-title {
+  visibility: hidden;
+}
+
+/* download section heading */
+.heading {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  font-weight: 800;
+  word-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .heading {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 5.5vw;
+    text-align: center;
+  }
+}
+
+/* downloads */
+.download-item {
+  padding: 0;
+}
+
+.download-item a {
+  font-weight: bold;
+}
+
+/* download items */
+.download-item-content {
+  margin: 1em;
+  background-size: cover;
+  background-position: center center;
+  height: 43vw;
+}
+
+.download-item-content:hover div,
+.download-item-content:active div {
+  visibility: visible;
+}
+
+#pagination-white {
+  background-image: url("../download-items/schriftzug-weiss-website.jpg");
+}
+
+#pagination-black {
+  background-image: url("../download-items/schriftzug-schwarz.jpg");
+}
+
+#foto-smoke {
+  background-image: url("../download-items/band-smoke.jpg");
+}
+
+#foto-light {
+  background-image: url("../download-items/band-light-website.jpg");
+}
+
+#foto-square {
+  background-image: url("../download-items/band-square-website.jpg");
+}
+
+#foto-black-white {
+  background-image: url("../download-items/band-black-white-website.jpg");
+}
+
+#bandinfo {
+  background-image: url("../download-items/bandinfo-website.jpg");
+}
+
+#technical-rider {
+  background-image: url("../download-items/technical-rider-website.jpg");
+}
+
+.download-link-container {
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.801);
+  height: 100%;
+}
+
+.download-link {
+  margin-top: 17vw;
+}
+
+/* download items media querys */
+@media (min-width: 576px) {
+  .download-item-content {
+    height: 22vw;
+  }
+
+  .download-link {
+    margin-top: 9vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .download-item-content {
+    height: 15vw;
+  }
+
+  .download-link {
+    margin-top: 6.5vw;
+  }
+}

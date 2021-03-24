@@ -1,0 +1,857 @@
+/* music player */
+.player-container {
+  height: 190vw;
+}
+
+#background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  z-index: -1;
+}
+
+/* song container */
+.container {
+  position: absolute;
+  height: 82vw;
+  width: 70vw;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+}
+
+/* control bar box  */
+.box {
+  position: absolute;
+  height: 50%;
+  width: 103%;
+  background: -webkit-linear-gradient(45deg, #282828, #550101);
+  z-index: 4;
+  bottom: -17%;
+}
+
+/* album cover */
+.thumbnail {
+  position: absolute;
+  width: 103%;
+  top: -7%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 3;
+}
+
+/* track artist */
+.song-artist {
+  position: absolute;
+  z-index: 4;
+  color: #a50000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3.8vw;
+  bottom: 21%;
+  left: 24%;
+}
+
+/* track title */
+.song-title {
+  position: absolute;
+  z-index: 4;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.42vw;
+  bottom: 16%;
+  left: 24%;
+}
+
+/* style for play and pause images */
+.play-pause {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  cursor: pointer;
+  bottom: 15%;
+  z-index: 4;
+  font-size: 53px;
+  left: 5%;
+}
+
+/* style for next and previous song images */
+#download-song {
+  position: absolute;
+  height: 6vw;
+  width: 6vw;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  cursor: pointer;
+  bottom: 13.5%;
+  font-size: 40px;
+  z-index: 4;
+  right: 5%;
+  bottom: 18%;
+}
+
+/* style for current time of the track */
+.currentTime {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  cursor: pointer;
+  bottom: -6.5%;
+  left: 17%;
+  z-index: 4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* style for the total length of the track */
+.durationTime {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  cursor: pointer;
+  bottom: 1%;
+  right: 11%;
+  z-index: 4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a50000;
+}
+
+.progress-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  position: absolute;
+  z-index: 4;
+  height: 1vw;
+  background: #000000;
+  width: 44vw;
+  bottom: 7%;
+  border-radius: 30px;
+  left: 17%;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -3px;
+  margin-left: 0px;
+  height: 1.9vw;
+  width: 1.2vw;
+  border: 0;
+  background: -webkit-linear-gradient(45deg, #8f8f8f, #a50000);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* style for the progress bar's runnable track */
+.progress-bar::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  max-height: 5px;
+  border-radius: 30px;
+}
+
+/* style to remove blue shade of the progress bar when clicked on/selected */
+.progress-bar:focus {
+  outline: none;
+}
+
+/* media querys songs */
+@media (min-width: 576px) {
+  .player-container {
+    height: 52vw;
+  }
+  .container {
+    position: absolute;
+    height: 45vw;
+    width: 37vw;
+  }
+  .song-artist {
+    font-size: 2vw;
+  }
+  .song-title {
+    font-size: 1.8vw;
+  }
+  .play-pause {
+    height: 5vw;
+    width: 5vw;
+  }
+  #download-song {
+    height: 3vw;
+    width: 3vw;
+  }
+  .currentTime {
+    height: 5vw;
+    width: 5vw;
+    bottom: -5.5%;
+  }
+  .durationTime {
+    height: 5vw;
+    width: 5vw;
+    bottom: 2.5%;
+  }
+  .progress-bar {
+    height: 0.5vw;
+    width: 23.5vw;
+    bottom: 7%;
+  }
+  .progress-bar::-webkit-slider-thumb {
+    height: 1.2vw;
+    width: 0.6vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .player-container {
+    height: 36vw;
+  }
+  .container {
+    position: absolute;
+    height: 31vw;
+    width: 25vw;
+  }
+  .song-artist {
+    font-size: 1.4vw;
+  }
+  .song-title {
+    font-size: 1.25vw;
+  }
+  .play-pause {
+    height: 3.2vw;
+    width: 3.2vw;
+  }
+  #download-song {
+    height: 2vw;
+    width: 2vw;
+  }
+  .currentTime {
+    height: 3vw;
+    width: 3vw;
+    bottom: -5%;
+  }
+  .durationTime {
+    height: 3vw;
+    width: 3vw;
+    bottom: 2.5%;
+  }
+  .progress-bar {
+    height: 0.4vw;
+    width: 16vw;
+    bottom: 6.5%;
+  }
+  .progress-bar::-webkit-slider-thumb {
+    height: 0.9vw;
+    width: 0.5vw;
+  }
+}
+
+/* Sass variables */
+/* global website stylings */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* changing color when selecting text */
+::-moz-selection {
+  background: #ec3030;
+  color: #fff;
+}
+::selection {
+  background: #ec3030;
+  color: #fff;
+}
+
+/* general element stylings */
+body {
+  margin: 0;
+  font-family: "Papyrus", "Poor Richard", "Arial";
+  color: #fff;
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow-x: hidden;
+  letter-spacing: 0.07em;
+  /* link hover styling */
+}
+
+body p {
+  font-size: 1.2rem;
+  line-height: 1.7em;
+  word-spacing: 0.05em;
+}
+
+body a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ec3030;
+}
+
+body a:hover,
+body a:focus,
+body a span:hover,
+body a span:focus,
+body a i:hover,
+body a i:focus,
+body li a:hover,
+body li a:focus,
+body .copyright a:hover,
+body .copyright a:focus {
+  text-decoration: none;
+  color: #a5a5a5;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* all red elements are getting the class red */
+.red {
+  color: #ec3030;
+}
+
+/* hero background mixin */
+/* hero section with the page title and background picture */
+.hero {
+  padding-bottom: 5%;
+  z-index: 5;
+}
+
+.hero h1 {
+  margin: 6em 0em 0em 0.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ec3030;
+  font-size: 2.5vw;
+}
+
+/* hero section on mobile */
+@media (max-width: 350px) {
+  .hero {
+    margin-top: -0.2em;
+  }
+}
+
+/* styling main Content container */
+#mainContent {
+  padding: 2em;
+  height: auto;
+  background-repeat: no-repeat;
+  background-image: url("../layoutPictures/Blut_6.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* importing other scss files */
+/* navigation menu */
+header {
+  background-color: rgba(0, 0, 0, 0.788);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header nav li {
+  display: inline-block;
+  letter-spacing: 0.04em;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+header nav a:hover, header nav a:focus {
+  text-decoration: none;
+  color: #969696;
+}
+
+header nav img {
+  height: 6em;
+  width: auto;
+  margin: 1em 1em;
+}
+
+header nav #menuToggle input {
+  display: none;
+}
+
+header #mobileLogo {
+  display: none;
+}
+
+header .socialIcon {
+  display: none;
+}
+
+/* styling navigation for mobile devices */
+@media (max-width: 750px) {
+  /* mobile navigation menu */
+  header {
+    /* changing logo in top bar */
+  }
+  header nav {
+    height: 3.5em;
+  }
+  header nav #menuToggle {
+    display: block;
+    position: relative;
+    top: 1.2em;
+    left: 1em;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+  }
+  header nav #menuToggle input {
+    display: block;
+    width: 2.4em;
+    height: 2em;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  header nav #menuToggle span {
+    display: block;
+    width: 2em;
+    height: 0.23em;
+    margin-bottom: 0.3em;
+    position: relative;
+    background: #ec3030;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+            transform-origin: 4px 0px;
+    -webkit-transition: opacity 0.01s ease, -webkit-transform 0.28s cubic-bezier(0.72, 0.9, 0.44, 0.2);
+    transition: opacity 0.01s ease, -webkit-transform 0.28s cubic-bezier(0.72, 0.9, 0.44, 0.2);
+    transition: transform 0.28s cubic-bezier(0.72, 0.9, 0.44, 0.2), opacity 0.01s ease;
+    transition: transform 0.28s cubic-bezier(0.72, 0.9, 0.44, 0.2), opacity 0.01s ease, -webkit-transform 0.28s cubic-bezier(0.72, 0.9, 0.44, 0.2);
+  }
+  header nav #menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  header nav #menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  header nav #menuToggle input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+            transform: rotate(45deg) translate(-2px, -1px);
+    position: fixed;
+  }
+  header nav #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  header nav #menuToggle input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: translate(0, 16px) rotate(-45deg);
+            transform: translate(0, 16px) rotate(-45deg);
+  }
+  header nav #menuToggle ul {
+    position: absolute;
+    position: fixed;
+    width: 13em;
+    height: 130vh;
+    margin: -100px 0 0 -50px;
+    padding: 2em;
+    padding-top: 9em;
+    background-color: #0f0f0f;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  header nav #menuToggle ul li {
+    padding: 10px 0;
+    font-size: 22px;
+    display: block;
+  }
+  header nav #menuToggle ul li:nth-of-type(4) {
+    display: none;
+  }
+  header nav #menuToggle input:checked ~ ul {
+    -webkit-transform: none;
+            transform: none;
+  }
+  header #mobileLogo {
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    margin: -3em 34vw 0em 34vw;
+  }
+  header .hero h1 {
+    visibility: hidden;
+  }
+  header .socialIcon {
+    padding-top: 1em;
+    font-size: 1.4em;
+    display: inline-block;
+    padding: 0;
+    margin-top: 1.8em;
+    margin-left: 0.6em;
+  }
+}
+
+/* mobile logo */
+@media (max-width: 550px) {
+  header #mobileLogo {
+    width: 40%;
+    margin-left: 28vw;
+  }
+}
+
+@media (max-width: 425px) {
+  header nav #menuToggle {
+    left: 0.3em;
+  }
+  header nav #menuToggle span {
+    height: 0.17em;
+    width: 1.8em;
+  }
+}
+
+@media (max-width: 380px) {
+  header nav {
+    height: 3.2em;
+  }
+  header #mobileLogo {
+    width: 48%;
+    margin-left: 22vw;
+    margin-top: -2.5em;
+  }
+}
+
+@media (max-width: 325px) {
+  header nav #menuToggle {
+    left: 0em;
+    top: 1em;
+  }
+  header nav #menuToggle span {
+    height: 0.14em;
+  }
+}
+
+/* getting footer styles */
+/* footer */
+footer {
+  background-color: #000;
+  padding: 2em 2em 0.5em;
+}
+
+footer .footer-title {
+  font-size: 1.2rem;
+  line-height: 0.5em;
+}
+
+footer .collumn-contact {
+  padding-left: 3em;
+}
+
+footer .collumn-contact a,
+footer .collumn-contact p {
+  font-size: 0.9rem;
+  word-spacing: 0.1em;
+}
+
+footer .collumn-redstuff img {
+  width: 81%;
+  padding: 1.8em 1em 1em;
+  margin-left: 2.6vw;
+}
+
+footer .collumn-social {
+  padding-left: 6em;
+}
+
+footer .collumn-social i {
+  font-size: 1.5em;
+  margin: 0.5em 0.7em 0em 0.2em;
+  color: #fff;
+}
+
+/*footer for large devices */
+@media screen and (min-width: 1450px) {
+  footer .footer-title {
+    font-size: 1.6em;
+  }
+  footer .collumn-contact p,
+  footer .collumn-contact a {
+    font-size: 1.1em;
+  }
+  footer .collumn-redstuff img {
+    width: 65%;
+    margin-left: 6vw;
+  }
+  footer .collumn-social {
+    padding-left: 13em;
+  }
+}
+
+/* fixing size of redstuff img */
+@media (max-width: 965px) {
+  footer .collumn-redstuff img {
+    width: 100%;
+    margin-left: 0em;
+  }
+  footer .collumn-contact {
+    padding-left: 1em;
+  }
+}
+
+/* redstuff section and social section switch position */
+@media (max-width: 767px) {
+  footer .footer-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  footer .collumn-redstuff {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  footer .collumn-redstuff img {
+    width: 81%;
+    margin-left: 1.8em;
+  }
+  footer .collumn-social {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    padding-left: 4.3em;
+  }
+  footer .collumn-social i {
+    margin: 0.1em 0.7em 0em 0.1em;
+  }
+}
+
+/* mobile footer */
+@media (max-width: 576px) {
+  footer .collumn-contact {
+    padding-left: 0em;
+  }
+  footer .collumn-contact p {
+    font-size: 0.8em;
+  }
+  footer .collumn-social {
+    padding-left: 1em;
+  }
+  footer .collumn-social i {
+    font-size: 1.3em;
+    margin: 0em 0.2em 0em 0.1em;
+  }
+  footer .collumn-redstuff img {
+    width: 100%;
+    padding: 1em 0em;
+    margin-left: 0em;
+  }
+}
+
+/* fixing for extra small devices */
+@media (max-width: 403px) {
+  footer {
+    padding: 2em 1em;
+  }
+  footer .collumn-redstuff {
+    padding-top: 1em;
+  }
+  footer .footer-title {
+    font-size: 1em;
+  }
+}
+
+/* copyright section */
+footer .copyright {
+  text-align: center;
+  padding-top: 1.7em;
+}
+
+footer .copyright a,
+footer .copyright p {
+  font-size: 0.7em;
+  color: #fff;
+  display: inline-block;
+  padding-right: 1em;
+}
+
+/* overwriting layout.css */
+#hero-background {
+  background-repeat: no-repeat;
+  background-image: url("../headers/header-downloads-version-2.jpg");
+  background-position: center top;
+  background-size: 100%;
+  height: auto;
+  width: auto;
+}
+
+/* hiding main title */
+#main-title {
+  visibility: hidden;
+}
+
+/* download section heading */
+.heading {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  font-weight: 800;
+  word-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .heading {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 5.5vw;
+    text-align: center;
+  }
+}
+
+/* downloads */
+.download-item {
+  padding: 0;
+}
+
+.download-item a {
+  font-weight: bold;
+}
+
+/* download items */
+.download-item-content {
+  margin: 1em;
+  background-size: cover;
+  background-position: center center;
+  height: 43vw;
+}
+
+.download-item-content:hover div,
+.download-item-content:active div {
+  visibility: visible;
+}
+
+#pagination-white {
+  background-image: url("../download-items/schriftzug-weiss-website.jpg");
+}
+
+#pagination-black {
+  background-image: url("../download-items/schriftzug-schwarz.jpg");
+}
+
+#foto-smoke {
+  background-image: url("../download-items/band-smoke.jpg");
+}
+
+#foto-light {
+  background-image: url("../download-items/band-light-website.jpg");
+}
+
+#foto-square {
+  background-image: url("../download-items/band-square-website.jpg");
+}
+
+#foto-black-white {
+  background-image: url("../download-items/band-black-white-website.jpg");
+}
+
+#bandinfo {
+  background-image: url("../download-items/bandinfo-website.jpg");
+}
+
+#technical-rider {
+  background-image: url("../download-items/technical-rider-website.jpg");
+}
+
+.download-link-container {
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.801);
+  height: 100%;
+}
+
+.download-link {
+  margin-top: 17vw;
+}
+
+/* download items media querys */
+@media (min-width: 576px) {
+  .download-item-content {
+    height: 22vw;
+  }
+  .download-link {
+    margin-top: 9vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .download-item-content {
+    height: 15vw;
+  }
+  .download-link {
+    margin-top: 6.5vw;
+  }
+}
+/*# sourceMappingURL=downloads.css.map */
