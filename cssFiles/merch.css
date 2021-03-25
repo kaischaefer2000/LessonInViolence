@@ -611,7 +611,9 @@ footer .copyright p {
   visibility: hidden;
 }
 
-/* info box stylings */
+/* 
+info box stylings 
+*/
 #info-box div:first-child {
   padding: 2.7em 0em 1.5em 0em;
 }
@@ -651,5 +653,86 @@ footer .copyright p {
   #info-box h2 {
     font-size: 1.1rem;
   }
+}
+
+/*
+product card styling 
+*/
+.products {
+  padding: 8em 0px 0px 0px;
+  margin: 0;
+}
+
+.products .product {
+  padding: 0;
+  margin: 0;
+}
+
+.products .product .prodContainer {
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+  width: 100%;
+  height: auto;
+}
+
+.products .product .prodContainer img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.products .product .prodContainer .prodDescription {
+  background-color: rgba(18, 22, 26, 0.815);
+  margin: 0;
+  padding: 1.5em 1em;
+}
+
+.products .product .prodContainer .prodDescription hr {
+  background: rgba(161, 161, 161, 0.418);
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  margin: 1em 0px;
+}
+
+.products .product .prodContainer .prodDescription h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  word-spacing: 0.3em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.products .product .prodContainer .prodDescription table {
+  padding-top: 1.5em;
+  width: 100%;
+}
+
+.products .product .prodContainer .prodDescription table tr {
+  line-height: 2.5em;
+}
+
+.products .product .prodContainer .prodDescription table tr td:first-child {
+  width: 30%;
+}
+
+.products .product .prodContainer .prodDescription button {
+  margin-top: 2em;
+  width: 100%;
+  padding: 0.5em;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-radius: 1px;
+}
+
+.products .product .prodContainer .prodDescription button:hover, .products .product .prodContainer .prodDescription button:focus {
+  background: rgba(187, 10, 10, 0.651);
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 /*# sourceMappingURL=merch.css.map */

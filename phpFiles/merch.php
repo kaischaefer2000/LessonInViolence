@@ -51,6 +51,30 @@
 
     <div id="mainContent" class="fluid-container">
 
+    <section>
+        <div class="row products">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product">
+                <div class="prodContainer">    
+                    <img src="../merchPictures/productShirt.jpg" alt="Lesson In Violence Shirt black">
+                    <div class="row prodDescription">
+                        <h3>LIV T-Shirt</h3>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>Color:</td>
+                                <td>Black</td>
+                            </tr>
+                            <tr>
+                                <td>Size:</td>
+                                <td>S, M, L, XL, XXL</td>
+                            </tr>
+                        </table>
+                        <button>Fuck yeah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
         
