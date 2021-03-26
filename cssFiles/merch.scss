@@ -59,7 +59,7 @@ info box stylings
 product card styling 
 */
 .products {
-  padding: 8em 0px 18em 0px;
+  padding: 8em 0px 0em 0px;
   margin: 0;
 
   .product {
@@ -152,7 +152,7 @@ product card styling
                 width: auto;
                 font-weight: bold;
 
-                &:hover, &:focus,{
+                &:hover, &:focus{
                   color: $primaryColor;
                   cursor: pointer;
                   background: none;
@@ -185,5 +185,5 @@ product card styling
         }
       }
     }
-  }
+}
 }
