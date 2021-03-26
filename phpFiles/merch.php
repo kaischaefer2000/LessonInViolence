@@ -54,8 +54,16 @@
     <section>
         <div class="row products">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product">
-                <div class="prodContainer">    
-                    <img src="../merchPictures/productShirt.jpg" alt="Lesson In Violence Shirt black">
+                <div class="prodContainer">
+                    <div class="prodImage">
+                        <span>b<br>a<br>c<br>k</span>
+                        <span>f<br>r<br>o<br>n<br>t</span>
+                        
+                        <img id="bgImg" src="../merchPictures/productShirt.jpg" alt="">
+                        <img id="fullScreenImg" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        
+                    </div>
+                    
                     <div class="row prodDescription">
                         <h3>LIV T-Shirt</h3>
                         <hr>
@@ -66,7 +74,7 @@
                             </tr>
                             <tr>
                                 <td>Size:</td>
-                                <td>S, M, L, XL, XXL</td>
+                                <td><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></td>
                             </tr>
                         </table>
                         <button>Fuck yeah</button>

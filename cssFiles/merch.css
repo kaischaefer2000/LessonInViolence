@@ -659,7 +659,7 @@ info box stylings
 product card styling 
 */
 .products {
-  padding: 8em 0px 0px 0px;
+  padding: 8em 0px 18em 0px;
   margin: 0;
 }
 
@@ -671,12 +671,50 @@ product card styling
 .products .product .prodContainer {
   -webkit-box-shadow: 0 0 10px #000000;
           box-shadow: 0 0 10px #000000;
-  width: 100%;
-  height: auto;
 }
 
-.products .product .prodContainer img {
-  border-radius: 5px 5px 0px 0px;
+.products .product .prodContainer .prodImage {
+  border-radius: 2px 2px 0px 0px;
+  overflow: hidden;
+}
+
+.products .product .prodContainer .prodImage #bgImg {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.products .product .prodContainer .prodImage #bgImg:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.products .product .prodContainer .prodImage #fullScreenImg {
+  position: absolute;
+  width: 1.5em;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  right: 1em;
+  top: 1em;
+}
+
+.products .product .prodContainer .prodImage span {
+  position: absolute;
+  left: 100%;
+  padding: 5% 3%;
+  line-height: 1em;
+  background: rgba(35, 42, 49, 0.973);
+  z-index: 1;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.products .product .prodContainer .prodImage span:nth-of-type(1) {
+  top: 21%;
+  background: rgba(35, 42, 49, 0.699);
 }
 
 .products .product .prodContainer .prodDescription {
@@ -716,6 +754,24 @@ product card styling
   width: 30%;
 }
 
+.products .product .prodContainer .prodDescription table tr td button {
+  border: none;
+  padding: 0.1em 1%;
+  margin: 0px 5% 0px 0px;
+  font-size: 1em;
+  color: white;
+  width: auto;
+  font-weight: bold;
+}
+
+.products .product .prodContainer .prodDescription table tr td button:hover, .products .product .prodContainer .prodDescription table tr td button:focus {
+  color: #ec3030;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
 .products .product .prodContainer .prodDescription button {
   margin-top: 2em;
   width: 100%;
@@ -728,10 +784,10 @@ product card styling
   border-radius: 1px;
 }
 
-.products .product .prodContainer .prodDescription button:hover, .products .product .prodContainer .prodDescription button:focus {
-  background: rgba(187, 10, 10, 0.651);
+.products .product .prodContainer .prodDescription button:hover {
+  background: #ec3030;
   color: black;
-  border: none;
+  border-color: #ec3030;
   font-weight: bold;
   cursor: pointer;
 }
