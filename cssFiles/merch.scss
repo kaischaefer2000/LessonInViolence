@@ -65,6 +65,7 @@ product card styling
   .product {
     padding: 0;
     margin: 0;
+    min-height: 80vh;
 
     .prodContainer {
       box-shadow: 0 0 10px #000000;
@@ -81,30 +82,45 @@ product card styling
             }
           }
 
+          #imgFront, #imgBack{
+            visibility: hidden;
+            position: absolute;
+          }
+
           #fullScreenImg {
             position: absolute;
             width: 1.5em;
             height: auto;
-            display: flex;
             float: right;
             right: 1em;
             top: 1em;
+            z-index: 7;
+
+            &:hover{
+              cursor: pointer;
+            }
           }
 
-          span{
+          button{
             position: absolute;
             left: 100%;
             padding: 5% 3%;
             line-height: 1em;
-            background: rgba(35, 42, 49, 0.973);
-            z-index: 1;
             border-radius: 0px 5px 5px 0px;
+            background: rgb(29, 35, 41);
+            border: none;
+            color: #fff;
 
             &:nth-of-type(1){
               top: 21%;
-              background: rgba(35, 42, 49, 0.699);
+            }
+
+            &:focus{
+              border: none;
+              outline: none;
             }
           }
+
         }
       
 
@@ -145,8 +161,8 @@ product card styling
 
               button{
                 border: none;
-                padding: 0.1em 1%;
-                margin: 0px 5% 0px 0px;
+                margin: 0;
+                padding: 0px 7% 0px 0px;
                 font-size: 1em;
                 color: white;
                 width: auto;
@@ -186,4 +202,39 @@ product card styling
       }
     }
 }
+}
+
+.active{
+  background: rgb(50, 61, 71) !important;
+  z-index: 5;
+  visibility: visible;
+}
+
+.shown{
+  visibility: visible !important;
+  z-index: 6;
+}
+
+
+#lightboxContainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+#lightboxImg{
+  position: fixed;
+  height: 80vh;
+  width: auto;
+  margin-top: 5vh;
 }

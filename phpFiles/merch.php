@@ -56,11 +56,13 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product">
                 <div class="prodContainer">
                     <div class="prodImage">
-                        <span>b<br>a<br>c<br>k</span>
-                        <span>f<br>r<br>o<br>n<br>t</span>
-                        
-                        <img id="bgImg" src="../merchPictures/productShirt.jpg" alt="">
-                        <img id="fullScreenImg" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        <button id="back" onfocus="backActive()">b<br>a<br>c<br>k</button>
+                        <button id="front" onfocus="frontActive()">f<br>r<br>o<br>n<br>t</button>
+
+                        <img id="imgFront" class="shirtImage" src="../merchPictures/productShirtFront.jpg" alt="">
+                        <img id="imgBack" class="shirtImage" src="../merchPictures/productShirtBack.jpg" alt="">
+                        <img id="bgImg" class="shirtImage shown" src="../merchPictures/productShirt.jpg" alt="">
+                        <img id="fullScreenImg" onclick="openLightbox()" src="../merchPictures/fullScreen.png" alt="full screen icon">
                         
                     </div>
                     
@@ -93,7 +95,7 @@
         include('../htmlFiles/footer.html');
     ?>
 
-    <script language="javascript" type="text/javascript" src="../jsFiles/merch.js"></script>
+    <script language="javascript" type="text/javascript" src="../jsFiles/product.js"></script>
     
 </body>
 </html>
