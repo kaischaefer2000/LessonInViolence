@@ -1,279 +1,141 @@
-/* music player */
-.player-container {
-  height: 190vw;
-}
-
-#background {
+/* info box */
+#info-box {
+  background-color: #000;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-  z-index: -1;
+  width: 50%;
+  top: 35vw;
+  left: 25vw;
+  text-align: center;
+  padding-bottom: 1em;
+  -webkit-box-shadow: 0px 0px 15px 11px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 0px 15px 11px rgba(0, 0, 0, 0.9);
+  -webkit-animation-name: infoBoxAnimation;
+          animation-name: infoBoxAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
-/* song container */
-.container {
-  position: absolute;
-  height: 82vw;
-  width: 70vw;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px #000000;
-          box-shadow: 0 0 10px #000000;
+#info-box div:first-child {
+  padding: 4.3em 0em;
 }
 
-/* control bar box  */
-.box {
-  position: absolute;
-  height: 50%;
-  width: 103%;
-  background: -webkit-linear-gradient(45deg, #282828, #550101);
-  z-index: 4;
-  bottom: -17%;
+#info-box div:first-child a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  word-spacing: .3em;
 }
 
-/* album cover */
-.thumbnail {
-  position: absolute;
-  width: 103%;
-  top: -7%;
-  -webkit-transition: 1s;
-  transition: 1s;
-  z-index: 3;
+#info-box div:nth-child(2) {
+  padding: 1.7em 0em;
 }
 
-/* track artist */
-.song-artist {
-  position: absolute;
-  z-index: 4;
-  color: #a50000;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 3.8vw;
-  bottom: 21%;
-  left: 24%;
+#info-box div:nth-child(2) a {
+  color: #FFF;
+  font-size: 1em;
 }
 
-/* track title */
-.song-title {
-  position: absolute;
-  z-index: 4;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.42vw;
-  bottom: 16%;
-  left: 24%;
+#info-box span:nth-of-type(1) {
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  line-height: 3em;
 }
 
-/* style for play and pause images */
-.play-pause {
-  position: absolute;
-  height: 10vw;
-  width: 10vw;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  cursor: pointer;
-  bottom: 15%;
-  z-index: 4;
-  font-size: 53px;
-  left: 5%;
+#info-box span:nth-of-type(2) {
+  font-size: 1.4em;
 }
 
-/* style for next and previous song images */
-#download-song {
-  position: absolute;
-  height: 6vw;
-  width: 6vw;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  cursor: pointer;
-  bottom: 13.5%;
-  font-size: 40px;
-  z-index: 4;
-  right: 5%;
-  bottom: 18%;
+#info-box a:hover, #info-box a:focus {
+  color: #c2c2c2;
 }
 
-/* style for current time of the track */
-.currentTime {
-  position: absolute;
-  height: 10vw;
-  width: 10vw;
-  cursor: pointer;
-  bottom: -6.5%;
-  left: 17%;
-  z-index: 4;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* style for the total length of the track */
-.durationTime {
-  position: absolute;
-  height: 10vw;
-  width: 10vw;
-  cursor: pointer;
-  bottom: 1%;
-  right: 11%;
-  z-index: 4;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #a50000;
-}
-
-.progress-bar {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-  position: absolute;
-  z-index: 4;
-  height: 1vw;
-  background: #000000;
-  width: 44vw;
-  bottom: 7%;
-  border-radius: 30px;
-  left: 17%;
-}
-
-.progress-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  margin-top: -3px;
-  margin-left: 0px;
-  height: 1.9vw;
-  width: 1.2vw;
-  border: 0;
-  background: -webkit-linear-gradient(45deg, #8f8f8f, #a50000);
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-/* style for the progress bar's runnable track */
-.progress-bar::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  max-height: 5px;
-  border-radius: 30px;
-}
-
-/* style to remove blue shade of the progress bar when clicked on/selected */
-.progress-bar:focus {
-  outline: none;
-}
-
-/* media querys songs */
-@media (min-width: 576px) {
-  .player-container {
-    height: 52vw;
+@media (max-width: 1000px) {
+  #info-box {
+    width: 60%;
+    left: 21vw;
+    padding-bottom: 0em;
+    top: 36vw;
   }
-  .container {
-    position: absolute;
-    height: 45vw;
-    width: 37vw;
+  #info-box div:first-child {
+    padding: 3.5em 0em;
   }
-  .song-artist {
-    font-size: 2vw;
-  }
-  .song-title {
-    font-size: 1.8vw;
-  }
-  .play-pause {
-    height: 5vw;
-    width: 5vw;
-  }
-  #download-song {
-    height: 3vw;
-    width: 3vw;
-  }
-  .currentTime {
-    height: 5vw;
-    width: 5vw;
-    bottom: -5.5%;
-  }
-  .durationTime {
-    height: 5vw;
-    width: 5vw;
-    bottom: 2.5%;
-  }
-  .progress-bar {
-    height: 0.5vw;
-    width: 23.5vw;
-    bottom: 7%;
-  }
-  .progress-bar::-webkit-slider-thumb {
-    height: 1.2vw;
-    width: 0.6vw;
+  #info-box div:nth-child(2) {
+    padding: 1em 0em;
   }
 }
 
-@media (min-width: 992px) {
-  .player-container {
-    height: 36vw;
+@media (min-width: 750px) {
+  @-webkit-keyframes infoBoxAnimation {
+    0% {
+      top: 36vw;
+    }
+    100% {
+      top: 34vw;
+    }
   }
-  .container {
-    position: absolute;
-    height: 31vw;
-    width: 25vw;
+  @keyframes infoBoxAnimation {
+    0% {
+      top: 36vw;
+    }
+    100% {
+      top: 34vw;
+    }
   }
-  .song-artist {
-    font-size: 1.4vw;
+}
+
+@media (max-width: 750px) {
+  #info-box {
+    width: 90vw;
+    left: 7vw;
+    top: 38vw;
+    padding-bottom: 1em;
   }
-  .song-title {
-    font-size: 1.25vw;
+}
+
+@media (max-width: 600px) {
+  #info-box {
+    top: 40vw;
   }
-  .play-pause {
-    height: 3.2vw;
-    width: 3.2vw;
+  #info-box div:first-child a {
+    font-size: 1rem;
   }
-  #download-song {
-    height: 2vw;
-    width: 2vw;
+  #info-box span:nth-of-type(2) {
+    font-size: 1rem;
   }
-  .currentTime {
-    height: 3vw;
-    width: 3vw;
-    bottom: -5%;
+  #info-box div:nth-child(2) a {
+    font-size: 0.9rem;
   }
-  .durationTime {
-    height: 3vw;
-    width: 3vw;
-    bottom: 2.5%;
+  #info-box div:first-child {
+    padding: 2.2em 0em;
   }
-  .progress-bar {
-    height: 0.4vw;
-    width: 16vw;
-    bottom: 6.5%;
+  #info-box div:nth-child(2) {
+    padding: 0em 0em;
   }
-  .progress-bar::-webkit-slider-thumb {
-    height: 0.9vw;
-    width: 0.5vw;
+}
+
+@media (max-width: 450px) {
+  #info-box {
+    top: 40vw;
+    padding-bottom: 0em;
+  }
+  #info-box div:first-child a {
+    font-size: 0.8rem;
+  }
+  #info-box span:nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+  #info-box div:nth-child(2) a {
+    font-size: 0.7rem;
+  }
+  #info-box div:first-child {
+    padding: 2em 0em;
+  }
+  #info-box div:nth-child(2) {
+    padding: 0em 0em;
   }
 }
 
@@ -738,121 +600,47 @@ footer .copyright p {
 /* overwriting layout.css */
 #hero-background {
   background-repeat: no-repeat;
-  background-image: url("../headers/header-downloads-version-2.jpg");
+  background-image: url("../headers/header-home.jpg");
   background-position: center top;
   background-size: 100%;
   height: auto;
   width: auto;
 }
 
-/* hiding main title */
-#main-title {
-  visibility: hidden;
-}
-
-/* download section heading */
+/* heading */
 .heading {
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-  font-weight: 800;
-  word-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-@media (min-width: 576px) {
-  .heading {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 576px) {
-  .heading {
-    font-size: 5.5vw;
-    text-align: center;
-  }
-}
-
-/* downloads */
-.download-item {
-  padding: 0;
-}
-
-.download-item a {
-  font-weight: bold;
-}
-
-/* download items */
-.download-item-content {
-  margin: 1em;
-  background-size: cover;
-  background-position: center center;
-  height: 43vw;
-}
-
-.download-item-content:hover div,
-.download-item-content:active div {
-  visibility: visible;
-}
-
-#pagination-white {
-  background-image: url("../download-items/schriftzug-weiss-website.jpg");
-}
-
-#pagination-black {
-  background-image: url("../download-items/schriftzug-schwarz.jpg");
-}
-
-#foto-smoke {
-  background-image: url("../download-items/band-smoke.jpg");
-}
-
-#foto-light {
-  background-image: url("../download-items/band-light-website.jpg");
-}
-
-#foto-square {
-  background-image: url("../download-items/band-square-website.jpg");
-}
-
-#foto-black-white {
-  background-image: url("../download-items/band-black-white-website.jpg");
-}
-
-#bandinfo {
-  background-image: url("../download-items/bandinfo-website.jpg");
-}
-
-#technical-rider {
-  background-image: url("../download-items/technical-rider-website.jpg");
-}
-
-.download-link-container {
-  visibility: hidden;
+  padding-top: 9em;
+  padding-bottom: 2em;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.801);
-  height: 100%;
+  font-weight: 800;
 }
 
-.download-link {
-  margin-top: 17vw;
-}
-
-/* download items media querys */
-@media (min-width: 576px) {
-  .download-item-content {
-    height: 22vw;
-  }
-  .download-link {
-    margin-top: 9vw;
+@media (max-width: 350px) {
+  .heading h2 {
+    font-size: 1.7em;
   }
 }
 
-@media (min-width: 992px) {
-  .download-item-content {
-    height: 15vw;
-  }
-  .download-link {
-    margin-top: 6.5vw;
-  }
+/* content boxes */
+.content-box {
+  min-width: full;
+  height: auto;
+  padding: 4em 3em;
 }
-/*# sourceMappingURL=downloads.css.map */
+
+.content-box .post-time {
+  float: right;
+}
+
+.light-content-box {
+  background-color: rgba(255, 255, 255, 0.158);
+  -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
+          box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.9);
+}
+
+.dark-content-box {
+  background-color: rgba(27, 4, 4, 0.479);
+  -webkit-box-shadow: 0px 0px 15px 11px black;
+          box-shadow: 0px 0px 15px 11px black;
+}
+/*# sourceMappingURL=home.css.map */

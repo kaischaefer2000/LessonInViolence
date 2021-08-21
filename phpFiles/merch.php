@@ -79,16 +79,35 @@
                                 <td><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></td>
                             </tr>
                         </table>
-                        <button>Fuck yeah</button>
+                        <button><a href="mailto:contact@lessoninviolence.com" style="color:white">Order !</a></button>
                     </div>
                 </div>
             </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6 order" style="display:none">
+                <h3>My order</h3>
+                <div class="orderContainer">
+                    <h4>LIV Shirt</h4>
+                    <hr> 
+                    <img class="orderPicture" src="../merchPictures/productShirt.jpg" alt="">
+                    <div class="orderTitle">
+                        <p>Size: L</p>
+                        <p>Count: 1x</p>
+                    </div>
+
+                </div>
+                <div class="orderContainer">
+                    <h4>Thrashfall of Mankind - CD</h4>
+                    <hr> 
+                    <img class="orderPicture" src="../audioPlayer/thrash-metal-mankind-thumbnail.jpg" alt="">
+                    <div class="orderTitle">
+                        <p>Count: 1x</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </section>
-
-
-        
-    
+    </section>    
     </div>
 
     <?php

@@ -3,6 +3,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* changing color when selecting text */
@@ -691,7 +692,8 @@ product card styling
           transform: scale(1.05);
 }
 
-.products .product .prodContainer .prodImage #imgFront, .products .product .prodContainer .prodImage #imgBack {
+.products .product .prodContainer .prodImage #imgFront,
+.products .product .prodContainer .prodImage #imgBack {
   visibility: hidden;
   position: absolute;
 }
@@ -717,7 +719,7 @@ product card styling
   line-height: 1em;
   border-radius: 0px 5px 5px 0px;
   background: #1d2329;
-  border: none;
+  border: 2px solid black;
   color: #fff;
 }
 
@@ -838,10 +840,106 @@ product card styling
   background-color: rgba(0, 0, 0, 0.678);
 }
 
+#lightboxContainer ::-moz-selection {
+  background: none;
+}
+
+#lightboxContainer ::selection {
+  background: none;
+}
+
 #lightboxImg {
   position: fixed;
   height: 80vh;
   width: auto;
   margin-top: 5vh;
+}
+
+.lightboxIcon {
+  position: fixed;
+  z-index: 10;
+  width: 7vw;
+  height: auto;
+  fill: white;
+  cursor: pointer;
+}
+
+#prev {
+  left: 3vw;
+  padding: 2em 2em 2em 1em;
+}
+
+#next {
+  right: 3vw;
+  padding: 2em 1em 2em 2em;
+}
+
+.order {
+  margin-left: 3em;
+  background: #000000a4;
+  -webkit-box-shadow: 0px 0px 10px 4px #640303;
+          box-shadow: 0px 0px 10px 4px #640303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.order h3 {
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.order .orderContainer {
+  width: 50% !important;
+  margin: 0;
+  margin-top: 2em;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(129, 129, 129, 0.678);
+          box-shadow: 0px 0px 5px 1px rgba(129, 129, 129, 0.678);
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #140000;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.order .orderContainer h4 {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 1vw 0px;
+  font-weight: bold;
+  color: #ec3030;
+}
+
+.order .orderContainer .orderPicture {
+  width: 30%;
+}
+
+.order .orderContainer .orderTitle {
+  width: 70%;
+  padding-left: 1vw;
+}
+
+.order .orderContainer .orderTitle p {
+  margin: 0;
+}
+
+.order .orderContainer hr {
+  background: rgba(78, 78, 78, 0.418);
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  margin-top: 0;
 }
 /*# sourceMappingURL=merch.css.map */

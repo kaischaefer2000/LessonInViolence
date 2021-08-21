@@ -235,7 +235,7 @@
                                 <p>Flyer:</p>
                             </div>
                             <div class="col-12 col-sm-9 col-lg-10">
-                                <img id="boneBreakerFlyer" src="../flyer/bonebreaker-flyer.jpg" alt="Bonebreaker Festival Flyer">
+                                <img id="boneBreakerFlyer" src="../flyer/bonebreaker-flyer-min.jpg" alt="Bonebreaker Festival Flyer">
                             </div>
                         </div>
 

@@ -1,0 +1,45 @@
+@import "./infoBox";
+@import "./layout";
+
+
+/* overwriting layout.css */
+#hero-background{
+    @include heroBackground(url("../headers/header-home.jpg"));
+}
+
+
+/* heading */
+.heading{
+    padding-top: 9em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-weight: 800;
+}
+
+@media(max-width: 350px){
+    .heading h2{
+        font-size: 1.7em;
+    }   
+}
+
+
+/* content boxes */
+.content-box{
+    min-width: full;
+    height: auto;
+    padding: 4em 3em;
+
+    .post-time{
+        float: right;
+    }
+}
+
+.light-content-box{
+    background-color: rgba(255, 255, 255, 0.158);
+    box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.90);
+}
+
+.dark-content-box{
+    background-color: rgba(27, 4, 4, 0.479);
+    box-shadow: 0px 0px 15px 11px rgb(0, 0, 0);
+}
