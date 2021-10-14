@@ -1,0 +1,4 @@
+# Permanent URL redirect- by netgrade 
+RewriteEngine on
+Redirect 301 /index.html https://lessoninviolence.com/phpFiles/index.php
+Redirect 301 lessoninviolence.com https://lessoninviolence.com/phpFiles/index.php
