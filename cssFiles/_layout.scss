@@ -1,5 +1,3 @@
-
-
 /* Sass variables */
 $primaryColor: rgb(236, 48, 48);
 
@@ -18,7 +16,7 @@ $primaryColor: rgb(236, 48, 48);
 /* general element stylings */
 body {
   margin: 0;
-  font-family: "Papyrus", "Poor Richard", "Arial";
+  font-family: "Papyrus", "Goudy Old Style", "Arial";
   color: #fff;
   word-wrap: break-word;
   max-width: 100%;
@@ -96,15 +94,19 @@ body {
 }
 
 /* styling main Content container */
-#mainContent{
+#mainContent {
   padding: 2em;
   height: auto;
-  background-repeat:no-repeat;
-  background-image:url('../layoutPictures/Blut_6.jpg');
-  background-attachment:fixed; 
+  background-repeat: no-repeat;
+  background-image: url("../layoutPictures/Blut_6.jpg");
+  background-attachment: fixed;
   background-size: cover;
 }
 
+.mainContentInner {
+  max-width: 1500px !important;
+  margin: auto;
+}
 
 /* importing other scss files */
 @import "./navigation";

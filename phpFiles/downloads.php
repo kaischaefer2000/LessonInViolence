@@ -1,18 +1,18 @@
 <html lang="en">
 <!-- head -->
 <head>
-    <title>News from LESSON IN VIOLENCE | Thrash Metal band</title>
+    <title>Lesson in Violence | Picture & Info-Downloads</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index,follow">
     <meta name="description"
-        content="News from the german Thrash Metal band Lesson in Violence | next show: 29.08.2020 at the Infernum meets Porkcore Fistevil Festival in Büchold">
+        content="Intrested in our band? Go checkout the pictures and demo songs for download. You`ll also find a bandinfo and a technical rider">
     <meta name="keywords"
         content="lesson in violence, thrash metal, german thrash metal, thrash metal aus schweinfurt, thrash metal aus franken, lesson in violence schweinfurt,
              lesson in violence band, thrash metal band, lesson in violence buchen, l i v, L.I.V, Thrash Metal Mankind, Bavarian thrash metal, heavy metal, heavy metal band, german thrash, exodus, lesson in violence news">
-    <link rel="shortcut icon" type="image/x-icon" href="LIVabgekürzt_schwarz.jpg">
-    <link rel="apple-touch-icon" href="LIVabgekürzt_schwarz.jpg" />
-
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/LIV_abkuerzung_weiss.png">
+    <link rel="icon" href="../assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/LIV_abkuerzung_weiss.png" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -40,7 +40,7 @@
     ?>
 
     <div id="mainContent" class="fluid-container">
-
+    <div class="mainContentInner">
         <!-- heading for pictures and logos -->
         <div class="row">
             <div class="col">
@@ -166,7 +166,7 @@
 
         <script language="javascript" type="text/javascript" src="../jsFiles/downloads.js"></script>
         <script language="javascript" type="text/javascript" src="../jsFiles/musicPlayer.js"></script>
-
+    </div>
     </div>
     <?php
         include('../htmlFiles/footer.html');

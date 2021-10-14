@@ -1,17 +1,18 @@
 <html lang="en">
 <!-- head -->
 <head>
-    <title>News from LESSON IN VIOLENCE | Thrash Metal band</title>
+    <title>Lesson in Violence | concert dates and locations</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index,follow">
     <meta name="description"
-        content="News from the german Thrash Metal band Lesson in Violence | next show: 29.08.2020 at the Infernum meets Porkcore Fistevil Festival in Büchold">
+        content="You want to experience headbanging trash metal? Come to one of our shows! You can find dates, locations and other performing bands here">
     <meta name="keywords"
         content="lesson in violence, thrash metal, german thrash metal, thrash metal aus schweinfurt, thrash metal aus franken, lesson in violence schweinfurt,
              lesson in violence band, thrash metal band, lesson in violence buchen, l i v, L.I.V, Thrash Metal Mankind, Bavarian thrash metal, heavy metal, heavy metal band, german thrash, exodus, lesson in violence news">
-    <link rel="shortcut icon" type="image/x-icon" href="LIVabgekürzt_schwarz.jpg">
-    <link rel="apple-touch-icon" href="LIVabgekürzt_schwarz.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/LIV_abkuerzung_weiss.png">
+    <link rel="icon" href="../assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/LIV_abkuerzung_weiss.png" />
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -48,9 +49,9 @@
                 </div>
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
-                        <span>13.03.2021</span><br>
-                        <span>Lessons in Metal 2</span><br>
-                        Schweinfurt / Jugendhaus
+                        <span>09.04.2022</span><br>
+                        <span>Metal Franconia Festival</span><br>
+                        Dettelbach / Frankenhalle
                     </a>
                 </div>
             </div>
@@ -58,6 +59,7 @@
     </section>
 
     <div id="mainContent" class="fluid-container">
+        <div class="mainContentInner">
         <!-- heading -->
         <div class="row">
             <div class="col heading">
@@ -65,6 +67,92 @@
             </div>
         </div>
 
+        <!-- Rockverband goes Rockclub -->
+        <section>
+            <div class="row accordion-item show">
+                <div class="col-11">
+                    <p>17.09.2022<p>
+                    <p class="show-name">Rockverband goes Rockclub Nordbayern</p>
+                </div>
+                <div class="col-1">
+                    <i class="fa fa-chevron-down arrow"></i>
+                </div>
+            </div>
+
+            <div class="row accordion-item details">
+                <div class="col">
+                    <div class="fluid-container">
+                        <div class="row details-content">
+                            <div class="col-5 col-sm-3 col-lg-2">
+                                <p>Location:</p>
+                            </div>
+                            <div class="col-7 col-sm-9 col-lg-10">
+                                <p>Selb / Rockclub</p>
+                            </div>
+                        </div>
+
+                        <div class="row details-content">
+                            <div class="col-5 col-sm-3 col-lg-2">
+                                <p>Bands:</p>
+                            </div>
+                            <div class="col-7 col-sm-9 col-lg-10">
+                                <p>Broken Circle, Defuse My Hate, Horny Arbiter</p>
+                            </div>
+                        </div>
+
+                        <div class="row details-content">
+                            <div class="col">
+                                <a rel="nofollow" href="https://rockclub-nordbayern.de/"><u>More details</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bonebreaker -->
+        <section>
+            <div class="row accordion-item show">
+                <div class="col-11">
+                    <p>02.09.2022<p>
+                    <p class="show-name">Bonebreaker Festival</p>
+                </div>
+                <div class="col-1">
+                    <i class="fa fa-chevron-down arrow"></i>
+                </div>
+            </div>
+
+            <div class="row accordion-item details">
+                <div class="col">
+                    <div class="fluid-container">
+                        <div class="row details-content">
+                            <div class="col-5 col-sm-3 col-lg-2">
+                                <p>Location:</p>
+                            </div>
+                            <div class="col-7 col-sm-9 col-lg-10">
+                                <p>Kleinwenkheim / Sportgelände</p>
+                            </div>
+                        </div>
+
+                        <div class="row details-content">
+                            <div class="col-5 col-sm-3 col-lg-2">
+                                <p>Bands:</p>
+                            </div>
+                            <div class="col-7 col-sm-9 col-lg-10">
+                                <p>to be announced</p>
+                            </div>
+                        </div>
+
+                        <div class="row details-content">
+                            <div class="col">
+                                <a rel="nofollow" href="http://bonebreaker-festival.com/"><u>More details</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
          <!-- Infernum meets Porkcore Fistevil Festival -->
          <section>
             <div class="row accordion-item show">
@@ -151,140 +239,6 @@
             </div>
         </section>
 
-        <!-- Lessons in Metal-->
-        <section>
-            <div class="row accordion-item show">
-                <div class="col-11">
-                    <p>??.10.2021<p>
-                    <p class="show-name">Lessons in Metal 2</p>
-                </div>
-                <div class="col-1">
-                <i class="fa fa-chevron-down arrow"></i>
-                </div>
-            </div>
-
-            <div class="row accordion-item details">
-                <div class="col">
-                    <div class="fluid-container">
-                        <div class="row details-content">
-                            <div class="col-3 col-md-3 col-lg-2">
-                                <p>Location:</p>
-                            </div>
-                            <div class="col-9 col-md-9 col-lg-10">
-                                <p>Schweinfurt / Jugendhaus</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content">
-                            <div class="col-3 col-md-3 col-lg-2">
-                                <p>Bands:</p>
-                            </div>
-                            <div class="col-9 col-md-9 col-lg-10">
-                                <p>Goregonzola, Shredhammer, Hateful Agony</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content flyer-row">
-                            <div class="col-12 col-sm-3 col-lg-2">
-                                <p>Flyer:</p>
-                            </div>
-                            <div class="col-12 col-sm-9 col-lg-10">
-                                <img id="JugendhausZweiFlyer" src="../flyer/lessons-in-metal-2-flyer-min.jpg" alt="Bonebreaker Festival Flyer">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Bonebreaker -->
-        <section>
-            <div class="row accordion-item show">
-                <div class="col-11">
-                    <p>03.09.2021<p>
-                    <p class="show-name">Bonebreaker Festival</p>
-                </div>
-                <div class="col-1">
-                    <i class="fa fa-chevron-down arrow"></i>
-                </div>
-            </div>
-
-            <div class="row accordion-item details">
-                <div class="col">
-                    <div class="fluid-container">
-                        <div class="row details-content">
-                            <div class="col-5 col-sm-3 col-lg-2">
-                                <p>Location:</p>
-                            </div>
-                            <div class="col-7 col-sm-9 col-lg-10">
-                                <p>Kleinwenkheim / Sportgelände</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content">
-                            <div class="col-5 col-sm-3 col-lg-2">
-                                <p>Bands:</p>
-                            </div>
-                            <div class="col-7 col-sm-9 col-lg-10">
-                                <p>to be announced</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content flyer-row">
-                            <div class="col-12 col-sm-3 col-lg-2">
-                                <p>Flyer:</p>
-                            </div>
-                            <div class="col-12 col-sm-9 col-lg-10">
-                                <img id="boneBreakerFlyer" src="../flyer/bonebreaker-flyer-min.jpg" alt="Bonebreaker Festival Flyer">
-                            </div>
-                        </div>
-
-                        <div class="row details-content">
-                            <div class="col">
-                                <a rel="nofollow" href="http://bonebreaker-festival.com/"><u>More details</u></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-         <!-- Birthday Moshpit -->
-         <section>
-            <div class="row accordion-item show">
-                <div class="col-11">
-                    <p>03.07.2021<p>
-                    <p class="show-name">Birthday Moshpit (private party)</p>
-                </div>
-                <div class="col-1">
-                <i class="fa fa-chevron-down arrow"></i>
-                </div>
-            </div>
-
-            <div class="row accordion-item details">
-                <div class="col">
-                    <div class="fluid-container">
-                        <div class="row details-content">
-                            <div class="col-3 col-md-3 col-lg-2">
-                                <p>Location:</p>
-                            </div>
-                            <div class="col-9 col-md-9 col-lg-10">
-                                <p>Obervolkach / Sportgelände</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content">
-                            <div class="col-3 col-md-3 col-lg-2">
-                                <p>Bands:</p>
-                            </div>
-                            <div class="col-9 col-md-9 col-lg-10">
-                                <p>to be announced</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Goregonzola Birthday Bash -->
         <section>
@@ -416,7 +370,7 @@
         </section>
 
         <script language="javascript" type="text/javascript" src="../jsFiles/live.js"></script>
-    
+    </div>
     </div>
     <?php
         include('../htmlFiles/footer.html');

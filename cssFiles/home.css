@@ -160,7 +160,7 @@
 /* general element stylings */
 body {
   margin: 0;
-  font-family: "Papyrus", "Poor Richard", "Arial";
+  font-family: "Papyrus", "Goudy Old Style", "Arial";
   color: #fff;
   word-wrap: break-word;
   max-width: 100%;
@@ -237,6 +237,11 @@ body img {
   background-image: url("../layoutPictures/Blut_6.jpg");
   background-attachment: fixed;
   background-size: cover;
+}
+
+.mainContentInner {
+  max-width: 1500px !important;
+  margin: auto;
 }
 
 /* importing other scss files */
@@ -597,6 +602,291 @@ footer .copyright p {
   padding-right: 1em;
 }
 
+/* music player */
+.player-container {
+  height: 190vw;
+}
+
+#background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  z-index: -1;
+}
+
+/* song container */
+.container {
+  position: absolute;
+  height: 82vw;
+  width: 70vw;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+}
+
+/* control bar box  */
+.box {
+  position: absolute;
+  height: 50%;
+  width: 103%;
+  background: -webkit-linear-gradient(45deg, #282828, #550101);
+  z-index: 4;
+  bottom: -17%;
+}
+
+/* album cover */
+.thumbnail {
+  position: absolute;
+  width: 103%;
+  top: -7%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 3;
+}
+
+/* track artist */
+.song-artist {
+  position: absolute;
+  z-index: 4;
+  color: #a50000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3.8vw;
+  bottom: 21%;
+  left: 24%;
+}
+
+/* track title */
+.song-title {
+  position: absolute;
+  z-index: 4;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.42vw;
+  bottom: 16%;
+  left: 24%;
+}
+
+/* style for play and pause images */
+.play-pause {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  cursor: pointer;
+  bottom: 15%;
+  z-index: 4;
+  font-size: 53px;
+  left: 5%;
+}
+
+/* style for next and previous song images */
+#download-song {
+  position: absolute;
+  height: 6vw;
+  width: 6vw;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  cursor: pointer;
+  bottom: 13.5%;
+  font-size: 40px;
+  z-index: 4;
+  right: 5%;
+  bottom: 18%;
+}
+
+/* style for current time of the track */
+.currentTime {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  cursor: pointer;
+  bottom: -6.5%;
+  left: 17%;
+  z-index: 4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* style for the total length of the track */
+.durationTime {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  cursor: pointer;
+  bottom: 1%;
+  right: 11%;
+  z-index: 4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a50000;
+}
+
+.progress-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  position: absolute;
+  z-index: 4;
+  height: 1vw;
+  background: #000000;
+  width: 44vw;
+  bottom: 7%;
+  border-radius: 30px;
+  left: 17%;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -3px;
+  margin-left: 0px;
+  height: 1.9vw;
+  width: 1.2vw;
+  border: 0;
+  background: -webkit-linear-gradient(45deg, #8f8f8f, #a50000);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* style for the progress bar's runnable track */
+.progress-bar::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  max-height: 5px;
+  border-radius: 30px;
+}
+
+/* style to remove blue shade of the progress bar when clicked on/selected */
+.progress-bar:focus {
+  outline: none;
+}
+
+/* media querys songs */
+@media (min-width: 576px) {
+  .player-container {
+    height: 52vw;
+  }
+  .container {
+    position: absolute;
+    height: 45vw;
+    width: 37vw;
+  }
+  .song-artist {
+    font-size: 2vw;
+  }
+  .song-title {
+    font-size: 1.8vw;
+  }
+  .play-pause {
+    height: 5vw;
+    width: 5vw;
+  }
+  #download-song {
+    height: 3vw;
+    width: 3vw;
+  }
+  .currentTime {
+    height: 5vw;
+    width: 5vw;
+    bottom: -5.5%;
+  }
+  .durationTime {
+    height: 5vw;
+    width: 5vw;
+    bottom: 2.5%;
+  }
+  .progress-bar {
+    height: 0.5vw;
+    width: 23.5vw;
+    bottom: 7%;
+  }
+  .progress-bar::-webkit-slider-thumb {
+    height: 1.2vw;
+    width: 0.6vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .player-container {
+    height: 36vw;
+  }
+  .container {
+    position: absolute;
+    height: 31vw;
+    width: 25vw;
+  }
+  .song-artist {
+    font-size: 1.4vw;
+  }
+  .song-title {
+    font-size: 1.25vw;
+  }
+  .play-pause {
+    height: 3.2vw;
+    width: 3.2vw;
+  }
+  #download-song {
+    height: 2vw;
+    width: 2vw;
+  }
+  .currentTime {
+    height: 3vw;
+    width: 3vw;
+    bottom: -5%;
+  }
+  .durationTime {
+    height: 3vw;
+    width: 3vw;
+    bottom: 2.5%;
+  }
+  .progress-bar {
+    height: 0.4vw;
+    width: 16vw;
+    bottom: 6.5%;
+  }
+  .progress-bar::-webkit-slider-thumb {
+    height: 0.9vw;
+    width: 0.5vw;
+  }
+}
+
+@media (min-width: 1800px) {
+  .player-container > div:nth-of-type(2) {
+    margin-left: 10em !important;
+  }
+}
+
 /* overwriting layout.css */
 #hero-background {
   background-repeat: no-repeat;
@@ -611,13 +901,13 @@ footer .copyright p {
 .heading {
   padding-top: 9em;
   padding-bottom: 2em;
-  text-align: center;
+  text-align: left;
   font-weight: 800;
 }
 
 @media (max-width: 350px) {
   .heading h2 {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
 }
 
@@ -642,5 +932,164 @@ footer .copyright p {
   background-color: rgba(27, 4, 4, 0.479);
   -webkit-box-shadow: 0px 0px 15px 11px black;
           box-shadow: 0px 0px 15px 11px black;
+}
+
+.show-row .show-preview a {
+  font-size: inherit;
+  color: white;
+}
+
+.show-row .show-preview .image-div {
+  height: 18vw;
+  overflow: hidden;
+}
+
+.show-row .show-preview .image-div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.show-row .show-preview .padding-div {
+  padding: 2em;
+  background: -webkit-linear-gradient(90deg, rgba(20, 0, 0, 0.9), rgba(66, 0, 0, 0.9));
+  border-radius: 0px 0px 5px 5px;
+}
+
+.show-row .show-preview .padding-div .live-date {
+  letter-spacing: 0.3em;
+}
+
+.about-us-row {
+  background-color: #0e0f11;
+}
+
+.about-us-row .right-half-inner {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-us-row .right-half-inner h4 {
+  text-align: center;
+  padding: 2em 0px 2em 0px;
+}
+
+.about-us-row .right-half-inner .cta-about-us {
+  background-color: #ec3030;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  word-spacing: 0.5em;
+  margin-top: 3em;
+}
+
+.cta-media {
+  background-color: transparent;
+  border-radius: 3px;
+  border-width: medium;
+  border-color: #ec3030;
+  color: #ec3030;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  word-spacing: 0.5em;
+  margin-top: 3em;
+}
+
+.TMM-section {
+  background: url("../homeAssets/StoneBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5em;
+  border-radius: 5px;
+}
+
+.TMM-section #demoTracks {
+  display: none;
+}
+
+.TMM-section .player-container > div {
+  position: relative;
+}
+
+.TMM-section .player-container > div:nth-of-type(2) {
+  display: none;
+}
+
+.TMM-section .TMM-left-side {
+  padding-left: 2em;
+}
+
+.TMM-section .TMM-right-side {
+  padding: 2em;
+}
+
+.TMM-section .TMM-right-side img {
+  padding-bottom: 2em;
+}
+
+@media (max-width: 786px) {
+  .post-time {
+    text-align: right;
+    float: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .TMM-left-side {
+    padding-left: 0em;
+    margin: -13em 0em -13em 0em;
+  }
+  .content-box {
+    padding: 2em 2em;
+  }
+}
+
+@media (max-width: 450px) {
+  .TMM-left-side {
+    padding-left: 0em;
+    margin: -9em 0em -9em 0em;
+  }
+  .TMM-right-side {
+    font-size: 1.1rem;
+  }
+  .content-box > p {
+    font-size: 1.1rem;
+  }
+  .heading {
+    padding-top: 6em;
+  }
+}
+
+@media (max-width: 760px) {
+  .image-div {
+    height: 250px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .image-div {
+    height: 180px !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .image-div {
+    height: 250px !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .TMM-right-side {
+    max-width: 900px !important;
+    margin-left: auto;
+  }
 }
 /*# sourceMappingURL=home.css.map */

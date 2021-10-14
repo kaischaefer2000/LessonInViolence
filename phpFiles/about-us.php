@@ -1,18 +1,18 @@
 <html lang="en">
 <!-- head -->
 <head>
-    <title>News from LESSON IN VIOLENCE | Thrash Metal band</title>
+    <title>Lesson in Violence | german Thrash Metal band</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index,follow">
     <meta name="description"
-        content="News from the german Thrash Metal band Lesson in Violence | next show: 29.08.2020 at the Infernum meets Porkcore Fistevil Festival in Büchold">
+        content="We are a german Thrash Metal band from Schweinfurt - Frankonia. Lesson in Violence delivers headbanging metal and smashing live shows">
     <meta name="keywords"
         content="lesson in violence, thrash metal, german thrash metal, thrash metal aus schweinfurt, thrash metal aus franken, lesson in violence schweinfurt,
              lesson in violence band, thrash metal band, lesson in violence buchen, l i v, L.I.V, Thrash Metal Mankind, Bavarian thrash metal, heavy metal, heavy metal band, german thrash, exodus, lesson in violence news">
-    <link rel="shortcut icon" type="image/x-icon" href="LIVabgekürzt_schwarz.jpg">
-    <link rel="apple-touch-icon" href="LIVabgekürzt_schwarz.jpg" />
-
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/LIV_abkuerzung_weiss.png">
+    <link rel="icon" href="../assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/LIV_abkuerzung_weiss.png" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -47,9 +47,9 @@
                 </div>
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
-                        <span>13.03.2021</span><br>
-                        <span>Lessons in Metal 2</span><br>
-                        Schweinfurt / Jugendhaus
+                        <span>09.04.2022</span><br>
+                        <span>Metal Franconia Festival</span><br>
+                        Dettelbach / Frankenhalle
                     </a>
                 </div>
             </div>
@@ -59,7 +59,7 @@
     <!-- main content -->
     <main>
         <div id="mainContent" class="fluid-container">
-
+        <div class="mainContentInner">
             <!-- about us pragraph  -->
             <section>
                 <div class="row">
@@ -78,22 +78,28 @@
 
             <!-- member pictures -->
             <div id="members" class="row">
-                <div id="flo_eins" class="col ml-1 mr-1"></div>
-                <div id="roli" class="col ml-1 mr-1"></div>
-                <div id="scraper" class="col ml-1 mr-1"></div>
-                <div id="flo_zwei" class="col ml-1 mr-1"></div>
-                <div id="andre" class="col ml-1 mr-1"></div>
+                <div class="col-6 col-md ml-0 mr-0 ml-lg-1 mr-lg-1">
+                   <div id="flo_eins" class="member-picture"></div> 
+                   <p>Florian Negwer<br><span>Vocals</span></p>
+                </div>
+                <div class="col-6 col-md ml-0 mr-0 ml-lg-1 mr-lg-1">
+                    <div id="roli" class="member-picture"></div>    
+                    <p>Roland Schäfer<br><span>Bass, Backvocals</span></p>
+                </div>
+                <div class="col-6 col-md ml-0 mr-0 ml-lg-1 mr-lg-1">
+                     <div id="scraper" class="member-picture"></div> 
+                    <p>Matthias Krapp<br><span>Drums</span></p>
+                </div>
+                <div class="col-6 col-md ml-0 mr-0 ml-lg-1 mr-lg-1">
+                    <div id="flo_zwei" class="member-picture"></div>
+                    <p>Florian Helbig<br><span>Guitar, Backvocals</span></p>
+                </div>
+                <div class="col-6 col-md ml-0 mr-0 ml-lg-1 mr-lg-1">
+                    <div id="andre" class="member-picture"></div>
+                    <p>Andre Loesch<br><span>Guitar</span></p>
+                </div>
             </div>
-
-            <!-- member description -->
-            <div id="member-description" class="row">
-                <div class="col ml-1 mr-1"><p>Florian Negwer<br><span>Vocals</span></p></div>
-                <div class="col ml-1 mr-1"><p>Roland Schäfer<br><span>Bass, Backvocals</span></p></div>
-                <div class="col ml-1 mr-1"><p>Matthias Krapp<br><span>Drums</span></p></div>
-                <div class="col ml-1 mr-1"><p>Florian Helbig<br><span>Guitar, Backvocals</span></p></div>
-                <div class="col ml-1 mr-1"><p>Andre Loesch<br><span>Guitar</span></p></div>
-            </div>
-
+    	</div>
         </div>
     </main>
 

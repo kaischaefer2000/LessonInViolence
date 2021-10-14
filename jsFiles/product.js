@@ -60,10 +60,7 @@ window.onload = function(){
  };
 
 
-
-
  /* lightbox */
-
  const fullImg = document.getElementById("fullScreenImg");
  const shirtImage = document.getElementsByClassName("shirtImage");
 

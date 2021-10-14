@@ -236,7 +236,7 @@ product card styling
 
 #lightboxImg {
   position: fixed;
-  height: 80vh;
+  height: 60vw;
   width: auto;
   margin-top: 5vh;
 }
@@ -244,7 +244,7 @@ product card styling
 .lightboxIcon {
   position: fixed;
   z-index: 10;
-  width: 7vw;
+  width: 5em;
   height: auto;
   fill: white;
   cursor: pointer;
@@ -317,4 +317,23 @@ product card styling
       margin-top: 0;
     }
   }
+}
+
+@media(min-width: 1600px){
+    @keyframes infoBoxAnimation{
+        0%   {  top: 42vw }
+        100% {  top: 40vw }
+    }
+}
+
+@media(min-width: 1000px){
+    #lightboxImg {
+      height: 600px;
+    }
+}
+
+@media(max-width: 570px){
+    .lightboxIcon {
+      width: 4.5em;
+    }
 }

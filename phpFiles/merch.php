@@ -1,17 +1,18 @@
 <html lang="en">
 <!-- head -->
 <head>
-    <title>News from LESSON IN VIOLENCE | Thrash Metal band</title>
+    <title>Lesson in Violence | Metal Merch</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index,follow">
     <meta name="description"
-        content="News from the german Thrash Metal band Lesson in Violence | next show: 29.08.2020 at the Infernum meets Porkcore Fistevil Festival in Büchold">
+        content="Go checkout our merch! You can order t-shirts and our new album The Thrashfall of Mankind soon...">
     <meta name="keywords"
         content="lesson in violence, thrash metal, german thrash metal, thrash metal aus schweinfurt, thrash metal aus franken, lesson in violence schweinfurt,
              lesson in violence band, thrash metal band, lesson in violence buchen, l i v, L.I.V, Thrash Metal Mankind, Bavarian thrash metal, heavy metal, heavy metal band, german thrash, exodus, lesson in violence news">
-    <link rel="shortcut icon" type="image/x-icon" href="LIVabgekürzt_schwarz.jpg">
-    <link rel="apple-touch-icon" href="LIVabgekürzt_schwarz.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/LIV_abkuerzung_weiss.png">
+    <link rel="icon" href="../assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/LIV_abkuerzung_weiss.png" />
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -50,7 +51,7 @@
     </section>
 
     <div id="mainContent" class="fluid-container">
-
+    <div class="mainContentInner">
     <section>
         <div class="row products">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product">
@@ -106,6 +107,8 @@
 
                 </div>
             </div>
+
+        </div>
         </div>
     </section>    
     </div>

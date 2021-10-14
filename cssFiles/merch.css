@@ -19,7 +19,7 @@
 /* general element stylings */
 body {
   margin: 0;
-  font-family: "Papyrus", "Poor Richard", "Arial";
+  font-family: "Papyrus", "Goudy Old Style", "Arial";
   color: #fff;
   word-wrap: break-word;
   max-width: 100%;
@@ -96,6 +96,11 @@ body img {
   background-image: url("../layoutPictures/Blut_6.jpg");
   background-attachment: fixed;
   background-size: cover;
+}
+
+.mainContentInner {
+  max-width: 1500px !important;
+  margin: auto;
 }
 
 /* importing other scss files */
@@ -850,7 +855,7 @@ product card styling
 
 #lightboxImg {
   position: fixed;
-  height: 80vh;
+  height: 60vw;
   width: auto;
   margin-top: 5vh;
 }
@@ -858,7 +863,7 @@ product card styling
 .lightboxIcon {
   position: fixed;
   z-index: 10;
-  width: 7vw;
+  width: 5em;
   height: auto;
   fill: white;
   cursor: pointer;
@@ -941,5 +946,36 @@ product card styling
   height: 1px;
   border-radius: 2px;
   margin-top: 0;
+}
+
+@media (min-width: 1600px) {
+  @-webkit-keyframes infoBoxAnimation {
+    0% {
+      top: 42vw;
+    }
+    100% {
+      top: 40vw;
+    }
+  }
+  @keyframes infoBoxAnimation {
+    0% {
+      top: 42vw;
+    }
+    100% {
+      top: 40vw;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #lightboxImg {
+    height: 600px;
+  }
+}
+
+@media (max-width: 570px) {
+  .lightboxIcon {
+    width: 4.5em;
+  }
 }
 /*# sourceMappingURL=merch.css.map */

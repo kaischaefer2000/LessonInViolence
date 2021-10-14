@@ -277,6 +277,12 @@
   }
 }
 
+@media (min-width: 1800px) {
+  .player-container > div:nth-of-type(2) {
+    margin-left: 10em !important;
+  }
+}
+
 /* Sass variables */
 /* global website stylings */
 * {
@@ -298,7 +304,7 @@
 /* general element stylings */
 body {
   margin: 0;
-  font-family: "Papyrus", "Poor Richard", "Arial";
+  font-family: "Papyrus", "Goudy Old Style", "Arial";
   color: #fff;
   word-wrap: break-word;
   max-width: 100%;
@@ -375,6 +381,11 @@ body img {
   background-image: url("../layoutPictures/Blut_6.jpg");
   background-attachment: fixed;
   background-size: cover;
+}
+
+.mainContentInner {
+  max-width: 1500px !important;
+  margin: auto;
 }
 
 /* importing other scss files */
@@ -853,6 +864,15 @@ footer .copyright p {
   }
   .download-link {
     margin-top: 6.5vw;
+  }
+}
+
+@media (min-width: 1700px) {
+  .download-item {
+    height: 300px;
+  }
+  .download-item-content {
+    height: 250px;
   }
 }
 /*# sourceMappingURL=downloads.css.map */

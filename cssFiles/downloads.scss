@@ -118,3 +118,12 @@
     margin-top: 6.5vw;
   }
 }
+
+@media (min-width: 1700px) {
+  .download-item{
+    height: 300px;
+  }
+  .download-item-content {
+    height: 250px;
+  }
+}
