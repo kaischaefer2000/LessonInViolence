@@ -1,6 +1,7 @@
 @import "./layout";
 @import "./infoBox";
 
+
 /* setting header picture */
 #hero-background {
   @include heroBackground(url("../headers/header-merch-min.jpg"));
@@ -19,7 +20,6 @@ info box stylings
     padding: 2.7em 0em 1.5em 0em;
   }
 }
-
 
 @media (min-width: 750px) {
   @keyframes infoBoxAnimation {
