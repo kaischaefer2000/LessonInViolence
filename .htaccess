@@ -1,4 +1,10 @@
 # Permanent URL redirect- by netgrade 
 RewriteEngine on
 Redirect 301 /index.html https://lessoninviolence.com/phpFiles/index.php
+Redirect 301 /live.html https://lessoninviolence.com/phpFiles/live.php
+Redirect 301 /band.html https://lessoninviolence.com/phpFiles/about-us.php
+Redirect 301 /merch.html https://lessoninviolence.com/phpFiles/merch.php
+Redirect 301 /media.html https://lessoninviolence.com/phpFiles/media.php
+Redirect 301 /downloads.html https://lessoninviolence.com/phpFiles/downloads.php
+Redirect 301 /contact.html https://lessoninviolence.com/phpFiles/index.php
 Redirect 301 lessoninviolence.com https://lessoninviolence.com/phpFiles/index.php
