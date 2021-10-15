@@ -102,7 +102,7 @@
 
                         <div class="row details-content">
                             <div class="col">
-                                <a rel="nofollow" href="https://rockclub-nordbayern.de/"><u>More details</u></a>
+                                <a rel="nofollow" href="https://rockclub-nordbayern.de/" target="blank"><u>More details</u></a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
 
                         <div class="row details-content">
                             <div class="col">
-                                <a rel="nofollow" href="http://bonebreaker-festival.com/"><u>More details</u></a>
+                                <a rel="nofollow" href="https://de-de.facebook.com/bonebreaker666/" target="blank"><u>More details</u></a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
 
                         <div class="row details-content">
                             <div class="col">
-                                <a rel="nofollow" href="https://infernum-meets-porkcore.de/"><u>More details</u></a>
+                                <a rel="nofollow" href="https://infernum-meets-porkcore.de/" target="blank"><u>More details</u></a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
 
                         <div class="row details-content">
                             <div class="col">
-                                <a rel="nofollow" href="https://sw.metal-franconia.de/"><u>More details</u></a>
+                                <a rel="nofollow" href="https://sw.metal-franconia.de/" target="blank"><u>More details</u></a>
                             </div>
                         </div>
                     </div>

@@ -89,30 +89,30 @@
              </div>
     
              <div class="dark-content-box content-box">
-                 <p class="post-time"><i>02.06.2021</i></p>
+                 <p class="post-time"><i>02.06.2020</i></p>
                 <p>
                     All shows in 2020 were rescheduled to 2021 due to Covid19.<br>
-                    Just check our dates for the <a href="/LIV_new_Version/phpFiles/live.php">upcoming shows</a> in 2021. Right     now we work on our first album to be published next year!
+                    Just check our dates for the <a href="live.php">upcoming shows</a> in 2021. Right     now we work on our first album to be published next year!
                 </p>
              </div>
     
              <div class="light-content-box content-box">
-                 <p class="post-time"><i>10.05.2021</i></p>
+                 <p class="post-time"><i>10.03.2020</i></p>
                 <p>
                     Our show at the Metal Franconia Festival 2020 was cancelled in connection with the upcoming Corona  Epidemic. The replacement date will be in 2021.
                 </p>
              </div>
     
              <div class="dark-content-box content-box">
-                <p class="post-time"><i>04.03.2021</i></p>
+                <p class="post-time"><i>04.12.2019</i></p>
                 <p>
                     Thanks a lot for the great support on our first show in our hometown!<br>
-                    Click <a href="/LIV_new_Version/phpFiles/media.php#jugendhaus2019">here</a> for the pictures!
+                    Click <a href="media.php#jugendhaus2019">here</a> for the pictures!
                 </p>
              </div>
     
              <div class="light-content-box content-box">
-                 <p class="post-time"><i>26.10.2020</i></p>
+                 <p class="post-time"><i>26.10.2019</i></p>
                 <p>
                     We're glad to announce our first hometown-show in Schweinfurt, where we can blast your faces off with our   brandnew set of pure fuckin' thrash!<br>
                     Goregonzola, Insulter and April in Flames will join the show! Be there!
@@ -120,7 +120,7 @@
              </div>
     
              <div class="dark-content-box content-box">
-                 <p class="post-time"><i>19.07.2020</i></p>
+                 <p class="post-time"><i>19.07.2019</i></p>
                 <p>
                     Welcome!<br>
                     We are very proud to present our new Thrash Metal Formation to you.<br>
@@ -139,9 +139,9 @@
                 </div>
                 <div class="col-s-12 col-md-6 col-lg-8 TMM-right-side">
                     <img src="../homeAssets/TMM-Albumtitel.png">
-                    <p>Thrash Metal Mankind is one of the headbanging tracks of the new Album The Thrashfall of Mankind.
+                    <p>Thrash Metal Mankind is one of the headbanging tracks of the upcoming album The Thrashfall of Mankind.
                     <br>
-                    Listen to our other <a href="../phpFiles/media.php#mainContent">demo track</a> from our coming album The Trashfall of Mankind. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:contact@lessoninviolence.com">contact@lessoninviolence.com</a> and look at our technical riders and other information <a href="../phpFiles/downloads.php">here</a>. 
+                    Listen to our other <a href="../phpFiles/media.php#mainContent">demo track</a> from our upcoming album The Thrashfall of Mankind. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:contact@lessoninviolence.com">contact@lessoninviolence.com</a> and look at our technical riders and other information <a href="../phpFiles/downloads.php">here</a>. 
                     </p>
                 </div>
             </div>
@@ -215,7 +215,7 @@
                     <div class="right-half-inner">
                         <h4><b>Violence in music and nowhere else!</b></h4>
                         <br>
-                        <p>Lesson in Violence represents the best of traditional smashing trash metal! We are a new german metal band located in Schweinfurt/Bavaria. Our vision is to deliver headbanging trash metal and to teach you metalheads a Lesson in VIolence!</p>
+                        <p>Lesson in Violence represents the best of traditional smashing thrash metal! We are a new german metal band located in Schweinfurt/Bavaria. Our vision is to deliver headbanging thrash metal and to teach you metalheads a Lesson in Violence!</p>
                         <button class="cta-about-us" onclick="document.location='../phpFiles/about-us.php'">Get to know us ></button>
                     </div>
                 </div>

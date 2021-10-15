@@ -53,7 +53,7 @@
                     <ul>
                         <li><a href="#jugendhaus2019">Jugendhaus 2019</a></li>
                         <li><a href="#stattbahnhof2020">Stattbahnhof 2020</a></li>
-                        <li><a href="#birthdayBash2021">Birthday Bash 2021</a></li>
+                        <li><a href="#birthdayBash2021">Birthday Bash 2019</a></li>
                         <li><a href="#bandPictures">Band pictures</a></li>
                         <li><a href="#videoSection">Videos</a></li>
                         <li><a href="#demoTracks">Demo tracks</a></li>
@@ -189,10 +189,10 @@
             </div>   
         </section>
         
-        <!-- Birthday Bash 2021 -->
+        <!-- Birthday Bash 2019 -->
         <section>
             <h2 id="birthdayBash2021" class="lightbox-heading">
-                Birthday Bash 2021
+                Birthday Bash 2019
             </h2>
         
             <div class="row">

@@ -68,7 +68,7 @@
                     </div>
                     
                     <div class="row prodDescription">
-                        <h3>LIV T-Shirt</h3>
+                        <h3>L.i.V T-SHIRT</h3>
                         <hr>
                         <table>
                             <tr>
@@ -88,7 +88,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-6 order" style="display:none">
                 <h3>My order</h3>
                 <div class="orderContainer">
-                    <h4>LIV Shirt</h4>
+                    <h4>L.i.V Shirt</h4>
                     <hr> 
                     <img class="orderPicture" src="../merchPictures/productShirt.jpg" alt="">
                     <div class="orderTitle">
