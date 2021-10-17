@@ -699,7 +699,11 @@ footer .copyright p {
   background-image: url("../members/Flo-zwei-freigestellt-min.png");
 }
 
-#flo_zwei:hover {
+#flo_zwei:hover, #flo_zwei::-moz-selection {
+  background-image: url("../members/Flo-zwei-live-min.jpg");
+}
+
+#flo_zwei:hover, #flo_zwei::selection {
   background-image: url("../members/Flo-zwei-live-min.jpg");
 }
 
@@ -707,7 +711,11 @@ footer .copyright p {
   background-image: url("../members/Scraper-freigestellt-min.png");
 }
 
-#scraper:hover {
+#scraper:hover, #scraper::-moz-selection {
+  background-image: url("../members/Scraper-live-min.jpg");
+}
+
+#scraper:hover, #scraper::selection {
   background-image: url("../members/Scraper-live-min.jpg");
 }
 
@@ -716,7 +724,11 @@ footer .copyright p {
   background-image: url("../members/Flo-eins-freigestellt-min.png");
 }
 
-#flo_eins:hover {
+#flo_eins:hover, #flo_eins::-moz-selection {
+  background-image: url("../members/Flo-eins-live-min.jpg");
+}
+
+#flo_eins:hover, #flo_eins::selection {
   background-image: url("../members/Flo-eins-live-min.jpg");
 }
 
@@ -724,7 +736,11 @@ footer .copyright p {
   background-image: url("../members/Roli-freigestellt-min.png");
 }
 
-#roli:hover {
+#roli:hover, #roli::-moz-selection {
+  background-image: url("../members/Roli-live-min.jpg");
+}
+
+#roli:hover, #roli::selection {
   background-image: url("../members/Roli-live-min.jpg");
 }
 
@@ -733,7 +749,11 @@ footer .copyright p {
   background-image: url("../members/Andre-freigestellt-min.png");
 }
 
-#andre:hover {
+#andre:hover, #andre::-moz-selection {
+  background-image: url("../members/Andre-live-min.jpg");
+}
+
+#andre:hover, #andre::selection {
   background-image: url("../members/Andre-live-min.jpg");
 }
 

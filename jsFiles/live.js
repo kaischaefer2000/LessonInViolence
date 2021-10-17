@@ -1,7 +1,3 @@
-document.getElementById('main-title').innerHTML = 'L<br>I<br>V<br>E';
-document.getElementById('main-title').style.lineHeight = '1.5em';
-document.getElementById('main-title').style.padding = '2.5vw 0px 2.5vw';
-
 var acc = document.getElementsByClassName("show");
 var i;
 
@@ -17,39 +13,6 @@ for (i = 0; i < acc.length; i++) {
         }
 
     });
-}
-
-// click event for Bone Breaker Flyer
-img = document.getElementById("boneBreakerFlyer");
-
-function scaleImg(){
-    if(img.classList.contains("bigImg")){
-        img.classList.remove("bigImg");
-        img.style.width = "15vw";
-        img.style.transition = "width 0.8s ease-in-out";
-    }
-    else{
-        img.style.width = "30vw";
-        img.style.transition = "width 0.8s ease-in-out";
-        img.classList.add("bigImg");
-    }
-}
-
-
-// click event for Jugendhaus zwei Flyer
-img2 = document.getElementById("JugendhausZweiFlyer");
-
-function scaleImg2(){
-    if(img2.classList.contains("bigImg")){
-        img2.classList.remove("bigImg");
-        img2.style.width = "15vw";
-        img2.style.transition = "width 0.8s ease-in-out";
-    }
-    else{
-        img2.style.width = "30vw";
-        img2.style.transition = "width 0.8s ease-in-out";
-        img2.classList.add("bigImg");
-    }
 }
 
 // click event for Birthday Bash Flyer
