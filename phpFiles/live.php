@@ -93,10 +93,10 @@
 
                         <div class="row details-content">
                             <div class="col-5 col-sm-3 col-lg-2">
-                                <p>Bands:</p>
+                                <p translate="no">Bands:</p>
                             </div>
                             <div class="col-7 col-sm-9 col-lg-10">
-                                <p>Broken Circle, Defuse My Hate, Horny Arbiter</p>
+                                <p translate="no">Broken Circle, Defuse My Hate, Horny Arbiter</p>
                             </div>
                         </div>
 
@@ -115,7 +115,7 @@
             <div class="row accordion-item show">
                 <div class="col-11">
                     <p>02.09.2022<p>
-                    <p class="show-name">Bonebreaker Festival</p>
+                    <p class="show-name" translate="no">Bonebreaker Festival</p>
                 </div>
                 <div class="col-1">
                     <i class="fa fa-chevron-down arrow"></i>
@@ -136,10 +136,10 @@
 
                         <div class="row details-content">
                             <div class="col-5 col-sm-3 col-lg-2">
-                                <p>Bands:</p>
+                                <p translate="no">Bands:</p>
                             </div>
                             <div class="col-7 col-sm-9 col-lg-10">
-                                <p>to be announced</p>
+                                <p translate="no">to be announced</p>
                             </div>
                         </div>
 
@@ -158,7 +158,7 @@
             <div class="row accordion-item show">
                 <div class="col-11">
                     <p>august.2022<p>
-                    <p class="show-name">Infernum meets Porkcore Fistevil Festival</p>
+                    <p class="show-name" translate="no">Infernum meets Porkcore Fistevil Festival</p>
                 </div>
                 <div class="col-1">
                 <i class="fa fa-chevron-down arrow"></i>
@@ -179,10 +179,10 @@
 
                         <div class="row details-content">
                             <div class="col-3 col-md-3 col-lg-2">
-                                <p>Bands:</p>
+                                <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p>to be announced</p>
+                                <p translate="no">to be announced</p>
                             </div>
                         </div>
 
@@ -222,7 +222,7 @@
 
                         <div class="row details-content">
                             <div class="col-3 col-md-3 col-lg-2">
-                                <p>Bands:</p>
+                                <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
                                 <p>JBO, Milking the Goatmachine, Bodyfarm, Fleshcrawl, Cypecore, and many more...</p>
@@ -245,7 +245,7 @@
             <div class="row accordion-item show over">
                 <div class="col-11">
                     <p>22.02.2020<p>
-                    <p class="show-name">Goregonzola Birthday Bash</p>
+                    <p class="show-name" translate="no">Goregonzola Birthday Bash</p>
                 </div>
                 <div class="col-1">
                 <i class="fa fa-chevron-down arrow over"></i>
@@ -266,7 +266,7 @@
 
                         <div class="row details-content">
                             <div class="col-3 col-md-3 col-lg-2">
-                                <p>Bands:</p>
+                                <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
                                 <p>Goregonzola, Painstyle, Rawside, April in Flames</p>
@@ -291,7 +291,7 @@
             <div class="row accordion-item show over">
                 <div class="col-11">
                     <p>30.11.2019<p>
-                    <p class="show-name">Lessons in Metal 1</p>
+                    <p class="show-name" translate="no">Lessons in Metal 1</p>
                 </div>
                 <div class="col-1">
                 <i class="fa fa-chevron-down arrow over"></i>
@@ -312,10 +312,10 @@
 
                         <div class="row details-content">
                             <div class="col-3 col-md-3 col-lg-2">
-                                <p>Bands:</p>
+                                <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p>Goregonzola, Insulter, April in Flames</p>
+                                <p translate="no">Goregonzola, Insulter, April in Flames</p>
                             </div>
                         </div>
 
@@ -337,7 +337,7 @@
             <div class="row accordion-item show over">
                 <div class="col-11">
                     <p>06.07.2019<p>
-                    <p class="show-name">Birthday Moshpit (private party)</p>
+                    <p class="show-name" translate="no">Birthday Moshpit (private party)</p>
                 </div>
                 <div class="col-1">
                 <i class="fa fa-chevron-down arrow over"></i>
@@ -361,7 +361,7 @@
                                 <p>Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p>Absorb, Road Crew, Turn the course, Legal Hate</p>
+                                <p translate="no">Absorb, Road Crew, Turn the course, Legal Hate</p>
                             </div>
                         </div>
                     </div>

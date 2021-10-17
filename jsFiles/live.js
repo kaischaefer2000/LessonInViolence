@@ -87,8 +87,6 @@ function scaleImg4(){
 // click event only when screen is big enough
 function myFunction(x) {
     if (x.matches) {
-        document.getElementById("boneBreakerFlyer").addEventListener("click", scaleImg);
-        document.getElementById("JugendhausZweiFlyer").addEventListener("click", scaleImg2);
         document.getElementById("birthdayBashFlyer").addEventListener("click", scaleImg3);
         document.getElementById("JugendhausEinsFlyer").addEventListener("click", scaleImg4);
     } else {

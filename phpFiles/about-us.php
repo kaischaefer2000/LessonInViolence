@@ -13,6 +13,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="../assets/LIV_abkuerzung_weiss.png">
     <link rel="icon" href="../assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
     <link rel="apple-touch-icon" href="../assets/LIV_abkuerzung_weiss.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Lato&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -48,7 +51,7 @@
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
                         <span>09.04.2022</span><br>
-                        <span>Metal Franconia Festival</span><br>
+                        <span translate="no">Metal Franconia Festival</span><br>
                         Dettelbach / Frankenhalle
                     </a>
                 </div>
@@ -65,7 +68,7 @@
                 <div class="row">
                     <div id="aboutUsText" class="col">
                         <h2>Welcome to the official homepage of<br>
-                        <span>LESSON IN VIOLENCE</span></h2>
+                        <span translate="no">LESSON IN VIOLENCE</span></h2>
 
                         <p>We are a <strong>german Thrash Metal</strong> band from <strong>Schweinfurt</strong>, Bavaria.<br>It's always hard to find a name for your baby. We wanted a name that expresses the message in our music and gives you an idea for what it's all about. Further should every <strong>metalhead</strong> know what's going on by just reading the name of the band. So we helped ourselves by leaning on to one of the greatest <strong>Thrash Metal bands</strong> who have always been a huge influence to us all. <strong>“Lesson in Violence”</strong> was born in summer 2019, named after a song by <strong>Exodus</strong>. It is our aim to deliver fuckin good <strong>Thrash Metal</strong> without any triviality that goes straight through the heart.
                         <br><br>

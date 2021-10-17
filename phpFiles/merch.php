@@ -80,7 +80,7 @@
                                 <td><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></td>
                             </tr>
                         </table>
-                        <button><a href="mailto:contact@lessoninviolence.com" style="color:white">Order !</a></button>
+                        <button><a href="mailto:contact@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
                     </div>
                 </div>
             </div>

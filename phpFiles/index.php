@@ -65,7 +65,7 @@
         <section>
             <div class="row">
                 <div class="col heading">
-                    <h2>News from Lesson in Violence</h2>
+                    <h2>News from <span translate="no">Lesson in Violence</span></h2>
                 </div>
             </div>
     
@@ -115,7 +115,7 @@
                  <p class="post-time"><i>26.10.2019</i></p>
                 <p>
                     We're glad to announce our first hometown-show in Schweinfurt, where we can blast your faces off with our   brandnew set of pure fuckin' thrash!<br>
-                    Goregonzola, Insulter and April in Flames will join the show! Be there!
+                    Goregonzola, Insulter and April in Flames will join the show! <span translate="no"> Be there!</span>
                 </p>
              </div>
     
@@ -141,7 +141,7 @@
                     <img src="../homeAssets/TMM-Albumtitel.png">
                     <p>Thrash Metal Mankind is one of the headbanging tracks of the upcoming album The Thrashfall of Mankind.
                     <br>
-                    Listen to our other <a href="../phpFiles/media.php#mainContent">demo track</a> from our upcoming album The Thrashfall of Mankind. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:contact@lessoninviolence.com">contact@lessoninviolence.com</a> and look at our technical riders and other information <a href="../phpFiles/downloads.php">here</a>. 
+                    Listen to our other <a href="../phpFiles/media.php#mainContent">demo track</a> from our upcoming album The Thrashfall of Mankind. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:contact@lessoninviolence.com">contact@lessoninviolence.com</a> and look at our<span translate="no"> technical rider </span> and other information <a href="../phpFiles/downloads.php">here</a>. 
                     </p>
                 </div>
             </div>
@@ -163,7 +163,7 @@
                 </div>
                 <div class="padding-div">
                     <p class="live-date">09.04.2022</p>
-                    <h4><b>Metal Franconia Festival</b></h4>
+                    <h4><b translate="no">Metal Franconia Festival</b></h4>
                     <p><i>Dettelbach / Frankenhalle</i></p>
                 </div>
                 </a>
@@ -176,7 +176,7 @@
                 </div>
                     <div class="padding-div">
                         <p class="live-date">August-2022</p>
-                        <h4><b>Infernum meets Porkcore Fistevil Festival</b></h4>
+                        <h4><b translate="no">Infernum meets Porkcore Fistevil Festival</b></h4>
                         <p><i>Festivalgelände Büchold</i></p>
                     </div>
                 </a>
@@ -189,7 +189,7 @@
                 </div>    
                     <div class="padding-div">
                         <p class="live-date">02.09.2022</p>
-                        <h4><b>Bonebreaker Festival</b></h4>
+                        <h4><b translate="no">Bonebreaker Festival</b></h4>
                         <p><i>Kleinwenkheim / Sportgelände</i></p>
                     </div>
                 </a>
@@ -202,7 +202,7 @@
         <section>
             <div class="row">
                 <div class="col heading">
-                    <h2>This is Lesson in Violence</h2>
+                    <h2>This is<span translate="no"> Lesson in Violence</span></h2>
                 </div>
             </div>
 
