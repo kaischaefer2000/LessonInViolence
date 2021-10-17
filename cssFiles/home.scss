@@ -18,9 +18,16 @@
 }
 
 @media(max-width: 350px){
+    .heading h1{
+        font-size: 1.4em;
+    } 
     .heading h2{
         font-size: 1.4em;
     }   
+
+    .heading h3{
+        font-size: 1.4em;
+    } 
 }
 
 

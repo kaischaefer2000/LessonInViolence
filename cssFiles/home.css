@@ -214,7 +214,7 @@ body img {
   z-index: 5;
 }
 
-.hero h1 {
+.hero p {
   margin: 6em 0em 0em 0.5em;
   text-transform: uppercase;
   font-weight: 900;
@@ -906,7 +906,13 @@ footer .copyright p {
 }
 
 @media (max-width: 350px) {
+  .heading h1 {
+    font-size: 1.4em;
+  }
   .heading h2 {
+    font-size: 1.4em;
+  }
+  .heading h3 {
     font-size: 1.4em;
   }
 }

@@ -25,7 +25,7 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    
+
     <link rel="stylesheet" type="text/css" href="../cssFiles/home.css" />
 </head>
 
@@ -60,7 +60,7 @@
         <section>
             <div class="row">
                 <div class="col heading">
-                    <h2>News from <span translate="no">Lesson in Violence</span></h2>
+                    <h1>News from <span translate="no">Lesson in Violence</span></h1>
                 </div>
             </div>
     
@@ -133,7 +133,7 @@
                     ?>
                 </div>
                 <div class="col-s-12 col-md-6 col-lg-8 TMM-right-side">
-                    <img src="../homeAssets/TMM-Albumtitel.png">
+                    <img src="../homeAssets/TMM-Albumtitel.png" alt="The Trashfall of Mankind album title">
                     <p>Thrash Metal Mankind is one of the headbanging tracks of the upcoming album The Thrashfall of Mankind.
                     <br>
                     Listen to our other <a href="../phpFiles/media.php#mainContent">demo track</a> from our upcoming album The Thrashfall of Mankind. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:contact@lessoninviolence.com">contact@lessoninviolence.com</a> and look at our<span translate="no"> technical rider </span> and other information <a href="../phpFiles/downloads.php">here</a>. 
@@ -154,7 +154,7 @@
                 <div class="col-md-4 show-preview">
                 <a href="../phpFiles/live.php">
                 <div class="image-div">
-                    <img src="../statti_pictures/Lesson in Violence_Statti_13.jpg">
+                    <img src="../statti_pictures/Lesson in Violence_Statti_13.jpg" alt="lesson in violence concert at stattbahnhof schweinfurt">
                 </div>
                 <div class="padding-div">
                     <p class="live-date">09.04.2022</p>
@@ -167,7 +167,7 @@
                 <div class="col-md-4 show-preview">
                 <a href="../phpFiles/live.php">
                 <div class="image-div">
-                    <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_9-min.jpg">
+                    <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_9-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt">
                 </div>
                     <div class="padding-div">
                         <p class="live-date">August-2022</p>
@@ -180,7 +180,7 @@
                 <div class="col-md-4 show-preview">
                 <a href="../phpFiles/live.php">
                 <div class="image-div">
-                    <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg">
+                    <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt">
                 </div>    
                     <div class="padding-div">
                         <p class="live-date">02.09.2022</p>
@@ -197,7 +197,7 @@
         <section>
             <div class="row">
                 <div class="col heading">
-                    <h2>This is<span translate="no"> Lesson in Violence</span></h2>
+                    <h3>This is<span translate="no"> Lesson in Violence</span></h3>
                 </div>
             </div>
 
@@ -221,34 +221,34 @@
         <section>
             <div class="row">
                 <div class="col heading">
-                    <h2>Concert pictures!</h2>
+                    <h3>Concert pictures!</h3>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_2-min.jpg"/>
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_2-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt"/>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg"/>
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt"/>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../statti_pictures/Lesson in Violence_Statti_13.jpg"/>
+                    <img class="mklbItem" src="../statti_pictures/Lesson in Violence_Statti_13.jpg" alt="lesson in violence concert at stattbahnhof schweinfurt"/>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../statti_pictures/Lesson in Violence_Statti_11.jpg"/>
+                    <img class="mklbItem" src="../statti_pictures/Lesson in Violence_Statti_11.jpg" alt="lesson in violence concert at stattbahnhof schweinfurt"/>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_10.jpg"/>
+                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_10.jpg" alt="lesson in violence concert at the goregonzola birthday bash"/>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_9.jpg"/>
+                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_9.jpg" alt="lesson in violence concert at the goregonzola birthday bash"/>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_19.jpg"/>
+                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_19.jpg" alt="lesson in violence concert at the goregonzola birthday bash"/>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_2.jpg"/>
+                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_2.jpg" alt="lesson in violence concert at the goregonzola birthday bash"/>
                 </div>
 
                 <button class="cta-media" onclick="document.location='../phpFiles/media.php'">View all pictures</button>
