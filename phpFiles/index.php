@@ -60,7 +60,7 @@
         <section>
             <div class="row">
                 <div class="col heading">
-                    <h1>News from <span translate="no">Lesson in Violence</span></h1>
+                    <h1>news from<span translate="no">Lesson in Violence</span></h1>
                 </div>
             </div>
     
@@ -86,7 +86,7 @@
              <div class="dark-content-box content-box">
                  <p class="post-time"><i>02.06.2020</i></p>
                 <p>
-                    All shows in 2020 were rescheduled to 2021 due to Covid19.<br>
+                    Bad news: All shows in 2020 were rescheduled to 2021 due to Covid19.<br>
                     Just check our dates for the <a href="live.php">upcoming shows</a> in 2021. Right     now we work on our first album to be published next year!
                 </p>
              </div>
@@ -210,7 +210,7 @@
                     <div class="right-half-inner">
                         <h4><b>Violence in music and nowhere else!</b></h4>
                         <br>
-                        <p>Lesson in Violence represents the best of traditional smashing thrash metal! We are a new german metal band located in Schweinfurt/Bavaria. Our vision is to deliver headbanging thrash metal and to teach you metalheads a Lesson in Violence!</p>
+                        <p>Lesson in Violence represents the best of traditional smashing thrash metal! We are a new german metal band from Schweinfurt/Bavaria. Our vision is to deliver headbanging thrash metal and to teach you metalheads a Lesson in Violence!</p>
                         <button class="cta-about-us" onclick="document.location='../phpFiles/about-us.php'">Get to know us ></button>
                     </div>
                 </div>
