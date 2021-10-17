@@ -60,7 +60,7 @@
         <section>
             <div class="row">
                 <div class="col heading">
-                    <h1>News from<span translate="no">Lesson in Violence</span></h1>
+                    <h2>News from<span translate="no">Lesson in Violence</span></h2>
                 </div>
             </div>
     
