@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <!-- head -->
 <head>
@@ -6,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index,follow">
     <meta name="description"
-        content="Violence in music and nowhere else! We deliver fucking good thrash metal from Schweinfurt. Go checkout the demo song from our new album The Thrashfall of Mankind">
+        content="We deliver fucking good thrash metal from Schweinfurt. Go checkout the demo track from our upcoming album The Thrashfall of Mankind">
     <meta name="keywords"
-        content="lesson in violence, thrash metal, german thrash metal, thrash metal aus schweinfurt, thrash metal aus franken, lesson in violence schweinfurt,
-             lesson in violence band, thrash metal band, lesson in violence buchen, l i v, L.I.V, Thrash Metal Mankind, Bavarian thrash metal, heavy metal, heavy metal band, german thrash, exodus, lesson in violence news">
+        content="lesson in violence, thrash metal, german thrash metal, lesson in violence schweinfurt, lesson in violence band, thrash metal band, Thrash Metal Mankind">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/LIV_abkuerzung_weiss.png">
     <link rel="icon" href="../assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
     <link rel="apple-touch-icon" href="../assets/LIV_abkuerzung_weiss.png" />
@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="../cssFiles/home.css" />
 </head>
 
