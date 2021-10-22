@@ -117,6 +117,39 @@
             window.attachEvent("onload", downloadJSAtOnload);
         // all Browser
         else window.onload = downloadJSAtOnload; 
+
+
+        // const memberPictures = document.querySelectorAll(".member-picture")
+        // const memberPicturesActive = [
+            // {
+                // id: 0,
+                // image: "../members/Flo-zwei-live-min.jpg"
+            // },
+            // {
+                // id: 1,
+                // image: "../members/Scraper-live-min.jpg"
+            // },
+            // {
+                // id: 2,
+                // image: "../members/Flo-eins-live-min.jpg"
+            // },
+            // {
+                // id: 3,
+                // image: "../members/Roli-live-min.jpg"
+            // },
+            // {
+                // id: 4,
+                // image: "../members/Andre-live-min.jpg"
+            // }
+        // ]
+// 
+// 
+        // memberPictures.forEach((member) => {
+            // member.addEventListener("click", function(){
+                // console.log(this.id)
+            // })
+        // })
+
     </script>
     
 </body>
