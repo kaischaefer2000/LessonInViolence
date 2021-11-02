@@ -102,54 +102,11 @@
             </div>
         </section>
         
-        <!-- Bonebreaker -->
-        <section>
-            <div class="row accordion-item show">
-                <div class="col-11">
-                    <p>02.09.2022<p>
-                    <p class="show-name" translate="no">Bonebreaker Festival</p>
-                </div>
-                <div class="col-1">
-                    <i class="fa fa-chevron-down arrow"></i>
-                </div>
-            </div>
-
-            <div class="row accordion-item details">
-                <div class="col">
-                    <div class="fluid-container">
-                        <div class="row details-content">
-                            <div class="col-5 col-sm-3 col-lg-2">
-                                <p>Location:</p>
-                            </div>
-                            <div class="col-7 col-sm-9 col-lg-10">
-                                <p>Kleinwenkheim / Sportgelände</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content">
-                            <div class="col-5 col-sm-3 col-lg-2">
-                                <p translate="no">Bands:</p>
-                            </div>
-                            <div class="col-7 col-sm-9 col-lg-10">
-                                <p translate="no">to be announced</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content">
-                            <div class="col">
-                                <a rel="nofollow" href="https://de-de.facebook.com/bonebreaker666/" target="blank"><u>More details</u></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
          <!-- Infernum meets Porkcore Fistevil Festival -->
          <section>
             <div class="row accordion-item show">
                 <div class="col-11">
-                    <p>august.2022<p>
+                    <p>02.09.2022<p>
                     <p class="show-name" translate="no">Infernum meets Porkcore Fistevil Festival</p>
                 </div>
                 <div class="col-1">
