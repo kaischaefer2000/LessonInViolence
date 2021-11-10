@@ -64,6 +64,21 @@
                 </div>
             </div>
     
+            <div class="dark-content-box content-box">
+                <div style="display: flex; justify-content: flex-end">
+                 <p class="post-time"><i>10.1.2021</i></p>
+                </div> 
+                 <div class="content-devided">
+                 <p>
+                    Hey Folks!<br><br>
+                    Lesson in violence is proud to tell you, that the work for our first album "the thrashfall of mankind" is taking progress and it will be released in Q1 2022!<br>
+                    Prepare yourself for 11 tracks full of finest thrash metal and stay tuned for more updates!<br><br>
+                    Thrash Metal Mankind!
+                </p>
+                <img class="albumCover" src="../homeAssets/CoverV26.09.jpg" alt="Thrashfall of Mankind Album Cover" />
+                </div>
+             </div>
+
              <div class="light-content-box content-box">
                 <p class="post-time"><i>26.06.2021</i></p>
                 <p>
