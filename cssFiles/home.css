@@ -935,7 +935,8 @@ footer .copyright p {
 }
 
 .content-box .content-devided .albumCover {
-  max-width: 40%;
+  max-width: 500px;
+  width: 40%;
 }
 
 .content-box .post-time {
@@ -1070,7 +1071,7 @@ footer .copyright p {
     padding-right: 0em;
   }
   .content-devided .albumCover {
-    min-width: 50%;
+    min-width: 60%;
     margin: 2em 0px;
   }
 }

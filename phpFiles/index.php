@@ -66,7 +66,7 @@
     
             <div class="dark-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">
-                 <p class="post-time"><i>10.1.2021</i></p>
+                 <p class="post-time"><i>10.11.2021</i></p>
                 </div> 
                  <div class="content-devided">
                  <p>
