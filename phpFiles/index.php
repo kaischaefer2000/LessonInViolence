@@ -47,7 +47,7 @@
                     <a href="../phpFiles/live.php">
                         <span>09.04.2022</span><br>
                         <span>Metal Franconia Festival</span><br>
-                        Dettelbach / Frankenhalle
+                        Geiselwind / Eventzentrum Strohofer
                     </a>
                 </div>
             </div>
@@ -63,6 +63,22 @@
                     <h2>News from<span translate="no"> Lesson in Violence</span></h2>
                 </div>
             </div>
+
+            <div class="light-content-box content-box">
+                <div style="display: flex; justify-content: flex-end">
+                 <p class="post-time"><i>20.11.2021</i></p>
+                </div> 
+                 <div class="content-devided">
+                 <p>
+                    Hey Headbangers and thrash metal enthusiasts!<br><br>
+                    Lesson In Violence is very happy to announce the deal with <a href="https://www.ironshieldrecords.de/" target="blank">Iron Shield Records</a>. A label for the finest selection of old school thrash metal from berlin!<br>
+                    Thomas Dargel, head of <a href="https://www.ironshieldrecords.de/" target="blank">Iron Shield Records</a> is a great thrash metal fan so we joined forces!<br><br>
+                    We can't wait to blast our album "the thrashfall of mankind" through your speakers and return to the stage!<br><br>
+                    Thrash Metal Mankind!
+                </p>
+                <img class="albumCover" src="../homeAssets/LIV-ironshields-deal.jpg" alt="Thrashfall of Mankind Album Cover" />
+                </div>
+             </div>
     
             <div class="dark-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">

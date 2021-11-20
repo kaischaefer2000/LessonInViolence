@@ -43,7 +43,7 @@
                     <a href="../phpFiles/live.php">
                         <span>09.04.2022</span><br>
                         <span>Metal Franconia Festival</span><br>
-                        Dettelbach / Frankenhalle
+                        Geiselwind / Eventzentrum Strohofer
                     </a>
                 </div>
             </div>
@@ -58,6 +58,43 @@
                 <h2>Experience us live!</h2>
             </div>
         </div>
+
+        <!-- Lessons in Metal 2 -->
+        <section>
+            <div class="row accordion-item show">
+                <div class="col-11">
+                    <p>02.10.2022<p>
+                    <p class="show-name">Lessons in Metal 2</p>
+                </div>
+                <div class="col-1">
+                    <i class="fa fa-chevron-down arrow"></i>
+                </div>
+            </div>
+
+            <div class="row accordion-item details">
+                <div class="col">
+                    <div class="fluid-container">
+                        <div class="row details-content">
+                            <div class="col-5 col-sm-3 col-lg-2">
+                                <p>Location:</p>
+                            </div>
+                            <div class="col-7 col-sm-9 col-lg-10">
+                                <p>Schweinfurt / Stattbahnhof</p>
+                            </div>
+                        </div>
+
+                        <div class="row details-content">
+                            <div class="col-5 col-sm-3 col-lg-2">
+                                <p translate="no">Bands:</p>
+                            </div>
+                            <div class="col-7 col-sm-9 col-lg-10">
+                                <p translate="no">Lesson in Violence, Hateful Agony, to be announced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Rockverband goes Rockclub -->
         <section>
@@ -88,7 +125,7 @@
                                 <p translate="no">Bands:</p>
                             </div>
                             <div class="col-7 col-sm-9 col-lg-10">
-                                <p translate="no">Broken Circle, Defuse My Hate, Horny Arbiter</p>
+                                <p translate="no">Lesson in Violence, Broken Circle, Defuse My Hate, Horny Arbiter</p>
                             </div>
                         </div>
 
@@ -131,7 +168,7 @@
                                 <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p translate="no">to be announced</p>
+                                <p translate="no">Lesson in Violence, to be announced</p>
                             </div>
                         </div>
 
@@ -165,7 +202,7 @@
                                 <p>Location:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p>Dettelbach / Frankenhalle</p>
+                                <p>Geiselwind / Eventzentrum Strohofer</p>
                             </div>
                         </div>
 
@@ -174,7 +211,7 @@
                                 <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p>JBO, Milking the Goatmachine, Bodyfarm, Fleshcrawl, Cypecore, and many more...</p>
+                                <p>Lesson in Violence, JBO, Milking the Goatmachine, Bodyfarm, Fleshcrawl, Cypecore, and many more...</p>
                             </div>
                         </div>
 
@@ -218,7 +255,7 @@
                                 <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p>Goregonzola, Painstyle, Rawside, April in Flames</p>
+                                <p>Lesson in Violence, Goregonzola, Painstyle, Rawside, April in Flames</p>
                             </div>
                         </div>
 
@@ -264,7 +301,7 @@
                                 <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p translate="no">Goregonzola, Insulter, April in Flames</p>
+                                <p translate="no">Lesson in Violence, Goregonzola, Insulter, April in Flames</p>
                             </div>
                         </div>
 
@@ -310,7 +347,7 @@
                                 <p>Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p translate="no">Absorb, Road Crew, Turn the course, Legal Hate</p>
+                                <p translate="no">Lesson in Violence, Absorb, Road Crew, Turn the course, Legal Hate</p>
                             </div>
                         </div>
                     </div>
