@@ -43,7 +43,7 @@
                     <a href="../phpFiles/live.php">
                         <span>09.04.2022</span><br>
                         <span>Metal Franconia Festival</span><br>
-                        Geiselwind / Eventzentrum Strohofer
+                        Dettelbach / Frankenhalle
                     </a>
                 </div>
             </div>
@@ -202,7 +202,7 @@
                                 <p>Location:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p>Geiselwind / Eventzentrum Strohofer</p>
+                                <p>Dettelbach / Frankenhalle</p>
                             </div>
                         </div>
 

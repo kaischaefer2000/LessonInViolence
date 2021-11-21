@@ -43,7 +43,7 @@
                     <a href="../phpFiles/live.php">
                         <span>09.04.2022</span><br>
                         <span translate="no">Metal Franconia Festival</span><br>
-                        Geiselwind / Eventzentrum Strohofer
+                        Dettelbach / Frankenhalle
                     </a>
                 </div>
             </div>
