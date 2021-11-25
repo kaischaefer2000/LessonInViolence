@@ -47,7 +47,7 @@
                     <a href="../phpFiles/live.php">
                         <span>09.04.2022</span><br>
                         <span>Metal Franconia Festival</span><br>
-                        Dettelbach / Frankenhalle
+                        Geiselwind / Musichall Strohofer
                     </a>
                 </div>
             </div>
@@ -190,7 +190,7 @@
                 <div class="padding-div">
                     <p class="live-date">09.04.2022</p>
                     <h4><b translate="no">Metal Franconia Festival</b></h4>
-                    <p><i>Dettelbach / Frankenhalle</i></p>
+                    <p><i>Geiselwind / Musichall Strohofer</i></p>
                 </div>
                 </a>
                 </div>
@@ -201,7 +201,7 @@
                     <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_9-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt">
                 </div>
                     <div class="padding-div">
-                        <p class="live-date">August-2022</p>
+                        <p class="live-date">02.09.2022</p>
                         <h4><b translate="no">Infernum meets Porkcore Fistevil Festival</b></h4>
                         <p><i>Festivalgelände Büchold</i></p>
                     </div>
@@ -214,9 +214,9 @@
                     <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt">
                 </div>    
                     <div class="padding-div">
-                        <p class="live-date">02.09.2022</p>
-                        <h4><b translate="no">Bonebreaker Festival</b></h4>
-                        <p><i>Kleinwenkheim / Sportgelände</i></p>
+                        <p class="live-date">17.09.2022</p>
+                        <h4><b translate="no">Rockverband goes Rockclub Nordbayern</b></h4>
+                        <p><i>Selb / Rockclub</i></p>
                     </div>
                 </a>
                 </div>
