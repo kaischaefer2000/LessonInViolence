@@ -88,7 +88,7 @@
                                 <p translate="no">Bands:</p>
                             </div>
                             <div class="col-7 col-sm-9 col-lg-10">
-                                <p translate="no">Lesson in Violence, Hateful Agony, to be announced</p>
+                                <p translate="no">Lesson in Violence, Hateful Agony, Godslave, Reactory</p>
                             </div>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
          <section>
             <div class="row accordion-item show">
                 <div class="col-11">
-                    <p>02.09.2022<p>
+                    <p>03.09.2022<p>
                     <p class="show-name" translate="no">Infernum meets Porkcore Fistevil Festival</p>
                 </div>
                 <div class="col-1">
@@ -175,6 +175,43 @@
                         <div class="row details-content">
                             <div class="col">
                                 <a rel="nofollow" href="https://infernum-meets-porkcore.de/" target="blank"><u>More details</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Birthday Moshpit(private party) 2022 -->
+        <section>
+            <div class="row accordion-item show ">
+                <div class="col-11">
+                    <p>02.07.2022<p>
+                    <p class="show-name" translate="no">Birthday Moshpit (private party)</p>
+                </div>
+                <div class="col-1">
+                <i class="fa fa-chevron-down arrow"></i>
+                </div>
+            </div>
+
+            <div class="row accordion-item details">
+                <div class="col">
+                    <div class="fluid-container">
+                        <div class="row details-content">
+                            <div class="col-3 col-md-3 col-lg-2">
+                                <p>Location:</p>
+                            </div>
+                            <div class="col-9 col-md-9 col-lg-10">
+                                <p>Obervolkach</p>
+                            </div>
+                        </div>
+
+                        <div class="row details-content">
+                            <div class="col-3 col-md-3 col-lg-2">
+                                <p>Bands:</p>
+                            </div>
+                            <div class="col-9 col-md-9 col-lg-10">
+                                <p translate="no">Lesson in Violence, Shredhammer, to be announced</p>
                             </div>
                         </div>
                     </div>

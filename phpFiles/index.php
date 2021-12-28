@@ -167,7 +167,7 @@
                     <img src="../homeAssets/TMM-Albumtitel.png" alt="The Trashfall of Mankind album title">
                     <p>Thrash Metal Mankind is one of the headbanging tracks of the upcoming album The Thrashfall of Mankind.
                     <br>
-                    Listen to our other <a href="../phpFiles/media.php#mainContent">demo track</a> from our upcoming album The Thrashfall of Mankind. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:contact@lessoninviolence.com">contact@lessoninviolence.com</a> and look at our<span translate="no"> technical rider </span> and other information <a href="../phpFiles/downloads.php">here</a>. 
+                    Listen to our other <a href="../phpFiles/media.php#mainContent">demo track</a> from our upcoming album The Thrashfall of Mankind. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:booking@lessoninviolence.com">booking@lessoninviolence.com</a> and look at our<span translate="no"> technical rider </span> and other information <a href="../phpFiles/downloads.php">here</a>. 
                     </p>
                 </div>
             </div>
