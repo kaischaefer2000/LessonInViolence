@@ -47,7 +47,7 @@
     <div class="mainContentInner">
     <section>
         <div class="row products">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product">
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 product">
                 <div class="prodContainer">
                     <div class="prodImage">
                         <button id="back" onfocus="backActive()">b<br>a<br>c<br>k</button>
@@ -55,8 +55,8 @@
 
                         <img id="imgFront" class="shirtImage" src="../merchPictures/productShirtFront.jpg" alt="">
                         <img id="imgBack" class="shirtImage" src="../merchPictures/productShirtBack.jpg" alt="">
-                        <img id="bgImg" class="shirtImage shown" src="../merchPictures/productShirt.jpg" alt="">
-                        <img id="fullScreenImg" onclick="openLightbox()" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        <img id="bgImg" class="shirtImage shown bgImages" src="../merchPictures/productShirt.jpg" alt="">
+                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(0)" src="../merchPictures/fullScreen.png" alt="full screen icon">
                         
                     </div>
                     
@@ -77,6 +77,72 @@
                     </div>
                 </div>
             </div>
+
+            <!-- <div class="col-6 col-sm-6 col-md-4 col-lg-6 order" style="display:none">
+                <h3>My order</h3>
+                <div class="orderContainer">
+                    <h4>L.i.V Shirt</h4>
+                    <hr> 
+                    <img class="orderPicture" src="../merchPictures/productShirt.jpg" alt="">
+                    <div class="orderTitle">
+                        <p>Size: L</p>
+                        <p>Count: 1x</p>
+                    </div>
+
+                </div>
+                <div class="orderContainer">
+                    <h4>Thrashfall of Mankind - CD</h4>
+                    <hr> 
+                    <img class="orderPicture" src="../audioPlayer/thrash-metal-mankind-thumbnail.jpg" alt="">
+                    <div class="orderTitle">
+                        <p>Count: 1x</p>
+                    </div>
+
+                </div>
+            </div> -->
+
+            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 product">
+                <div class="prodContainer">
+                    <div class="prodImage">
+                        <img id="bgImg2" class="patchImage shown bgImages" src="../merchPictures/SinglePatch.jpg" alt="">
+                        <img id="fullScreenImg2" class="fullScreenImages" onclick="openLightbox(1)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+
+                        <img id="imgFront" class="patchImage" src="../merchPictures/MultiplePatches.jpg" alt="">
+                    </div>
+                    
+                    <div class="row prodDescription">
+                        <h3>L.i.V Patch</h3>
+                        <hr>
+                        <div class="details">
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Design:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>Each patch has an individual blood splash!</p>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Size:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>12cm x 6cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button><a href="mailto:contact@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            
+
+
+
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-6 order" style="display:none">
                 <h3>My order</h3>
@@ -102,6 +168,8 @@
             </div>
 
         </div>
+
+
         </div>
     </section>    
     </div>

@@ -671,7 +671,7 @@ product card styling
 
 .products .product {
   padding: 0;
-  margin: 0;
+  margin: 0 5em 5em 0;
   min-height: 80vh;
 }
 
@@ -685,14 +685,14 @@ product card styling
   overflow: hidden;
 }
 
-.products .product .prodContainer .prodImage #bgImg {
+.products .product .prodContainer .prodImage .bgImages {
   -webkit-transition: -webkit-transform 0.3s linear;
   transition: -webkit-transform 0.3s linear;
   transition: transform 0.3s linear;
   transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
-.products .product .prodContainer .prodImage #bgImg:hover {
+.products .product .prodContainer .prodImage .bgImages:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -703,7 +703,7 @@ product card styling
   position: absolute;
 }
 
-.products .product .prodContainer .prodImage #fullScreenImg {
+.products .product .prodContainer .prodImage .fullScreenImages {
   position: absolute;
   width: 1.5em;
   height: auto;
@@ -713,7 +713,7 @@ product card styling
   z-index: 7;
 }
 
-.products .product .prodContainer .prodImage #fullScreenImg:hover {
+.products .product .prodContainer .prodImage .fullScreenImages:hover {
   cursor: pointer;
 }
 
@@ -790,6 +790,30 @@ product card styling
   background: none;
   border: none;
   outline: none;
+}
+
+.products .product .prodContainer .prodDescription .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.products .product .prodContainer .prodDescription .details .details-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.products .product .prodContainer .prodDescription .details .details-column p {
+  font-size: 1rem !important;
 }
 
 .products .product .prodContainer .prodDescription button {
@@ -948,6 +972,10 @@ product card styling
   margin-top: 0;
 }
 
+#lightboxContainer {
+  z-index: 15 !important;
+}
+
 @media (min-width: 1600px) {
   @-webkit-keyframes infoBoxAnimation {
     0% {
@@ -976,6 +1004,10 @@ product card styling
 @media (max-width: 570px) {
   .lightboxIcon {
     width: 4.5em;
+  }
+  #bgImg2 {
+    display: -ms-grid;
+    display: grid;
   }
 }
 /*# sourceMappingURL=merch.css.map */
