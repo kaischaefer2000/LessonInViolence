@@ -128,7 +128,7 @@
                 <div id="bandinfo" class="download-item-content row align-items-center">
                     <div class="col download-link-container"> 
                         <div class="download-link">
-                            <a download href="../download-items/bandinfo-download.pdf">DOWNLOAD</a>
+                            <a download href="../download-items/Bandinfo_LessoninViolence_2022.pdf">DOWNLOAD</a>
                         </div>
                     </div>
                 </div>
