@@ -149,11 +149,7 @@
         
 
 
-        <!-- heading for songs -->
-
-        <?php
-            include('../htmlFiles/musicPlayer.html');
-        ?>
+        
     </div>
     </div>
     

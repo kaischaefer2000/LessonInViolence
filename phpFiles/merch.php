@@ -61,7 +61,7 @@
                     </div>
                     
                     <div class="row prodDescription">
-                        <h3>L.i.V T-SHIRT</h3>
+                        <h3>L.i.V. T-SHIRT</h3>
                         <hr>
                         <table>
                             <tr>
@@ -73,7 +73,7 @@
                                 <td><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></td>
                             </tr>
                         </table>
-                        <button><a href="mailto:contact@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
+                        <button><a href="mailto:order@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                     </div>
                     
                     <div class="row prodDescription">
-                        <h3>L.i.V Patch</h3>
+                        <h3>L.i.V. Patch</h3>
                         <hr>
                         <div class="details">
                             <div class="details-column">
@@ -132,7 +132,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button><a href="mailto:contact@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
+                        <button><a href="mailto:order@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-6 order" style="display:none">
                 <h3>My order</h3>
                 <div class="orderContainer">
-                    <h4>L.i.V Shirt</h4>
+                    <h4>L.i.V. Shirt</h4>
                     <hr> 
                     <img class="orderPicture" src="../merchPictures/productShirt.jpg" alt="">
                     <div class="orderTitle">

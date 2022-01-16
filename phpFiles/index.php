@@ -64,6 +64,22 @@
                 </div>
             </div>
 
+            <div class="dark-content-box content-box">
+                <div style="display: flex; justify-content: flex-end">
+                 <p class="post-time"><i>16.01.2022</i></p>
+                </div> 
+                 <div class="content-devided">
+                 <p>
+                    Listen metalheads!<br><br>
+                    Lesson in Violence  is proud to announce the release-date of our first thrash metal baby "The Thrashfall of Mankind" by Iron Shield Records:<br>
+                    On february 18th the time has come for our debut album including 11 tracks of serious thrash metal shit.<br><br>
+                    Listen to our <a href="../phpFiles/media.php#mainContent" >audio samples!</a><br><br>
+                    You can order our full length album "The Thrashfall of Mankind" directly from our <a href="../phpFiles/merch.php" >merchandising-page</a> or from our label <a target="blank" href="https://www.ironshieldrecords.de/contact.html">Iron Shield Records</a>.<br><br>
+                </p>
+                <img class="albumCover" src="../homeAssets/cdCover.jpg" alt="Thrashfall of Mankind Album Cover" />
+                </div>
+             </div>
+
             <div class="light-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">
                  <p class="post-time"><i>20.11.2021</i></p>
@@ -71,7 +87,7 @@
                  <div class="content-devided">
                  <p>
                     Hey Headbangers and thrash metal enthusiasts!<br><br>
-                    Lesson In Violence is very happy to announce the deal with <a href="https://www.ironshieldrecords.de/" target="blank">Iron Shield Records</a>. A label for the finest selection of old school thrash metal from berlin!<br>
+                    Lesson in Violence is very happy to announce the deal with <a href="https://www.ironshieldrecords.de/" target="blank">Iron Shield Records</a>. A label for the finest selection of old school thrash metal from berlin!<br>
                     Thomas Dargel, head of <a href="https://www.ironshieldrecords.de/" target="blank">Iron Shield Records</a> is a great thrash metal fan so we joined forces!<br><br>
                     We can't wait to blast our album "the thrashfall of mankind" through your speakers and return to the stage!<br><br>
                     Thrash Metal Mankind!
@@ -84,15 +100,12 @@
                 <div style="display: flex; justify-content: flex-end">
                  <p class="post-time"><i>10.11.2021</i></p>
                 </div> 
-                 <div class="content-devided">
                  <p>
                     Hey Folks!<br><br>
-                    Lesson in violence is proud to tell you, that the work for our first album "the thrashfall of mankind" is taking progress and it will be released in Q1 2022!<br>
+                    Lesson in Violence is proud to tell you, that the work for our first album "the thrashfall of mankind" is taking progress and it will be released in Q1 2022!<br>
                     Prepare yourself for 11 tracks full of finest thrash metal and stay tuned for more updates!<br><br>
                     Thrash Metal Mankind!
                 </p>
-                <img class="albumCover" src="../homeAssets/CoverV26.09.jpg" alt="Thrashfall of Mankind Album Cover" />
-                </div>
              </div>
 
              <div class="light-content-box content-box">
@@ -165,9 +178,9 @@
                 </div>
                 <div class="col-s-12 col-md-6 col-lg-8 TMM-right-side">
                     <img src="../homeAssets/TMM-Albumtitel.png" alt="The Trashfall of Mankind album title">
-                    <p>Thrash Metal Mankind is one of the headbanging tracks of the upcoming album The Thrashfall of Mankind.
+                    <p>Thrash Metal Mankind is one of the headbanging tracks of our debut album The Thrashfall of Mankind.
                     <br>
-                    Listen to our other <a href="../phpFiles/media.php#mainContent">demo track</a> from our upcoming album The Thrashfall of Mankind. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:booking@lessoninviolence.com">booking@lessoninviolence.com</a> and look at our<span translate="no"> technical rider </span> and other information <a href="../phpFiles/downloads.php">here</a>. 
+                    Listen to our other <a href="../phpFiles/media.php#mainContent">audio samples</a> from our album. Your interested in booking us for a concert? Send us an E-Mail at <a href="mailto:booking@lessoninviolence.com">booking@lessoninviolence.com</a> and look at our<span translate="no"> technical rider </span> and other information <a href="../phpFiles/downloads.php">here</a>. 
                     </p>
                 </div>
             </div>

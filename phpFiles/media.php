@@ -51,7 +51,7 @@
                         <li><a href="#birthdayBash2021" translate="no">Birthday Bash 2019</a></li>
                         <li><a href="#bandPictures">Band pictures</a></li>
                         <li><a href="#videoSection">Videos</a></li>
-                        <li><a href="#demoTracks">Demo tracks</a></li>
+                        <li><a href="#demoTracks">Audio samples</a></li>
                     </ul>
                 </div>
             </div>
