@@ -71,7 +71,7 @@
                  <div class="content-devided">
                  <p>
                     Listen metalheads!<br><br>
-                    Lesson in Violence  is proud to announce the release-date of our first thrash metal baby "The Thrashfall of Mankind" by Iron Shield Records:<br>
+                    Lesson in Violence  is proud to announce the release-date of our first thrash metal baby "The Thrashfall of Mankind" by Iron Shield Records.<br>
                     On february 18th the time has come for our debut album including 11 tracks of serious thrash metal shit.<br><br>
                     Listen to our <a href="../phpFiles/media.php#mainContent" >audio samples!</a><br><br>
                     You can order our full length album "The Thrashfall of Mankind" directly from our <a href="../phpFiles/merch.php" >merchandising-page</a> or from our label <a target="blank" href="https://www.ironshieldrecords.de/contact.html">Iron Shield Records</a>.<br><br>
