@@ -1,6 +1,6 @@
 /* music player */
 .player-container{
-    height: 190vw;
+    height: 380vw;
 }
 
 
@@ -178,7 +178,7 @@
     /* media querys songs */
     @media(min-width: 576px){
         .player-container{
-            height: 52vw;
+            height: 115vw;
         }
             .container {
                 position: absolute;
@@ -229,7 +229,7 @@
 
     @media(min-width: 992px){
         .player-container{
-            height: 36vw;
+            height: 74vw;
         }
             .container {
                 position: absolute;
@@ -279,8 +279,52 @@
     }
 
 
-    @media(min-width: 1800px){
-        .player-container>div:nth-of-type(2){
-            margin-left: 10em !important;
+    @media(min-width: 1650px){
+        .player-container{
+            height: 60vw;
         }
+            .container {
+                height: 25vw;
+                width: 19vw;
+            }
+
+            .song-artist {
+                font-size: 1vw;
+            }
+            .song-title {
+                font-size: 0.75vw;
+            }
+
+            .play-pause {
+                height: 2.4vw;
+                width: 2.4vw;
+            }
+
+            #download-song {
+                height: 1.5vw;
+                width: 1.5vw;
+            }
+
+            .currentTime {
+                height: 3vw;
+                width: 3vw;
+                bottom: -7%;
+            }
+
+            .durationTime {
+                height: 3vw;
+                width: 3vw;
+                bottom: 1%;
+            }
+
+            .progress-bar {
+                height: 0.3vw;
+                width: 12vw;
+                bottom: 6.5%;
+            }
+
+            .progress-bar::-webkit-slider-thumb {
+                height: 0.5vw;
+                width: 0.5vw;
+            }
     }

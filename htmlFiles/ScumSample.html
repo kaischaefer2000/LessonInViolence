@@ -1,0 +1,48 @@
+
+  <!-- Scum of society song -->
+  <div class="col-12 col-sm-6 col-lg-4">
+    <img
+      src="../audioPlayer/time-to-kill-thumbnail.jpg"
+      id="background"
+      alt="single cover scum of society"
+    />
+    <audio
+      src="../audioPlayer/Scum of Society_audio sample.mp3"
+      class="song"
+      id="song2"
+    ></audio>
+
+    <div class="container">
+      <div class="box"></div>
+      <img
+        src="../audioPlayer/time-to-kill-thumbnail.jpg"
+        class="thumbnail"
+        id="tmb2"
+        alt="single cover scum of society"
+      />
+
+      <img
+        src="../audioPlayer/play.png"
+        onclick="playPause2()"
+        class="play-pause"
+        id="pp2"
+        alt=""
+      />
+
+      <div class="song-artist" translate="no">Lesson in Violence</div>
+      <div class="song-title" translate="no">Scum of Society</div>
+
+      <input
+        type="range"
+        class="progress-bar"
+        id="pb2"
+        min="0"
+        max=""
+        value="0"
+        onchange="changeProgressBar2()"
+      />
+
+      <div class="currentTime" id="ct2"></div>
+      <div class="durationTime" id="dt2"></div>
+    </div>
+  </div>

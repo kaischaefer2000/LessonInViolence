@@ -172,9 +172,11 @@
          <section>
              <div class="row TMM-section">
                 <div class="col-s-12 col-md-6 col-lg-4 TMM-left-side">
-                    <?php
-                        include('../htmlFiles/musicPlayer.html');
-                    ?>
+                    <div class="row player-container">
+                        <?php
+                            include('../htmlFiles/TMMSample.html');
+                        ?>
+                    </div>
                 </div>
                 <div class="col-s-12 col-md-6 col-lg-8 TMM-right-side">
                     <img src="../homeAssets/TMM-Albumtitel.png" alt="The Trashfall of Mankind album title">

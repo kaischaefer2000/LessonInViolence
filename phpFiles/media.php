@@ -60,9 +60,20 @@
 
     <div id="mainContent" class="fluid-container">
     <div class="mainContentInner">
-        <?php
-            include('../htmlFiles/musicPlayer.html');
-        ?>
+        <div class="row">
+            <div class="col">
+                <h2 id="demoTracks" class="heading" translate="no">Audio samples</h2>
+                <!-- music player -->
+                    <div class="row player-container">
+                        <?php
+            	            include('../htmlFiles/TMMSample.html');
+            	            include('../htmlFiles/ScumSample.html');
+            	            include('../htmlFiles/LIVSample.html');
+            	            include('../htmlFiles/LostInYourselfSample.html');
+            	        ?>
+                    </div>
+            </div>
+        </div>
 
         <!-- Jugendhaus 2019 -->
         <section>
