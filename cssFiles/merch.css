@@ -671,8 +671,7 @@ product card styling
 
 .products .product {
   padding: 0;
-  margin: 0 5em 5em 0;
-  min-height: 80vh;
+  margin: 0 3.5em 3em 0;
 }
 
 .products .product .prodContainer {
@@ -698,8 +697,9 @@ product card styling
 }
 
 .products .product .prodContainer .prodImage #imgFront,
+.products .product .prodContainer .prodImage #imgPatch,
 .products .product .prodContainer .prodImage #imgBack {
-  visibility: hidden;
+  display: none;
   position: absolute;
 }
 
@@ -729,7 +729,7 @@ product card styling
 }
 
 .products .product .prodContainer .prodImage button:nth-of-type(1) {
-  top: 21%;
+  top: 11%;
 }
 
 .products .product .prodContainer .prodImage button:focus {
@@ -752,44 +752,13 @@ product card styling
 }
 
 .products .product .prodContainer .prodDescription h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   text-align: center;
   word-spacing: 0.3em;
   letter-spacing: 0.1em;
   font-weight: bold;
   width: 100%;
-}
-
-.products .product .prodContainer .prodDescription table {
-  padding-top: 1.5em;
-  width: 100%;
-}
-
-.products .product .prodContainer .prodDescription table tr {
-  line-height: 2.5em;
-}
-
-.products .product .prodContainer .prodDescription table tr td:first-child {
-  width: 30%;
-}
-
-.products .product .prodContainer .prodDescription table tr td button {
-  border: none;
-  margin: 0;
-  padding: 0px 7% 0px 0px;
-  font-size: 1em;
-  color: white;
-  width: auto;
-  font-weight: bold;
-}
-
-.products .product .prodContainer .prodDescription table tr td button:hover, .products .product .prodContainer .prodDescription table tr td button:focus {
-  color: #ec3030;
-  cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
 }
 
 .products .product .prodContainer .prodDescription .details {
@@ -800,6 +769,7 @@ product card styling
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .products .product .prodContainer .prodDescription .details .details-column {
@@ -814,6 +784,24 @@ product card styling
 
 .products .product .prodContainer .prodDescription .details .details-column p {
   font-size: 1rem !important;
+}
+
+.products .product .prodContainer .prodDescription .details .details-column button {
+  border: none;
+  margin: 0;
+  padding: 0px 5px 0px 0px;
+  font-size: 1em;
+  color: white;
+  width: auto;
+  font-weight: bold;
+}
+
+.products .product .prodContainer .prodDescription .details .details-column button:hover, .products .product .prodContainer .prodDescription .details .details-column button:focus {
+  color: #ec3030;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .products .product .prodContainer .prodDescription button {
@@ -839,11 +827,11 @@ product card styling
 .active {
   background: #323d47 !important;
   z-index: 5;
-  visibility: visible;
+  display: block;
 }
 
 .shown {
-  visibility: visible !important;
+  display: block !important;
   z-index: 6;
 }
 

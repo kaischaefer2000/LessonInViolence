@@ -64,8 +64,7 @@ product card styling
 
   .product {
     padding: 0;
-    margin: 0 5em 5em 0;
-    min-height: 80vh;
+    margin: 0 3.5em 3em 0;
 
     .prodContainer {
       box-shadow: 0 0 10px #000000;
@@ -82,8 +81,9 @@ product card styling
         }
 
         #imgFront,
+        #imgPatch,
         #imgBack {
-          visibility: hidden;
+          display:none;
           position: absolute;
         }
 
@@ -112,7 +112,7 @@ product card styling
           color: #fff;
 
           &:nth-of-type(1) {
-            top: 21%;
+            top: 11%;
           }
 
           &:focus {
@@ -136,7 +136,7 @@ product card styling
         }
 
         h3 {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           text-transform: uppercase;
           text-align: center;
           word-spacing: 0.3em;
@@ -145,43 +145,10 @@ product card styling
           width: 100%;
         }
 
-        table {
-          padding-top: 1.5em;
-          width: 100%;
-
-          tr {
-            line-height: 2.5em;
-
-            td {
-              &:first-child {
-                width: 30%;
-              }
-
-              button {
-                border: none;
-                margin: 0;
-                padding: 0px 7% 0px 0px;
-                font-size: 1em;
-                color: white;
-                width: auto;
-                font-weight: bold;
-
-                &:hover,
-                &:focus {
-                  color: $primaryColor;
-                  cursor: pointer;
-                  background: none;
-                  border: none;
-                  outline: none;
-                }
-              }
-            }
-          }
-        }
-
         .details {
           display: flex;
           flex-direction: column;
+          width: 100%;
 
           .details-column {
             display: flex;
@@ -189,6 +156,25 @@ product card styling
 
             p {
               font-size: 1rem !important;
+            }
+
+            button {
+              border: none;
+              margin: 0;
+              padding: 0px 5px 0px 0px;
+              font-size: 1em;
+              color: white;
+              width: auto;
+              font-weight: bold;
+
+              &:hover,
+              &:focus {
+                color: $primaryColor;
+                cursor: pointer;
+                background: none;
+                border: none;
+                outline: none;
+              }
             }
           }
         }
@@ -220,11 +206,11 @@ product card styling
 .active {
   background: rgb(50, 61, 71) !important;
   z-index: 5;
-  visibility: visible;
+  display: block;
 }
 
 .shown {
-  visibility: visible !important;
+  display: block !important;
   z-index: 6;
 }
 
@@ -332,7 +318,7 @@ product card styling
   }
 }
 
-#lightboxContainer{
+#lightboxContainer {
   z-index: 15 !important;
 }
 
@@ -358,7 +344,7 @@ product card styling
     width: 4.5em;
   }
 
-  #bgImg2{
+  #bgImg2 {
     display: grid;
   }
 }

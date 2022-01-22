@@ -32,22 +32,96 @@
         include('../htmlFiles/header.html');
     ?>
 
-    <!-- info box -->
-    <section>
-        <div class="container-fluid">
-            <div id="info-box" class="row">
-                <div class="col">
-                    <h2>More stuff coming soon ...</h2>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div id="mainContent" class="fluid-container">
     <div class="mainContentInner">
     <section>
         <div class="row products">
-            <div class="col-11 col-sm-6 col-md-4 col-lg-3 product">
+            
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 product" >
+                <div class="prodContainer">
+                    <div class="prodImage">
+                        <img  class=" shown bgImages" src="../merchPictures/CDProdukt.jpg" alt="">
+                    </div>
+                    
+                    <div class="row prodDescription">
+                        <h3>Album CD</h3>
+                        
+                        <hr>
+                        <div class="details">
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Titel:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>The Thrashfall of Mankind</p>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Tracklist:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>1. Lost In Yourself<br>
+                                    2. C.H.A.O.S.<br>
+                                    3. Thrash Metal Mankind<br>
+                                    4. Inside<br>
+                                    5. Dissembling Wings<br>
+                                    6. Liar<br>
+                                    7. Social Madness<br>
+                                    8. Rigid And Stubborn<br>
+                                    9. Scum Of Society<br>
+                                    10. Time To Kill<br>
+                                    11. Lesson In Violence</p>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Release:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>18.02.2022</p>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Duration:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>39:32 min</p>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Label:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>Iron Shield Records</p>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Prize*:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>Germany 14,- €<br>
+                                    Europe 16,- €<br>
+                                    Worldwide 16,- €</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button><a href="mailto:order@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-11 col-sm-10 col-md-4 col-lg-3 product">
                 <div class="prodContainer">
                     <div class="prodImage">
                         <button id="back" onfocus="backActive()">b<br>a<br>c<br>k</button>
@@ -63,16 +137,39 @@
                     <div class="row prodDescription">
                         <h3>L.i.V. T-SHIRT</h3>
                         <hr>
-                        <table>
-                            <tr>
-                                <td>Color:</td>
-                                <td>Black</td>
-                            </tr>
-                            <tr>
-                                <td>Size:</td>
-                                <td><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></td>
-                            </tr>
-                        </table>
+                        <div class="details">
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Color:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>Black</p>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Size:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Prize*:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>Germany 13,- €<br>
+                                    Europe 18,- €<br>
+                                    Worldwide 24,- €</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
                         <button><a href="mailto:order@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
                     </div>
                 </div>
@@ -101,13 +198,13 @@
                 </div>
             </div> -->
 
-            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 product">
+            <div  class="col-12 col-sm-10 col-md-4 col-lg-3 product">
                 <div class="prodContainer">
                     <div class="prodImage">
                         <img id="bgImg2" class="patchImage shown bgImages" src="../merchPictures/SinglePatch.jpg" alt="">
                         <img id="fullScreenImg2" class="fullScreenImages" onclick="openLightbox(1)" src="../merchPictures/fullScreen.png" alt="full screen icon">
 
-                        <img id="imgFront" class="patchImage" src="../merchPictures/MultiplePatches.jpg" alt="">
+                        <img id="imgPatch" class="patchImage" src="../merchPictures/MultiplePatches.jpg" alt="">
                     </div>
                     
                     <div class="row prodDescription">
@@ -131,6 +228,18 @@
                                     <p>12cm x 6cm</p>
                                 </div>
                             </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Prize*:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>Germany 5,- €<br>
+                                    Europe 6,- €<br>
+                                    Worldwide 6,- €</p>
+                                </div>
+                            </div>
+                            
                         </div>
                         <button><a href="mailto:order@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
                     </div>
@@ -139,12 +248,16 @@
 
         </div>
 
+        <div>
+            * Please note that all prices include shipping costs!
+        </div>
+
             
 
 
 
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-6 order" style="display:none">
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-6 order" style="display:none">
                 <h3>My order</h3>
                 <div class="orderContainer">
                     <h4>L.i.V. Shirt</h4>
@@ -165,7 +278,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
