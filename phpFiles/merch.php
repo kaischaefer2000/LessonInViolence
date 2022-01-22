@@ -45,13 +45,13 @@
                     </div>
                     
                     <div class="row prodDescription">
-                        <h3>Album CD</h3>
+                        <h3>L.I.V. CD</h3>
                         
                         <hr>
                         <div class="details">
                             <div class="details-column">
                                 <div style="width: 30%">
-                                    <p>Titel:</p>
+                                    <p>Title:</p>
                                 </div>
                                 <div style="width: 70%">
                                     <p>The Thrashfall of Mankind</p>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
 
-                        <button><a href="mailto:order@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
+                        <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                                     <p>Size:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button><button>XXXL</button>
                                 </div>
                             </div>
 
@@ -170,7 +170,7 @@
 
 
                         
-                        <button><a href="mailto:order@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
+                        <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
                     </div>
                 </div>
             </div>
@@ -241,7 +241,7 @@
                             </div>
                             
                         </div>
-                        <button><a href="mailto:order@lessoninviolence.com" style="color:white" translate="no">Order !</a></button>
+                        <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
                     </div>
                 </div>
             </div>

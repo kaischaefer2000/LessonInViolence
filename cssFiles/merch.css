@@ -794,6 +794,7 @@ product card styling
   color: white;
   width: auto;
   font-weight: bold;
+  display: none;
 }
 
 .products .product .prodContainer .prodDescription .details .details-column button:hover, .products .product .prodContainer .prodDescription .details .details-column button:focus {
@@ -804,7 +805,7 @@ product card styling
   outline: none;
 }
 
-.products .product .prodContainer .prodDescription button {
+.products .product .prodContainer .prodDescription .orderBtn {
   margin-top: 2em;
   width: 100%;
   padding: 0.5em;
@@ -814,9 +815,10 @@ product card styling
   text-transform: uppercase;
   font-size: 0.9rem;
   border-radius: 1px;
+  text-align: center;
 }
 
-.products .product .prodContainer .prodDescription button:hover {
+.products .product .prodContainer .prodDescription .orderBtn:hover {
   background: #ec3030;
   color: black;
   border-color: #ec3030;
