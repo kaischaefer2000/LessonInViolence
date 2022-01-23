@@ -789,12 +789,12 @@ product card styling
 .products .product .prodContainer .prodDescription .details .details-column button {
   border: none;
   margin: 0;
-  padding: 0px 5px 0px 0px;
+  padding: 0px 10px 0px 0px;
   font-size: 1em;
   color: white;
   width: auto;
   font-weight: bold;
-  display: none;
+  background-color: transparent;
 }
 
 .products .product .prodContainer .prodDescription .details .details-column button:hover, .products .product .prodContainer .prodDescription .details .details-column button:focus {
