@@ -73,6 +73,10 @@ product card styling
         border-radius: 2px 2px 0px 0px;
         overflow: hidden;
 
+        button {
+          border-color: none !important;
+        }
+
         .bgImages {
           transition: transform 0.3s linear;
           &:hover {
@@ -83,9 +87,8 @@ product card styling
         #imgFront,
         #imgPatch,
         #imgBack {
-          display:none;
+          display: none;
           position: absolute;
-          border-color: none;
         }
 
         .fullScreenImages {
