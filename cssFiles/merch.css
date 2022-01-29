@@ -684,6 +684,10 @@ product card styling
   overflow: hidden;
 }
 
+.products .product .prodContainer .prodImage button {
+  border-color: none !important;
+}
+
 .products .product .prodContainer .prodImage .bgImages {
   -webkit-transition: -webkit-transform 0.3s linear;
   transition: -webkit-transform 0.3s linear;
@@ -701,7 +705,6 @@ product card styling
 .products .product .prodContainer .prodImage #imgBack {
   display: none;
   position: absolute;
-  border-color: none;
 }
 
 .products .product .prodContainer .prodImage .fullScreenImages {
