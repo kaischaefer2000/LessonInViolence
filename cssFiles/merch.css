@@ -701,6 +701,7 @@ product card styling
 .products .product .prodContainer .prodImage #imgBack {
   display: none;
   position: absolute;
+  border-color: none;
 }
 
 .products .product .prodContainer .prodImage .fullScreenImages {

@@ -106,7 +106,7 @@
 
                             <div class="details-column">
                                 <div style="width: 30%">
-                                    <p>Prize*:</p>
+                                    <p>Price*:</p>
                                 </div>
                                 <div style="width: 70%">
                                     <p>Germany 14,- €<br>
@@ -152,13 +152,13 @@
                                     <p>Size:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button><button>XXXL</button>
+                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
                                 </div>
                             </div>
 
                             <div class="details-column">
                                 <div style="width: 30%">
-                                    <p>Prize*:</p>
+                                    <p>Price*:</p>
                                 </div>
                                 <div style="width: 70%">
                                     <p>Germany 13,- €<br>
@@ -231,7 +231,7 @@
 
                             <div class="details-column">
                                 <div style="width: 30%">
-                                    <p>Prize*:</p>
+                                    <p>Price*:</p>
                                 </div>
                                 <div style="width: 70%">
                                     <p>Germany 5,- €<br>
