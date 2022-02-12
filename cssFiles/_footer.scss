@@ -19,10 +19,22 @@ footer {
   }
 
   .collumn-redstuff {
-    img {
-      width: 81%;
-      padding: 1.8em 1em 1em;
-      margin-left: 2.6vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    a {
+      display: contents;
+
+      img {
+        width: 70%;
+        padding: 1.8em 1em 1em;
+      }
+
+      #ironShieldsLogo {
+        width: 50%;
+      }
     }
   }
 
@@ -38,7 +50,7 @@ footer {
 }
 
 /*footer for large devices */
-@media screen and (min-width: 1450px) {
+@media (min-width: 1450px) {
   footer {
     .footer-title {
       font-size: 1.6em;
@@ -49,9 +61,13 @@ footer {
       font-size: 1.1em;
     }
 
-    .collumn-redstuff img {
-      width: 65%;
-      margin-left: 6vw;
+    .collumn-redstuff {
+      a {
+        img,
+        #ironShieldsLogo {
+          width: 50%;
+        }
+      }
     }
 
     .collumn-social {
@@ -63,9 +79,15 @@ footer {
 /* fixing size of redstuff img */
 @media (max-width: 965px) {
   footer {
-    .collumn-redstuff img {
-      width: 100%;
-      margin-left: 0em;
+    .collumn-redstuff {
+      a {
+        img {
+          width: 70%;
+        }
+        #ironShieldsLogo {
+          width: 60%;
+        }
+      }
     }
 
     .collumn-contact {
@@ -88,31 +110,37 @@ footer {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-    }
 
-    .collumn-redstuff {
-      -webkit-box-ordinal-group: 2;
-      -moz-box-ordinal-group: 2;
-      -ms-flex-order: 2;
-      -webkit-order: 2;
-      order: 2;
+      .collumn-redstuff {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+        align-items: start;
+        padding-left: 4em;
 
-      img {
-        width: 81%;
-        margin-left: 1.8em;
+        a {
+          img {
+            width: 80%;
+          }
+          #ironShieldsLogo {
+            width: 70%;
+          }
+        }
       }
-    }
 
-    .collumn-social {
-      -webkit-box-ordinal-group: 1;
-      -moz-box-ordinal-group: 1;
-      -ms-flex-order: 1;
-      -webkit-order: 1;
-      order: 1;
-      padding-left: 4.3em;
+      .collumn-social {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+        padding-left: 4.3em;
 
-      i {
-        margin: 0.1em 0.7em 0em 0.1em;
+        i {
+          margin: 0.1em 0.7em 0em 0.1em;
+        }
       }
     }
   }
@@ -121,27 +149,36 @@ footer {
 /* mobile footer */
 @media (max-width: 576px) {
   footer {
-    .collumn-contact {
-      padding-left: 0em;
+    .footer-right {
+      .collumn-contact {
+        padding-left: 0em;
 
-      p {
-        font-size: 0.8em;
+        p {
+          font-size: 0.8em;
+        }
       }
-    }
 
-    .collumn-social {
-      padding-left: 1em;
+      .collumn-social {
+        padding-left: 1em;
 
-      i {
-        font-size: 1.3em;
-        margin: 0em 0.2em 0em 0.1em;
+        i {
+          font-size: 1.3em;
+          margin: 0em 0.2em 0em 0.1em;
+        }
       }
-    }
 
-    .collumn-redstuff img {
-      width: 100%;
-      padding: 1em 0em;
-      margin-left: 0em;
+      .collumn-redstuff {
+        padding-left: 0px;
+        a {
+          img {
+            width:80%;
+            padding: 1em 0.5em;
+          }
+          #ironShieldsLogo {
+            width: 70%;
+          }
+        }
+      }
     }
   }
 }
@@ -151,12 +188,24 @@ footer {
   footer {
     padding: 2em 1em;
 
-    .collumn-redstuff {
-      padding-top: 1em;
-    }
+    .footer-right {
+      .collumn-redstuff {
+        padding-top: 1em;
 
-    .footer-title {
-      font-size: 1em;
+        a {
+          img {
+            width: 100%;
+            padding: 1em 0.5em;
+          }
+          #ironShieldsLogo {
+            width: 90%;
+          }
+        }
+      }
+
+      .footer-title {
+        font-size: 1em;
+      }
     }
   }
 }

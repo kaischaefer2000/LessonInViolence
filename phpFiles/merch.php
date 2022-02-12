@@ -101,7 +101,7 @@
                                     <p>Duration:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <p>39:32 min</p>
+                                    <p>39:39 min</p>
                                 </div>
                             </div>
 
@@ -119,7 +119,7 @@
                                     <p>Price*:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <p>Germany 14,- €<br>
+                                    <p>Germany 15,- €<br>
                                     Europe 16,- €<br>
                                     Worldwide 16,- €</p>
                                 </div>
@@ -259,7 +259,7 @@
         </div>
 
         <div>
-            * Please note that all prices include shipping costs!
+            * Please note that all prices include shipping costs! Of course, if you order several items, the shipping costs will change to your advantage.
         </div>
 
             
