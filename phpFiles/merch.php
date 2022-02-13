@@ -120,8 +120,8 @@
                                 </div>
                                 <div style="width: 70%">
                                     <p>Germany 15,- €<br>
-                                    Europe 16,- €<br>
-                                    Worldwide 16,- €</p>
+                                    Europe 17,- €<br>
+                                    Worldwide 17,- €</p>
                                 </div>
                             </div>
                         </div>

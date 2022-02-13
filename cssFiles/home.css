@@ -486,23 +486,37 @@ footer .collumn-redstuff {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+footer .collumn-redstuff .logoRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-footer .collumn-redstuff a {
+footer .collumn-redstuff .logoRow a {
   display: contents;
 }
 
-footer .collumn-redstuff a img {
-  width: 70%;
+footer .collumn-redstuff .logoRow a img {
+  width: 60%;
   padding: 1.8em 1em 1em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-footer .collumn-redstuff a #ironShieldsLogo {
+footer .collumn-redstuff .logoRow a #ironShieldsLogo {
   width: 50%;
 }
 
@@ -525,9 +539,11 @@ footer .collumn-social i {
   footer .collumn-contact a {
     font-size: 1.1em;
   }
-  footer .collumn-redstuff a img,
-  footer .collumn-redstuff a #ironShieldsLogo {
-    width: 50%;
+  footer .collumn-redstuff .logoRow a img {
+    width: 40%;
+  }
+  footer .collumn-redstuff .logoRow a #ironShieldsLogo {
+    width: 30%;
   }
   footer .collumn-social {
     padding-left: 13em;
@@ -566,11 +582,11 @@ footer .collumn-social i {
             align-items: start;
     padding-left: 4em;
   }
-  footer .footer-right .collumn-redstuff a img {
-    width: 80%;
+  footer .footer-right .collumn-redstuff .logoRow a img {
+    width: 60%;
   }
-  footer .footer-right .collumn-redstuff a #ironShieldsLogo {
-    width: 70%;
+  footer .footer-right .collumn-redstuff .logoRow a #ironShieldsLogo {
+    width: 50%;
   }
   footer .footer-right .collumn-social {
     -webkit-box-ordinal-group: 1;
@@ -618,11 +634,17 @@ footer .collumn-social i {
   footer .footer-right .collumn-redstuff {
     padding-top: 1em;
   }
-  footer .footer-right .collumn-redstuff a img {
+  footer .footer-right .collumn-redstuff .logoRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-right .collumn-redstuff .logoRow a img {
     width: 100%;
     padding: 1em 0.5em;
   }
-  footer .footer-right .collumn-redstuff a #ironShieldsLogo {
+  footer .footer-right .collumn-redstuff .logoRow a #ironShieldsLogo {
     width: 90%;
   }
   footer .footer-right .footer-title {
