@@ -41,27 +41,80 @@ function frontActive(){
 
 }
 
+// CD T-Shirt 
+const back4 = document.getElementById("back4");
+const front4 = document.getElementById("front4");
+
+const bgImg4 = document.getElementById("bgImg4");
+const imgFront4 = document.getElementById("imgFront4");
+const imgBack4 = document.getElementById("imgBack4");
+
+var numbr = 0;
+
+// activate picture of shirt back
+function backActive4(){
+    if(front4.classList.contains("active")){
+        front4.classList.remove("active");
+        imgFront4.classList.remove("shown");        
+    }
+    
+    bgImg4.classList.remove("shown");
+    
+    back4.classList.add("active");
+    imgBack4.classList.add("shown");
+}
+
+// activate picture of shirt front
+function frontActive4(){
+    if(back4.classList.contains("active")){
+        back4.classList.remove("active");
+        imgBack4.classList.remove("shown");        
+    }
+    
+    front4.classList.add("active");
+    imgFront4.classList.add("shown");
+    bgImg4.classList.remove("shown");
+
+}
 // toggle between each view
 window.onload = function(){
     document.onclick = function(e){
 
-       if(e.target.id !== 'front'){
-            front.classList.remove("active");
-            imgFront.classList.remove("shown");  
+       if(e.target.id !== 'front4'){
+            front4.classList.remove("active");
+            imgFront4.classList.remove("shown");  
 
-            if(!back.classList.contains("active")){
-                bgImg.classList.add("shown");
+            if(!back4.classList.contains("active")){
+                bgImg4.classList.add("shown");
             }
       
        }
 
-       if(e.target.id !== 'back'){
-            back.classList.remove("active");
-            imgBack.classList.remove("shown");
+       if(e.target.id !== 'back4'){
+            back4.classList.remove("active");
+            imgBack4.classList.remove("shown");
             
-            if(!front.classList.contains("active")){
-                bgImg.classList.add("shown");
+            if(!front4.classList.contains("active")){
+                bgImg4.classList.add("shown");
             }
+       }
+
+       if (e.target.id !== "front") {
+         front.classList.remove("active");
+         imgFront.classList.remove("shown");
+
+         if (!back.classList.contains("active")) {
+           bgImg.classList.add("shown");
+         }
+       }
+
+       if (e.target.id !== "back") {
+         back.classList.remove("active");
+         imgBack.classList.remove("shown");
+
+         if (!front.classList.contains("active")) {
+           bgImg.classList.add("shown");
+         }
        }
     };
  };
@@ -71,6 +124,7 @@ window.onload = function(){
  const fullImg = document.getElementById("fullScreenImg");
  const shirtImage = document.getElementsByClassName("shirtImage");
  const patchImages = document.getElementsByClassName("patchImage");
+ const cdshirtImages = document.getElementsByClassName("cdShirtImage");
  var imagesArray = [];
 
  const svgIcons = {
@@ -93,11 +147,14 @@ window.onload = function(){
     lightboxContainer.appendChild(prevIcon);
     prevIcon.addEventListener('click', () => _moveToPrevious(lightboxImage));
 
-    if(p == 0){
+    if(p === 0){
         imagesArray = shirtImage;
     }
-    else{
-        imagesArray = patchImages;
+    if (p === 4) {
+      imagesArray = cdshirtImages;
+    }
+     if (p === 1) {
+      imagesArray = patchImages;
     }
 
     // open the current activated picture in the lightbox

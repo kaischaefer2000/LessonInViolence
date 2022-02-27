@@ -47,16 +47,17 @@
     <div class="mainContentInner">
     <section>
         <div class="row products">
-            
-            <div class="col-12 col-sm-10 col-md-6 col-lg-4 product" >
+            <!-- CD -->
+            <div class="col-12 col-sm-10 col-md-4 col-lg-4 product" >
                 <div class="prodContainer">
                     <div class="prodImage">
                         <img  class=" shown bgImages" src="../merchPictures/CDProdukt.jpg" alt="">
                     </div>
                     
                     <div class="row prodDescription">
-                        <h3>L.I.V. CD</h3>
-                        
+                        <div class="prodTitle">
+                            <h3>CD</h3>
+                        </div>
                         <hr>
                         <div class="details">
                             <div class="details-column">
@@ -65,43 +66,6 @@
                                 </div>
                                 <div style="width: 70%">
                                     <p>The Thrashfall of Mankind</p>
-                                </div>
-                            </div>
-
-                            <div class="details-column">
-                                <div style="width: 30%">
-                                    <p>Tracklist:</p>
-                                </div>
-                                <div style="width: 70%">
-                                    <p>1. Lost In Yourself<br>
-                                    2. C.H.A.O.S.<br>
-                                    3. Thrash Metal Mankind<br>
-                                    4. Inside<br>
-                                    5. Dissembling Wings<br>
-                                    6. Liar<br>
-                                    7. Social Madness<br>
-                                    8. Rigid And Stubborn<br>
-                                    9. Scum Of Society<br>
-                                    10. Time To Kill<br>
-                                    11. Lesson In Violence</p>
-                                </div>
-                            </div>
-
-                            <div class="details-column">
-                                <div style="width: 30%">
-                                    <p>Release:</p>
-                                </div>
-                                <div style="width: 70%">
-                                    <p>18.02.2022</p>
-                                </div>
-                            </div>
-
-                            <div class="details-column">
-                                <div style="width: 30%">
-                                    <p>Duration:</p>
-                                </div>
-                                <div style="width: 70%">
-                                    <p>39:39 min</p>
                                 </div>
                             </div>
 
@@ -120,95 +84,18 @@
                                 </div>
                                 <div style="width: 70%">
                                     <p>Germany 15,- €<br>
-                                    Europe 17,- €<br>
                                     Worldwide 17,- €</p>
                                 </div>
                             </div>
                         </div>
-
-                        <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
-                    </div>
-                </div>
-            </div>
-  
-            <div class="col-11 col-sm-10 col-md-4 col-lg-3 product">
-                <div class="prodContainer">
-                    <div class="prodImage">
-                        <button id="back" onfocus="backActive()">b<br>a<br>c<br>k</button>
-                        <button id="front" onfocus="frontActive()">f<br>r<br>o<br>n<br>t</button>
-
-                        <img id="imgFront" class="shirtImage" src="../merchPictures/productShirtFront.jpg" alt="">
-                        <img id="imgBack" class="shirtImage" src="../merchPictures/productShirtBack.jpg" alt="">
-                        <img id="bgImg" class="shirtImage shown bgImages" src="../merchPictures/productShirt.jpg" alt="">
-                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(0)" src="../merchPictures/fullScreen.png" alt="full screen icon">
-                        
-                    </div>
-                    
-                    <div class="row prodDescription">
-                        <h3>L.i.V. T-SHIRT</h3>
-                        <hr>
-                        <div class="details">
-                            <div class="details-column">
-                                <div style="width: 30%">
-                                    <p>Color:</p>
-                                </div>
-                                <div style="width: 70%">
-                                    <p>Black</p>
-                                </div>
-                            </div>
-
-                            <div class="details-column">
-                                <div style="width: 30%">
-                                    <p>Size:</p>
-                                </div>
-                                <div style="width: 70%">
-                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
-                                </div>
-                            </div>
-
-                            <div class="details-column">
-                                <div style="width: 30%">
-                                    <p>Price*:</p>
-                                </div>
-                                <div style="width: 70%">
-                                    <p>Germany 13,- €<br>
-                                    Europe 18,- €<br>
-                                    Worldwide 24,- €</p>
-                                </div>
-                            </div>
-                        </div>
-
-
                         
                         <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
                     </div>
                 </div>
             </div>
 
-            <!-- <div class="col-6 col-sm-6 col-md-4 col-lg-6 order" style="display:none">
-                <h3>My order</h3>
-                <div class="orderContainer">
-                    <h4>L.i.V Shirt</h4>
-                    <hr> 
-                    <img class="orderPicture" src="../merchPictures/productShirt.jpg" alt="">
-                    <div class="orderTitle">
-                        <p>Size: L</p>
-                        <p>Count: 1x</p>
-                    </div>
-
-                </div>
-                <div class="orderContainer">
-                    <h4>Thrashfall of Mankind - CD</h4>
-                    <hr> 
-                    <img class="orderPicture" src="../audioPlayer/thrash-metal-mankind-thumbnail.jpg" alt="">
-                    <div class="orderTitle">
-                        <p>Count: 1x</p>
-                    </div>
-
-                </div>
-            </div> -->
-
-            <div  class="col-12 col-sm-10 col-md-4 col-lg-3 product">
+            <!-- Patch -->
+            <div  class="col-12 col-sm-10 col-md-4 col-lg-4 product">
                 <div class="prodContainer">
                     <div class="prodImage">
                         <img id="bgImg2" class="patchImage shown bgImages" src="../merchPictures/SinglePatch.jpg" alt="">
@@ -218,7 +105,9 @@
                     </div>
                     
                     <div class="row prodDescription">
-                        <h3>L.i.V. Patch</h3>
+                        <div class="prodTitle">
+                            <h3>Patch</h3>
+                        </div>
                         <hr>
                         <div class="details">
                             <div class="details-column">
@@ -245,20 +134,130 @@
                                 </div>
                                 <div style="width: 70%">
                                     <p>Germany 5,- €<br>
-                                    Europe 6,- €<br>
                                     Worldwide 6,- €</p>
                                 </div>
                             </div>
-                            
                         </div>
+
+                        <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="row products">
+            <!-- LIV Shirt -->
+            <div class="col-11 col-sm-10 col-md-4 col-lg-4 product">
+                <div class="prodContainer">
+                    <div class="prodImage">
+                        <button id="back" onfocus="backActive()">b<br>a<br>c<br>k</button>
+                        <button id="front" onfocus="frontActive()">f<br>r<br>o<br>n<br>t</button>
+
+                        <img id="imgFront" class="shirtImage" src="../merchPictures/productShirtFront.jpg" alt="">
+                        <img id="imgBack" class="shirtImage" src="../merchPictures/productShirtBack.jpg" alt="">
+                        <img id="bgImg" class="shirtImage shown bgImages" src="../merchPictures/productShirt.jpg" alt="">
+                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(0)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        
+                    </div>
+                    
+                    <div class="row prodDescription">
+                        <div class="prodTitle">
+                            <h3>T-SHIRT</h3>
+                        </div>
+                        <hr>
+                        <div class="details">
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Title:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    Lesson in Violence
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Size:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Price*:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>Germany 13,- €<br>
+                                    Worldwide 17,- €</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
                     </div>
                 </div>
             </div>
 
+            <!-- CD Shirt -->
+            <div class="col-11 col-sm-10 col-md-4 col-lg-4 product">
+                <div class="prodContainer">
+                    <div class="prodImage">
+                        <button id="back4" onfocus="backActive4()">b<br>a<br>c<br>k</button>
+                        <button id="front4" onfocus="frontActive4()">f<br>r<br>o<br>n<br>t</button>
+
+                        <img id="imgFront4" class="cdShirtImage" src="../merchPictures/productCdShirtFront.jpg" alt="">
+                        <img id="imgBack4" class="cdShirtImage" src="../merchPictures/productCdShirtBack.jpg" alt="">
+                        <img id="bgImg4" class="cdShirtImage shown bgImages" src="../merchPictures/productShirtCD.jpg" alt="">
+                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(4)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        
+                    </div>
+                    
+                    <div class="row prodDescription">
+                        <div class="prodTitle">
+                            <h3>T-SHIRT</h3>
+                        </div>
+                        <hr>
+                        <div class="details">
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Title:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    The Thrashfall of Mankind
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Size:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Price*:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>Germany 20,- €<br>
+                                    Worldwide 25,- €</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
+        </div>
+
+        <div style="margin: 0 3vw">
             * Please note that all prices include shipping costs! Of course, if you order several items, the shipping costs will change to your advantage.
         </div>
 

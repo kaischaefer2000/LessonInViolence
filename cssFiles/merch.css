@@ -729,23 +729,32 @@ info box stylings
 product card styling 
 */
 .products {
-  padding: 8em 0px 0em 0px;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .products .product {
   padding: 0;
-  margin: 0 3.5em 3em 0;
+  margin: 2vw 4vw 8vw;
 }
 
 .products .product .prodContainer {
   -webkit-box-shadow: 0 0 10px #000000;
           box-shadow: 0 0 10px #000000;
+  background-color: rgba(18, 22, 26, 0.815);
 }
 
 .products .product .prodContainer .prodImage {
   border-radius: 2px 2px 0px 0px;
   overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .products .product .prodContainer .prodImage button {
@@ -766,6 +775,8 @@ product card styling
 
 .products .product .prodContainer .prodImage #imgFront,
 .products .product .prodContainer .prodImage #imgPatch,
+.products .product .prodContainer .prodImage #imgFront4,
+.products .product .prodContainer .prodImage #imgBack4,
 .products .product .prodContainer .prodImage #imgBack {
   display: none;
   position: absolute;
@@ -797,7 +808,7 @@ product card styling
 }
 
 .products .product .prodContainer .prodImage button:nth-of-type(1) {
-  top: 11%;
+  top: 18%;
 }
 
 .products .product .prodContainer .prodImage button:focus {
@@ -806,9 +817,13 @@ product card styling
 }
 
 .products .product .prodContainer .prodDescription {
-  background-color: rgba(18, 22, 26, 0.815);
   margin: 0;
-  padding: 1.5em 1em;
+  padding: 1em 1em 5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .products .product .prodContainer .prodDescription hr {
@@ -816,17 +831,23 @@ product card styling
   width: 100%;
   height: 1px;
   border-radius: 5px;
-  margin: 1em 0px;
 }
 
-.products .product .prodContainer .prodDescription h3 {
+.products .product .prodContainer .prodDescription .prodTitle {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.products .product .prodContainer .prodDescription .prodTitle h3 {
   font-size: 1.1rem;
   text-transform: uppercase;
   text-align: center;
   word-spacing: 0.3em;
   letter-spacing: 0.1em;
   font-weight: bold;
-  width: 100%;
+  margin: 0;
 }
 
 .products .product .prodContainer .prodDescription .details {
@@ -874,9 +895,13 @@ product card styling
 }
 
 .products .product .prodContainer .prodDescription .orderBtn {
-  margin-top: 2em;
-  width: 100%;
-  padding: 0.5em;
+  width: 90%;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 1em;
   background: none;
   border: 1px solid white;
   color: white;
@@ -1064,6 +1089,10 @@ product card styling
     width: 4.5em;
   }
   #bgImg2 {
+    display: -ms-grid;
+    display: grid;
+  }
+  #bgImg4 {
     display: -ms-grid;
     display: grid;
   }
