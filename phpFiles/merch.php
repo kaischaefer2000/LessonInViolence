@@ -150,8 +150,8 @@
             <div class="col-11 col-sm-10 col-md-4 col-lg-4 product">
                 <div class="prodContainer">
                     <div class="prodImage">
-                        <button id="back" onfocus="backActive()">b<br>a<br>c<br>k</button>
-                        <button id="front" onfocus="frontActive()">f<br>r<br>o<br>n<br>t</button>
+                        <button id="back" style="border-color: none !important" onfocus="backActive()">b<br>a<br>c<br>k</button>
+                        <button id="front" style="border-color: none !important" onfocus="frontActive()">f<br>r<br>o<br>n<br>t</button>
 
                         <img id="imgFront" class="shirtImage" src="../merchPictures/productShirtFront.jpg" alt="">
                         <img id="imgBack" class="shirtImage" src="../merchPictures/productShirtBack.jpg" alt="">
@@ -204,8 +204,8 @@
             <div class="col-11 col-sm-10 col-md-4 col-lg-4 product">
                 <div class="prodContainer">
                     <div class="prodImage">
-                        <button id="back4" onfocus="backActive4()">b<br>a<br>c<br>k</button>
-                        <button id="front4" onfocus="frontActive4()">f<br>r<br>o<br>n<br>t</button>
+                        <button id="back4" style="border-color: none !important" onfocus="backActive4()">b<br>a<br>c<br>k</button>
+                        <button id="front4" style="border-color: none !important" onfocus="frontActive4()">f<br>r<br>o<br>n<br>t</button>
 
                         <img id="imgFront4" class="cdShirtImage" src="../merchPictures/productCdShirtFront.jpg" alt="">
                         <img id="imgBack4" class="cdShirtImage" src="../merchPictures/productCdShirtBack.jpg" alt="">
