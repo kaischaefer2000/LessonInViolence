@@ -94,28 +94,32 @@
                 </div>
             </div>
 
-            <!-- Patch -->
-            <div  class="col-12 col-sm-10 col-md-4 col-lg-4 product">
+            <!-- CD Shirt -->
+            <div class="col-11 col-sm-10 col-md-4 col-lg-4 product">
                 <div class="prodContainer">
                     <div class="prodImage">
-                        <img id="bgImg2" class="patchImage shown bgImages" src="../merchPictures/SinglePatch.jpg" alt="">
-                        <img id="fullScreenImg2" class="fullScreenImages" onclick="openLightbox(1)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        <button id="back4" style="border-color: none !important" onfocus="backActive4()">b<br>a<br>c<br>k</button>
+                        <button id="front4" style="border-color: none !important" onfocus="frontActive4()">f<br>r<br>o<br>n<br>t</button>
 
-                        <img id="imgPatch" class="patchImage" src="../merchPictures/MultiplePatches.jpg" alt="">
+                        <img id="imgFront4" class="cdShirtImage" src="../merchPictures/productCdShirtFront.jpg" alt="">
+                        <img id="imgBack4" class="cdShirtImage" src="../merchPictures/productCdShirtBack.jpg" alt="">
+                        <img id="bgImg4" class="cdShirtImage shown bgImages" src="../merchPictures/productShirtCD.jpg" alt="">
+                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(4)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        
                     </div>
                     
                     <div class="row prodDescription">
                         <div class="prodTitle">
-                            <h3>Patch</h3>
+                            <h3>T-SHIRT</h3>
                         </div>
                         <hr>
                         <div class="details">
                             <div class="details-column">
                                 <div style="width: 30%">
-                                    <p>Design:</p>
+                                    <p>Title:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <p>Each patch has an individual blood splash!</p>
+                                    The Thrashfall of Mankind
                                 </div>
                             </div>
 
@@ -124,7 +128,7 @@
                                     <p>Size:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <p>12cm x 6cm</p>
+                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button><button>XXXL</button>
                                 </div>
                             </div>
 
@@ -133,12 +137,12 @@
                                     <p>Price*:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <p>Germany 5,- €<br>
-                                    Worldwide 6,- €</p>
+                                    <p>Germany 2,- €<br>
+                                    Worldwide 25,- €</p>
                                 </div>
                             </div>
                         </div>
-
+                        
                         <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
                     </div>
                 </div>
@@ -200,32 +204,28 @@
                 </div>
             </div>
 
-            <!-- CD Shirt -->
-            <div class="col-11 col-sm-10 col-md-4 col-lg-4 product">
+            <!-- Patch -->
+            <div  class="col-12 col-sm-10 col-md-4 col-lg-4 product">
                 <div class="prodContainer">
                     <div class="prodImage">
-                        <button id="back4" style="border-color: none !important" onfocus="backActive4()">b<br>a<br>c<br>k</button>
-                        <button id="front4" style="border-color: none !important" onfocus="frontActive4()">f<br>r<br>o<br>n<br>t</button>
+                        <img id="bgImg2" class="patchImage shown bgImages" src="../merchPictures/SinglePatch.jpg" alt="">
+                        <img id="fullScreenImg2" class="fullScreenImages" onclick="openLightbox(1)" src="../merchPictures/fullScreen.png" alt="full screen icon">
 
-                        <img id="imgFront4" class="cdShirtImage" src="../merchPictures/productCdShirtFront.jpg" alt="">
-                        <img id="imgBack4" class="cdShirtImage" src="../merchPictures/productCdShirtBack.jpg" alt="">
-                        <img id="bgImg4" class="cdShirtImage shown bgImages" src="../merchPictures/productShirtCD.jpg" alt="">
-                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(4)" src="../merchPictures/fullScreen.png" alt="full screen icon">
-                        
+                        <img id="imgPatch" class="patchImage" src="../merchPictures/MultiplePatches.jpg" alt="">
                     </div>
                     
                     <div class="row prodDescription">
                         <div class="prodTitle">
-                            <h3>T-SHIRT</h3>
+                            <h3>Patch</h3>
                         </div>
                         <hr>
                         <div class="details">
                             <div class="details-column">
                                 <div style="width: 30%">
-                                    <p>Title:</p>
+                                    <p>Design:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    The Thrashfall of Mankind
+                                    <p>Each patch has an individual blood splash!</p>
                                 </div>
                             </div>
 
@@ -234,7 +234,7 @@
                                     <p>Size:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                                    <p>12cm x 6cm</p>
                                 </div>
                             </div>
 
@@ -243,12 +243,12 @@
                                     <p>Price*:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <p>Germany 20,- €<br>
-                                    Worldwide 25,- €</p>
+                                    <p>Germany 5,- €<br>
+                                    Worldwide 6,- €</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
                     </div>
                 </div>
