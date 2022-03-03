@@ -137,7 +137,7 @@
                                     <p>Price*:</p>
                                 </div>
                                 <div style="width: 70%">
-                                    <p>Germany 2,- €<br>
+                                    <p>Germany 21,- €<br>
                                     Worldwide 25,- €</p>
                                 </div>
                             </div>
