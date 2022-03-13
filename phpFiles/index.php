@@ -74,6 +74,20 @@
                 </div>
             </div>
 
+            <div class="light-content-box content-box">
+                <div style="display: flex; justify-content: flex-end">
+                 <p class="post-time"><i>13.03.2022</i></p>
+                </div> 
+                 <div class="content-devided">
+                 <p>
+                    One month is gone since we released our first album "The Thrashfall Of Mankind" and the feedback is absolutely amazing. Reviews worldwide are very good and the sales charts are also very impressive! Lesson in Violence want to say thank you for this huge amount of support and appreciation from fans all around the world.<br><br>
+                    Right now we are looking forward to present the album live to the crowds! Next stop: Metal Franconia Festival 2022.<br><br>
+                    Thrash on!
+                </p>
+                <img class="albumCover" src="../flyer/Flyer Lessons in Metal 2.jpg" alt="Flyer Lessons in Metal 2" />
+                </div>
+             </div>
+
             <div class="dark-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">
                  <p class="post-time"><i>16.01.2022</i></p>

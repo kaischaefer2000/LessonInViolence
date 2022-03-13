@@ -101,6 +101,15 @@
                                 <p translate="no">Lesson in Violence, Hateful Agony, Godslave, Reactory</p>
                             </div>
                         </div>
+
+                        <div class="row details-content flyer-row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <p>Flyer:</p>
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <img id="LessonsInMetalFlyer" src="../flyer/Flyer Lessons in Metal 2.jpg" alt="Lessons in Metal Flyer">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

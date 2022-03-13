@@ -15,6 +15,21 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+// click event for LessonsInMetalFlyer
+img2 = document.getElementById("LessonsInMetalFlyer");
+
+function scaleImg2(){
+    if (img2.classList.contains("bigImg")) {
+      img2.classList.remove("bigImg");
+      img2.style.width = "15vw";
+      img2.style.transition = "width 0.8s ease-in-out";
+    } else {
+      img2.style.width = "30vw";
+      img2.style.transition = "width 0.8s ease-in-out";
+      img2.classList.add("bigImg");
+    }
+}
+
 // click event for Birthday Bash Flyer
 img3 = document.getElementById("birthdayBashFlyer");
 
@@ -50,6 +65,9 @@ function scaleImg4(){
 // click event only when screen is big enough
 function myFunction(x) {
     if (x.matches) {
+        document
+          .getElementById("LessonsInMetalFlyer")
+          .addEventListener("click", scaleImg2);
         document.getElementById("birthdayBashFlyer").addEventListener("click", scaleImg3);
         document.getElementById("JugendhausEinsFlyer").addEventListener("click", scaleImg4);
     } else {
