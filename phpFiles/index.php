@@ -84,7 +84,7 @@
                     Right now we are looking forward to present the album live to the crowds! Next stop: Metal Franconia Festival 2022.<br><br>
                     Thrash on!
                 </p>
-                <img class="albumCover" src="../flyer/Flyer Lessons in Metal 2.jpg" alt="Flyer Lessons in Metal 2" />
+                <img class="albumCover" src="../flyer/Flyer_MFF.jpg" alt="Flyer Lessons in Metal 2" />
                 </div>
              </div>
 
