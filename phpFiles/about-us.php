@@ -76,7 +76,7 @@
                         Violence in music ... and nowhere else!
                         <br><br>
                         If you like it fast and straight and you prefer some <strong>old-school-thrash-riffings</strong> without any cosmetics or compromises, then lend us your ears until they bleed!<br>
-                        By <strong>February 2022</strong> we will release our <strong>first album “The Thrashfall of Mankind”</strong> to bring the violence to your home and play shows to increase our range and fuck shit up! We are looking for bands, fans, locations, organizators and promoters to support our live ambitions.
+                        In February 2022 we released our first album "The Thrashfall of Mankind" to bring the violence to your home and play shows to expand our range and fuck shit up! We are looking for bands, fans, venues, organizations and promoters who support our life ambitions.
                     </div>
                 </div>
             </section>
