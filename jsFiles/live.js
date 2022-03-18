@@ -30,6 +30,21 @@ function scaleImg2(){
     }
 }
 
+// click event for InfernumFlyer
+img5 = document.getElementById("InfernumFlyer");
+
+function scaleImg5(){
+    if (img5.classList.contains("bigImg")) {
+      img5.classList.remove("bigImg");
+      img5.style.width = "15vw";
+      img5.style.transition = "width 0.8s ease-in-out";
+    } else {
+      img5.style.width = "30vw";
+      img5.style.transition = "width 0.8s ease-in-out";
+      img5.classList.add("bigImg");
+    }
+}
+
 // click event for Birthday Bash Flyer
 img3 = document.getElementById("birthdayBashFlyer");
 
@@ -70,6 +85,9 @@ function myFunction(x) {
           .addEventListener("click", scaleImg2);
         document.getElementById("birthdayBashFlyer").addEventListener("click", scaleImg3);
         document.getElementById("JugendhausEinsFlyer").addEventListener("click", scaleImg4);
+        document
+          .getElementById("InfernumFlyer")
+          .addEventListener("click", scaleImg5);
     } else {
 
     }

@@ -255,6 +255,65 @@
             </div>
         </div>
 
+        <div class="row products">
+            <!-- Ticket -->
+            <div class="col-11 col-sm-10 col-md-4 col-lg-4 product">
+                <div class="prodContainer">
+                    <div class="prodImage">
+                        <img id="bgImg5" class="ticketImage shown bgImages" src="../merchPictures/TicketLessonsInMetal2.jpg" alt="">
+                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(5)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        
+                    </div>
+                    
+                    <div class="row prodDescription">
+                        <div class="prodTitle">
+                            <h3>Ticket</h3>
+                        </div>
+                        <hr>
+                        <div class="details">
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Event:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    Lessons in Metal 2
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Date:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    02.10.2022
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Bands:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    Lesson in Violence, Hateful Agony, Godslave, Reactory
+                                </div>
+                            </div>
+
+                            <div class="details-column">
+                                <div style="width: 30%">
+                                    <p>Price*:</p>
+                                </div>
+                                <div style="width: 70%">
+                                    <p>13,- €<br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </div>
 
         <div style="margin: 0 3vw">

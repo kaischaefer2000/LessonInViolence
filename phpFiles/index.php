@@ -80,7 +80,7 @@
                 </div> 
                  <div class="content-devided">
                  <p>
-                    One month is gone since we released our first album "The Thrashfall Of Mankind" and the feedback is absolutely amazing. Reviews worldwide are very good and the sales charts are also very impressive! Lesson in Violence want to say thank you for this huge amount of support and appreciation from fans all around the world.<br><br>
+                    One month is gone since we released our first album "The Thrashfall Of Mankind" and the feedback is absolutely amazing. Reviews worldwide are very good and the sales charts are also very impressive! Lesson in Violence want to say thank you for this huge amount of support and appreciation from fans, mags and radio stations all around the world.<br><br>
                     Right now we are looking forward to present the album live to the crowds! <br>Next stop: <a target="blank" href="https://sw.metal-franconia.de/">Metal Franconia Festival 2022</a>.<br><br>
                     Thrash on!
                 </p>

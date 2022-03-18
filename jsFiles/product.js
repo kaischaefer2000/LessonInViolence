@@ -125,6 +125,7 @@ window.onload = function(){
  const shirtImage = document.getElementsByClassName("shirtImage");
  const patchImages = document.getElementsByClassName("patchImage");
  const cdshirtImages = document.getElementsByClassName("cdShirtImage");
+ const ticketImages = document.getElementsByClassName("ticketImage");
  var imagesArray = [];
 
  const svgIcons = {
@@ -148,13 +149,17 @@ window.onload = function(){
     prevIcon.addEventListener('click', () => _moveToPrevious(lightboxImage));
 
     if(p === 0){
-        imagesArray = shirtImage;
+      imagesArray = shirtImage;
     }
     if (p === 4) {
       imagesArray = cdshirtImages;
     }
-     if (p === 1) {
+    if (p === 1) {
       imagesArray = patchImages;
+    }
+
+    if (p === 5) {
+      imagesArray = ticketImages;
     }
 
     // open the current activated picture in the lightbox
