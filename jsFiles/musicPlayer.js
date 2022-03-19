@@ -1,22 +1,18 @@
 const thumbnail1 = document.querySelector('#tmb1'); 
-const thumbnail2 = document.querySelector('#tmb2');
 const thumbnail3 = document.querySelector("#tmb3");
 const thumbnail4 = document.querySelector("#tmb4"); 
 
 const song1 = document.querySelector('#song1');
-const song2 = document.querySelector('#song2');
 const song3 = document.querySelector("#song3");
 const song4 = document.querySelector("#song4");
 
 const songArtist = document.querySelector('.song-artist'); // element where track artist appears
 const songTitle = document.querySelector('.song-title'); // element where track title appears
 const progressBar1 = document.querySelector('#pb1');
-const progressBar2 = document.querySelector('#pb2');
 const progressBar3 = document.querySelector("#pb3");
 const progressBar4 = document.querySelector("#pb4"); 
 
 let pPause1 = document.querySelector('#pp1');
-let pPause2 = document.querySelector('#pp2');
 let pPause3 = document.querySelector("#pp3");
 let pPause4 = document.querySelector("#pp4");
 
@@ -36,23 +32,6 @@ function playPause() {
         thumbnail1.style.transform = "scale(1)"
 
         song1.pause();
-        playing = true;
-    }
-}
-
-function playPause2() {
-    if (playing) {
-
-        pPause2.src = "../audioPlayer/pause2.png"
-        thumbnail2.style.transform = "scale(1.15)";
-
-        song2.play();
-        playing = false;
-    } else {
-        pPause2.src = "../audioPlayer/play2.png"
-        thumbnail2.style.transform = "scale(1)"
-
-        song2.pause();
         playing = true;
     }
 }
@@ -101,16 +80,6 @@ function updateProgressValue() {
     }
 };
 
-function updateProgressValue2() {
-    progressBar2.max = song2.duration;
-    progressBar2.value = song2.currentTime;
-    document.querySelector('#ct2').innerHTML = (formatTime(Math.floor(song2.currentTime)));
-    if (document.querySelector('#dt2').innerHTML === "NaN:NaN") {
-        document.querySelector('#dt2').innerHTML = "0:00";
-    } else {
-        document.querySelector('#dt2').innerHTML = (formatTime(Math.floor(song2.duration)));
-    }
-};
 
 function updateProgressValue3() {
     progressBar3.max = song3.duration;
@@ -147,8 +116,6 @@ function formatTime(seconds) {
 // run updateProgressValue function every 1/2 second to show change in progressBar and song.currentTime on the DOM
 setInterval(updateProgressValue, 500);
 
-setInterval(updateProgressValue2, 500);
-
 setInterval(updateProgressValue3, 500);
 
 setInterval(updateProgressValue4, 500);
@@ -156,10 +123,6 @@ setInterval(updateProgressValue4, 500);
 // function where progressBar.value is changed when slider thumb is dragged without auto-playing audio
 function changeProgressBar() {
     song.currentTime = progressBar.value;
-};
-
-function changeProgressBar2() {
-    song2.currentTime = progressBar2.value;
 };
 
 function changeProgressBar3() {

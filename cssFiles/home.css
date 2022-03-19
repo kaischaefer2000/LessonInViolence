@@ -675,7 +675,7 @@ footer .copyright p {
 
 /* music player */
 .player-container {
-  height: 380vw;
+  height: 320vw;
 }
 
 #background {
@@ -910,7 +910,7 @@ footer .copyright p {
 
 @media (min-width: 992px) {
   .player-container {
-    height: 74vw;
+    height: 40vw;
   }
   .container {
     position: absolute;
