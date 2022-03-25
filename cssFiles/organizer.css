@@ -1029,6 +1029,10 @@ h3 {
   padding: 2em 4em;
 }
 
+.player-container {
+  height: 70vw;
+}
+
 @media (max-width: 990px) {
   .player-container {
     height: 200vw;
