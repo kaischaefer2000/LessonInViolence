@@ -40,9 +40,21 @@
 <!-- body -->
 <body>
 
-    <?php
-        include('../htmlFiles/header.html');
-    ?>
+    <div id="hero-background">
+        <?php
+            include('../htmlFiles/header.html');
+        ?>
+        <!-- hero -->
+        <section>
+            <div class="container-fluid">
+                <div class="row hero">
+                    <div class="col">
+                        <h1 id="main-title">M<br>E<br>D<br>I<br>A</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- info box -->
     <section>
@@ -392,29 +404,8 @@
         include('../htmlFiles/footer.html');
     ?>
 
-    <script type="text/javascript" language="javascript">
-        function downloadJSAtOnload() {
-            var element = document.createElement("script");
-            element.src = "../jsFiles/layout.js";
-            document.body.appendChild(element);
-
-            var elementTwo = document.createElement("script");
-            elementTwo.src = "../jsFiles/lightbox.js";
-            document.body.appendChild(elementTwo);
-
-            var elementThree = document.createElement("script");
-            elementThree.src = "../jsFiles/musicPlayer.js";
-            document.body.appendChild(elementThree);
-        }
-        
-        if (window.addEventListener)
-            window.addEventListener("load", downloadJSAtOnload, false);
-        //  less than or equal IE 8
-        else if (window.attachEvent)
-            window.attachEvent("onload", downloadJSAtOnload);
-        // all Browser
-        else window.onload = downloadJSAtOnload; 
-    </script>
+    <script type="text/javascript" language="javascript" src="../jsFiles/lightbox.js"></script>
+    <script type="text/javascript" language="javascript" src="../jsFiles/musicPlayer.js"></script>
     
 </body>
 </html>

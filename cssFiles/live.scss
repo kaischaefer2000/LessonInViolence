@@ -7,6 +7,10 @@
     @include heroBackground(url("../headers/header-live-min.jpg"));
 }
 
+#main-title{
+  line-height: 1.5em;
+  padding: 2.5vw 0px 2.5vw;
+}
 
 /* heading */
 .heading{

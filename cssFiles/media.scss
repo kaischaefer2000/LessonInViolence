@@ -7,6 +7,11 @@
   @include heroBackground(url("../headers/header-media.jpg"));
 }
 
+#main-title{
+  line-height: 1.5em;
+  padding: 2.5vw 0px 2.5vw;
+}
+
 /* heading style */
 h2 {
   font-size: 2rem;

@@ -85,25 +85,7 @@
         include('../htmlFiles/footer.html');
     ?>
 
-    <script type="text/javascript" language="javascript">
-        function downloadJSAtOnload() {
-            var element = document.createElement("script");
-            element.src = "../jsFiles/layout.js";
-            document.body.appendChild(element);
-
-            var elementThree = document.createElement("script");
-            elementThree.src = "../jsFiles/musicPlayer.js";
-            document.body.appendChild(elementThree);
-        }
-        
-        if (window.addEventListener)
-            window.addEventListener("load", downloadJSAtOnload, false);
-        //  less than or equal IE 8
-        else if (window.attachEvent)
-            window.attachEvent("onload", downloadJSAtOnload);
-        // all Browser
-        else window.onload = downloadJSAtOnload; 
-    </script>
+    <script type="text/javascript" language="javascript" src="../jsFiles/musicPlayer.js"></script>
     
 </body>
 </html>

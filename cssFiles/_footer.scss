@@ -31,14 +31,18 @@ footer {
       a {
         display: contents;
 
-        img {
-          width: 60%;
-          padding: 1.8em 1em 1em;
-          height: fit-content;
-        }
+        picture {
+          display: contents;
+          
+          img {
+            padding: 1.8em 1em 1em;
+            width: 60%;
+            height: fit-content;
+          }
 
-        #ironShieldsLogo {
-          width: 50%;
+          #ironShieldsLogo {
+            width: 50%;
+          }
         }
       }
     }
@@ -53,7 +57,7 @@ footer {
       color: #fff;
     }
 
-    #bandcamp{
+    #bandcamp {
       border: 0;
       width: 100%;
       height: 50px;
@@ -77,11 +81,15 @@ footer {
     .collumn-redstuff {
       .logoRow {
         a {
-          img {
-            width: 40%;
-          }
-          #ironShieldsLogo {
-            width: 30%;
+          picture {
+            display: contents;
+            
+            img {
+              width: 45%;
+            }
+            #ironShieldsLogo {
+              width: 35%;
+            }
           }
         }
       }
@@ -98,11 +106,13 @@ footer {
   footer {
     .collumn-redstuff {
       a {
-        img {
-          width: 70%;
-        }
-        #ironShieldsLogo {
-          width: 60%;
+        picture {
+          img {
+            width: 70%;
+          }
+          #ironShieldsLogo {
+            width: 60%;
+          }
         }
       }
     }
@@ -139,11 +149,13 @@ footer {
 
         .logoRow {
           a {
-            img {
-              width: 60%;
-            }
-            #ironShieldsLogo {
-              width: 50%;
+            picture {
+              img {
+                width: 60%;
+              }
+              #ironShieldsLogo {
+                width: 50%;
+              }
             }
           }
         }
@@ -189,12 +201,14 @@ footer {
       .collumn-redstuff {
         padding-left: 0px;
         a {
-          img {
-            width: 80%;
-            padding: 1em 0.5em;
-          }
-          #ironShieldsLogo {
-            width: 70%;
+          picture {
+            img {
+              width: 80%;
+              padding: 1em 0.5em;
+            }
+            #ironShieldsLogo {
+              width: 70%;
+            }
           }
         }
       }
@@ -215,12 +229,14 @@ footer {
           flex-direction: column;
 
           a {
-            img {
-              width: 100%;
-              padding: 1em 0.5em;
-            }
-            #ironShieldsLogo {
-              width: 90%;
+            picture {
+              img {
+                width: 100%;
+                padding: 1em 0.5em;
+              }
+              #ironShieldsLogo {
+                width: 90%;
+              }
             }
           }
         }

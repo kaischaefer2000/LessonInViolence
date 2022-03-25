@@ -38,9 +38,21 @@
 <body>
 
     <!-- header -->
-    <?php
-        include('../htmlFiles/header.html');
-    ?>
+    <div id="hero-background">
+        <?php
+            include('../htmlFiles/header.html');
+        ?>
+        <!-- hero -->
+        <section>
+            <div class="container-fluid">
+                <div class="row hero">
+                    <div class="col">
+                        <h1 id="main-title">A<br>b<br>o<br>u<br>t<br><br>u<br>s</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- info box -->
     <section>
@@ -113,55 +125,5 @@
     <?php
         include('../htmlFiles/footer.html');
     ?>
-
-    <script type="text/javascript" language="javascript">
-        function downloadJSAtOnload() {
-            var element = document.createElement("script");
-            element.src = "../jsFiles/layout.js";
-            document.body.appendChild(element);
-        }
-        // greater than or equal IE 9 and other modern Browser
-        if (window.addEventListener)
-            window.addEventListener("load", downloadJSAtOnload, false);
-        //  less than or equal IE 8
-        else if (window.attachEvent)
-            window.attachEvent("onload", downloadJSAtOnload);
-        // all Browser
-        else window.onload = downloadJSAtOnload; 
-
-
-        // const memberPictures = document.querySelectorAll(".member-picture")
-        // const memberPicturesActive = [
-            // {
-                // id: 0,
-                // image: "../members/Flo-zwei-live-min.jpg"
-            // },
-            // {
-                // id: 1,
-                // image: "../members/Scraper-live-min.jpg"
-            // },
-            // {
-                // id: 2,
-                // image: "../members/Flo-eins-live-min.jpg"
-            // },
-            // {
-                // id: 3,
-                // image: "../members/Roli-live-min.jpg"
-            // },
-            // {
-                // id: 4,
-                // image: "../members/Andre-live-min.jpg"
-            // }
-        // ]
-// 
-// 
-        // memberPictures.forEach((member) => {
-            // member.addEventListener("click", function(){
-                // console.log(this.id)
-            // })
-        // })
-
-    </script>
-    
 </body>
 </html>

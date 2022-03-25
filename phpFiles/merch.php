@@ -38,9 +38,21 @@
 <!-- body -->
 <body>
 
-    <?php
-        include('../htmlFiles/header.html');
-    ?>
+    <div id="hero-background">
+        <?php
+            include('../htmlFiles/header.html');
+        ?>
+        <!-- hero -->
+        <section>
+            <div class="container-fluid">
+                <div class="row hero">
+                    <div class="col">
+                        <h1 id="main-title">A<br>b<br>o<br>u<br>t<br><br>u<br>s</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
     <div id="mainContent" class="fluid-container">

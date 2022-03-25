@@ -556,7 +556,7 @@ body img {
   padding: 2em;
   height: auto;
   background-repeat: no-repeat;
-  background-image: url("../layoutPictures/Blut_6.jpg");
+  background-image: url("../avif/bloodBg.avif"), url("../layoutPictures/Blut_6.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -569,7 +569,7 @@ body img {
 /* importing other scss files */
 /* navigation menu */
 header {
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: black;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -830,15 +830,19 @@ footer .collumn-redstuff .logoRow a {
   display: contents;
 }
 
-footer .collumn-redstuff .logoRow a img {
-  width: 60%;
+footer .collumn-redstuff .logoRow a picture {
+  display: contents;
+}
+
+footer .collumn-redstuff .logoRow a picture img {
   padding: 1.8em 1em 1em;
+  width: 60%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-footer .collumn-redstuff .logoRow a #ironShieldsLogo {
+footer .collumn-redstuff .logoRow a picture #ironShieldsLogo {
   width: 50%;
 }
 
@@ -868,11 +872,14 @@ footer .collumn-social #bandcamp {
   footer .collumn-contact a {
     font-size: 1.1em;
   }
-  footer .collumn-redstuff .logoRow a img {
-    width: 40%;
+  footer .collumn-redstuff .logoRow a picture {
+    display: contents;
   }
-  footer .collumn-redstuff .logoRow a #ironShieldsLogo {
-    width: 30%;
+  footer .collumn-redstuff .logoRow a picture img {
+    width: 45%;
+  }
+  footer .collumn-redstuff .logoRow a picture #ironShieldsLogo {
+    width: 35%;
   }
   footer .collumn-social {
     padding-left: 13em;
@@ -881,10 +888,10 @@ footer .collumn-social #bandcamp {
 
 /* fixing size of redstuff img */
 @media (max-width: 965px) {
-  footer .collumn-redstuff a img {
+  footer .collumn-redstuff a picture img {
     width: 70%;
   }
-  footer .collumn-redstuff a #ironShieldsLogo {
+  footer .collumn-redstuff a picture #ironShieldsLogo {
     width: 60%;
   }
   footer .collumn-contact {
@@ -911,10 +918,10 @@ footer .collumn-social #bandcamp {
             align-items: start;
     padding-left: 4em;
   }
-  footer .footer-right .collumn-redstuff .logoRow a img {
+  footer .footer-right .collumn-redstuff .logoRow a picture img {
     width: 60%;
   }
-  footer .footer-right .collumn-redstuff .logoRow a #ironShieldsLogo {
+  footer .footer-right .collumn-redstuff .logoRow a picture #ironShieldsLogo {
     width: 50%;
   }
   footer .footer-right .collumn-social {
@@ -946,11 +953,11 @@ footer .collumn-social #bandcamp {
   footer .footer-right .collumn-redstuff {
     padding-left: 0px;
   }
-  footer .footer-right .collumn-redstuff a img {
+  footer .footer-right .collumn-redstuff a picture img {
     width: 80%;
     padding: 1em 0.5em;
   }
-  footer .footer-right .collumn-redstuff a #ironShieldsLogo {
+  footer .footer-right .collumn-redstuff a picture #ironShieldsLogo {
     width: 70%;
   }
 }
@@ -969,11 +976,11 @@ footer .collumn-social #bandcamp {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .footer-right .collumn-redstuff .logoRow a img {
+  footer .footer-right .collumn-redstuff .logoRow a picture img {
     width: 100%;
     padding: 1em 0.5em;
   }
-  footer .footer-right .collumn-redstuff .logoRow a #ironShieldsLogo {
+  footer .footer-right .collumn-redstuff .logoRow a picture #ironShieldsLogo {
     width: 90%;
   }
   footer .footer-right .footer-title {
