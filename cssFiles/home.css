@@ -1231,6 +1231,9 @@ footer .copyright p {
   #mainContent {
     padding: 1em;
   }
+  .player-container {
+    height: 188vw !important;
+  }
   .albumCover img {
     min-width: 250px;
     max-width: 250px !important;
@@ -1256,9 +1259,6 @@ footer .copyright p {
 @media (max-width: 760px) {
   .image-div {
     height: 250px !important;
-  }
-  .player-container {
-    height: 55vw !important;
   }
 }
 

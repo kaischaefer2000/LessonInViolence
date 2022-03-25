@@ -230,6 +230,10 @@
     padding: 1em;
   }
 
+  .player-container {
+    height: 188vw !important;
+  }
+
   .albumCover {
     img {
       min-width: 250px;
@@ -265,9 +269,7 @@
   .image-div {
     height: 250px !important;
   }
-  .player-container {
-    height: 55vw !important;
-  }
+  
 }
 
 @media (max-width: 450px) {
