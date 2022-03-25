@@ -4,10 +4,10 @@
 
 /* overwriting layout.css */
 #hero-background {
-  @include heroBackground(url("../headers/header-home.jpg"));
+  @include heroBackground(url("../avif/header-home.avif"), url("../headers/header-home.jpg"));
 }
 
-#main-title{
+#main-title {
   line-height: 1.5em;
   padding: 2.5vw 0px 2.5vw;
 }
@@ -45,8 +45,15 @@
     }
 
     .albumCover {
-      max-width: 500px;
-      width: 40%;
+      width: 80%;
+      #flyer {
+        width: 20vw;
+      }
+      img {
+        max-width: 500px;
+        max-height: 500px;
+        width: 100%;
+      }
     }
   }
 
@@ -151,7 +158,7 @@
     position: relative;
   }
 
-  .player-container{
+  .player-container {
     height: 170vw;
   }
 
@@ -181,25 +188,27 @@
     }
 
     .albumCover {
-      min-width: 60%;
-      margin: 2em 0px;
+      img {
+        min-width: 60%;
+        margin: 2em 0px;
+      }
     }
   }
-  .player-container{
-      height: 55vw !important;
-    }
+  .player-container {
+    height: 55vw !important;
+  }
 }
 
 @media (min-width: 786px) {
-  .player-container{
-      height: 55vw !important;
-    }
+  .player-container {
+    height: 55vw !important;
+  }
 }
 
 @media (min-width: 980px) {
-  .player-container{
-      height: 40vw !important;
-    }
+  .player-container {
+    height: 40vw !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -217,9 +226,11 @@
   }
 
   .albumCover {
+    img {
       min-width: 250px;
       max-width: 250px !important;
     }
+  }
 }
 
 @media (max-width: 450px) {
@@ -249,9 +260,9 @@
   .image-div {
     height: 250px !important;
   }
-  .player-container{
-      height: 55vw !important;
-    }
+  .player-container {
+    height: 55vw !important;
+  }
 }
 
 @media (max-width: 450px) {
@@ -263,6 +274,14 @@
 @media (min-width: 1400px) {
   .player-container {
     height: 30vw !important;
+  }
+
+  .content-box {
+    .content-devided {
+      .albumCover {
+        width: 50%;
+      }
+    }
   }
 }
 

@@ -96,7 +96,10 @@
                     Right now we are looking forward to present the album live to the crowds! <br>Next stop: <a target="blank" href="https://sw.metal-franconia.de/">Metal Franconia Festival 2022</a>.<br><br>
                     Thrash on!
                 </p>
-                <img class="albumCover" src="../flyer/Flyer_MFF.jpg" alt="Flyer Lessons in Metal 2" />
+                <picture class="albumCover">
+                    <source type="image/avif" srcset="../avif/Flyer_MFF.avif" />
+                    <img id="flyer" class="albumCover" src="../flyer/Flyer_MFF.jpg" alt="Flyer Lessons in Metal 2" />
+                </picture>
                 </div>
              </div>
 
@@ -112,7 +115,10 @@
                     Listen to our <a href="../phpFiles/media.php#mainContent" >audio samples!</a><br><br>
                     You can order our full length album "The Thrashfall of Mankind" directly from our <a href="../phpFiles/merch.php" >merchandising-page</a> or from our label <a target="blank" href="https://www.ironshieldrecords.de/contact.html">Iron Shield Records</a>.<br><br>
                 </p>
-                <img class="albumCover" src="../homeAssets/cdCover.jpg" alt="Thrashfall of Mankind Album Cover" />
+                <picture class="albumCover">
+                    <source type="image/avif" srcset="../avif/cdCover.avif" />
+                    <img src="../homeAssets/cdCover.jpg" alt="Thrashfall of Mankind Album Cover" />
+                </picture>
                 </div>
              </div>
 
@@ -128,7 +134,10 @@
                     We can't wait to blast our album "the thrashfall of mankind" through your speakers and return to the stage!<br><br>
                     Thrash Metal Mankind!
                 </p>
-                <img class="albumCover" src="../homeAssets/LIV-ironshields-deal.jpg" alt="Thrashfall of Mankind Album Cover" />
+                <picture class="albumCover">
+                    <source type="image/avif" srcset="../avif/LIV-ironshields-deal.avif" />
+                    <img class="albumCover" src="../homeAssets/LIV-ironshields-deal.jpg" alt="Thrashfall of Mankind Album Cover" />
+                </picture>
                 </div>
              </div>
     
@@ -285,7 +294,10 @@
 
             <div class="row about-us-row">
                 <div class="col-12 col-lg-6">
-                    <img src="../homeAssets/BandScaffold.jpg" alt="Lesson in Violence Band standing in front of scaffold">
+                    <picture>
+                        <source type="image/avif" srcset="../avif/BandScaffold.avif" />
+                        <img src="../homeAssets/BandScaffold.jpg" alt="Lesson in Violence Band standing in front of scaffold">
+                    </picture>
                 </div>
 
                 <div class="col-12 col-lg-6">

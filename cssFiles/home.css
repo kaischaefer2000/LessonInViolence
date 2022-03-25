@@ -1055,8 +1055,17 @@ footer .copyright p {
 }
 
 .content-box .content-devided .albumCover {
+  width: 80%;
+}
+
+.content-box .content-devided .albumCover #flyer {
+  width: 20vw;
+}
+
+.content-box .content-devided .albumCover img {
   max-width: 500px;
-  width: 40%;
+  max-height: 500px;
+  width: 100%;
 }
 
 .content-box .post-time {
@@ -1190,7 +1199,7 @@ footer .copyright p {
   .content-devided p {
     padding-right: 0em;
   }
-  .content-devided .albumCover {
+  .content-devided .albumCover img {
     min-width: 60%;
     margin: 2em 0px;
   }
@@ -1222,7 +1231,7 @@ footer .copyright p {
   #mainContent {
     padding: 1em;
   }
-  .albumCover {
+  .albumCover img {
     min-width: 250px;
     max-width: 250px !important;
   }
@@ -1262,6 +1271,9 @@ footer .copyright p {
 @media (min-width: 1400px) {
   .player-container {
     height: 30vw !important;
+  }
+  .content-box .content-devided .albumCover {
+    width: 50%;
   }
 }
 
