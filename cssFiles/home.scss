@@ -4,7 +4,12 @@
 
 /* overwriting layout.css */
 #hero-background {
-  @include heroBackground(url("../avif/header-home.avif"), url("../headers/header-home.jpg"));
+  background-repeat: no-repeat;
+  background-image: url("../avif/header-home.avif"), url("../headers/header-home.jpg");;
+  background-position: center top;
+  background-size: 100%;
+  height: auto;
+  width: auto;
 }
 
 #main-title {

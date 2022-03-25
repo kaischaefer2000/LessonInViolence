@@ -1005,7 +1005,7 @@ footer .copyright p {
 /* overwriting layout.css */
 #hero-background {
   background-repeat: no-repeat;
-  background-image: url("../headers/header-home.jpg");
+  background-image: url("../avif/header-home.avif"), url("../headers/header-home.jpg");
   background-position: center top;
   background-size: 100%;
   height: auto;

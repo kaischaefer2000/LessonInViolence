@@ -245,7 +245,10 @@
                 <div class="col-md-4 show-preview">
                 <a href="../phpFiles/live.php">
                 <div class="image-div">
-                    <img src="../statti_pictures/Lesson in Violence_Statti_13.jpg" alt="lesson in violence concert at stattbahnhof schweinfurt">
+                    <picture>
+                        <source type="image/avif" srcset="../avif/LessoninViolence_Statti_13.avif" />
+                        <img src="../statti_pictures/Lesson in Violence_Statti_13.jpg" alt="lesson in violence concert at stattbahnhof schweinfurt">
+                    </picture>
                 </div>
                 <div class="padding-div">
                     <p class="live-date">09.04.2022</p>
@@ -258,7 +261,10 @@
                 <div class="col-md-4 show-preview">
                 <a href="../phpFiles/live.php">
                 <div class="image-div">
-                    <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_9-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt">
+                    <picture>
+                        <source type="image/avif" srcset="../avif/LessoninViolence_Jugendhaus_2019_9-min.avif" />
+                        <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_9-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt">
+                    </picture>
                 </div>
                     <div class="padding-div">
                         <p class="live-date">02.09.2022</p>
@@ -271,7 +277,10 @@
                 <div class="col-md-4 show-preview">
                 <a href="../phpFiles/live.php">
                 <div class="image-div">
-                    <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt">
+                    <picture>
+                        <source type="image/avif" srcset="../avif/LessoninViolence_Jugendhaus_2019_7-min.avif" />
+                        <img src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg" alt="lesson in violence concert at jugendhaus schweinfurt">
+                    </picture>
                 </div>    
                     <div class="padding-div">
                         <p class="live-date">17.09.2022</p>
@@ -342,7 +351,10 @@
                     <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_19.jpg" alt="lesson in violence concert at the goregonzola birthday bash"/>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_2.jpg" alt="lesson in violence concert at the goregonzola birthday bash"/>
+                    <picture>
+                        <source type="image/avif" srcset="../avif/Lesson_in_violence_birthday_bash_2.avif" />
+                        <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_2.jpg" alt="lesson in violence concert at the goregonzola birthday bash"/>
+                    </picture>
                 </div>
 
                 <button class="cta-media" onclick="document.location='../phpFiles/media.php'">View all pictures</button>
