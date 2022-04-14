@@ -63,9 +63,9 @@
                 </div>
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
-                        <span>09.04.2022</span><br>
-                        <span>Metal Franconia Festival</span><br>
-                        Geiselwind / Musichall Strohofer
+                        <span>02.07.2022</span><br>
+                        <span translate="no">Birthday Moshpit</span><br>
+                        Obervolkach
                     </a>
                 </div>
             </div>
@@ -80,6 +80,43 @@
                 <h2>Experience us live!</h2>
             </div>
         </div>
+
+        <!-- Hidden Gig -->
+        <section>
+            <div class="row accordion-item show">
+                <div class="col-11">
+                    <p>15.10.2022<p>
+                    <p class="show-name">Kopf & Kragen</p>
+                </div>
+                <div class="col-1">
+                    <i class="fa fa-chevron-down arrow"></i>
+                </div>
+            </div>
+
+            <div class="row accordion-item details">
+                <div class="col">
+                    <div class="fluid-container">
+                        <div class="row details-content">
+                            <div class="col-5 col-sm-3 col-lg-2">
+                                <p>Location:</p>
+                            </div>
+                            <div class="col-7 col-sm-9 col-lg-10">
+                                <p>Fürth / Kopf & Kragen</p>
+                            </div>
+                        </div>
+
+                        <div class="row details-content">
+                            <div class="col-5 col-sm-3 col-lg-2">
+                                <p translate="no">Bands:</p>
+                            </div>
+                            <div class="col-7 col-sm-9 col-lg-10">
+                                <p translate="no">Lesson in Violence, Hateful Agony, Entera, to be announced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Lessons in Metal 2 -->
         <section>
@@ -127,49 +164,6 @@
             </div>
         </section>
 
-        <!-- Rockverband goes Rockclub -->
-        <section>
-            <div class="row accordion-item show">
-                <div class="col-11">
-                    <p>17.09.2022<p>
-                    <p class="show-name">Rockverband goes Rockclub Nordbayern</p>
-                </div>
-                <div class="col-1">
-                    <i class="fa fa-chevron-down arrow"></i>
-                </div>
-            </div>
-
-            <div class="row accordion-item details">
-                <div class="col">
-                    <div class="fluid-container">
-                        <div class="row details-content">
-                            <div class="col-5 col-sm-3 col-lg-2">
-                                <p>Location:</p>
-                            </div>
-                            <div class="col-7 col-sm-9 col-lg-10">
-                                <p>Selb / Rockclub</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content">
-                            <div class="col-5 col-sm-3 col-lg-2">
-                                <p translate="no">Bands:</p>
-                            </div>
-                            <div class="col-7 col-sm-9 col-lg-10">
-                                <p translate="no">Lesson in Violence, Broken Circle, Defuse My Hate, Horny Arbiter</p>
-                            </div>
-                        </div>
-
-                        <div class="row details-content">
-                            <div class="col">
-                                <a rel="nofollow" href="https://rockclub-nordbayern.de/" target="blank"><u>More details</u></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
          <!-- Infernum meets Porkcore Fistevil Festival -->
          <section>
             <div class="row accordion-item show">
@@ -199,7 +193,7 @@
                                 <p translate="no">Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p translate="no">Lesson in Violence, to be announced</p>
+                                <p translate="no">Lesson in Violence, Ektomorf, Debauchery, Crisix, Cypecore</p>
                             </div>
                         </div>
 
@@ -251,7 +245,7 @@
                                 <p>Bands:</p>
                             </div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <p translate="no">Lesson in Violence, Shredhammer, to be announced</p>
+                                <p translate="no">Lesson in Violence, Shredhammer, Bastard`s Breed, Absorb, Goregonzola</p>
                             </div>
                         </div>
                     </div>
@@ -261,13 +255,13 @@
 
         <!-- Metal Franconia Festival -->
         <section>
-            <div class="row accordion-item show">
+            <div class="row accordion-item show over">
                 <div class="col-11">
                     <p>09.04.2022<p>
                     <p class="show-name">Metal Franconia Festival</p>
                 </div>
                 <div class="col-1">
-                <i class="fa fa-chevron-down arrow"></i>
+                <i class="fa fa-chevron-down arrow over"></i>
                 </div>
             </div>
 

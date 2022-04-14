@@ -132,59 +132,9 @@
             </div>
         </div>
 
-        <!-- Jugendhaus 2019 -->
-        <section>
-            <h2 id="jugendhaus2019" class="lightbox-heading">
-                Jugendhaus 2019
-            </h2>
         
         
-            <div class="row">
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_1-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_2-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_3-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_4-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_5-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_6-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_8-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_9-min.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_10-min.jpg" data-gallery="myGal" />
-                </div>
-
-            </div>   
-        </section> 
         
-
         <!-- Statti 2020 -->
         <section>
             <h2 id="stattbahnhof2020" class="lightbox-heading">
@@ -251,8 +201,60 @@
 
             </div>   
         </section>
+
+        <!-- Jugendhaus 2019 -->
+        <section>
+            <h2 id="jugendhaus2019" class="lightbox-heading">
+                Jugendhaus 2019
+            </h2>
         
-        <!-- Birthday Bash 2019 -->
+        
+            <div class="row">
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_1-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_2-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_3-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_4-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_5-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_6-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_7-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_8-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_9-min.jpg" data-gallery="myGal" />
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_10-min.jpg" data-gallery="myGal" />
+                </div>
+
+            </div>   
+        </section> 
+
+         <!-- Birthday Bash 2019 -->
         <section>
             <h2 id="birthdayBash2021" class="lightbox-heading" translate="no">
                 Birthday Bash 2019
@@ -265,15 +267,7 @@
                 </div>
 
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_2.jpg" data-gallery="myGal" />
-                </div>
-                
-                <div class="col-6 col-sm-4 col-md-3">
                     <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_3.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_4.jpg" data-gallery="myGal" />
                 </div>
 
                 <div class="col-6 col-sm-4 col-md-3">
@@ -317,15 +311,7 @@
                 </div>
 
                 <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_15.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
                     <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_16.jpg" data-gallery="myGal" />
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-3">
-                    <img class="mklbItem" src="../birthdayBash_pictures/Lesson_in_violence_birthday_bash_17.jpg" data-gallery="myGal" />
                 </div>
 
                 <div class="col-6 col-sm-4 col-md-3">

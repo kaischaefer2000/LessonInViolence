@@ -626,7 +626,7 @@ section.imageContainer {
 
 @media (min-width: 1650px) {
   .player-container {
-    height: 60vw;
+    height: 30vw !important;
   }
   .container {
     height: 25vw;

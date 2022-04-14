@@ -67,9 +67,9 @@
                 </div>
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
-                        <span>09.04.2022</span><br>
-                        <span>Metal Franconia Festival</span><br>
-                        Geiselwind / Musichall Strohofer
+                        <span>02.07.2022</span><br>
+                        <span translate="no">Birthday Moshpit</span><br>
+                        Obervolkach
                     </a>
                 </div>
             </div>
@@ -85,6 +85,24 @@
                     <h2>News from<span translate="no"> Lesson in Violence</span></h2>
                 </div>
             </div>
+
+            <div class="dark-content-box content-box">
+                <div style="display: flex; justify-content: flex-end">
+                 <p class="post-time"><i>14.04.2022</i></p>
+                </div> 
+                 <div class="content-devided">
+                 <p>
+                    Hello Folks,
+                    <br><br>we got some news for you. 'Lesson In Violence' has a new man on the guitar. His name is 'Michael Helbig' and he has always been a good friend and a supporter of our music. One of  the main reason for recruiting him is that he is as much a thrash-enthusiast as the rest of 'Lesson In Violence'. He first joined the stage with us on the 'Metal Franconia Festival 2022' and did a really awesome job.
+                    <br><br>We also want to thank our former guitar-hero André for the good times we had together and all the efforts he brought into 'Lesson In Violence' and the first album 'The Thrashfall of Mankind'. “This is sure your baby too!”
+                    <br><br>We decided to go different ways because we faced some different focuses and visions of what the future will hold. Dear André, we wish you all the best for your projects and 'Lesson In Violence' is sure to meet up with you somewhere in time.
+                </p>
+                <picture class="albumCover">
+                    <source type="image/avif" srcset="../avif/MichiLive.avif" />
+                    <img id="flyer" class="albumCover" src="../members/MichiLive.jpg" alt="Michi member of Lesson in Violence" />
+                </picture>
+                </div>
+             </div>
 
             <div class="light-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">

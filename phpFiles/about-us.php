@@ -63,9 +63,9 @@
                 </div>
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
-                        <span>09.04.2022</span><br>
-                        <span translate="no">Metal Franconia Festival</span><br>
-                        Geiselwind / Musichall Strohofer
+                        <span>02.07.2022</span><br>
+                        <span translate="no">Birthday Moshpit</span><br>
+                        Obervolkach
                     </a>
                 </div>
             </div>
@@ -112,8 +112,8 @@
                     <p>Florian Helbig<br><span>Guitar, Backvocals</span></p>
                 </div>
                 <div class="col-6 col-md ml-0 mr-0 ml-lg-1 mr-lg-1">
-                    <div id="andre" class="member-picture"></div>
-                    <p>Andre Loesch<br><span>Guitar</span></p>
+                    <div id="michi" class="member-picture"></div>
+                    <p>Michael Helbig<br><span>Guitar</span></p>
                 </div>
             </div>
     	</div>
