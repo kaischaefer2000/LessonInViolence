@@ -683,7 +683,7 @@ footer .copyright p {
 /* overwriting layout.css */
 #hero-background {
   background-repeat: no-repeat;
-  background-image: url("../headers/header-live-min.jpg");
+  background-image: url("../headers/MFF-concert-header.jpg");
   background-position: center top;
   background-size: 100%;
   height: auto;
