@@ -66,8 +66,9 @@
             
                 <div class="col">
                     <ul>
-                        <li><a href="#jugendhaus2019">Jugendhaus 2019</a></li>
-                        <li><a href="#stattbahnhof2020">Stattbahnhof 2020</a></li>
+                        <li><a href="#mff2022">Metal Frankonia 2022</a></li>
+                        <li><a href="#jugendhaus2019">Lessons in Metal 1 2019</a></li>
+                        <li><a href="#stattbahnhof2020">Goregonzola Birthday Bash 2020</a></li>
                         <li><a href="#birthdayBash2021" translate="no">Birthday Bash 2019</a></li>
                         <li><a href="#bandPictures">Band pictures</a></li>
                         <li><a href="#videoSection">Videos</a></li>
@@ -132,13 +133,82 @@
             </div>
         </div>
 
+        <!-- MFF 2022 -->
+        <section>
+            <h2 id="mff2022" class="lightbox-heading">
+                Metal Frankonia Festival 2022
+            </h2>
+        
+            <div class="row">
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF4-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF3-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF5-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF9-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF20-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF11-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF12-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF15-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF1-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF2-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF6-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF7-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF13-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF14-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF16-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF17-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF18-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF19-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF8-min.jpg" data-gallery="myGal" />
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <img class="mklbItem" src="../mff_pictures/MFF10-min.jpg" data-gallery="myGal" />
+                </div>
+            </div>   
+        </section>
         
         
-        
-        <!-- Statti 2020 -->
+        <!-- Goregonzola Birthday Bash 2020 -->
         <section>
             <h2 id="stattbahnhof2020" class="lightbox-heading">
-                Stattbahnhof 2020
+                Goregonzola Birthday Bash 2020
             </h2>
         
             <div class="row">
@@ -202,10 +272,10 @@
             </div>   
         </section>
 
-        <!-- Jugendhaus 2019 -->
+        <!-- Lessons in Metal 1 2019 -->
         <section>
             <h2 id="jugendhaus2019" class="lightbox-heading">
-                Jugendhaus 2019
+                Lessons in Metal 1 2019
             </h2>
         
         
