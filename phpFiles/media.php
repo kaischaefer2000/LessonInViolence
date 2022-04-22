@@ -69,7 +69,7 @@
                         <li><a href="#mff2022">Metal Frankonia 2022</a></li>
                         <li><a href="#jugendhaus2019">Lessons in Metal 1 2019</a></li>
                         <li><a href="#stattbahnhof2020">Goregonzola Birthday Bash 2020</a></li>
-                        <li><a href="#birthdayBash2021" translate="no">Birthday Bash 2019</a></li>
+                        <li><a href="#birthdayBash2021" translate="no">Birthday Moshpit 2019</a></li>
                         <li><a href="#bandPictures">Band pictures</a></li>
                         <li><a href="#videoSection">Videos</a></li>
                         <li><a href="#demoTracks">Audio samples</a></li>
@@ -324,10 +324,10 @@
             </div>   
         </section> 
 
-         <!-- Birthday Bash 2019 -->
+         <!-- Birthday Moshpit 2019 -->
         <section>
             <h2 id="birthdayBash2021" class="lightbox-heading" translate="no">
-                Birthday Bash 2019
+                Birthday Moshpit 2019
             </h2>
         
             <div class="row">
