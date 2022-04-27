@@ -64,8 +64,7 @@
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
                         <span>02.07.2022</span><br>
-                        <span translate="no">Birthday Moshpit</span><br>
-                        Obervolkach
+                        <span translate="no">Birthday Moshpit</span>
                     </a>
                 </div>
             </div>

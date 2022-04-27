@@ -64,8 +64,7 @@
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
                         <span>02.07.2022</span><br>
-                        <span translate="no">Birthday Moshpit</span><br>
-                        Obervolkach
+                        <span translate="no">Birthday Moshpit</span>
                     </a>
                 </div>
             </div>
@@ -110,7 +109,7 @@
                                 <p translate="no">Bands:</p>
                             </div>
                             <div class="col-7 col-sm-9 col-lg-10">
-                                <p translate="no">Lesson in Violence, Hateful Agony, Entera, to be announced</p>
+                                <p translate="no">Lesson in Violence, Hateful Agony, Entera</p>
                             </div>
                         </div>
                     </div>
