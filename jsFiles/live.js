@@ -1,5 +1,5 @@
 // TODO: refactor !!!!!
-
+console.log('HI')
 var acc = document.getElementsByClassName("show");
 var i;
 
@@ -76,6 +76,21 @@ function scaleImg4() {
   }
 }
 
+// click event for Birthday Moshpit
+img6 = document.getElementById("MoshpitFlyer");
+
+function scaleImg6() {
+  if (img6.classList.contains("bigImg")) {
+    img6.classList.remove("bigImg");
+    img6.style.width = "15vw";
+    img6.style.transition = "width 0.8s ease-in-out";
+  } else {
+    img6.style.width = "30vw";
+    img6.style.transition = "width 0.8s ease-in-out";
+    img6.classList.add("bigImg");
+  }
+}
+
 // click event only when screen is big enough
 function myFunction(x) {
   if (x.matches) {
@@ -91,6 +106,9 @@ function myFunction(x) {
     document
       .getElementById("InfernumFlyer")
       .addEventListener("click", scaleImg5);
+    document
+      .getElementById("MoshpitFlyer")
+      .addEventListener("click", scaleImg6);
   } else {
   }
 }

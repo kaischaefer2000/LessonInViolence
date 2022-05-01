@@ -247,6 +247,15 @@
                                 <p translate="no">Lesson in Violence, Shredhammer, Bastard`s Breed, Absorb, Goregonzola</p>
                             </div>
                         </div>
+
+                        <div class="row details-content flyer-row">
+                            <div class="col-12 col-sm-3 col-lg-2">
+                                <p>Flyer:</p>
+                            </div>
+                            <div class="col-12 col-sm-9 col-lg-10">
+                                <img id="MoshpitFlyer" src="../flyer/FylerBirthdayMoshpit.jpeg" alt="Birthday Moshpit Flyer">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
