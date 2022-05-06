@@ -60,6 +60,15 @@
         width: 100%;
       }
     }
+    .castingPic{
+      width: 100%;
+      img {
+        padding: 7px 0px;
+        max-width: 500px;
+        max-height: 500px;
+        width: 20vw;
+      }
+    }
   }
 
   .post-time {
@@ -247,18 +256,18 @@
     padding-left: 0em;
     margin: -9em 0em -9em 0em;
   }
-
+  
   .TMM-right-side {
     font-size: 1.1rem;
   }
-
+  
   .content-box > p {
     font-size: 1.1rem;
   }
 
   // #mainContent{
-  //     margin: 0em -1em;
-  // }
+    //     margin: 0em -1em;
+    // }
 
   .heading {
     padding-top: 6em;
@@ -270,6 +279,12 @@
     height: 250px !important;
   }
   
+  .castingPic {
+    img {
+      min-width: 250px;
+      max-width: 250px !important;
+    }
+  }
 }
 
 @media (max-width: 450px) {
@@ -287,6 +302,11 @@
     .content-devided {
       .albumCover {
         width: 50%;
+      }
+      .castingPic {
+        img {
+          width: 15vw;
+        }
       }
     }
   }

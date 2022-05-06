@@ -1068,6 +1068,17 @@ footer .copyright p {
   width: 100%;
 }
 
+.content-box .content-devided .castingPic {
+  width: 100%;
+}
+
+.content-box .content-devided .castingPic img {
+  padding: 7px 0px;
+  max-width: 500px;
+  max-height: 500px;
+  width: 20vw;
+}
+
 .content-box .post-time {
   float: right;
 }
@@ -1260,6 +1271,10 @@ footer .copyright p {
   .image-div {
     height: 250px !important;
   }
+  .castingPic img {
+    min-width: 250px;
+    max-width: 250px !important;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1274,6 +1289,9 @@ footer .copyright p {
   }
   .content-box .content-devided .albumCover {
     width: 50%;
+  }
+  .content-box .content-devided .castingPic img {
+    width: 15vw;
   }
 }
 

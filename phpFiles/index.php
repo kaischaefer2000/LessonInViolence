@@ -85,6 +85,42 @@
                 </div>
             </div>
 
+            <div class="light-content-box content-box">
+                <div style="display: flex; justify-content: flex-end">
+                 <p class="post-time"><i>06.05.2022</i></p>
+                </div> 
+                 <div class="content-devided">
+                 <p>
+                    We need you!
+                    <br>'Lesson In Violence' is planning to create a music video for the album 'The Thrashfall Of Mankind' and you shall be the the main actors!
+                    <br>So if you want to be part of it, just send us your most thrashy selfies. No matter if 'horns up in the bathtub' or with a beer in or below your camping-chair, headbanging or hugging the toilet. Feel free!
+                    <br>We need about 300 pics to be ready, so don't hold yourselfes back! Best send your pics in landscape format and please take note, that we can't use bandpics. Please make sure, that there is only yourself to be seen in the pictures.
+                    <br>So if you're in, send your pictures to <a href="mailto:casting@lessoninviolence.com">casting@lessoninviolence.com</a>.
+                    <br>To thank you, we will give you our next single before the second album will be released.
+                    <br>Your mail will be answered with further notice for privacy terms etc.
+                    <br>We added some examples to give you some inspiration!
+                </p>
+                <div style="display:flex; flex-direction:column">
+                    <picture class="castingPic">
+                        <source type="image/avif" srcset="../avif/castingPicture1.avif" />
+                        <img class="albumCover" src="../homeAssests/castingPicture1.jpg" alt="Casting picture example for music video" />
+                    </picture>
+                    <picture class="castingPic">
+                        <source type="image/avif" srcset="../avif/castingPicture2.avif" />
+                        <img class="albumCover" src="../homeAssests/castingPicture2.jpg" alt="Casting picture example for music video" />
+                    </picture>
+                    <picture class="castingPic">
+                        <source type="image/avif" srcset="../avif/castingPicture3.avif" />
+                        <img class="albumCover" src="../homeAssests/castingPicture3.jpg" alt="Casting picture example for music video" />
+                    </picture>
+                    <picture class="castingPic">
+                        <source type="image/avif" srcset="../avif/castingPicture4.avif" />
+                        <img class="albumCover" src="../homeAssests/castingPicture4.jpg" alt="Casting picture example for music video" />
+                    </picture>
+                </div>
+                </div>
+             </div>
+
             <div class="dark-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">
                  <p class="post-time"><i>14.04.2022</i></p>
