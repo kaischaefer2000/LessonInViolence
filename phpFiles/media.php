@@ -87,9 +87,9 @@
                 <!-- music player -->
                     <div class="row player-container">
                         <?php
-            	            include('../htmlFiles/TMMSample.html');
-            	            include('../htmlFiles/LIVSample.html');
-            	            include('../htmlFiles/LostInYourselfSample.html');
+            	            include('../htmlFiles/TMMFullVersion.html');
+            	            include('../htmlFiles/LIVFullVersion.html');
+            	            include('../htmlFiles/LostInYourselfFullVersion.html');
             	        ?>
                     </div>
                     <div class="row streaming-links">

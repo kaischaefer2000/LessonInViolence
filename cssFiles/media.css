@@ -625,9 +625,6 @@ section.imageContainer {
 }
 
 @media (min-width: 1650px) {
-  .player-container {
-    height: 30vw !important;
-  }
   .container {
     height: 25vw;
     width: 19vw;
@@ -1350,6 +1347,16 @@ h2 {
 @media (max-width: 450px) {
   #videoSection img {
     width: 100%;
+  }
+}
+
+@media (min-width: 1650px) {
+  .player-container {
+    height: 30vw !important;
+  }
+  .container {
+    height: 25vw;
+    width: 19vw;
   }
 }
 /*# sourceMappingURL=media.css.map */
