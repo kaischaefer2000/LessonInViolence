@@ -85,6 +85,24 @@
                 </div>
             </div>
 
+            <div class="dark-content-box content-box">
+                <div style="display: flex; justify-content: flex-end">
+                 <p class="post-time"><i>30.06.2022</i></p>
+                </div> 
+                 <div class="content-devided">
+                 <p>
+                    Prepare for attack!
+                    <br><br>On October 2nd of this year, there will be the most thrashful event of the year!
+                    <br><br>Join Lesson In Violence, Hateful Agony, REACTORY and Godslave when they meet up to crush the Stattbahnhof Schweinfurt!
+                    <br><br>Grab your <a href="./merch.php">tickets</a> and also check on our other <a href="./merch.php">merch-stuff</a>!
+                </p>
+                <picture id="LIM2-picture" class="albumCover">
+                    <source type="image/avif" srcset="../avif/lessons-in-metal-2-flyer.avif" />
+                    <img id="flyer" class="albumCover" src="../flyer/lessons-in-metal-2-flyer-min.jpg" alt="Flyer of Lessons in Metal 2" />
+                </picture>
+                </div>
+            </div>
+
             <div class="light-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">
                  <p class="post-time"><i>06.05.2022</i></p>
@@ -137,7 +155,7 @@
                     <img id="flyer" class="albumCover" src="../members/MichiLive.jpg" alt="Michi member of Lesson in Violence" />
                 </picture>
                 </div>
-             </div>
+            </div>
 
             <div class="light-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">

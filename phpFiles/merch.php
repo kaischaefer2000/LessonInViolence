@@ -319,14 +319,6 @@
                                 </div>
                             </div>
 
-                            <div class="details-column">
-                                <div style="width: 30%">
-                                    <p>Note:</p>
-                                </div>
-                                <div style="width: 70%">
-                                    <p>The shipping starts at 31.03<br>
-                                </div>
-                            </div>
                         </div>
                         
                         <a href="mailto:order@lessoninviolence.com" class="orderBtn" translate="no">Order !</a>

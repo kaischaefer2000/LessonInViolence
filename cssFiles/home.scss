@@ -285,6 +285,9 @@
       max-width: 250px !important;
     }
   }
+    #LIM2-picture {
+      text-align: center !important;
+    }
 }
 
 @media (max-width: 450px) {
@@ -323,4 +326,8 @@
     max-width: 900px !important;
     margin-left: auto;
   }
+}
+
+#LIM2-picture{
+text-align: end;
 }

@@ -1272,6 +1272,9 @@ footer .copyright p {
     min-width: 250px;
     max-width: 250px !important;
   }
+  #LIM2-picture {
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1303,5 +1306,9 @@ footer .copyright p {
     max-width: 900px !important;
     margin-left: auto;
   }
+}
+
+#LIM2-picture {
+  text-align: end;
 }
 /*# sourceMappingURL=home.css.map */
