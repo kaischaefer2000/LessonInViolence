@@ -217,13 +217,13 @@
 
         <!-- Birthday Moshpit(private party) 2022 -->
         <section>
-            <div class="row accordion-item show ">
+            <div class="row accordion-item show over">
                 <div class="col-11">
                     <p>02.07.2022<p>
                     <p class="show-name" translate="no">Birthday Moshpit (private party)</p>
                 </div>
                 <div class="col-1">
-                <i class="fa fa-chevron-down arrow"></i>
+                <i class="fa fa-chevron-down arrow over"></i>
                 </div>
             </div>
 
