@@ -85,6 +85,18 @@
                 </div>
             </div>
 
+            <div class="light-content-box content-box">
+                <div style="display: flex; justify-content: flex-end">
+                 <p class="post-time"><i>17.08.2022</i></p>
+                </div> 
+                 <div class="content-devided">
+                 <p>
+                    Thank you metalheads,<br>
+                    it was amazing how many of you sent us some pics to create <a href="https://www.youtube.com/watch?v=2Y81kLYrfS0" target="blank">our new video</a>! We really appreciate your support! It's not a typical lyric-video how everyone else does it these days. We made a picture-video and we definitely don’t take things too serious! Many of the pics you sent were from earlier times so we tried to capture this spirit with the style of our video and kept it intentionally old-fashioned and different. So please enjoy our <a href="https://www.youtube.com/watch?v=2Y81kLYrfS0" target="blank">pic-vid spiced with lyrics</a>!
+                </p>
+                </div>
+             </div>
+
             <div class="dark-content-box content-box">
                 <div style="display: flex; justify-content: flex-end">
                  <p class="post-time"><i>30.06.2022</i></p>
@@ -96,10 +108,6 @@
                     <br><br>Join Lesson In Violence, Hateful Agony, REACTORY and Godslave when they meet up to crush the Stattbahnhof Schweinfurt!
                     <br><br>Grab your <a href="./merch.php">tickets</a> and also check on our other <a href="./merch.php">merch-stuff</a>!
                 </p>
-                <picture id="LIM2-picture" class="albumCover">
-                    <source type="image/avif" srcset="../avif/lessons-in-metal-2-flyer.avif" />
-                    <img id="flyer" class="albumCover" src="../flyer/lessons-in-metal-2-flyer-min.jpg" alt="Flyer of Lessons in Metal 2" />
-                </picture>
                 </div>
             </div>
 

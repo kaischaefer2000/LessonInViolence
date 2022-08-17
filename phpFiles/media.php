@@ -65,12 +65,8 @@
                 </div>
             
                 <div class="col">
-                    <ul>
-                        <li><a href="#mff2022">Metal Frankonia 2022</a></li>
-                        <li><a href="#jugendhaus2019">Lessons in Metal 1 2019</a></li>
-                        <li><a href="#stattbahnhof2020">Goregonzola Birthday Bash 2020</a></li>
-                        <li><a href="#birthdayBash2021" translate="no">Birthday Moshpit 2019</a></li>
-                        <li><a href="#bandPictures">Band pictures</a></li>
+                    <ul style="padding-left: 0px">
+                        <li><a href="#live-pictures">Live picture</a></li>
                         <li><a href="#videoSection">Videos</a></li>
                         <li><a href="#demoTracks">Audio samples</a></li>
                     </ul>
@@ -133,11 +129,13 @@
             </div>
         </div>
 
+        <h2 id="live-pictures" class="heading" translate="no">Live pictures</h2>
+
         <!-- MFF 2022 -->
-        <section>
-            <h2 id="mff2022" class="lightbox-heading">
+        <section class="live-pics">
+            <h3 id="mff2022" class="lightbox-heading">
                 Metal Frankonia Festival 2022
-            </h2>
+            </h3>
         
             <div class="row">
 
@@ -204,12 +202,11 @@
             </div>   
         </section>
         
-        
         <!-- Goregonzola Birthday Bash 2020 -->
-        <section>
-            <h2 id="stattbahnhof2020" class="lightbox-heading">
+        <section class="live-pics">
+            <h3 id="stattbahnhof2020" class="lightbox-heading">
                 Goregonzola Birthday Bash 2020
-            </h2>
+            </h3>
         
             <div class="row">
 
@@ -273,10 +270,10 @@
         </section>
 
         <!-- Lessons in Metal 1 2019 -->
-        <section>
-            <h2 id="jugendhaus2019" class="lightbox-heading">
+        <section class="live-pics">
+            <h3 id="jugendhaus2019" class="lightbox-heading">
                 Lessons in Metal 1 2019
-            </h2>
+            </h3>
         
         
             <div class="row">
@@ -325,10 +322,10 @@
         </section> 
 
          <!-- Birthday Moshpit 2019 -->
-        <section>
-            <h2 id="birthdayBash2021" class="lightbox-heading" translate="no">
+        <section class="live-pics">
+            <h3 id="birthdayBash2021" class="lightbox-heading" translate="no">
                 Birthday Moshpit 2019
-            </h2>
+            </h3>
         
             <div class="row">
 
@@ -400,10 +397,10 @@
         </section>
 
         <!-- Band pictures -->
-        <section>
-            <h2 id="bandPictures" class="lightbox-heading">
+        <section class="live-pics">
+            <h3 id="bandPictures" class="lightbox-heading">
                 Band pictures
-            </h2>
+            </h3>
         
             <div class="row">
 
@@ -428,30 +425,45 @@
 
         <!-- Videos -->
         <section>
-        
-            <div class="row" id="videoSection">
 
-                <div class="col-12 col-md-6">
+            <h2 class="lightbox-heading">
+                Videos
+            </h2>
+        
+            <div id="videoSection" class="row" >
+
+                <div class="col-12 col-md-4">
                     
-                    <h2>
+                    <h3>
                         Thrash Metal Mankind musicvideo
-                    </h2>
+                    </h3>
 
                     <img class="mklbItem videoTmb" src="../videos/Lesson_in_violence_tmm-tmb.jpg" data-video-src="../videos/Thrash Metal Mankind.mp4" />
 
                 </div>
 
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4 vidWithPadding">
                     
-                    <h2 translate="no">
-                        Gig Goregonzola Birthday Bash
-                    </h2>
+                    <h3 translate="no">
+                        Lesson in Violence - Social Madness
+                    </h3>
                     
-                    <a href="#" class="mklbItem" data-youtube-id="ah10Ml4s1Tc"><img class="videoTmb" src="../videos/Birthday_bash-gig_tmb.jpg"></a>
+                    <a class="mklbItem" data-youtube-id="2Y81kLYrfS0"><img class="videoTmb" src="../videos/Lesson_in_violence_social_madness-tmb.jpg"></a>
                     
                 </div>
 
-            </div>   
+                <div class="col-12 col-md-4 vidWithPadding">
+                    
+                    <h3 translate="no">
+                        Gig Goregonzola Birthday Bash
+                    </h3>
+                    
+                    <a class="mklbItem" data-youtube-id="ah10Ml4s1Tc"><img class="videoTmb" src="../videos/Birthday_bash-gig_tmb.jpg"></a>
+                    
+                </div>
+
+            </div>  
+             
         </section>
     </div>
     </div>

@@ -1225,6 +1225,19 @@ h2 {
   padding-top: 4em;
 }
 
+h2:last-of-type {
+  padding-top: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+  padding-top: 1em;
+}
+
+.live-pics {
+  margin-bottom: 4em;
+}
+
 .streaming-links {
   padding-left: 2em;
   display: -webkit-box;
@@ -1235,6 +1248,7 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .streaming-links .streaming-btn {
@@ -1282,6 +1296,9 @@ h2 {
   #main-title {
     visibility: hidden;
   }
+  #videoSection > *:not(:first-child) {
+    padding-top: 4em;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1326,8 +1343,8 @@ h2 {
 }
 
 /* styling Video Section */
-#videoSection h2 {
-  font-size: 1.6em;
+#videoSection h3 {
+  font-size: 1.3em;
 }
 
 #videoSection a > img {
@@ -1339,8 +1356,8 @@ h2 {
 }
 
 @media (max-width: 926px) {
-  #videoSection h2 {
-    font-size: 1.25em;
+  #videoSection h3 {
+    font-size: 1.2em;
   }
 }
 
