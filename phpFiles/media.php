@@ -66,7 +66,7 @@
             
                 <div class="col">
                     <ul style="padding-left: 0px">
-                        <li><a href="#live-pictures">Live picture</a></li>
+                        <li><a href="#live-pictures">Live pictures</a></li>
                         <li><a href="#videoSection">Videos</a></li>
                         <li><a href="#demoTracks">Audio samples</a></li>
                     </ul>
