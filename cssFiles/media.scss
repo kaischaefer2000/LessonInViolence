@@ -98,6 +98,7 @@ h3 {
 
 /* info box styling */
 #info-box {
+  z-index: 1000;
   div:first-child {
     padding: 2em;
   }

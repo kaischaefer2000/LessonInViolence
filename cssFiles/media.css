@@ -1314,6 +1314,10 @@ h3 {
 }
 
 /* info box styling */
+#info-box {
+  z-index: 1000;
+}
+
 #info-box div:first-child {
   padding: 2em;
 }
