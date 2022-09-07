@@ -63,8 +63,8 @@
                 </div>
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
-                        <span>03.09.2022</span><br>
-                        <span translate="no">Infernum meets Porkcore Fistevil Festival</span>
+                        <span>02.10.2022</span><br>
+                        <span translate="no">Lessons in Metal 2</span>
                     </a>
                 </div>
             </div>
@@ -165,13 +165,13 @@
 
          <!-- Infernum meets Porkcore Fistevil Festival -->
          <section>
-            <div class="row accordion-item show">
+            <div class="row accordion-item show over">
                 <div class="col-11">
                     <p>03.09.2022<p>
                     <p class="show-name" translate="no">Infernum meets Porkcore Fistevil Festival</p>
                 </div>
                 <div class="col-1">
-                <i class="fa fa-chevron-down arrow"></i>
+                <i class="fa fa-chevron-down arrow over"></i>
                 </div>
             </div>
 

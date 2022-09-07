@@ -67,8 +67,8 @@
                 </div>
                 <div class="col-6">
                     <a href="../phpFiles/live.php">
-                        <span>03.09.2022</span><br>
-                        <span translate="no">Infernum meets Porkcore Fistevil Festival</span>
+                        <span>02.10.2022</span><br>
+                        <span translate="no">Lessons in Metal 2</span>
                     </a>
                 </div>
             </div>
