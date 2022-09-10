@@ -11,9 +11,9 @@
     <meta name="keywords"
         content="lesson in violence, thrash metal, german thrash metal, thrash metal aus schweinfurt, thrash metal aus franken, lesson in violence schweinfurt,
              lesson in violence band, thrash metal band, lesson in violence buchen, l i v, L.I.V, Thrash Metal Mankind, Bavarian thrash metal, heavy metal, heavy metal band, german thrash, exodus, lesson in violence news">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/LIV_abkuerzung_weiss.png">
-    <link rel="icon" href="../assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
-    <link rel="apple-touch-icon" href="../assets/LIV_abkuerzung_weiss.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/LIV_abkuerzung_weiss.png">
+    <link rel="icon" href="./assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/LIV_abkuerzung_weiss.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Lato&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../cssFiles/merch.css" />
+    <link rel="stylesheet" type="text/css" href="./cssFiles/merch.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Analytics -->
@@ -33,15 +33,21 @@
 
       gtag('config', 'G-XDYLDJFLCX');
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $("#headerFile").load("./htmlFiles/header.html"); 
+            $("#footerFile").load("./htmlFiles/footer.html"); 
+        });
+    </script> 
 </head>
 
 <!-- body -->
 <body>
 
     <div id="hero-background">
-        <?php
-            include('../htmlFiles/header.html');
-        ?>
+        <header id="headerFile"></header>
         <!-- hero -->
         <section>
             <div class="container-fluid">
@@ -63,7 +69,7 @@
             <div class="col-12 col-sm-10 col-md-4 col-lg-4 product" >
                 <div class="prodContainer">
                     <div class="prodImage">
-                        <img  class=" shown bgImages" src="../merchPictures/CDProdukt.jpg" alt="">
+                        <img  class=" shown bgImages" src="./merchPictures/CDProdukt.jpg" alt="">
                     </div>
                     
                     <div class="row prodDescription">
@@ -113,10 +119,10 @@
                         <button id="back4" style="border-color: none !important" onfocus="backActive4()">b<br>a<br>c<br>k</button>
                         <button id="front4" style="border-color: none !important" onfocus="frontActive4()">f<br>r<br>o<br>n<br>t</button>
 
-                        <img id="imgFront4" class="cdShirtImage" src="../merchPictures/productCdShirtFront.jpg" alt="">
-                        <img id="imgBack4" class="cdShirtImage" src="../merchPictures/productCdShirtBack.jpg" alt="">
-                        <img id="bgImg4" class="cdShirtImage shown bgImages" src="../merchPictures/productShirtCD.jpg" alt="">
-                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(4)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        <img id="imgFront4" class="cdShirtImage" src="./merchPictures/productCdShirtFront.jpg" alt="">
+                        <img id="imgBack4" class="cdShirtImage" src="./merchPictures/productCdShirtBack.jpg" alt="">
+                        <img id="bgImg4" class="cdShirtImage shown bgImages" src="./merchPictures/productShirtCD.jpg" alt="">
+                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(4)" src="./merchPictures/fullScreen.png" alt="full screen icon">
                         
                     </div>
                     
@@ -169,10 +175,10 @@
                         <button id="back" style="border-color: none !important" onfocus="backActive()">b<br>a<br>c<br>k</button>
                         <button id="front" style="border-color: none !important" onfocus="frontActive()">f<br>r<br>o<br>n<br>t</button>
 
-                        <img id="imgFront" class="shirtImage" src="../merchPictures/productShirtFront.jpg" alt="">
-                        <img id="imgBack" class="shirtImage" src="../merchPictures/productShirtBack.jpg" alt="">
-                        <img id="bgImg" class="shirtImage shown bgImages" src="../merchPictures/productShirt.jpg" alt="">
-                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(0)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        <img id="imgFront" class="shirtImage" src="./merchPictures/productShirtFront.jpg" alt="">
+                        <img id="imgBack" class="shirtImage" src="./merchPictures/productShirtBack.jpg" alt="">
+                        <img id="bgImg" class="shirtImage shown bgImages" src="./merchPictures/productShirt.jpg" alt="">
+                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(0)" src="./merchPictures/fullScreen.png" alt="full screen icon">
                         
                     </div>
                     
@@ -220,10 +226,10 @@
             <div  class="col-12 col-sm-10 col-md-4 col-lg-4 product">
                 <div class="prodContainer">
                     <div class="prodImage">
-                        <img id="bgImg2" class="patchImage shown bgImages" src="../merchPictures/SinglePatch.jpg" alt="">
-                        <img id="fullScreenImg2" class="fullScreenImages" onclick="openLightbox(1)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        <img id="bgImg2" class="patchImage shown bgImages" src="./merchPictures/SinglePatch.jpg" alt="">
+                        <img id="fullScreenImg2" class="fullScreenImages" onclick="openLightbox(1)" src="./merchPictures/fullScreen.png" alt="full screen icon">
 
-                        <img id="imgPatch" class="patchImage" src="../merchPictures/MultiplePatches.jpg" alt="">
+                        <img id="imgPatch" class="patchImage" src="./merchPictures/MultiplePatches.jpg" alt="">
                     </div>
                     
                     <div class="row prodDescription">
@@ -272,8 +278,8 @@
             <div class="col-11 col-sm-10 col-md-4 col-lg-4 product">
                 <div class="prodContainer">
                     <div class="prodImage">
-                        <img id="bgImg5" class="ticketImage shown bgImages" src="../merchPictures/TicketLessonsInMetal2.jpg" alt="">
-                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(5)" src="../merchPictures/fullScreen.png" alt="full screen icon">
+                        <img id="bgImg5" class="ticketImage shown bgImages" src="./merchPictures/TicketLessonsInMetal2.jpg" alt="">
+                        <img id="fullScreenImg" class="fullScreenImages" onclick="openLightbox(5)" src="./merchPictures/fullScreen.png" alt="full screen icon">
                         
                     </div>
                     
@@ -343,7 +349,7 @@
                 <div class="orderContainer">
                     <h4>L.i.V. Shirt</h4>
                     <hr> 
-                    <img class="orderPicture" src="../merchPictures/productShirt.jpg" alt="">
+                    <img class="orderPicture" src="./merchPictures/productShirt.jpg" alt="">
                     <div class="orderTitle">
                         <p>Size: L</p>
                         <p>Count: 1x</p>
@@ -353,7 +359,7 @@
                 <div class="orderContainer">
                     <h4>Thrashfall of Mankind - CD</h4>
                     <hr> 
-                    <img class="orderPicture" src="../audioPlayer/thrash-metal-mankind-thumbnail.jpg" alt="">
+                    <img class="orderPicture" src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg" alt="">
                     <div class="orderTitle">
                         <p>Count: 1x</p>
                     </div>
@@ -368,14 +374,12 @@
     </section>    
     </div>
 
-    <?php
-        include('../htmlFiles/footer.html');
-    ?>
+    <footer id="footerFile"></footer>
 
     <script type="text/javascript" language="javascript">
         function downloadJSAtOnload() {
             var element = document.createElement("script");
-            element.src = "../jsFiles/product.js";
+            element.src = "./jsFiles/product.js";
             document.body.appendChild(element);
         }
         // greater than or equal IE 9 and other modern Browser

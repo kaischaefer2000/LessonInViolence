@@ -1,193 +1,187 @@
 @import "./infoBox";
 @import "./layout";
 
-
-#hero-background{
-    @include heroBackground(url("../headers/header_about-us-min.jpg"));
+#hero-background {
+  @include heroBackground(url("../headers/header_about-us-min.jpg"));
 }
 
+/* heading and text */
+#aboutUsText {
+  padding: 4em 3em;
+}
 
-    /* heading and text */
-    #aboutUsText{
-        padding: 4em 3em;
+#aboutUsText h2 {
+  margin-top: 3em;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+#aboutUsText p {
+  margin-top: 3em;
+}
+
+#aboutUsText span {
+  word-spacing: 0.5em;
+  font-weight: 900;
+  font-size: 1.02em;
+}
+
+/* heading and text - responsive */
+@media (max-width: 750px) {
+  #aboutUsText {
+    padding-top: 8em;
+  }
+}
+
+@media (max-width: 632px) {
+  #aboutUsText h2 {
+    font-size: 1.4rem;
+  }
+
+  #aboutUsText p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #aboutUsText {
+    padding-top: 5em;
+  }
+}
+
+@media (max-width: 550px) {
+  #aboutUsText {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+/* member fotos */
+#members {
+  margin: 0px 0em 5em 0em;
+
+  p {
+    text-align: center;
+    font-weight: 800;
+    line-height: 3em;
+  }
+
+  span {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+  }
+}
+
+#members > div {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.member-picture {
+  height: 25vw;
+  background-size: cover;
+  transition: background-image 0.6s;
+  transition-timing-function: ease;
+  background-position: center;
+}
+
+#flo_zwei {
+  background-image: url("../members/Flo-zwei-freigestellt-min.png");
+}
+
+#scraper {
+  background-image: url("../members/Scraper-freigestellt-min.png");
+}
+
+#flo_eins {
+  margin-left: 1em;
+  background-image: url("../members/Flo-eins-freigestellt-min.png");
+}
+
+#roli {
+  background-image: url("../members/Roli-freigestellt.png");
+}
+
+#michi {
+  margin-right: 1em;
+  background-image: url("../members/Michi-freigestellt-min.png");
+}
+
+/* member description - responsive*/
+@media (max-width: 1250px) {
+  #members {
+    p {
+      font-size: 0.8rem;
     }
 
-        #aboutUsText h2{
-            margin-top: 3em;
-            text-align: center;
-            line-height: 1.7em;
-        }
+    span {
+      font-size: 0.51em;
+    }
+  }
+}
 
-        #aboutUsText p{
-            margin-top: 3em;
-            
-        }
+@media (max-width: 768px) {
+  .member-picture {
+    height: 65vw;
+  }
+}
 
-        #aboutUsText span{
-            word-spacing: 0.5em;
-            font-weight: 900;
-            font-size: 1.02em;
-        }
-
-    /* heading and text - responsive */
-    @media(max-width: 750px){
-        
-        #aboutUsText{
-            padding-top: 8em;
-        }
+@media (max-width: 835px) {
+  #members {
+    p {
+      font-size: 0.8em;
     }
 
-    @media(max-width: 632px){
-        #aboutUsText h2{
-            font-size: 1.4rem;
-        }
-
-        #aboutUsText p{
-            font-size: 1rem;
-        }
+    span {
+      font-size: 0.6em;
     }
+  }
+}
 
-    @media(max-width: 600px){
-        #aboutUsText{
-            padding-top: 5em;
-        }
+@media (min-width: 1700px) {
+  @keyframes infoBoxAnimation {
+    0% {
+      top: 40vw;
     }
-
-    @media(max-width: 550px){
-        #aboutUsText{
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-        }
+    100% {
+      top: 38vw;
     }
+  }
+}
 
-    /* member fotos */
-    #members{
-        margin: 0px 0em 5em 0em;
+@media (min-width: 1600px) {
+  .member-picture {
+    height: 400px;
+  }
+}
 
-        p{
-            text-align: center;
-            font-weight: 800;
-            line-height: 3em;
-        }
+// @media(min-width: 600px){
 
-        span{
-            font-weight: normal;
-            text-transform: uppercase;
-            font-size: 0.6rem;
-            letter-spacing: 0.1em;
-            line-height: 2em;
-        }
-    }
+#flo_zwei:hover,
+#flo_zwei:active {
+  background-image: url("../members/Flo-zwei-live-min.jpg");
+}
 
-    #members > div{
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
+#scraper:hover,
+#scraper:active {
+  background-image: url("../members/Scraper-live-min.jpg");
+}
 
-        .member-picture{
-            height: 25vw;
-            background-size: cover;
-            transition: background-image 0.6s;
-            transition-timing-function: ease;
-            background-position: center;
-        }
+#flo_eins:hover,
+#flo_eins:active {
+  background-image: url("../members/Flo-eins-live-min.jpg");
+}
 
-        
+#roli:hover,
+#roli:active {
+  background-image: url("../members/Roli-live-min.jpg");
+}
 
-            #flo_zwei{
-                background-image:url('../members/Flo-zwei-freigestellt-min.png');
-            }
-
-            #scraper{
-                background-image:url('../members/Scraper-freigestellt-min.png');
-            }
-        
-            #flo_eins{
-                margin-left: 1em;
-                background-image:url('../members/Flo-eins-freigestellt-min.png');
-            }
-
-            #roli{
-                background-image:url('../members/Roli-freigestellt.png');
-            }
-        
-            #michi{
-                margin-right: 1em;
-                background-image:url('../members/Michi-freigestellt-min.png');
-            }
-
-
-    /* member description - responsive*/
-    @media(max-width: 1250px){
-
-        #members {
-            p{
-                font-size: 0.8rem;
-            }
-            
-            span{
-                font-size: 0.51em;
-            }
-        }
-    }
-
-    @media(max-width: 768px){
-        .member-picture{
-            height:65vw;
-        }
-    }
-
-    @media(max-width: 835px){
-
-        #members {
-            p{
-                font-size: 0.8em;
-            }
-            
-            span{
-                font-size: 0.6em;
-            }
-        }
-    }
-
-    @media(min-width: 1700px){
-        @keyframes infoBoxAnimation{
-            0%   {  top: 40vw }
-            100% {  top: 38vw }
-        }
-    }
-
-    @media(min-width: 1600px){
-        .member-picture{
-            height: 400px;
-        }
-    }
-
-
-
-
-
-
-
-    // @media(min-width: 600px){
-
-        #flo_zwei:hover, #flo_zwei:active{
-            background-image:url('../members/Flo-zwei-live-min.jpg');
-        }
-
-        #scraper:hover, #scraper:active{
-            background-image:url('../members/Scraper-live-min.jpg');
-        }
-
-        #flo_eins:hover, #flo_eins:active{
-            background-image:url('../members/Flo-eins-live-min.jpg');
-        }
-
-        #roli:hover, #roli:active{
-            background-image:url('../members/Roli-live-min.jpg');
-        }
-
-        #michi:hover, #michi:active{
-            background-image:url('../members/MichiLive.jpeg');
-        }
-    // }
+#michi:hover,
+#michi:active {
+  background-image: url("../members/MichiLive.jpeg");
+}
+// }

@@ -1,147 +1,147 @@
 @import "./infoBox";
 @import "./layout";
 
-
 /* overwriting layout.css */
-#hero-background{
-    @include heroBackground(url("../headers/MFF-concert-header.jpg"));
+#hero-background {
+  @include heroBackground(url("../headers/MFF-concert-header.jpg"));
 }
 
-#main-title{
+#main-title {
   line-height: 1.5em;
   padding: 2.5vw 0px 2.5vw;
 }
 
 /* heading */
-.heading{
-    padding-top: 9em;
-    padding-bottom: 2em;
-    text-align: center;
-    font-weight: 800;
+.heading {
+  padding-top: 9em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-weight: 800;
 }
 
-@media(max-width: 350px){
-    .heading h2{
-        font-size: 1.7em;
-    }   
+@media (max-width: 350px) {
+  .heading h2 {
+    font-size: 1.7em;
+  }
 }
-
 
 /* accordion */
-.accordion-item{
-    background-color: rgba(182, 182, 182, 0.288);
+.accordion-item {
+  background-color: rgba(182, 182, 182, 0.288);
 }
 
-    .accordion-item p, .accordion-item a{
-        margin: 0.8em 0px 0.8em 0.5em;
-        display: inline-block;
-    }
+.accordion-item p,
+.accordion-item a {
+  margin: 0.8em 0px 0.8em 0.5em;
+  display: inline-block;
+}
 
-    /* show section */
-    .show{
-        margin-top: 0.5em;
-        cursor: pointer;
-    }
+/* show section */
+.show {
+  margin-top: 0.5em;
+  cursor: pointer;
+}
 
-        .show p{
-            font-size: 1.1rem;
-        }
+.show p {
+  font-size: 1.1rem;
+}
 
-        .show div:nth-of-type(1){
-            padding-left: 1em;
-        }
+.show div:nth-of-type(1) {
+  padding-left: 1em;
+}
 
-        .show div{
-            padding: 0;
-        }
+.show div {
+  padding: 0;
+}
 
-        .over {
-            color: rgb(117, 117, 117) !important;
-        }
+.over {
+  color: rgb(117, 117, 117) !important;
+}
 
-        .arrow {
-            padding: 0.9em 2em 0.9em 0px;
-            width: 1.2em;
-            height: auto;
-            color: #FFF;
-            margin: 0;
-          }
-        
-        .active, .show:hover {
-          background-color: rgba(80, 80, 80, 0.425);
-        }
+.arrow {
+  padding: 0.9em 2em 0.9em 0px;
+  width: 1.2em;
+  height: auto;
+  color: #fff;
+  margin: 0;
+}
 
-    /* details section */
-    .details{
-        display: none;
-        background-color: rgba(20, 20, 20, 0.342);
-        border: 2px solid;
-        border-color: rgba(80, 80, 80, 0.425);
-        padding-top: 1em;
-    }
+.active,
+.show:hover {
+  background-color: rgba(80, 80, 80, 0.425);
+}
 
-        .details p{
-            font-size: 1rem;
-        }
+/* details section */
+.details {
+  display: none;
+  background-color: rgba(20, 20, 20, 0.342);
+  border: 2px solid;
+  border-color: rgba(80, 80, 80, 0.425);
+  padding-top: 1em;
+}
 
-        .flyer-row{
-            margin-top: 0.5em;
-        }
+.details p {
+  font-size: 1rem;
+}
 
+.flyer-row {
+  margin-top: 0.5em;
+}
 
 /* accordion media querys */
-@media(max-width: 380px){
-    .details-content div:nth-of-type(2){
-        padding-left: 2em;
-    }
+@media (max-width: 380px) {
+  .details-content div:nth-of-type(2) {
+    padding-left: 2em;
+  }
 }
 
-@media(max-width: 500px){
-    .show p{
-        display: block;
-    }
+@media (max-width: 500px) {
+  .show p {
+    display: block;
+  }
 
-    .show p:nth-of-type(2){
-        margin: 0;
-    }
+  .show p:nth-of-type(2) {
+    margin: 0;
+  }
 }
 
-@media(max-width: 525px){
-    .flyer-row img{
-        width: 70vw;
-        padding: 0.5em;
-    }
+@media (max-width: 525px) {
+  .flyer-row img {
+    width: 70vw;
+    padding: 0.5em;
+  }
 }
 
-@media(min-width: 525px){
-    .flyer-row img{
-        width: 16em;
-    }
+@media (min-width: 525px) {
+  .flyer-row img {
+    width: 16em;
+  }
 }
 
-@media(min-width: 750px){
-    .flyer-row img{
-        width: 15vw;
-        margin: 0px 0px 1em 1em;
-    }
-    .details a{
-        padding-left: 0.3em;
-    }
-    .accordion-item p{
-        margin: 1em 0px 1em 1em;
-    }
+@media (min-width: 750px) {
+  .flyer-row img {
+    width: 15vw;
+    margin: 0px 0px 1em 1em;
+  }
+  .details a {
+    padding-left: 0.3em;
+  }
+  .accordion-item p {
+    margin: 1em 0px 1em 1em;
+  }
 
-    .arrow {
-        padding: 1.4em 2em 1.4em 0px;
-    }
+  .arrow {
+    padding: 1.4em 2em 1.4em 0px;
+  }
 
-    .show, .details{
-        margin-left:  2em;
-        margin-right:  2em;
-    }
+  .show,
+  .details {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
 
-    .flyer-row img:hover{
-        cursor: pointer;
-        box-shadow: 0px 0px 15px 3px rgba(102, 102, 102, 0.603);
-    }
+  .flyer-row img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 3px rgba(102, 102, 102, 0.603);
+  }
 }

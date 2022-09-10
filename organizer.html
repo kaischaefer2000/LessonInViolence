@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <title>Lesson in Violence | organizer infos</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="noindex,nofollow" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/LIV_abkuerzung_weiss.png"
+    />
+    <link
+      rel="icon"
+      href="./assets/LIV_abkuerzung_weiss.png"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./assets/LIV_abkuerzung_weiss.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./cssFiles/organizer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XDYLDJFLCX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XDYLDJFLCX");
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#headerFile").load("./htmlFiles/header.html");
+        $("#footerFile").load("./htmlFiles/footer.html");
+        // $("#TMMFullVersionFile").load("./htmlFiles/TMMFullVersion.html");
+        // $("#ScumFullVersionFile").load("./htmlFiles/ScumFullVersion.html");
+        // $("#LIVFullVersionFile").load("./htmlFiles/LIVFullVersion.html");
+        // $("#LostInYourselfFullVersionFile").load(
+        //   "./htmlFiles/LostInYourselfFullVersion.html"
+        // );
+      });
+    </script>
+  </head>
+
+  <!-- body -->
+  <body>
+    <div id="hero-background">
+      <header id="headerFile"></header>
+      <!-- hero -->
+      <section>
+        <div class="container-fluid">
+          <div class="row hero">
+            <div class="col">
+              <h1 id="main-title">
+                A<br />b<br />o<br />u<br />t<br /><br />u<br />s
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- info box -->
+    <section>
+      <div class="container-fluid">
+        <div id="info-box" class="row">
+          <div class="col-12">
+            <img
+              src="./assets/LessonInViolence_Wortmarke_rot.png"
+              alt="lesson in violence logo red"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="mainContent" class="fluid-container">
+      <div class="mainContentInner">
+        <div class="row">
+          <div class="col">
+            <h3 translate="no">
+              Hello organizers, welcome to our hidden download-area for
+              promotional purposes only.
+            </h3>
+            <!-- music player -->
+            <div class="row player-container">
+              <!-- <div id="TMMFullVersionFile"></div>
+              <div id="ScumFullVersionFile"></div>
+              <div id="LIVFullVersionFile"></div>
+              <div id="LostInYourselfFullVersionFile"></div> -->
+
+              <!-- thrash metal mankind -->
+              <div class="col-12 col-sm-6 col-lg-4 completeTrack">
+                <img
+                  src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg"
+                  id="background"
+                  alt="single cover Thrash Metal Mankind"
+                />
+                <audio
+                  src="./audioPlayer/thrash metal mankind.mp3"
+                  class="song"
+                  id="song1"
+                ></audio>
+
+                <div class="container">
+                  <div class="box"></div>
+                  <img
+                    src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg"
+                    alt="single cover Thrash Metal Mankind"
+                    class="thumbnail"
+                    id="tmb1"
+                  />
+                  <img
+                    src="./audioPlayer/play.png"
+                    onclick="playPause()"
+                    class="play-pause"
+                    id="pp1"
+                    alt=""
+                  />
+                  <div class="song-artist" translate="no">
+                    Lesson in Violence
+                  </div>
+                  <div class="song-title" translate="no">
+                    Thrash Metal Mankind
+                  </div>
+                  <a href="./audioPlayer/thrash metal mankind.mp3" download>
+                    <img
+                      src="./audioPlayer/download-icon.png"
+                      id="download-song"
+                      alt=""
+                    />
+                  </a>
+                  <input
+                    type="range"
+                    class="progress-bar"
+                    id="pb1"
+                    min="0"
+                    max=""
+                    value="0"
+                    onchange="changeProgressBar()"
+                  />
+                  <div class="currentTime" id="ct1"></div>
+                  <div class="durationTime" id="dt1"></div>
+                </div>
+              </div>
+
+              <!-- scum of society -->
+              <div class="col-12 col-sm-6 col-lg-4 completeTrack">
+                <img
+                  src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg"
+                  id="background"
+                  alt="single cover Scum of society"
+                />
+                <audio
+                  src="./audioPlayer/scum of society.mp3"
+                  class="song"
+                  id="song2"
+                ></audio>
+
+                <div class="container">
+                  <div class="box"></div>
+                  <img
+                    src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg"
+                    alt="single cover Scum of Society"
+                    class="thumbnail"
+                    id="tmb2"
+                  />
+                  <img
+                    src="./audioPlayer/play.png"
+                    onclick="playPause2()"
+                    class="play-pause"
+                    id="pp2"
+                    alt=""
+                  />
+                  <div class="song-artist" translate="no">
+                    Lesson in Violence
+                  </div>
+                  <div class="song-title" translate="no">Scum of Society</div>
+                  <a href="./audioPlayer/scum of society.mp3" download>
+                    <img
+                      src="./audioPlayer/download-icon.png"
+                      id="download-song"
+                      alt=""
+                    />
+                  </a>
+                  <input
+                    type="range"
+                    class="progress-bar"
+                    id="pb2"
+                    min="0"
+                    max=""
+                    value="0"
+                    onchange="changeProgressBar2()"
+                  />
+                  <div class="currentTime" id="ct2"></div>
+                  <div class="durationTime" id="dt2"></div>
+                </div>
+              </div>
+
+              <!-- lesson in violence -->
+              <div class="col-12 col-sm-6 col-lg-4 completeTrack">
+                <img
+                  src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg"
+                  id="background"
+                  alt="single cover lesson in violence"
+                />
+                <audio
+                  src="./audioPlayer/lesson in violence.mp3"
+                  class="song"
+                  id="song4"
+                ></audio>
+
+                <div class="container">
+                  <div class="box"></div>
+                  <img
+                    src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg"
+                    alt="single cover lesson in violence"
+                    class="thumbnail"
+                    id="tmb4"
+                  />
+                  <img
+                    src="./audioPlayer/play.png"
+                    onclick="playPause4()"
+                    class="play-pause"
+                    id="pp4"
+                    alt=""
+                  />
+                  <div class="song-artist" translate="no">
+                    Lesson in Violence
+                  </div>
+                  <div class="song-title" translate="no">
+                    Lesson in Violence
+                  </div>
+                  <a href="./audioPlayer/lesson in violence.mp3" download>
+                    <img
+                      src="./audioPlayer/download-icon.png"
+                      id="download-song"
+                      alt=""
+                    />
+                  </a>
+                  <input
+                    type="range"
+                    class="progress-bar"
+                    id="pb4"
+                    min="0"
+                    max=""
+                    value="0"
+                    onchange="changeProgressBar4()"
+                  />
+                  <div class="currentTime" id="ct4"></div>
+                  <div class="durationTime" id="dt4"></div>
+                </div>
+              </div>
+
+              <!-- lost in yourself -->
+              <div class="col-12 col-sm-6 col-lg-4 completeTrack">
+                <img
+                  src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg"
+                  id="background"
+                  alt="single cover Lost in yourself"
+                />
+                <audio
+                  src="./audioPlayer/lost in yourself.mp3"
+                  class="song"
+                  id="song3"
+                ></audio>
+
+                <div class="container">
+                  <div class="box"></div>
+                  <img
+                    src="./audioPlayer/thrash-metal-mankind-thumbnail.jpg"
+                    alt="single cover Lost in yourself"
+                    class="thumbnail"
+                    id="tmb3"
+                  />
+                  <img
+                    src="./audioPlayer/play.png"
+                    onclick="playPause3()"
+                    class="play-pause"
+                    id="pp3"
+                    alt=""
+                  />
+                  <div class="song-artist" translate="no">
+                    Lesson in Violence
+                  </div>
+                  <div class="song-title" translate="no">Lost in yourself</div>
+                  <a href="./audioPlayer/lost in yourself.mp3" download>
+                    <img
+                      src="./audioPlayer/download-icon.png"
+                      id="download-song"
+                      alt=""
+                    />
+                  </a>
+                  <input
+                    type="range"
+                    class="progress-bar"
+                    id="pb3"
+                    min="0"
+                    max=""
+                    value="0"
+                    onchange="changeProgressBar3()"
+                  />
+                  <div class="currentTime" id="ct3"></div>
+                  <div class="durationTime" id="dt3"></div>
+                </div>
+              </div>
+
+              <!-- bandinfo -->
+              <div class="download-item col-12 col-sm-6 col-lg-8">
+                <div
+                  id="bandinfo"
+                  class="download-item-content row align-items-center"
+                >
+                  <div class="col download-link-container">
+                    <div class="download-link">
+                      <a
+                        download
+                        href="./download-items/Bandinfo_LessoninViolence_2022.pdf"
+                        >DOWNLOAD</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footerFile"></footer>
+
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="./jsFiles/musicPlayer.js"
+    ></script>
+  </body>
+</html>

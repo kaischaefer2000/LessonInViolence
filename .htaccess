@@ -1,10 +1,14 @@
-# Permanent URL redirect- by netgrade 
+# Permanent URL redirect- by netgrade
+
 RewriteEngine on
-Redirect 301 /index.html https://lessoninviolence.com/phpFiles/index.php
-Redirect 301 /live.html https://lessoninviolence.com/phpFiles/live.php
-Redirect 301 /band.html https://lessoninviolence.com/phpFiles/about-us.php
-Redirect 301 /merch.html https://lessoninviolence.com/phpFiles/merch.php
-Redirect 301 /media.html https://lessoninviolence.com/phpFiles/media.php
-Redirect 301 /downloads.html https://lessoninviolence.com/phpFiles/downloads.php
-Redirect 301 /contact.html https://lessoninviolence.com/phpFiles/index.php
-Redirect 301 lessoninviolence.com https://lessoninviolence.com/phpFiles/index.php
+Redirect 301 /band.html https://lessoninviolence.com/about-us.html
+Redirect 301 /contact.html https://lessoninviolence.com
+Redirect 301 lessoninviolence.com https://lessoninviolence.com/index.html
+Redirect 301 /phpFiles/index.php https://lessoninviolence.com
+Redirect 301 /phpFiles/about-us.php https://lessoninviolence.com/about-us.html
+Redirect 301 /phpFiles/live.php https://lessoninviolence.com/live.html
+Redirect 301 /phpFiles/merch.php https://lessoninviolence.com/merch.html
+Redirect 301 /phpFiles/media.php https://lessoninviolence.com/media.html
+Redirect 301 /phpFiles/downloads.php https://lessoninviolence.com/downloads.html
+Redirect 301 /phpFiles/organizer.php https://lessoninviolence.com/organizer.html
+Redirect 301 /phpFiles/legalNotice.php https://lessoninviolence.com/legal-notice.html

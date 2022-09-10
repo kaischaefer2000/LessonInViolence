@@ -11,9 +11,9 @@
     <meta name="keywords"
         content="lesson in violence, thrash metal, german thrash metal, thrash metal aus schweinfurt, thrash metal aus franken, lesson in violence schweinfurt,
              lesson in violence band, thrash metal band, lesson in violence buchen, l i v, L.I.V, Thrash Metal Mankind, Bavarian thrash metal, heavy metal, heavy metal band, german thrash, exodus, lesson in violence news">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/LIV_abkuerzung_weiss.png">
-    <link rel="icon" href="../assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
-    <link rel="apple-touch-icon" href="../assets/LIV_abkuerzung_weiss.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/LIV_abkuerzung_weiss.png">
+    <link rel="icon" href="./assets/LIV_abkuerzung_weiss.png" sizes="16x16 32x32" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/LIV_abkuerzung_weiss.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Lato&display=swap" rel="stylesheet">
@@ -21,16 +21,22 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../cssFiles/legalNotice.css" />
+    <link rel="stylesheet" type="text/css" href="./cssFiles/legalNotice.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $("#headerFile").load("./htmlFiles/header.html"); 
+            $("#footerFile").load("./htmlFiles/footer.html"); 
+        });
+    </script> 
 </head>
 
 <!-- body -->
 <body>
 
-    <?php
-        include('../htmlFiles/header.html');
-    ?>
+     <header id="headerFile"></header>
 
     <div id="mainContent" class="fluid-container">
         <section>
@@ -175,9 +181,7 @@
         </section>
     </div>
 
-    <?php
-        include('../htmlFiles/footer.html');
-    ?>
+    <footer id="footerFile"></footer>
     
 </body>
 </html>

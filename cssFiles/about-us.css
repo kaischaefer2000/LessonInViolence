@@ -845,23 +845,28 @@ footer .copyright p {
   }
 }
 
-#flo_zwei:hover, #flo_zwei:active {
+#flo_zwei:hover,
+#flo_zwei:active {
   background-image: url("../members/Flo-zwei-live-min.jpg");
 }
 
-#scraper:hover, #scraper:active {
+#scraper:hover,
+#scraper:active {
   background-image: url("../members/Scraper-live-min.jpg");
 }
 
-#flo_eins:hover, #flo_eins:active {
+#flo_eins:hover,
+#flo_eins:active {
   background-image: url("../members/Flo-eins-live-min.jpg");
 }
 
-#roli:hover, #roli:active {
+#roli:hover,
+#roli:active {
   background-image: url("../members/Roli-live-min.jpg");
 }
 
-#michi:hover, #michi:active {
+#michi:hover,
+#michi:active {
   background-image: url("../members/MichiLive.jpeg");
 }
 /*# sourceMappingURL=about-us.css.map */

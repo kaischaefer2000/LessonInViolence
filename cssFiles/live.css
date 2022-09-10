@@ -714,7 +714,8 @@ footer .copyright p {
   background-color: rgba(182, 182, 182, 0.288);
 }
 
-.accordion-item p, .accordion-item a {
+.accordion-item p,
+.accordion-item a {
   margin: 0.8em 0px 0.8em 0.5em;
   display: inline-block;
 }
@@ -745,11 +746,12 @@ footer .copyright p {
   padding: 0.9em 2em 0.9em 0px;
   width: 1.2em;
   height: auto;
-  color: #FFF;
+  color: #fff;
   margin: 0;
 }
 
-.active, .show:hover {
+.active,
+.show:hover {
   background-color: rgba(80, 80, 80, 0.425);
 }
 
@@ -813,7 +815,8 @@ footer .copyright p {
   .arrow {
     padding: 1.4em 2em 1.4em 0px;
   }
-  .show, .details {
+  .show,
+  .details {
     margin-left: 2em;
     margin-right: 2em;
   }
