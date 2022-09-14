@@ -1051,6 +1051,10 @@ footer .copyright p {
   padding-right: 2em;
 }
 
+.content-box .content-devided #LIM2 {
+  width: 30%;
+}
+
 .content-box .content-devided .albumCover {
   width: 80%;
 }
@@ -1203,6 +1207,9 @@ footer .copyright p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .content-devided #LIM2 {
+    min-width: 50%;
   }
   .content-devided p {
     padding-right: 0em;

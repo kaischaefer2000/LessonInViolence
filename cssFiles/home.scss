@@ -48,6 +48,9 @@
     p {
       padding-right: 2em;
     }
+    #LIM2{
+      width: 30%
+    }
 
     .albumCover {
       width: 80%;
@@ -196,6 +199,10 @@
 
   .content-devided {
     flex-direction: column;
+
+    #LIM2{
+      min-width: 50%
+    }
 
     p {
       padding-right: 0em;
