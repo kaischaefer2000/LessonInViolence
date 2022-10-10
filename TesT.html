@@ -353,7 +353,7 @@
     <!-- ### Optionaler Header ### -->
     <!-- <Wochenplan> -->
     <div style="width: 100%">
-      <div class="w1">Welche FWPMs belegst du?</div>
+      <div class="w1">Was belegst du?</div>
       <div
         style="display: flex; justify-content: space-evenly; margin: 5vh 5vw"
       >
@@ -366,6 +366,15 @@
           onchange="check('offSec', 'Offensive Security')"
         />
         <label for="offSec">Offensive Security</label><br />
+        <input
+          type="checkbox"
+          id="wiss"
+          name="wiss"
+          value="wiss"
+          checked
+          onchange="check('wiss', 'Wissenschaftsseminar')"
+        />
+        <label for="wiss">Wissenschaftsseminar</label><br />
         <input
           type="checkbox"
           id="webCon"
