@@ -354,54 +354,106 @@
     <!-- <Wochenplan> -->
     <div style="width: 100%">
       <div class="w1">Was belegst du?</div>
-      <div
-        style="display: flex; justify-content: space-evenly; margin: 5vh 5vw"
-      >
-        <input
-          type="checkbox"
-          id="offSec"
-          name="offSec"
-          value="offSec"
-          checked
-          onchange="check('offSec', 'Offensive Security')"
-        />
-        <label for="offSec">Offensive Security</label><br />
-        <input
-          type="checkbox"
-          id="wiss"
-          name="wiss"
-          value="wiss"
-          checked
-          onchange="check('wiss', 'Wissenschaftsseminar')"
-        />
-        <label for="wiss">Wissenschaftsseminar</label><br />
-        <input
-          type="checkbox"
-          id="webCon"
-          name="webCon"
-          value="webCon"
-          checked
-          onchange="check('webCon', 'Web-Controlling')"
-        />
-        <label for="offSec">Web-Controlling</label><br />
-        <input
-          type="checkbox"
-          id="embSys"
-          name="embSys"
-          value="embSys"
-          checked
-          onchange="check('embSys', 'Embedded Systems')"
-        />
-        <label for="embSys">Embedded Systems</label><br />
-        <input
-          type="checkbox"
-          id="forsch"
-          name="forsch"
-          value="forsch"
-          checked
-          onchange="check('forsch', 'Forschungsprojekt')"
-        />
-        <label for="forsch">Forschungsprojekt</label><br />
+      <div style="margin: 5vh 5vw">
+        <div>
+          <p>FWPM:</p>
+        </div>
+        <div
+          style="display: flex; justify-content: space-evenly"
+        >
+          <input
+            type="checkbox"
+            id="offSec"
+            name="offSec"
+            value="offSec"
+            checked
+            onchange="check('offSec', 'Offensive Security')"
+          />
+          <label for="offSec">Offensive Security</label><br />
+          <input
+            type="checkbox"
+            id="webCon"
+            name="webCon"
+            value="webCon"
+            checked
+            onchange="check('webCon', 'Web-Controlling')"
+          />
+          <label for="offSec">Web-Controlling</label><br />
+          <input
+            type="checkbox"
+            id="embSys"
+            name="embSys"
+            value="embSys"
+            checked
+            onchange="check('embSys', 'Embedded Systems')"
+          />
+          <label for="embSys">Embedded Systems</label><br />
+          <input
+            type="checkbox"
+            id="forsch"
+            name="forsch"
+            value="forsch"
+            checked
+            onchange="check('forsch', 'Forschungsprojekt')"
+          />
+          <label for="forsch">Forschungsprojekt</label><br />
+        </div>
+      </div>
+      <div style="margin: 5vh 5vw">
+        <div>
+          <p>Pflichtveranstaltungen:</p>
+        </div>
+        <div style="display: flex; justify-content: space-evenly">
+          <input
+            type="checkbox"
+            id="BS"
+            name="BS"
+            value="BS"
+            checked
+            onchange="check('BS', 'Business Systeme')"
+          />
+          <label for="BS">Business Systeme</label><br />
+
+          <input
+            type="checkbox"
+            id="wiss"
+            name="wiss"
+            value="wiss"
+            checked
+            onchange="check('wiss', 'Wissenschaftsseminar')"
+          />
+          <label for="wiss">Wissenschaftsseminar</label><br />
+
+          <input
+            type="checkbox"
+            id="EL"
+            name="EL"
+            value="EL"
+            checked
+            onchange="check('EL', 'Ethical Leadership')"
+          />
+          <label for="EL">Ethical Leadership</label><br />
+
+          <input
+            type="checkbox"
+            id="DT"
+            name="DT"
+            value="DT"
+            checked
+            onchange="check('DT', 'Digitale Transformation')"
+          />
+          <label for="DT">Digitale Transformation</label><br />
+
+          <input
+            type="checkbox"
+            id="SA"
+            name="SA"
+            value="SA"
+            checked
+            onchange="check('SA', 'Softwarearchitekturen ')"
+          />
+          <label for="SA">Softwarearchitekturen </label><br />
+        </div>
       </div>
     </div>
     <div class="w1">Veranstaltungsplan MDB WS22</div>
