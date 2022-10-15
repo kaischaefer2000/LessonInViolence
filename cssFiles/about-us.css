@@ -682,7 +682,7 @@ footer .copyright p {
 
 #hero-background {
   background-repeat: no-repeat;
-  background-image: url("../headers/header_about-us-min.jpg");
+  background-image: url("../headers/header_about-us-neu.jpg");
   background-position: center top;
   background-size: 100%;
   height: auto;
@@ -862,7 +862,7 @@ footer .copyright p {
 
 #roli:hover,
 #roli:active {
-  background-image: url("../members/Roli-live-min.jpg");
+  background-image: url("../members/Roli-live-neu-min.jpg");
 }
 
 #michi:hover,
