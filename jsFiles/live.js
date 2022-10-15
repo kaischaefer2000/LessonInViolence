@@ -1,5 +1,4 @@
 // TODO: refactor !!!!!
-console.log('HI')
 var acc = document.getElementsByClassName("show");
 var i;
 
@@ -91,6 +90,21 @@ function scaleImg6() {
   }
 }
 
+// click event for Zyklop
+img7 = document.getElementById("ZyklopFlyer");
+
+function scaleImg7() {
+  if (img7.classList.contains("bigImg")) {
+    img7.classList.remove("bigImg");
+    img7.style.width = "15vw";
+    img7.style.transition = "width 0.8s ease-in-out";
+  } else {
+    img7.style.width = "30vw";
+    img7.style.transition = "width 0.8s ease-in-out";
+    img7.classList.add("bigImg");
+  }
+}
+
 // click event only when screen is big enough
 function myFunction(x) {
   if (x.matches) {
@@ -109,6 +123,7 @@ function myFunction(x) {
     document
       .getElementById("MoshpitFlyer")
       .addEventListener("click", scaleImg6);
+    document.getElementById("ZyklopFlyer").addEventListener("click", scaleImg7);
   } else {
   }
 }
