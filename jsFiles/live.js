@@ -105,6 +105,21 @@ function scaleImg7() {
   }
 }
 
+// click event for metal massacre
+img8 = document.getElementById("MetalMassacreFlyer");
+
+function scaleImg8() {
+  if (img8.classList.contains("bigImg")) {
+    img8.classList.remove("bigImg");
+    img8.style.width = "15vw";
+    img8.style.transition = "width 0.8s ease-in-out";
+  } else {
+    img8.style.width = "30vw";
+    img8.style.transition = "width 0.8s ease-in-out";
+    img8.classList.add("bigImg");
+  }
+}
+
 // click event only when screen is big enough
 function myFunction(x) {
   if (x.matches) {
@@ -124,6 +139,9 @@ function myFunction(x) {
       .getElementById("MoshpitFlyer")
       .addEventListener("click", scaleImg6);
     document.getElementById("ZyklopFlyer").addEventListener("click", scaleImg7);
+    document
+      .getElementById("MetalMassacreFlyer")
+      .addEventListener("click", scaleImg8);
   } else {
   }
 }
