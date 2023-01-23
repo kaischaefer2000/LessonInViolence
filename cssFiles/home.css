@@ -1055,6 +1055,10 @@ footer .copyright p {
   width: 30%;
 }
 
+.content-box .content-devided #MetalMassacer {
+  width: 30%;
+}
+
 .content-box .content-devided .albumCover {
   width: 80%;
 }
@@ -1211,6 +1215,9 @@ footer .copyright p {
   .content-devided #LIM2 {
     min-width: 50%;
   }
+  .content-devided #MetalMassacer {
+    min-width: 50%;
+  }
   .content-devided p {
     padding-right: 0em;
   }
@@ -1282,6 +1289,9 @@ footer .copyright p {
   #LIM2-picture {
     text-align: center !important;
   }
+  #MetalMassacer-picture {
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1316,6 +1326,9 @@ footer .copyright p {
 }
 
 #LIM2-picture {
+  text-align: end;
+}
+#MetalMassacer-picture {
   text-align: end;
 }
 /*# sourceMappingURL=home.css.map */
