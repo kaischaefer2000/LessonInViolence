@@ -51,6 +51,9 @@
     #LIM2{
       width: 30%
     }
+    #MetalMassacer{
+      width: 30%
+    }
 
     .albumCover {
       width: 80%;
@@ -204,6 +207,10 @@
       min-width: 50%
     }
 
+    #MetalMassacer{
+      min-width: 50%
+    }
+
     p {
       padding-right: 0em;
     }
@@ -295,6 +302,9 @@
     #LIM2-picture {
       text-align: center !important;
     }
+    #MetalMassacer-picture {
+      text-align: center !important;
+    }
 }
 
 @media (max-width: 450px) {
@@ -336,5 +346,9 @@
 }
 
 #LIM2-picture{
+text-align: end;
+}
+
+#MetalMassacer-picture{
 text-align: end;
 }
