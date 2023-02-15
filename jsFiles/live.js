@@ -120,6 +120,21 @@ function scaleImg8() {
   }
 }
 
+// click event for LIM3
+img9 = document.getElementById("LIM3Flyer");
+
+function scaleImg9() {
+  if (img9.classList.contains("bigImg")) {
+    img9.classList.remove("bigImg");
+    img9.style.width = "15vw";
+    img9.style.transition = "width 0.8s ease-in-out";
+  } else {
+    img9.style.width = "30vw";
+    img9.style.transition = "width 0.8s ease-in-out";
+    img9.classList.add("bigImg");
+  }
+}
+
 // click event only when screen is big enough
 function myFunction(x) {
   if (x.matches) {
@@ -142,6 +157,7 @@ function myFunction(x) {
     document
       .getElementById("MetalMassacreFlyer")
       .addEventListener("click", scaleImg8);
+    document.getElementById("LIM3Flyer").addEventListener("click", scaleImg9);
   } else {
   }
 }
