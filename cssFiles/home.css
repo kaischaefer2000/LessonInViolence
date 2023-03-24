@@ -1059,6 +1059,10 @@ footer .copyright p {
   width: 30%;
 }
 
+.content-box .content-devided #Zyklopenair {
+  width: 30%;
+}
+
 .content-box .content-devided .albumCover {
   width: 80%;
 }
@@ -1216,6 +1220,9 @@ footer .copyright p {
     min-width: 50%;
   }
   .content-devided #MetalMassacer {
+    min-width: 50%;
+  }
+  .content-devided #Zyklopenair {
     min-width: 50%;
   }
   .content-devided p {
