@@ -5,7 +5,8 @@
 /* overwriting layout.css */
 #hero-background {
   background-repeat: no-repeat;
-  background-image: url("../avif/header-home.avif"), url("../headers/header-home.jpg");;
+  background-image: url("../avif/header-home.avif"),
+    url("../headers/header-home.jpg");
   background-position: center top;
   background-size: 100%;
   height: auto;
@@ -48,14 +49,14 @@
     p {
       padding-right: 2em;
     }
-    #LIM2{
-      width: 30%
+    #LIM2 {
+      width: 30%;
     }
-    #MetalMassacer{
-      width: 30%
+    #MetalMassacer {
+      width: 30%;
     }
-    #Zyklopenair{
-      width: 30%
+    #Zyklopenair {
+      width: 30%;
     }
 
     .albumCover {
@@ -69,7 +70,7 @@
         width: 100%;
       }
     }
-    .castingPic{
+    .castingPic {
       width: 100%;
       img {
         padding: 7px 0px;
@@ -165,6 +166,20 @@
   margin-top: 3em;
 }
 
+.hiddenNews {
+  display: none !important;
+}
+
+#show-more-btn {
+  background: none;
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: center;
+  padding: 0.5em 0em;
+}
+
 .TMM-section {
   background: url("../homeAssets/StoneBackground.jpg");
   background-position: center;
@@ -206,16 +221,16 @@
   .content-devided {
     flex-direction: column;
 
-    #LIM2{
-      min-width: 50%
+    #LIM2 {
+      min-width: 50%;
     }
 
-    #MetalMassacer{
-      min-width: 50%
+    #MetalMassacer {
+      min-width: 50%;
     }
 
-    #Zyklopenair{
-      min-width: 50%
+    #Zyklopenair {
+      min-width: 50%;
     }
 
     p {
@@ -277,18 +292,18 @@
     padding-left: 0em;
     margin: -9em 0em -9em 0em;
   }
-  
+
   .TMM-right-side {
     font-size: 1.1rem;
   }
-  
+
   .content-box > p {
     font-size: 1.1rem;
   }
 
   // #mainContent{
-    //     margin: 0em -1em;
-    // }
+  //     margin: 0em -1em;
+  // }
 
   .heading {
     padding-top: 6em;
@@ -299,19 +314,19 @@
   .image-div {
     height: 250px !important;
   }
-  
+
   .castingPic {
     img {
       min-width: 250px;
       max-width: 250px !important;
     }
   }
-    #LIM2-picture {
-      text-align: center !important;
-    }
-    #MetalMassacer-picture {
-      text-align: center !important;
-    }
+  #LIM2-picture {
+    text-align: center !important;
+  }
+  #MetalMassacer-picture {
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 450px) {
@@ -352,10 +367,10 @@
   }
 }
 
-#LIM2-picture{
-text-align: end;
+#LIM2-picture {
+  text-align: end;
 }
 
-#MetalMassacer-picture{
-text-align: end;
+#MetalMassacer-picture {
+  text-align: end;
 }

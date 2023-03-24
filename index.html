@@ -115,7 +115,7 @@
     <div id="mainContent" class="fluid-container">
       <div class="mainContentInner">
         <!-- news -->
-        <section>
+        <section id="newsSection">
           <div class="row">
             <div class="col heading">
               <h2>News from<span translate="no"> Lesson in Violence</span></h2>
@@ -128,11 +128,14 @@
             </div>
             <div class="content-devided">
               <p>
-                Hi Metalheads, take a look at this line-up, what a mess! Time to grab your tickets and thrash the shit out of the Zykloopen-Air!<br><br>
+                Hi Metalheads, take a look at this line-up, what a mess! Time to
+                grab your tickets and thrash the shit out of the
+                Zykloopen-Air!<br /><br />
                 <a
                   href="https://www.facebook.com/events/568788995020320"
                   target="blank"
-                  > Check it out >
+                >
+                  Check it out >
                 </a>
               </p>
               <picture id="Zyklopenair">
@@ -154,13 +157,15 @@
             </div>
             <div class="content-devided">
               <p>
-                Yeah!!!<br>
-                This is going to be an epic metal night!                
-                We are very pleased that the guys from Hatred have invited us to their resurrection.<br><br>
+                Yeah!!!<br />
+                This is going to be an epic metal night! We are very pleased
+                that the guys from Hatred have invited us to their
+                resurrection.<br /><br />
                 <a
                   href="https://www.facebook.com/events/581067580528085/?ref=newsfeed"
                   target="blank"
-                  > Check it out >
+                >
+                  Check it out >
                 </a>
               </p>
               <picture id="MetalMassacer">
@@ -182,15 +187,25 @@
             </div>
             <div class="content-devided">
               <p>
-                How cool is that? <a
+                How cool is that?
+                <a
                   href="https://www.facebook.com/sturmiingolstadt"
                   target="blank"
                   >Sturmi's Rock and Metal page</a
-                > declares our debut album 'The Thrashfall Of Mankind' as the best thrash-album of 2022. So that's some awesome news, thanks for aprreciating our work! In addition, Markus P. from "Time for Metal" fanzine has named our album as "Album of the Year 2022"
-                <br>With our upcoming album we won't settle for less than keeping the first place!
+                >
+                declares our debut album 'The Thrashfall Of Mankind' as the best
+                thrash-album of 2022. So that's some awesome news, thanks for
+                aprreciating our work! In addition, Markus P. from "Time for
+                Metal" fanzine has named our album as "Album of the Year 2022"
+                <br />With our upcoming album we won't settle for less than
+                keeping the first place!
               </p>
             </div>
           </div>
+
+          <button onclick="showMoreNews()" id="show-more-btn">
+            Show more...
+          </button>
 
           <div class="light-content-box content-box">
             <div style="display: flex; justify-content: flex-end">
@@ -620,7 +635,7 @@
         </section>
 
         <!-- show preview -->
-        <section>
+        <section style="display: none">
           <div class="row">
             <div class="col heading">
               <h2>The next live shows!</h2>
@@ -669,9 +684,7 @@
                 <div class="padding-div">
                   <p class="live-date">13.05.2023</p>
                   <h4>
-                    <b translate="no"
-                      >Zykloopen Air</b
-                    >
+                    <b translate="no">Zykloopen Air</b>
                   </h4>
                   <p><i>Zykloopenhof Mainbernheim</i></p>
                 </div>
@@ -836,6 +849,11 @@
       type="text/javascript"
       language="javascript"
       src="./jsFiles/musicPlayer.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="./jsFiles/home.js"
     ></script>
   </body>
 </html>
