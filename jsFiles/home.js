@@ -9,6 +9,7 @@ const mainContent = document.getElementById("mainContent");
 mainContent.addEventListener("touchend", function (event) {
   if (event.target === showMoreBtn) {
     showMoreNews();
+    alert('HI')
   }
 });
 
