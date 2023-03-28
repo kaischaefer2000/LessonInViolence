@@ -4,8 +4,19 @@ const newsSection = document.getElementById("newsSection");
 
 newsBoxes.forEach(removeOldNews);
 
-showMoreBtn.addEventListener("touchstart", showMoreNews);
-showMoreBtn.addEventListener("click", showMoreNews);
+const mainContent = document.getElementById("mainContent");
+
+mainContent.addEventListener("touchend", function (event) {
+  if (event.target === showMoreBtn) {
+    showMoreNews();
+  }
+});
+
+mainContent.addEventListener("click", function (event) {
+  if (event.target === showMoreBtn) {
+    showMoreNews();
+  }
+});
 
 function removeOldNews(item, index) {
   if (index > 2) {
