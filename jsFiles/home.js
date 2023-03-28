@@ -7,14 +7,12 @@ newsBoxes.forEach(removeOldNews);
 const mainContent = document.getElementById("mainContent");
 
 mainContent.addEventListener("touchend", function (event) {
-  alert(event.target)
   if (event.target === showMoreBtn) {
     showMoreNews();
   }
 });
 
 mainContent.addEventListener("click", function (event) {
-  alert(event.target);
   if (event.target === showMoreBtn) {
     showMoreNews();
   }
