@@ -3,7 +3,7 @@
 
 /* overwriting layout.css */
 #hero-background {
-  @include heroBackground(url("../headers/MFF-concert-header.jpg"));
+  @include heroBackground(url("../headers/live-header.jpg"));
 }
 
 #main-title {
