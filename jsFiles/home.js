@@ -12,12 +12,6 @@ mainContent.addEventListener("touchend", function (event) {
   }
 });
 
-mainContent.addEventListener("click", function (event) {
-  if (event.target === showMoreBtn) {
-    showMoreNews();
-  }
-});
-
 function removeOldNews(item, index) {
   if (index > 2) {
     item.classList.add("hiddenNews");
