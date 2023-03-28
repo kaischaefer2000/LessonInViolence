@@ -4,6 +4,9 @@ const newsSection = document.getElementById("newsSection");
 
 newsBoxes.forEach(removeOldNews);
 
+showMoreBtn.addEventListener("touchstart", showMoreNews);
+showMoreBtn.addEventListener("click", showMoreNews);
+
 function removeOldNews(item, index) {
   if (index > 2) {
     item.classList.add("hiddenNews");
