@@ -162,7 +162,22 @@ function scaleImg10() {
     img10.style.transition = "width 0.8s ease-in-out";
     img10.classList.add("bigImg");
   }
-};
+}
+
+// click event for BM23
+img11 = document.getElementById("BM23");
+
+function scaleImg11() {
+  if (img11.classList.contains("bigImg")) {
+    img11.classList.remove("bigImg");
+    img11.style.width = "15vw";
+    img11.style.transition = "width 0.8s ease-in-out";
+  } else {
+    img11.style.width = "30vw";
+    img11.style.transition = "width 0.8s ease-in-out";
+    img11.classList.add("bigImg");
+  }
+}
 
 // click event only when screen is big enough
 function myFunction(x) {
@@ -187,8 +202,10 @@ function myFunction(x) {
       .getElementById("MetalMassacreFlyer")
       .addEventListener("click", scaleImg8);
     document.getElementById("LIM3Flyer").addEventListener("click", scaleImg9);
-    document.getElementById("ParasitePitFlyer").addEventListener("click", scaleImg10);
-  } else {
+    document
+      .getElementById("ParasitePitFlyer")
+      .addEventListener("click", scaleImg10);
+    document.getElementById("BM23").addEventListener("click", scaleImg11);
   }
 }
 
