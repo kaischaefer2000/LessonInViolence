@@ -777,8 +777,8 @@ footer .copyright p {
   background-image: url("../members/Flo-zwei-freigestellt-min.png");
 }
 
-#scraper {
-  background-image: url("../members/Scraper-freigestellt-min.png");
+#hotte {
+  background-image: url("../members/Hotte-freigestellt-min.png");
 }
 
 #flo_eins {
@@ -850,9 +850,9 @@ footer .copyright p {
   background-image: url("../members/Flo-zwei-live-min.jpg");
 }
 
-#scraper:hover,
-#scraper:active {
-  background-image: url("../members/Scraper-live-min.jpg");
+#hotte:hover,
+#hotte:active {
+  background-image: url("../members/Hotte-live-min.jpg");
 }
 
 #flo_eins:hover,
