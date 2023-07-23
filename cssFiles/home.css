@@ -1067,6 +1067,10 @@ footer .copyright p {
   width: 70%;
 }
 
+.content-box .content-devided #hotteNews {
+  width: 50%;
+}
+
 .content-box .content-devided .albumCover {
   width: 80%;
 }
@@ -1248,6 +1252,9 @@ footer .copyright p {
     min-width: 50%;
   }
   .content-devided #Scraper {
+    min-width: 50%;
+  }
+  .content-devided #hotteNews {
     min-width: 50%;
   }
   .content-devided p {
