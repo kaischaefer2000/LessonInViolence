@@ -2,7 +2,7 @@
 @import "./layout";
 
 #hero-background {
-  @include heroBackground(url("../headers/header_about-us-neu.jpg"));
+  @include heroBackground(url("../headers/header_about-us.jpg"));
 }
 
 /* heading and text */
