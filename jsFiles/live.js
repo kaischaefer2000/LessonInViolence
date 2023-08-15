@@ -179,6 +179,21 @@ function scaleImg11() {
   }
 }
 
+// click event for MetalDayzFlyer
+img12 = document.getElementById("MetalDayzFlyer");
+
+function scaleImg12() {
+  if (img12.classList.contains("bigImg")) {
+    img12.classList.remove("bigImg");
+    img12.style.width = "15vw";
+    img12.style.transition = "width 0.8s ease-in-out";
+  } else {
+    img12.style.width = "30vw";
+    img12.style.transition = "width 0.8s ease-in-out";
+    img12.classList.add("bigImg");
+  }
+}
+
 // click event only when screen is big enough
 function myFunction(x) {
   if (x.matches) {
@@ -206,6 +221,9 @@ function myFunction(x) {
       .getElementById("ParasitePitFlyer")
       .addEventListener("click", scaleImg10);
     document.getElementById("BM23").addEventListener("click", scaleImg11);
+    document
+      .getElementById("MetalDayzFlyer")
+      .addEventListener("click", scaleImg12);
   }
 }
 
