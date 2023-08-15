@@ -188,7 +188,7 @@ function scaleImg12() {
     img12.style.width = "15vw";
     img12.style.transition = "width 0.8s ease-in-out";
   } else {
-    img12.style.width = "30vw";
+    img12.style.width = "45vw";
     img12.style.transition = "width 0.8s ease-in-out";
     img12.classList.add("bigImg");
   }
