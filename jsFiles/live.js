@@ -194,6 +194,21 @@ function scaleImg12() {
   }
 }
 
+// click event for Bastards Bash
+img13 = document.getElementById("BastardFlyer");
+
+function scaleImg13() {
+  if (img13.classList.contains("bigImg")) {
+    img13.classList.remove("bigImg");
+    img13.style.width = "15vw";
+    img13.style.transition = "width 0.8s ease-in-out";
+  } else {
+    img13.style.width = "45vw";
+    img13.style.transition = "width 0.8s ease-in-out";
+    img13.classList.add("bigImg");
+  }
+}
+
 // click event only when screen is big enough
 function myFunction(x) {
   if (x.matches) {
@@ -224,6 +239,9 @@ function myFunction(x) {
     document
       .getElementById("MetalDayzFlyer")
       .addEventListener("click", scaleImg12);
+    document
+      .getElementById("BastardFlyer")
+      .addEventListener("click", scaleImg13);
   }
 }
 
