@@ -3,7 +3,7 @@
 
 /* overwriting layout.css */
 #hero-background {
-  @include heroBackground(url("../headers/live-header.jpg"));
+  @include heroBackground(url("../headers/header-lim-3-k.jpeg"));
 }
 
 #main-title {
@@ -110,7 +110,7 @@
 }
 
 .ticket-arrow {
-  transform: rotate(270deg) !important; 
+  transform: rotate(270deg) !important;
   padding: 0 !important;
 }
 
