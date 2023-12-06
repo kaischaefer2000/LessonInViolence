@@ -41,7 +41,7 @@ const imgData = [
   { id: "LIM3Flyer", maxWidth: "30vw" },
   { id: "ParasitePitFlyer", maxWidth: "30vw" },
   { id: "BM23", maxWidth: "30vw" },
-  { id: "MetalDayzFlyer", maxWidth: "45vw" },
+  { id: "MetalDayzFlyer", maxWidth: "30vw" },
   { id: "BastardFlyer", maxWidth: "45vw" },
   { id: "WalsrodeFlyer", maxWidth: "30vw" },
 ];
