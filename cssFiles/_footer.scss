@@ -33,7 +33,7 @@ footer {
 
         picture {
           display: contents;
-          
+
           img {
             padding: 1.8em 1em 1em;
             width: 60%;
@@ -42,6 +42,10 @@ footer {
 
           #ironShieldsLogo {
             width: 50%;
+          }
+
+          #mddRecordsLogo {
+            width: 45%;
           }
         }
       }
@@ -83,12 +87,15 @@ footer {
         a {
           picture {
             display: contents;
-            
+
             img {
               width: 45%;
             }
             #ironShieldsLogo {
               width: 35%;
+            }
+            #mddRecordsLogo {
+              width: 30%;
             }
           }
         }
@@ -112,6 +119,9 @@ footer {
           }
           #ironShieldsLogo {
             width: 60%;
+          }
+          #mddRecordsLogo {
+            width: 55%;
           }
         }
       }
@@ -155,6 +165,9 @@ footer {
               }
               #ironShieldsLogo {
                 width: 50%;
+              }
+              #mddRecordsLogo {
+                width: 45%;
               }
             }
           }
@@ -209,6 +222,9 @@ footer {
             #ironShieldsLogo {
               width: 70%;
             }
+            #mddRecordsLogo {
+              width: 65%;
+            }
           }
         }
       }
@@ -236,6 +252,9 @@ footer {
               }
               #ironShieldsLogo {
                 width: 90%;
+              }
+              #mddRecordsLogo {
+                width: 85%;
               }
             }
           }

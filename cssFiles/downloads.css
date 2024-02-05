@@ -702,6 +702,10 @@ footer .collumn-redstuff .logoRow a picture #ironShieldsLogo {
   width: 50%;
 }
 
+footer .collumn-redstuff .logoRow a picture #mddRecordsLogo {
+  width: 45%;
+}
+
 footer .collumn-social {
   padding-left: 6em;
 }
@@ -737,6 +741,9 @@ footer .collumn-social #bandcamp {
   footer .collumn-redstuff .logoRow a picture #ironShieldsLogo {
     width: 35%;
   }
+  footer .collumn-redstuff .logoRow a picture #mddRecordsLogo {
+    width: 30%;
+  }
   footer .collumn-social {
     padding-left: 13em;
   }
@@ -749,6 +756,9 @@ footer .collumn-social #bandcamp {
   }
   footer .collumn-redstuff a picture #ironShieldsLogo {
     width: 60%;
+  }
+  footer .collumn-redstuff a picture #mddRecordsLogo {
+    width: 55%;
   }
   footer .collumn-contact {
     padding-left: 1em;
@@ -779,6 +789,9 @@ footer .collumn-social #bandcamp {
   }
   footer .footer-right .collumn-redstuff .logoRow a picture #ironShieldsLogo {
     width: 50%;
+  }
+  footer .footer-right .collumn-redstuff .logoRow a picture #mddRecordsLogo {
+    width: 45%;
   }
   footer .footer-right .collumn-social {
     -webkit-box-ordinal-group: 1;
@@ -816,6 +829,9 @@ footer .collumn-social #bandcamp {
   footer .footer-right .collumn-redstuff a picture #ironShieldsLogo {
     width: 70%;
   }
+  footer .footer-right .collumn-redstuff a picture #mddRecordsLogo {
+    width: 65%;
+  }
 }
 
 /* fixing for extra small devices */
@@ -838,6 +854,9 @@ footer .collumn-social #bandcamp {
   }
   footer .footer-right .collumn-redstuff .logoRow a picture #ironShieldsLogo {
     width: 90%;
+  }
+  footer .footer-right .collumn-redstuff .logoRow a picture #mddRecordsLogo {
+    width: 85%;
   }
   footer .footer-right .footer-title {
     font-size: 1em;
@@ -926,19 +945,19 @@ footer .copyright p {
 }
 
 #foto-smoke {
-  background-image: url("../download-items/Lesson In Violence_Bandfoto_01.jpg");
+  background-image: url("../download-items/Lesson In Violence_Bandfoto_01_small.jpg");
 }
 
 #foto-light {
-  background-image: url("../download-items/Lesson In Violence_Bandfoto_04.jpg");
+  background-image: url("../download-items/Lesson In Violence_Bandfoto_04_small.jpg");
 }
 
 #foto-square {
-  background-image: url("../download-items/Lesson In Violence_Bandfoto_02.jpg");
+  background-image: url("../download-items/Lesson In Violence_Bandfoto_02_small.jpg");
 }
 
 #foto-black-white {
-  background-image: url("../download-items/Lesson In Violence_Bandfoto_05.jpg");
+  background-image: url("../download-items/Lesson In Violence_Bandfoto_05_small.jpg");
 }
 
 #bandinfo {
