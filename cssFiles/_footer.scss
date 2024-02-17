@@ -67,6 +67,14 @@ footer {
       height: 50px;
       margin: 10% 0px;
     }
+
+    #linktree {
+      width: 40%;
+      min-width: 100px;
+      max-width: 500px;
+      margin-top: 1.5em;
+      opacity: 0.8;
+    }
   }
 }
 
@@ -258,6 +266,11 @@ footer {
               }
             }
           }
+        }
+      }
+      .collumn-social {
+        #linktree {
+          min-width: 50px;
         }
       }
 

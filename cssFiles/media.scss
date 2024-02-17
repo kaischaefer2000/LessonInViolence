@@ -4,10 +4,10 @@
 @import "./layout";
 
 #hero-background {
-  @include heroBackground(url("../headers/Banner-header.jpg"));
+  @include heroBackground(url("../headers/Noneedfordeath-header.jpg"));
 }
 
-#main-title{
+#main-title {
   line-height: 1.5em;
   padding: 2.5vw 0px 2.5vw;
 }
@@ -31,14 +31,14 @@ h3 {
   margin-bottom: 4em;
 }
 
-.streaming-links{
+.streaming-links {
   padding-left: 2em;
   display: flex;
   flex-direction: column;
   padding-top: 2em;
   padding-bottom: 2em;
 
-  .streaming-btn{
+  .streaming-btn {
     padding: 8px 18px;
     background: none;
     border: 1px solid white;
@@ -58,7 +58,7 @@ h3 {
       cursor: pointer;
     }
 
-    .streaming-icon{
+    .streaming-icon {
       color: white;
       width: 25px;
       height: 25px;
@@ -79,7 +79,7 @@ h3 {
     visibility: hidden;
   }
 
-  #videoSection>*:not(:first-child){
+  #videoSection > *:not(:first-child) {
     padding-top: 4em;
   }
 }
@@ -158,13 +158,13 @@ h3 {
   }
 }
 
- @media(min-width: 1650px) {
-   .player-container {
-     height: 30vw !important;
-   }
+@media (min-width: 1650px) {
+  .player-container {
+    height: 30vw !important;
+  }
 
-   .container {
-     height: 25vw;
-     width: 19vw;
-   }
- }
+  .container {
+    height: 25vw;
+    width: 19vw;
+  }
+}

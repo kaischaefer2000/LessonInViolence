@@ -864,6 +864,14 @@ footer .collumn-social #bandcamp {
   margin: 10% 0px;
 }
 
+footer .collumn-social #linktree {
+  width: 40%;
+  min-width: 100px;
+  max-width: 500px;
+  margin-top: 1.5em;
+  opacity: 0.8;
+}
+
 /*footer for large devices */
 @media (min-width: 1450px) {
   footer .footer-title {
@@ -998,6 +1006,9 @@ footer .collumn-social #bandcamp {
   }
   footer .footer-right .collumn-redstuff .logoRow a picture #mddRecordsLogo {
     width: 85%;
+  }
+  footer .footer-right .collumn-social #linktree {
+    min-width: 50px;
   }
   footer .footer-right .footer-title {
     font-size: 1em;
