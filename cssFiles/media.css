@@ -1316,6 +1316,12 @@ h3 {
   margin-right: 0.5em;
 }
 
+@media (min-width: 750px) {
+  .videoSection > *:last-child {
+    margin-top: 3em;
+  }
+}
+
 @media (max-width: 750px) {
   h2 {
     font-size: 1.6em;
@@ -1326,7 +1332,7 @@ h3 {
   #main-title {
     visibility: hidden;
   }
-  #videoSection > *:not(:first-child) {
+  .videoSection > *:not(:first-child) {
     padding-top: 4em;
   }
 }
@@ -1377,26 +1383,26 @@ h3 {
 }
 
 /* styling Video Section */
-#videoSection h3 {
+.videoSection h3 {
   font-size: 1.3em;
 }
 
-#videoSection a > img {
+.videoSection a > img {
   padding-top: 16px;
 }
 
-#videoSection img {
+.videoSection img {
   width: 80%;
 }
 
 @media (max-width: 926px) {
-  #videoSection h3 {
+  .videoSection h3 {
     font-size: 1.2em;
   }
 }
 
 @media (max-width: 450px) {
-  #videoSection img {
+  .videoSection img {
     width: 100%;
   }
 }
