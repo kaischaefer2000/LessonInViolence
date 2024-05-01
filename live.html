@@ -69,6 +69,7 @@
       $(function () {
         $("#headerFile").load("./htmlFiles/header.html");
         $("#footerFile").load("./htmlFiles/footer.html");
+        $("#nextShow").load("./htmlFiles/nextShow.html");
       });
     </script>
   </head>
@@ -89,22 +90,7 @@
       </section>
     </div>
 
-    <!-- info box -->
-    <section>
-      <div class="container-fluid">
-        <div id="info-box" class="row">
-          <div class="col-6">
-            <a class="red" href="./live.html">Next show</a>
-          </div>
-          <div class="col-6">
-            <a href="./live.html">
-              <span>19.04.2024</span><br />
-              <span translate="no">Metal Franconia Festival – Geiselwind</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="nextShow"></section>
 
     <div id="mainContent" class="fluid-container">
       <div class="mainContentInner">
@@ -136,7 +122,7 @@
                     <p>Location:</p>
                   </div>
                   <div class="col-7 col-sm-9 col-lg-10">
-                    <p>Cassiopeia / Berlin</p>
+                    <p>JUK Spirale / Berlin</p>
                   </div>
                 </div>
 
@@ -399,14 +385,14 @@
 
         <!-- Metal Franconia 2024 -->
         <section>
-          <div class="row accordion-item show">
+          <div class="row accordion-item show over">
             <div class="col-11">
               <p>19.04.2024</p>
               <p></p>
               <p class="show-name">Metal Franconia Festival – Geiselwind</p>
             </div>
             <div class="col-1">
-              <i class="fa fa-chevron-down arrow"></i>
+              <i class="fa fa-chevron-down arrow over"></i>
             </div>
           </div>
 
