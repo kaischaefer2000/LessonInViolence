@@ -1105,6 +1105,10 @@ footer .copyright p {
   width: 40%;
 }
 
+.content-box .content-devided #RockMetalDays {
+  width: 40%;
+}
+
 .content-box .content-devided .albumCover {
   width: 80%;
 }
@@ -1292,6 +1296,9 @@ footer .copyright p {
     min-width: 50%;
   }
   .content-devided #noNeedForDeathNews {
+    width: 50%;
+  }
+  .content-devided #RockMetalDays {
     width: 50%;
   }
   .content-devided p {
