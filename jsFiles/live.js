@@ -47,6 +47,8 @@ const imgData = [
   { id: "MFF24", maxWidth: "30vw" },
   { id: "MünsterFlyer", maxWidth: "30vw" },
   { id: "UndergroundPitFlyer", maxWidth: "30vw" },
+  { id: "ValhallaFlyer", maxWidth: "40vw" },
+  { id: "LIM4Flyer", maxWidth: "30vw" },
 ];
 
 imgData.forEach(addClickEvent);
