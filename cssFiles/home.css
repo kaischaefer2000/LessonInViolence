@@ -1105,6 +1105,10 @@ footer .copyright p {
   width: 40%;
 }
 
+.content-box .content-devided #lim4TicketsNews {
+  width: 30%;
+}
+
 .content-box .content-devided #RockMetalDays {
   width: 40%;
 }
@@ -1297,6 +1301,9 @@ footer .copyright p {
   }
   .content-devided #noNeedForDeathNews {
     width: 50%;
+  }
+  .content-devided #lim4TicketsNews {
+    width: 30%;
   }
   .content-devided #RockMetalDays {
     width: 50%;
