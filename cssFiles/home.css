@@ -1113,6 +1113,10 @@ footer .copyright p {
   width: 40%;
 }
 
+.content-box .content-devided #ThrashTalk {
+  width: 40%;
+}
+
 .content-box .content-devided .albumCover {
   width: 80%;
 }
@@ -1306,6 +1310,9 @@ footer .copyright p {
     width: 30%;
   }
   .content-devided #RockMetalDays {
+    width: 50%;
+  }
+  .content-devided #ThrashTalk {
     width: 50%;
   }
   .content-devided p {
