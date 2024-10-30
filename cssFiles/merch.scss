@@ -92,6 +92,8 @@ product card styling
         #imgPatch,
         #imgFront4,
         #imgBack4,
+        #imgFront3,
+        #imgBack3,
         #imgBack {
           display: none;
           position: absolute;
@@ -368,6 +370,10 @@ product card styling
   }
 
   #bgImg4 {
+    display: grid;
+  }
+
+  #bgImg3 {
     display: grid;
   }
 }

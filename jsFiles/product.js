@@ -48,6 +48,14 @@ const bgImg4 = document.getElementById("bgImg4");
 const imgFront4 = document.getElementById("imgFront4");
 const imgBack4 = document.getElementById("imgBack4");
 
+// CD T-Shirt NBT
+const back3 = document.getElementById("back3");
+const front3 = document.getElementById("front3");
+
+const bgImg3 = document.getElementById("bgImg3");
+const imgFront3 = document.getElementById("imgFront3");
+const imgBack3 = document.getElementById("imgBack3");
+
 var numbr = 0;
 
 // activate picture of shirt back
@@ -74,9 +82,53 @@ function frontActive4() {
   imgFront4.classList.add("shown");
   bgImg4.classList.remove("shown");
 }
+
+// activate picture of shirt back
+function backActive3() {
+  if (front3.classList.contains("active")) {
+    front3.classList.remove("active");
+    imgFront3.classList.remove("shown");
+  }
+
+  bgImg3.classList.remove("shown");
+
+  back3.classList.add("active");
+  imgBack3.classList.add("shown");
+}
+
+// activate picture of shirt front
+function frontActive3() {
+  if (back3.classList.contains("active")) {
+    back3.classList.remove("active");
+    imgBack3.classList.remove("shown");
+  }
+
+  front3.classList.add("active");
+  imgFront3.classList.add("shown");
+  bgImg3.classList.remove("shown");
+}
+
 // toggle between each view
 window.onload = function () {
   document.onclick = function (e) {
+    if (e.target.id !== "front3") {
+      front3.classList.remove("active");
+      imgFront3.classList.remove("shown");
+
+      if (!back3.classList.contains("active")) {
+        bgImg3.classList.add("shown");
+      }
+    }
+
+    if (e.target.id !== "back3") {
+      back3.classList.remove("active");
+      imgBack3.classList.remove("shown");
+
+      if (!front3.classList.contains("active")) {
+        bgImg3.classList.add("shown");
+      }
+    }
+
     if (e.target.id !== "front4") {
       front4.classList.remove("active");
       imgFront4.classList.remove("shown");
@@ -120,6 +172,7 @@ const fullImg = document.getElementById("fullScreenImg");
 const shirtImage = document.getElementsByClassName("shirtImage");
 const patchImages = document.getElementsByClassName("patchImage");
 const cdshirtImages = document.getElementsByClassName("cdShirtImage");
+const nbtshirtImages = document.getElementsByClassName("nbtShirtImage");
 const ticketImages = document.getElementsByClassName("ticketImage");
 const flaskImages = document.getElementsByClassName("flaskImage");
 var imagesArray = [];
@@ -147,6 +200,9 @@ function openLightbox(p) {
   }
   if (p === 4) {
     imagesArray = cdshirtImages;
+  }
+  if (p === 3) {
+    imagesArray = nbtshirtImages;
   }
   if (p === 1) {
     imagesArray = patchImages;

@@ -821,6 +821,8 @@ product card styling
 .products .product .prodContainer .prodImage #imgPatch,
 .products .product .prodContainer .prodImage #imgFront4,
 .products .product .prodContainer .prodImage #imgBack4,
+.products .product .prodContainer .prodImage #imgFront3,
+.products .product .prodContainer .prodImage #imgBack3,
 .products .product .prodContainer .prodImage #imgBack {
   display: none;
   position: absolute;
@@ -1137,6 +1139,10 @@ product card styling
     display: grid;
   }
   #bgImg4 {
+    display: -ms-grid;
+    display: grid;
+  }
+  #bgImg3 {
     display: -ms-grid;
     display: grid;
   }
