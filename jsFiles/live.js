@@ -51,6 +51,7 @@ const imgData = [
   { id: "LIM4Flyer", maxWidth: "30vw" },
   { id: "ThrashTalkFlyer", maxWidth: "30vw" },
   { id: "MetalExplosionFlyer", maxWidth: "40vw" },
+  { id: "FellfresseFlyer", maxWidth: "40vw" },
 ];
 
 imgData.forEach(addClickEvent);
