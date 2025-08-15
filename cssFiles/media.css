@@ -1049,6 +1049,10 @@ footer .collumn-redstuff .logoRow a picture #ironShieldsLogo {
   width: 50%;
 }
 
+footer .collumn-redstuff .logoRow a picture #rausgegangenLogo {
+  width: 50%;
+}
+
 footer .collumn-redstuff .logoRow a picture #mddRecordsLogo {
   width: 45%;
 }
@@ -1094,6 +1098,9 @@ footer .collumn-social #linktree {
     width: 45%;
   }
   footer .collumn-redstuff .logoRow a picture #ironShieldsLogo {
+    width: 35%;
+  }
+  footer .collumn-redstuff .logoRow a picture #rausgegangenLogo {
     width: 35%;
   }
   footer .collumn-redstuff .logoRow a picture #mddRecordsLogo {
@@ -1143,6 +1150,9 @@ footer .collumn-social #linktree {
     width: 60%;
   }
   footer .footer-right .collumn-redstuff .logoRow a picture #ironShieldsLogo {
+    width: 50%;
+  }
+  footer .footer-right .collumn-redstuff .logoRow a picture #rausgegangenLogo {
     width: 50%;
   }
   footer .footer-right .collumn-redstuff .logoRow a picture #mddRecordsLogo {
@@ -1208,6 +1218,9 @@ footer .collumn-social #linktree {
     padding: 1em 0.5em;
   }
   footer .footer-right .collumn-redstuff .logoRow a picture #ironShieldsLogo {
+    width: 90%;
+  }
+  footer .footer-right .collumn-redstuff .logoRow a picture #rausgegangenLogo {
     width: 90%;
   }
   footer .footer-right .collumn-redstuff .logoRow a picture #mddRecordsLogo {
