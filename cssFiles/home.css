@@ -1130,6 +1130,10 @@ footer .copyright p {
   width: 40%;
 }
 
+.content-box .content-devided #LIM5 {
+  width: 40%;
+}
+
 .content-box .content-devided .albumCover {
   width: 80%;
 }
@@ -1326,6 +1330,9 @@ footer .copyright p {
     width: 50%;
   }
   .content-devided #ThrashTalk {
+    width: 50%;
+  }
+  .content-devided #LIM5 {
     width: 50%;
   }
   .content-devided p {
