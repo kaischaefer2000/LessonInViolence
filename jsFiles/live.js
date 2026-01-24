@@ -26,7 +26,7 @@ function toggleBigImg(imgId, maxWidth) {
 function addClickEvent(imgInfo) {
   const img = document.getElementById(imgInfo.id);
   img.addEventListener("click", () =>
-    toggleBigImg(imgInfo.id, imgInfo.maxWidth)
+    toggleBigImg(imgInfo.id, imgInfo.maxWidth),
   );
 }
 
@@ -58,6 +58,8 @@ const imgData = [
   { id: "BattleOfBoarsFlyer", maxWidth: "30vw" },
   { id: "FrühlingserwachenFlyer", maxWidth: "30vw" },
   { id: "MetalNightRD", maxWidth: "30vw" },
+  { id: "keep-it-rotten-flyer", maxWidth: "30vw" },
+  { id: "hedwig", maxWidth: "30vw" },
 ];
 
 imgData.forEach(addClickEvent);
@@ -70,7 +72,7 @@ x.addEventListener("change", (e) => {
     imgData.forEach((imgInfo) => {
       const img = document.getElementById(imgInfo.id);
       img.removeEventListener("click", () =>
-        toggleBigImg(imgInfo.id, imgInfo.maxWidth)
+        toggleBigImg(imgInfo.id, imgInfo.maxWidth),
       );
     });
   }
