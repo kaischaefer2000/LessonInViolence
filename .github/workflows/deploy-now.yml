@@ -20,7 +20,7 @@ jobs:
           submodules: "recursive"
       - name: Deploy build
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/deploy-to-ionos-action@v2
+        uses: ionos-deploy-now/deploy-to-ionos-action@v1
         with:
           remote-host: ${{ steps.project.outputs.remote-host }}
           api-key: ${{ secrets.IONOS_API_KEY }}
