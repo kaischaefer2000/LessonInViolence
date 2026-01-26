@@ -1,31 +1,21 @@
 name: Deploy Now
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  deploy-now:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Fetch project data
-        uses: ionos-deploy-now/retrieve-project-info-action@v1
-        id: project
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to IONOS Deploy Now
+        uses: ionos-deploy-now/deploy-to-ionos-action@v2
         with:
-          service-host: api-eu.ionos.space
-          project: ${{ secrets.IONOS_PROJECT_ID }}
           api-key: ${{ secrets.IONOS_API_KEY }}
-      - name: checkout
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/checkout@v2
-        with:
-          submodules: "recursive"
-      - name: Deploy build
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/deploy-to-ionos-action@v1
-        with:
-          remote-host: ${{ steps.project.outputs.remote-host }}
-          api-key: ${{ secrets.IONOS_API_KEY }}
-          service-host: api-eu.ionos.space
-          branch-id: ${{ steps.project.outputs.branch-id }}
-          storage-quota: ${{ steps.project.outputs.storage-quota }}
-          project: ${{ secrets.IONOS_PROJECT_ID }}
+          project-id: ${{ secrets.IONOS_PROJECT_ID }}
           dist-folder: ./
