@@ -5,11 +5,6 @@ on: [push]
 jobs:
   deploy-now:
     runs-on: ubuntu-latest
-
-    env:
-      SSL_CERT_FILE: ""
-      SSL_CERT_DIR: ""
-
     steps:
       - name: Fetch project data
         uses: ionos-deploy-now/retrieve-project-info-action@v1
