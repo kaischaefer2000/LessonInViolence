@@ -1,0 +1,17 @@
+name: Deploy to IONOS
+
+on:
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy Now to IONOS
+        # Dieser Step wird durch IONOS GitHub App eingebaut
+        # Die IONOS-App setzt hier automatisch Tokens & Secrets ein
+        run: echo "IONOS deploy occurs via GitHub App"
