@@ -17,7 +17,7 @@ env:
   DEPLOYMENT_FOLDER: ./
 
 jobs:
-  # Please do not rename this job
+# Please do not rename this job
   build-project:
     name: build LessonInViolence
     runs-on: ubuntu-latest
@@ -25,15 +25,15 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
         with:
-          submodules: "recursive"
+          submodules: 'recursive'
 
-      # Please do not touch the following action
+# Please do not touch the following action
       - name: Store deployment content
         uses: ionos-deploy-now/artifact-action@v1
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
-          project-id: ${{ secrets.IONOS_PROJECT_ID }}
+          project-id: 962f64a6-8986-41d3-a6bc-af02b9a21c76
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
