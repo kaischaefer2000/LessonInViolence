@@ -64,6 +64,7 @@ const imgData = [
   { id: "MoshpitXFlyer", maxWidth: "30vw" },
   { id: "MetalNightFlyer", maxWidth: "30vw" },
   { id: "AssultFuerth", maxWidth: "30vw" },
+  { id: "swiss-metal-night-flyer", maxWidth: "30vw" },
 ];
 
 imgData.forEach(addClickEvent);
