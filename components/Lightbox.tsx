@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { memo, useEffect, useRef } from "react";
 import type { StaticImageData } from "next/image";
 import Img from "./Img";
 import styles from "./Lightbox.module.css";
@@ -31,6 +31,15 @@ export const PrevIcon = () => (
   </svg>
 );
 
+/** One gallery picture; memoized, so browsing only re-renders the slides whose loading changes. */
+const Slide = memo(function Slide({ src, alt, eager }: { src: StaticImageData; alt: string; eager: boolean }) {
+  return (
+    <section className={styles.imageContainer}>
+      <Img src={src} alt={alt} sizes="75vw" placeholder="empty" loading={eager ? "eager" : "lazy"} />
+    </section>
+  );
+});
+
 /** Fullscreen view of a picture gallery, a video or a YouTube video. */
 export default function Lightbox({
   content,
@@ -47,15 +56,20 @@ export default function Lightbox({
   const prev = () => onNavigate?.(index === 0 ? count - 1 : index - 1);
   const next = () => onNavigate?.(index === count - 1 ? 0 : index + 1);
 
+  // subscribe once; the listener calls the handler of the latest render through the ref
+  const keyHandler = useRef<(e: KeyboardEvent) => void>(undefined);
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
+    keyHandler.current = (e) => {
       if (e.key === "Escape") onClose();
       if (content.type === "gallery" && e.key === "ArrowLeft") prev();
       if (content.type === "gallery" && e.key === "ArrowRight") next();
     };
+  });
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => keyHandler.current?.(e);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  });
+  }, []);
 
   return (
     <div className={styles.lightbox} role="dialog" aria-modal="true">
@@ -64,9 +78,7 @@ export default function Lightbox({
       {content.type === "gallery" && (
         <div className={styles.inner} style={{ marginLeft: `${index * -100}vw` }}>
           {content.images.map((image, i) => (
-            <section key={i} className={styles.imageContainer}>
-              <Img src={image.src} alt={image.alt} sizes="75vw" placeholder="empty" loading={Math.abs(i - index) <= 1 ? "eager" : "lazy"} />
-            </section>
+            <Slide key={i} src={image.src} alt={image.alt} eager={Math.abs(i - index) <= 1} />
           ))}
         </div>
       )}

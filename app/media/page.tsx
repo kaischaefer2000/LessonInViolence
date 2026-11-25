@@ -12,7 +12,7 @@ import header from "@/images/headers/Noneedfordeath-header.jpg";
 import styles from "./media.module.css";
 
 export const metadata: Metadata = {
-  title: "Lesson in Violence | Concert pictures & videos",
+  title: "Concert pictures & videos",
   description:
     "Go checkout the pictures from our shows. You`ll also find music viedos and demo songs from our new album The Thrashfall of Mankind.",
   keywords: defaultKeywords,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function MediaPage() {
   return (
     <Page className={styles.page}>
-      <Hero title={["M", "E", "D", "I", "A"]} background={header.src} titleStyle="paddedHiddenOnMobile" />
+      <Hero title="MEDIA" background={header.src} titleStyle="paddedHiddenOnMobile" />
 
       <InfoBox variant="media">
         <div className="col-12">

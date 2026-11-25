@@ -1,4 +1,5 @@
 import type { MerchItem } from "@/components/MerchProduct";
+import { plain } from "./image";
 import cdNoNeedForDeath from "@/images/merchPictures/CDProductNoNeedForDeath.jpg";
 import lpNoNeedForDeath from "@/images/merchPictures/LPProductNoNeedForDeath.jpg";
 import cdThrashfall from "@/images/merchPictures/CDProdukt.jpg";
@@ -39,9 +40,11 @@ const sizes = (list: string[]) => (
   </>
 );
 
-const SHIRT_COLUMNS = "col-11 col-sm-10 col-md-4 col-lg-4";
+const NARROW_COLUMNS = "col-11 col-sm-10 col-md-4 col-lg-4";
 
-export const merchRows: { id?: string; hidden?: boolean; items: MerchItem[] }[] = [
+type MerchRowData = { id?: string; hidden?: boolean; items: MerchItem[] };
+
+const rows: MerchRowData[] = [
   {
     items: [
       {
@@ -77,7 +80,7 @@ export const merchRows: { id?: string; hidden?: boolean; items: MerchItem[] }[] 
       },
       {
         title: "T-SHIRT",
-        columns: SHIRT_COLUMNS,
+        columns: NARROW_COLUMNS,
         image: shirtNbt,
         front: shirtNbtFront,
         back: shirtNbtBack,
@@ -94,7 +97,7 @@ export const merchRows: { id?: string; hidden?: boolean; items: MerchItem[] }[] 
     items: [
       {
         title: "T-SHIRT",
-        columns: SHIRT_COLUMNS,
+        columns: NARROW_COLUMNS,
         image: shirtLiv,
         front: shirtLivFront,
         back: shirtLivBack,
@@ -107,7 +110,7 @@ export const merchRows: { id?: string; hidden?: boolean; items: MerchItem[] }[] 
       },
       {
         title: "T-SHIRT",
-        columns: SHIRT_COLUMNS,
+        columns: NARROW_COLUMNS,
         image: shirtCd,
         front: shirtCdFront,
         back: shirtCdBack,
@@ -126,7 +129,7 @@ export const merchRows: { id?: string; hidden?: boolean; items: MerchItem[] }[] 
         title: "Ticket",
         id: "lim4ticketAnchor",
         hidden: true,
-        columns: "col-11 col-sm-10 col-md-4 col-lg-4",
+        columns: NARROW_COLUMNS,
         image: ticketLim4,
         lightbox: true,
         details: [
@@ -167,7 +170,7 @@ export const merchRows: { id?: string; hidden?: boolean; items: MerchItem[] }[] 
       {
         title: "Ticket",
         id: "lim5ticketAnchor",
-        columns: "col-11 col-sm-10 col-md-4 col-lg-4",
+        columns: NARROW_COLUMNS,
         image: ticketLim5,
         lightbox: true,
         details: [
@@ -180,3 +183,15 @@ export const merchRows: { id?: string; hidden?: boolean; items: MerchItem[] }[] 
     ],
   },
 ];
+
+// passed to a client component: pictures without the inline blur data
+export const merchRows: MerchRowData[] = rows.map((row) => ({
+  ...row,
+  items: row.items.map((item) => ({
+    ...item,
+    image: plain(item.image),
+    front: item.front && plain(item.front),
+    back: item.back && plain(item.back),
+    morePictures: item.morePictures?.map(plain),
+  })),
+}));

@@ -3,9 +3,10 @@ import Page from "@/components/Page";
 import Header from "@/components/Header";
 import { defaultKeywords } from "@/data/seo";
 import styles from "./legal-notice.module.css";
+import { CONTACT_EMAIL } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Lesson in Violence legal notice",
+  title: { absolute: "Lesson in Violence legal notice" },
   description: "Legal Notice and privacy policy from the Lesson in Violence Website",
   keywords: defaultKeywords,
   robots: { index: true, follow: false },
@@ -23,7 +24,7 @@ export default function LegalNoticePage() {
             <p>Responsible for content pursuant to §6 MDSIV Information provided according to Sec. 5 German Telemedia Act (TMG):<br />
             We do not assume liability for forwarding links on this Homepage.<br />
             Responsible for content on these sites:<br />
-            Roland Schäfer; Auenstraße 47; 97456 Dittelbrunn; Germany; E-Mail: <a href="mailto:contact@lessoninviolence.com">contact@lessoninviolence.com</a>
+            Roland Schäfer; Auenstraße 47; 97456 Dittelbrunn; Germany; E-Mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
             </p>
           </div>
         </section>
@@ -54,7 +55,7 @@ export default function LegalNoticePage() {
             Notice concerning the party responsible for this website<br />
             The party responsible for processing data on this website is:<br />
             Roland Schäfer; Auenstr. 47; D-97456 Dittelbrunn<br />
-            Email: contact@lessoninviolence.com<br />
+            {`Email: ${CONTACT_EMAIL}`}<br />
             The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (names, email addresses, etc.).<br />
             Right to data portability<br />
             You have the right to have data which we process based on your consent or in fulfillment of a contract automatically delivered to yourself or to a third party in a standard, machine-readable format. If you require the direct transfer of data to another responsible party, this will only be done to the extent technically feasible.<br />

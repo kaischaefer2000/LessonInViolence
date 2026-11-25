@@ -2,6 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 import type { StaticImageData } from "next/image";
 import Img from "./Img";
 import styles from "./News.module.css";
+import { cx } from "./cx";
 
 export type NewsItem = {
   /** "DD.MM.YYYY" */
@@ -40,7 +41,7 @@ export function NewsBox({ item, dark }: { item: NewsItem; dark: boolean }) {
       {item.layout === "textOnly" ? (
         <p>{item.text}</p>
       ) : (
-        <div className={`${styles.contentDevided}${item.spaceBetween ? ` ${styles.spaceBetween}` : ""}`}>
+        <div className={cx(styles.contentDevided, item.spaceBetween && styles.spaceBetween)}>
           <p>{item.text}</p>
           {item.aside}
         </div>

@@ -14,7 +14,7 @@ const garamond = EB_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lessoninviolence.com"),
-  title: "Lesson in Violence | german thrash metal band",
+  title: { default: "Lesson in Violence | german thrash metal band", template: "Lesson in Violence | %s" },
   robots: { index: true, follow: true },
   icons: {
     icon: [{ url: "/assets/LIV_abkuerzung_rot.png", type: "image/png", sizes: "16x16 32x32" }],

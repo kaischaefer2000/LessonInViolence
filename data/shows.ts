@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import { plain } from "./image";
 
 /*
  * All concerts shown on the live page (newest first – the list is sorted by
@@ -34,7 +35,7 @@ export type Show = {
   hidden?: boolean;
   /** prevent browser translation of the show name */
   nameNoTranslate?: boolean;
-  /** narrower label column on small screens (layout of the older entries) */
+  /** narrower label column on small screens – set automatically for the older entries (see getShows) */
   legacyLayout?: boolean;
 };
 
@@ -297,7 +298,6 @@ const shows: Show[] = [
     flyer: { src: infernumFlyer, alt: "Infernum meets Porkcore Fistevil Festival Flyer", zoomWidth: "25vw" },
     moreDetailsUrl: "https://infernum-meets-porkcore.de/",
     nameNoTranslate: true,
-    legacyLayout: true,
   },
   {
     date: "02.07.2022",
@@ -306,7 +306,6 @@ const shows: Show[] = [
     bands: "Lesson in Violence, Shredhammer, Bastard`s Breed, Absorb, Goregonzola",
     flyer: { src: fylerBirthdayMoshpit, alt: "Birthday Moshpit Flyer" },
     nameNoTranslate: true,
-    legacyLayout: true,
   },
   {
     date: "09.04.2022",
@@ -315,7 +314,6 @@ const shows: Show[] = [
     bands: "Lesson in Violence, JBO, Milking the Goatmachine, Bodyfarm, Fleshcrawl, Cypecore, and many more...",
     flyer: { src: mff2022Flyer, alt: "Bonebreaker Festival Flyer", zoomWidth: "35vw" },
     moreDetailsUrl: "https://sw.metal-franconia.de/",
-    legacyLayout: true,
   },
   {
     date: "22.02.2020",
@@ -324,7 +322,6 @@ const shows: Show[] = [
     bands: "Lesson in Violence, Goregonzola, Painstyle, Rawside, April in Flames",
     flyer: { src: birthdayBashFlyerMin, alt: "Bonebreaker Festival Flyer", zoomWidth: "35vw" },
     nameNoTranslate: true,
-    legacyLayout: true,
   },
   {
     date: "30.11.2019",
@@ -333,7 +330,6 @@ const shows: Show[] = [
     bands: "Lesson in Violence, Goregonzola, Insulter, April in Flames",
     flyer: { src: lessonsInMetal1FlyerMin, alt: "Bonebreaker Festival Flyer", zoomWidth: "40vw" },
     nameNoTranslate: true,
-    legacyLayout: true,
   },
   {
     date: "06.07.2019",
@@ -341,7 +337,6 @@ const shows: Show[] = [
     location: "Obervolkach",
     bands: "Lesson in Violence, Absorb, Road Crew, Turn the course, Legal Hate",
     nameNoTranslate: true,
-    legacyLayout: true,
   },
 ];
 
@@ -361,11 +356,20 @@ export function isOver(show: Show, today = startOfToday()): boolean {
   return showDate(show) < today;
 }
 
-/** All visible shows, newest first. */
+/** Shows up to this date keep the layout of the former page. */
+const LEGACY_LAYOUT_UNTIL = new Date(2022, 8, 3);
+
+/** All visible shows, newest first (images without the inline blur data – they go to a client component). */
 export function getShows(): Show[] {
   return shows
     .filter((show) => !show.hidden)
-    .sort((a, b) => showDate(b).getTime() - showDate(a).getTime());
+    .sort((a, b) => showDate(b).getTime() - showDate(a).getTime())
+    .map((show) => ({
+      ...show,
+      legacyLayout: showDate(show) <= LEGACY_LAYOUT_UNTIL,
+      flyer: show.flyer && { ...show.flyer, src: plain(show.flyer.src) },
+      qrCode: show.qrCode && { ...show.qrCode, src: plain(show.qrCode.src) },
+    }));
 }
 
 /** The next upcoming show – or the latest show if there is none planned. */

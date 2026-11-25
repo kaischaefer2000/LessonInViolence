@@ -17,9 +17,10 @@ import floZweiLive from "@/images/members/Flo-zwei-live-min.jpg";
 import michi from "@/images/members/Michi-freigestellt-min.png";
 import michiLive from "@/images/members/MichiLive.jpeg";
 import styles from "./about-us.module.css";
+import { cx } from "@/components/cx";
 
 export const metadata: Metadata = {
-  title: "Lesson in Violence | german Thrash Metal band",
+  title: "german Thrash Metal band",
   description:
     "We are a german Thrash Metal band from Schweinfurt - Frankonia. Lesson in Violence delivers headbanging metal and smashing live shows",
   keywords: defaultKeywords,
@@ -37,7 +38,7 @@ const members: { name: string; role: string; picture: StaticImageData; live: Sta
 export default function AboutUsPage() {
   return (
     <Page>
-      <Hero title={["A", "b", "o", "u", "t", "", "u", "s"]} background={header.src} />
+      <Hero title="About us" background={header.src} />
       <NextShowBox variant="aboutUs" />
 
       <main>
@@ -87,13 +88,11 @@ export default function AboutUsPage() {
               {members.map((member, i) => (
                 <div key={member.name} className="col-6 col-md ml-0 mr-0 ml-lg-1 mr-lg-1">
                   <div
-                    className={[
+                    className={cx(
                       styles.memberPicture,
                       i === 0 && styles.first,
                       i === members.length - 1 && styles.last,
-                    ]
-                      .filter(Boolean)
-                      .join(" ")}
+                    )}
                     style={
                       {
                         "--picture": `url("${member.picture.src}")`,

@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Header from "./Header";
 import styles from "./Hero.module.css";
+import { cx } from "./cx";
 
 type TitleStyle = "default" | "padded" | "paddedHiddenOnMobile" | "hidden";
 
@@ -13,7 +14,7 @@ const titleClass: Record<TitleStyle, string | undefined> = {
 
 /**
  * Header picture with the navigation and the vertical page title
- * (e.g. "H O M E", one letter per line). An empty string in `title`
+ * (e.g. "HOME" → H O M E, one letter per line). A space in `title`
  * creates an empty line.
  */
 export default function Hero({
@@ -22,7 +23,7 @@ export default function Hero({
   backgroundClassName,
   titleStyle = "default",
 }: {
-  title: string[];
+  title: string;
   /** header picture (URL) */
   background?: string;
   /** alternatively a CSS class that sets the header picture */
@@ -31,7 +32,7 @@ export default function Hero({
 }) {
   return (
     <div
-      className={`${styles.heroBackground}${backgroundClassName ? ` ${backgroundClassName}` : ""}`}
+      className={cx(styles.heroBackground, backgroundClassName)}
       style={background ? { backgroundImage: `url("${background}")` } : undefined}
     >
       <Header />
@@ -40,10 +41,10 @@ export default function Hero({
           <div className={`row ${styles.hero}`}>
             <div className="col">
               <h1 className={titleClass[titleStyle]}>
-                {title.map((letter, i) => (
+                {[...title].map((letter, i) => (
                   <Fragment key={i}>
                     {i > 0 && <br />}
-                    {letter}
+                    {letter === " " ? "" : letter}
                   </Fragment>
                 ))}
               </h1>

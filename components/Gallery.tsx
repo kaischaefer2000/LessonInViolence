@@ -1,48 +1,57 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Img from "./Img";
 import Lightbox, { lightboxItemClass, type LightboxContent } from "./Lightbox";
+import { cx } from "./cx";
 import type { GallerySection, Video } from "@/data/gallery";
 
 /**
  * Concert picture sections of the media page. Clicking a picture opens the
  * lightbox, in which you can browse through all pictures of all sections.
  */
-export function PictureGallery({ sections, sectionClassName, headingClassName }: {
+export function PictureGallery({ sections, sectionClassName }: {
   sections: GallerySection[];
   sectionClassName?: string;
-  headingClassName?: string;
 }) {
-  const all = sections.flatMap((section) => section.images.map((src) => ({ src, alt: section.title })));
   const [index, setIndex] = useState<number | null>(null);
-  let counter = 0;
+  const all = useMemo(
+    () => sections.flatMap((section) => section.images.map((src) => ({ src, alt: section.title }))),
+    [sections],
+  );
 
-  return (
-    <>
-      {sections.map((section) => (
+  // the grid doesn't depend on the lightbox index, so browsing doesn't re-render it
+  const grid = useMemo(() => {
+    let start = 0;
+    return sections.map((section) => {
+      const first = start;
+      start += section.images.length;
+      return (
         <section key={section.title} className={sectionClassName}>
-          <h3 id={section.id} className={headingClassName} translate={section.titleNoTranslate ? "no" : undefined}>
+          <h3 id={section.id} translate={section.titleNoTranslate ? "no" : undefined}>
             {section.title}
           </h3>
           <div className="row">
-            {section.images.map((src) => {
-              const i = counter++;
-              return (
-                <div key={i} className="col-6 col-sm-4 col-md-3">
-                  <Img
-                    className={lightboxItemClass}
-                    src={src}
-                    alt={section.title}
-                    sizes="(max-width: 575px) 50vw, (max-width: 767px) 33vw, 25vw"
-                    onClick={() => setIndex(i)}
-                  />
-                </div>
-              );
-            })}
+            {section.images.map((src, j) => (
+              <div key={first + j} className="col-6 col-sm-4 col-md-3">
+                <Img
+                  className={lightboxItemClass}
+                  src={src}
+                  alt={section.title}
+                  sizes="(max-width: 575px) 50vw, (max-width: 767px) 33vw, 25vw"
+                  onClick={() => setIndex(first + j)}
+                />
+              </div>
+            ))}
           </div>
         </section>
-      ))}
+      );
+    });
+  }, [sections, sectionClassName]);
+
+  return (
+    <>
+      {grid}
       {index !== null && (
         <Lightbox
           content={{ type: "gallery", images: all, index }}
@@ -67,14 +76,11 @@ export function VideoGallery({ videos, className, secondRowClassName }: {
       {videos.map((video, i) => {
         const content: LightboxContent =
           "youtubeId" in video ? { type: "youtube", id: video.youtubeId } : { type: "video", src: video.videoSrc };
-        const thumbnail = (
-          <Img src={video.thumbnail} alt={video.alt} sizes="(max-width: 767px) 90vw, 30vw" />
-        );
         return (
-          <div key={video.title} className={`col-12 col-md-4${i >= 3 ? ` ${secondRowClassName}` : ""}`}>
+          <div key={video.title} className={cx("col-12 col-md-4", i >= 3 && secondRowClassName)}>
             <h3 translate={video.titleNoTranslate ? "no" : undefined}>{video.title}</h3>{" "}
             <a className={lightboxItemClass} role="button" tabIndex={0} onClick={() => setOpen(content)}>
-              {thumbnail}
+              <Img src={video.thumbnail} alt={video.alt} sizes="(max-width: 767px) 90vw, 30vw" />
             </a>
           </div>
         );

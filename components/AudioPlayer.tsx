@@ -7,6 +7,7 @@ import playIcon from "@/images/audioPlayer/play.png";
 import pauseIcon from "@/images/audioPlayer/pause.png";
 import downloadIcon from "@/images/audioPlayer/download-icon.png";
 import styles from "./AudioPlayer.module.css";
+import { cx } from "./cx";
 
 const PLAY_EVENT = "liv-audio-play";
 
@@ -57,7 +58,7 @@ export default function AudioPlayer({ track, download = false }: { track: Track;
   const alt = `single cover ${track.title}`;
 
   return (
-    <div className={`col-12 col-sm-6 col-lg-4${playing ? ` ${styles.playing}` : ""}`}>
+    <div className={cx("col-12 col-sm-6 col-lg-4", playing && styles.playing)}>
       <Img src={track.cover} className={styles.background} alt={alt} sizes="40vw" />
       <audio
         ref={audio}

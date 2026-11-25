@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import { plain } from "./image";
 import p1 from "@/images/Fotos2025/IMG-20250406-WA0073.jpg";
 import p2 from "@/images/Fotos2025/IMG-20250406-WA0061.jpg";
 import p3 from "@/images/Fotos2025/IMG-20250406-WA0063.jpg";
@@ -154,7 +155,7 @@ export type GallerySection = {
   images: StaticImageData[];
 };
 
-export const gallery: GallerySection[] = [
+const sections: GallerySection[] = [
   {
     title: "Best of 2025",
     images: [
@@ -341,6 +342,9 @@ export const gallery: GallerySection[] = [
   },
 ];
 
+// passed to a client component: without the inline blur data
+export const gallery: GallerySection[] = sections.map((section) => ({ ...section, images: section.images.map(plain) }));
+
 /** Videos on the media page (YouTube or a local MP4 in public/videos/). */
 export type Video = {
   title: string;
@@ -349,7 +353,7 @@ export type Video = {
   alt: string;
 } & ({ youtubeId: string } | { videoSrc: string });
 
-export const videos: Video[] = [
+const videoList: Video[] = [
   {
     title: "War against hypocrisy musicvideo",
     titleNoTranslate: true,
@@ -385,3 +389,6 @@ export const videos: Video[] = [
     alt: "Video of the song Men Kill Men",
   },
 ];
+
+// passed to a client component: without the inline blur data
+export const videos: Video[] = videoList.map((video) => ({ ...video, thumbnail: plain(video.thumbnail) }));

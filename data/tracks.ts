@@ -1,6 +1,11 @@
 import type { StaticImageData } from "next/image";
-import thrashfallCover from "@/images/audioPlayer/thrash-metal-mankind-thumbnail.jpg";
-import noNeedForDeathCover from "@/images/audioPlayer/no-need-for-death-thumbnail.jpg";
+import { plain } from "./image";
+import thrashfallCoverImage from "@/images/audioPlayer/thrash-metal-mankind-thumbnail.jpg";
+import noNeedForDeathCoverImage from "@/images/audioPlayer/no-need-for-death-thumbnail.jpg";
+
+// passed to a client component: without the inline blur data
+const thrashfallCover = plain(thrashfallCoverImage);
+const noNeedForDeathCover = plain(noNeedForDeathCoverImage);
 
 /*
  * Audio tracks. The MP3 files are in public/audioPlayer/ and are delivered

@@ -3,10 +3,10 @@
 import { useState, type CSSProperties } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import Img from "./Img";
+import { cx } from "./cx";
 import type { Show } from "@/data/shows";
 import styles from "./ShowAccordion.module.css";
 
-const cx = (...classes: (string | false | undefined)[]) => classes.filter(Boolean).join(" ");
 
 /** One concert: a clickable row that expands the details (location, bands, flyer, tickets). */
 export default function ShowAccordion({ show, over }: { show: Show; over: boolean }) {
@@ -25,6 +25,20 @@ export default function ShowAccordion({ show, over }: { show: Show; over: boolea
 
   const labelCol = show.legacyLayout ? "col-3 col-md-3 col-lg-2" : "col-5 col-sm-3 col-lg-2";
   const valueCol = show.legacyLayout ? "col-9 col-md-9 col-lg-10" : "col-7 col-sm-9 col-lg-10";
+
+  const detailRow = (label: string, value: string, noTranslate = false) => {
+    const translate = noTranslate ? "no" : undefined;
+    return (
+      <div className={`row ${styles.detailsContent}`}>
+        <div className={labelCol}>
+          <p translate={translate}>{label}</p>
+        </div>
+        <div className={valueCol}>
+          <p translate={translate}>{value}</p>
+        </div>
+      </div>
+    );
+  };
 
   const flyerRow = show.flyer && (
     <div className={`row ${styles.detailsContent} ${styles.flyerRow}`}>
@@ -48,19 +62,17 @@ export default function ShowAccordion({ show, over }: { show: Show; over: boolea
   const ticketRow = ticket && (
     <div className={`row ${styles.detailsContent}`}>
       <div className="col-12">
-        {ticket.url ? (
-          <a className={styles.ctaTicket} href={ticket.url} target={external ? "_blank" : undefined}>
-            {ticket.label}{" "}
-            <i className={`fa ${styles.arrow} ${styles.ticketArrow}`}><FaChevronDown /></i>
-          </a>
-        ) : (
-          <a className={`${styles.ctaTicket} ${styles.disabledTicket}`}>
-            {ticket.label}{" "}
-            <i className={`fa ${styles.arrow} ${styles.ticketArrow} ${styles.disabledArrow}`}>
-              <FaChevronDown />
-            </i>
-          </a>
-        )}
+        {/* without url: disabled button (no href) */}
+        <a
+          className={cx(styles.ctaTicket, !ticket.url && styles.disabledTicket)}
+          href={ticket.url}
+          target={external ? "_blank" : undefined}
+        >
+          {ticket.label}{" "}
+          <i className={cx("fa", styles.arrow, styles.ticketArrow, !ticket.url && styles.disabledArrow)}>
+            <FaChevronDown />
+          </i>
+        </a>
       </div>
       {show.qrCode && (
         <div className={`col-12 ${styles.qrCode}`}>
@@ -101,23 +113,9 @@ export default function ShowAccordion({ show, over }: { show: Show; over: boolea
       >
         <div className="col">
           <div>
-            <div className={`row ${styles.detailsContent}`}>
-              <div className={labelCol}>
-                <p>Location:</p>
-              </div>
-              <div className={valueCol}>
-                <p>{show.location}</p>
-              </div>
-            </div>
+            {detailRow("Location:", show.location)}
 
-            <div className={`row ${styles.detailsContent}`}>
-              <div className={labelCol}>
-                <p translate="no">Bands:</p>
-              </div>
-              <div className={valueCol}>
-                <p translate="no">{show.bands}</p>
-              </div>
-            </div>
+            {detailRow("Bands:", show.bands, true)}
 
             {show.ticketBeforeFlyer ? <>{ticketRow}{flyerRow}</> : <>{flyerRow}{ticketRow}</>}
 

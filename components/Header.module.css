@@ -85,7 +85,7 @@
     height: 0.23em;
     margin-bottom: 0.3em;
     position: relative;
-    background: rgb(236, 48, 48);
+    background: var(--primary);
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.28s cubic-bezier(0.72, 0.9, 0.44, 0.2), opacity 0.01s ease;

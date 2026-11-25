@@ -6,6 +6,7 @@ import AudioPlayer from "@/components/AudioPlayer";
 import DownloadItem from "@/components/DownloadItem";
 import Img from "@/components/Img";
 import { tracks } from "@/data/tracks";
+import { bandInfo } from "@/data/downloads";
 import header from "@/images/headers/header_about-us-min.jpg";
 import wordmark from "@/images/layoutPictures/LessonInViolence_Wortmarke_rot.png";
 import styles from "./organizer.module.css";
@@ -13,14 +14,14 @@ import styles from "./organizer.module.css";
 /* Hidden page for organizers (not linked, not indexed): full tracks and the band info. */
 
 export const metadata: Metadata = {
-  title: "Lesson in Violence | organizer infos",
+  title: "organizer infos",
   robots: { index: false, follow: false },
 };
 
 export default function OrganizerPage() {
   return (
     <Page className={styles.page}>
-      <Hero title={["A", "b", "o", "u", "t", "", "u", "s"]} background={header.src} titleStyle="hidden" />
+      <Hero title="About us" background={header.src} titleStyle="hidden" />
 
       <InfoBox variant="organizer">
         <div className="col-12">
@@ -41,8 +42,7 @@ export default function OrganizerPage() {
                 <AudioPlayer track={tracks.lessonInViolence} download />
                 <AudioPlayer track={tracks.lostInYourself} download />
                 <DownloadItem
-                  file="/download-items/Bandinfo_LessoninViolence_2022.pdf"
-                  preview="/download-items/bandinfo-website.jpg"
+                  {...bandInfo}
                   columns="col-12 col-sm-6 col-lg-8"
                   centered
                 />

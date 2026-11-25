@@ -7,7 +7,7 @@ import { defaultKeywords } from "@/data/seo";
 import header from "@/images/headers/header-merch-min.jpg";
 
 export const metadata: Metadata = {
-  title: "Lesson in Violence | Metal Merch",
+  title: "Metal Merch",
   description: "Go checkout our merch! You can order t-shirts and our new album The Thrashfall of Mankind soon...",
   keywords: defaultKeywords,
 };
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function MerchPage() {
   return (
     <Page>
-      <Hero title={["A", "b", "o", "u", "t", "", "u", "s"]} background={header.src} titleStyle="hidden" />
+      <Hero title="About us" background={header.src} titleStyle="hidden" />
 
       <div id="mainContent" className="mainContent">
         <div className="mainContentInner">

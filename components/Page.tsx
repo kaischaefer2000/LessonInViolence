@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Footer from "./Footer";
+import { cx } from "./cx";
 
 /**
  * Page wrapper. The original home page was built with Bootstrap 5, all other
@@ -17,7 +18,7 @@ export default function Page({
   children: ReactNode;
 }) {
   return (
-    <div className={`${bootstrap === 5 ? "bs5" : "bs4"}${className ? ` ${className}` : ""}`}>
+    <div className={cx(bootstrap === 5 ? "bs5" : "bs4", className)}>
       {children}
       <Footer />
     </div>

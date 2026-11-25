@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { StaticImageData } from "next/image";
 import Img from "./Img";
+import { cx } from "./cx";
 import { NextIcon, PrevIcon } from "./Lightbox";
 import fullScreenIcon from "@/images/merchPictures/fullScreen.png";
 import styles from "./MerchProduct.module.css";
+import { ORDER_EMAIL } from "@/data/site";
 
 export type MerchItem = {
   title: string;
@@ -29,7 +31,6 @@ export type MerchItem = {
 
 type View = "image" | "front" | "back";
 
-const cx = (...classes: (string | false | undefined)[]) => classes.filter(Boolean).join(" ");
 
 /** Wrapper row of product cards. */
 export function MerchRow({ id, hidden, children }: { id?: string; hidden?: boolean; children: ReactNode }) {
@@ -48,24 +49,28 @@ export default function MerchProduct({ item }: { item: MerchItem }) {
   const backButton = useRef<HTMLButtonElement>(null);
   const hasTabs = Boolean(item.front && item.back);
 
-  // a click anywhere else switches back to the normal picture
+  // while front / back is shown, a click anywhere else switches back to the normal picture
   useEffect(() => {
-    if (!hasTabs) return;
+    if (view === "image") return;
     const reset = (e: MouseEvent) => {
       if (e.target !== frontButton.current && e.target !== backButton.current) setView("image");
     };
     document.addEventListener("click", reset);
     return () => document.removeEventListener("click", reset);
-  }, [hasTabs]);
+  }, [view]);
 
   // pictures in the lightbox, in the order of the former page
-  const pictures: { src: StaticImageData; view?: View }[] = hasTabs
-    ? [
-        { src: item.front!, view: "front" },
-        { src: item.back!, view: "back" },
-        { src: item.image, view: "image" },
-      ]
-    : [{ src: item.image, view: "image" }, ...(item.morePictures ?? []).map((src) => ({ src }))];
+  const pictures = useMemo<{ src: StaticImageData; view?: View }[]>(
+    () =>
+      item.front && item.back
+        ? [
+            { src: item.front, view: "front" },
+            { src: item.back, view: "back" },
+            { src: item.image, view: "image" },
+          ]
+        : [{ src: item.image, view: "image" }, ...(item.morePictures ?? []).map((src) => ({ src }))],
+    [item],
+  );
 
   const openLightbox = () => setLightboxIndex(Math.max(0, pictures.findIndex((p) => p.view === view)));
   const move = (step: number) =>
@@ -129,7 +134,7 @@ export default function MerchProduct({ item }: { item: MerchItem }) {
             ))}
           </div>
 
-          <a href="mailto:order@lessoninviolence.com" className={styles.orderBtn} translate="no">
+          <a href={`mailto:${ORDER_EMAIL}`} className={styles.orderBtn} translate="no">
             Order !
           </a>
         </div>

@@ -32,3 +32,9 @@ export const downloads = [
 
 /** Link to the material for organizers (OneDrive). */
 export const organizerMaterialUrl = "https://1drv.ms/f/s!AgpJ4wgGix6BhLpV85KuEqStwx5m6g";
+
+/** Band info on the hidden organizer page. */
+export const bandInfo = {
+  file: "/download-items/Bandinfo_LessoninViolence_2022.pdf",
+  preview: "/download-items/bandinfo-website.jpg",
+};

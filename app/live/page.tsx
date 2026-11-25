@@ -9,7 +9,7 @@ import header from "@/images/headers/header-lim-3-k.jpeg";
 import styles from "./live.module.css";
 
 export const metadata: Metadata = {
-  title: "Lesson in Violence | concert dates and locations",
+  title: "concert dates and locations",
   description:
     "You want to experience headbanging trash metal? Come to one of our shows! You can find dates, locations and other performing bands here",
   keywords: defaultKeywords,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function LivePage() {
   return (
     <Page>
-      <Hero title={["L", "I", "V", "E"]} background={header.src} titleStyle="padded" />
+      <Hero title="LIVE" background={header.src} titleStyle="padded" />
       <NextShowBox />
 
       <div id="mainContent" className="mainContent">

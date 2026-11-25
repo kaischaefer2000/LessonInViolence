@@ -63,7 +63,7 @@
 }
 
 .ctaTicket {
-  background-color: #ec3030;
+  background-color: var(--primary);
   border-radius: 3px;
   border: none;
   color: white;

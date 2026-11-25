@@ -20,9 +20,9 @@ import bash9 from "@/images/birthdayBash_pictures/Lesson_in_violence_birthday_ba
 import bash19 from "@/images/birthdayBash_pictures/Lesson_in_violence_birthday_bash_19.jpg";
 import bash2 from "@/images/birthdayBash_pictures/Lesson_in_violence_birthday_bash_2.jpg";
 import styles from "./home.module.css";
+import { BOOKING_EMAIL } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Lesson in Violence | german thrash metal band",
   description:
     "We deliver fucking good thrash metal from Schweinfurt. Go checkout the demo track from our upcoming album The Thrashfall of Mankind",
   keywords:
@@ -49,7 +49,7 @@ export default function HomePage() {
   return (
     <Page bootstrap={5}>
       <Hero
-        title={["H", "O", "M", "E"]}
+        title="HOME"
         backgroundClassName={styles.heroBackground}
         titleStyle="padded"
       />
@@ -84,7 +84,7 @@ export default function HomePage() {
                   <br />
                   Listen to our other <a href="./media.html#mainContent">audio samples</a> from our album. Your
                   interested in booking us for a concert? Send us an E-Mail at{" "}
-                  <a href="mailto:booking@lessoninviolence.com">booking@lessoninviolence.com</a> and look at our
+                  <a href={`mailto:${BOOKING_EMAIL}`}>{BOOKING_EMAIL}</a> and look at our
                   <span translate="no"> technical rider </span> and other information{" "}
                   <a href="./downloads.html">here</a>.
                 </p>

@@ -1,4 +1,5 @@
 import styles from "./DownloadItem.module.css";
+import { cx } from "./cx";
 
 /**
  * Picture tile with a download link that appears on hover.
@@ -17,7 +18,7 @@ export default function DownloadItem({
   centered?: boolean;
 }) {
   return (
-    <div className={`${styles.downloadItem} ${columns}${centered ? ` ${styles.centered}` : ""}`}>
+    <div className={cx(styles.downloadItem, columns, centered && styles.centered)}>
       <div
         className={`${styles.content} row align-items-center`}
         style={{ backgroundImage: `url("${encodeURI(preview)}")` }}
