@@ -1,0 +1,41 @@
+/* Legal notice page (former cssFiles/legalNotice.scss) */
+
+.paragraphSection {
+  margin-top: 6em;
+}
+
+.paragraphSection h4 {
+  margin-top: 2em;
+}
+
+@media (max-width: 600px) {
+  .mainContent {
+    padding: 1em !important;
+  }
+
+  .paragraphSection h3 {
+    font-size: 1.3rem;
+  }
+
+  .paragraphSection h4 {
+    font-size: 1.2rem;
+  }
+
+  .paragraphSection p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .paragraphSection h3 {
+    font-size: 1.2rem;
+  }
+
+  .paragraphSection h4 {
+    font-size: 1.1rem;
+  }
+
+  .paragraphSection p {
+    font-size: 0.9rem;
+  }
+}

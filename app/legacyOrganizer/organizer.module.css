@@ -1,0 +1,36 @@
+/* Hidden organizer page (former cssFiles/organizer.scss) */
+
+.page h3 {
+  font-size: 1.5rem;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  text-align: center;
+}
+
+/* audio players: height of the area */
+.playerContainer {
+  height: 70vw;
+}
+
+@media (max-width: 990px) {
+  .playerContainer {
+    height: 200vw;
+    margin-bottom: -300px;
+  }
+
+  .page h3 {
+    padding: 5em 0px 1em 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .page h3 {
+    padding: 4em 0px 2em 0px;
+    line-height: 1.3em;
+  }
+
+  .playerContainer {
+    height: 500vw;
+    margin-bottom: -300px;
+  }
+}

@@ -1,0 +1,322 @@
+/* Audio player card (former cssFiles/_musicPlayer.scss).
+   The height of the surrounding .playerContainer row is set by each page. */
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/* the card */
+.container {
+  position: absolute;
+  height: 82vw;
+  width: 70vw;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+}
+
+/* control bar */
+.box {
+  position: absolute;
+  height: 50%;
+  width: 103%;
+  background: linear-gradient(45deg, rgb(40, 40, 40), rgb(85, 1, 1));
+  z-index: 4;
+  bottom: -17%;
+}
+
+/* album cover */
+.thumbnail {
+  position: absolute;
+  width: 103%;
+  top: -7%;
+  transition: 1s;
+  z-index: 3;
+}
+
+.playing .thumbnail {
+  transform: scale(1.15);
+}
+
+.songArtist {
+  position: absolute;
+  z-index: 4;
+  color: rgb(165, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3.8vw;
+  bottom: 21%;
+  left: 24%;
+}
+
+.songTitle {
+  position: absolute;
+  z-index: 4;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.42vw;
+  bottom: 16%;
+  left: 24%;
+}
+
+.playPause {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  filter: invert(1);
+  cursor: pointer;
+  bottom: 15%;
+  z-index: 4;
+  font-size: 53px;
+  left: 5%;
+}
+
+.download {
+  position: absolute;
+  height: 6vw;
+  width: 6vw;
+  filter: invert(1);
+  cursor: pointer;
+  font-size: 40px;
+  z-index: 4;
+  right: 5%;
+  bottom: 18%;
+}
+
+.currentTime {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  cursor: pointer;
+  bottom: -6.5%;
+  left: 17%;
+  z-index: 4;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: white;
+  align-items: center;
+}
+
+.durationTime {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  cursor: pointer;
+  bottom: 1%;
+  right: 11%;
+  z-index: 4;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  align-items: center;
+  color: rgb(165, 0, 0);
+}
+
+/* seek bar (incl. the former Bootstrap .progress-bar styles it inherited) */
+.progressBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  transition: width 0.6s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  z-index: 4;
+  height: 1vw;
+  background: #000000;
+  width: 44vw;
+  bottom: 7%;
+  border-radius: 30px;
+  left: 17%;
+}
+
+:global(.bs5) .progressBar {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -3px;
+  margin-left: 0px;
+  height: 1.9vw;
+  width: 1.2vw;
+  border: 0;
+  background: linear-gradient(45deg, rgb(143, 143, 143), rgb(165, 0, 0));
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.progressBar::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  max-height: 5px;
+  border-radius: 30px;
+}
+
+.progressBar:focus {
+  outline: none;
+}
+
+@media (min-width: 576px) {
+  .container {
+    height: 45vw;
+    width: 37vw;
+  }
+
+  .songArtist {
+    font-size: 2vw;
+  }
+
+  .songTitle {
+    font-size: 1.8vw;
+  }
+
+  .playPause {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .download {
+    height: 3vw;
+    width: 3vw;
+  }
+
+  .currentTime {
+    height: 5vw;
+    width: 5vw;
+    bottom: -5.5%;
+  }
+
+  .durationTime {
+    height: 5vw;
+    width: 5vw;
+    bottom: 2.5%;
+  }
+
+  .progressBar {
+    height: 0.5vw;
+    width: 23.5vw;
+    bottom: 7%;
+  }
+
+  .progressBar::-webkit-slider-thumb {
+    height: 1.2vw;
+    width: 0.6vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    height: 31vw;
+    width: 25vw;
+  }
+
+  .songArtist {
+    font-size: 1.4vw;
+  }
+
+  .songTitle {
+    font-size: 1.25vw;
+  }
+
+  .playPause {
+    height: 3.2vw;
+    width: 3.2vw;
+  }
+
+  .download {
+    height: 2vw;
+    width: 2vw;
+  }
+
+  .currentTime {
+    height: 3vw;
+    width: 3vw;
+    bottom: -5%;
+  }
+
+  .durationTime {
+    height: 3vw;
+    width: 3vw;
+    bottom: 2.5%;
+  }
+
+  .progressBar {
+    height: 0.4vw;
+    width: 16vw;
+    bottom: 6.5%;
+  }
+
+  .progressBar::-webkit-slider-thumb {
+    height: 0.9vw;
+    width: 0.5vw;
+  }
+}
+
+@media (min-width: 1650px) {
+  .container {
+    height: 25vw;
+    width: 19vw;
+  }
+
+  .songArtist {
+    font-size: 1vw;
+  }
+
+  .songTitle {
+    font-size: 0.75vw;
+  }
+
+  .playPause {
+    height: 2.4vw;
+    width: 2.4vw;
+  }
+
+  .download {
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+
+  .currentTime {
+    height: 3vw;
+    width: 3vw;
+    bottom: -7%;
+  }
+
+  .durationTime {
+    height: 3vw;
+    width: 3vw;
+    bottom: 1%;
+  }
+
+  .progressBar {
+    height: 0.3vw;
+    width: 12vw;
+    bottom: 6.5%;
+  }
+
+  .progressBar::-webkit-slider-thumb {
+    height: 0.5vw;
+    width: 0.5vw;
+  }
+}
