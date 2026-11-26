@@ -1,0 +1,396 @@
+/*
+ * Global styles
+ * ------------------------------------------------------------------
+ * 1. Bootstrap replacement: only the parts of Bootstrap the site really
+ *    uses, rebuilt 1:1. The home page was built with Bootstrap 5.0.2, all
+ *    other pages with Bootstrap 4.0. Every page therefore has a wrapper with
+ *    the class "bs4" or "bs5" (see components/Page.tsx). The version-specific
+ *    rules are scoped with :where(), which adds no specificity, so the
+ *    cascade is exactly the same as with the original Bootstrap files.
+ * 2. Base layout of the site (former cssFiles/_layout.scss).
+ *
+ * Breakpoints used across the site (Bootstrap): sm 576px, md 768px,
+ * lg 992px, xl 1200px. The site's own styles also use 750px (mobile
+ * navigation) and a few others.
+ */
+
+:root {
+  --primary: rgb(236, 48, 48);
+  /* --font-garamond is defined by next/font in app/layout.tsx */
+}
+
+/* ===== Bootstrap reboot (shared by 4.0 and 5.0.2) ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible;
+}
+
+button {
+  border-radius: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* ===== Bootstrap 4.0 only ===== */
+
+:where(.bs4) h1 { font-size: 2.5rem; }
+:where(.bs4) h2 { font-size: 2rem; }
+:where(.bs4) h3 { font-size: 1.75rem; }
+:where(.bs4) h4 { font-size: 1.5rem; }
+
+:where(.bs4) h1, :where(.bs4) h2, :where(.bs4) h3,
+:where(.bs4) h4, :where(.bs4) h5, :where(.bs4) h6 {
+  color: inherit;
+}
+
+:where(.bs4) a:not([href]):not([tabindex]),
+:where(.bs4) a:not([href]):not([tabindex]):hover,
+:where(.bs4) a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(.bs4) hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+:where(.bs4) svg:not(:root) {
+  overflow: hidden;
+}
+
+:where(.bs4) button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* ===== Bootstrap 5.0.2 only ===== */
+
+:where(.bs5) h1 { font-size: calc(1.375rem + 1.5vw); }
+:where(.bs5) h2 { font-size: calc(1.325rem + 0.9vw); }
+:where(.bs5) h3 { font-size: calc(1.3rem + 0.6vw); }
+:where(.bs5) h4 { font-size: calc(1.275rem + 0.3vw); }
+
+@media (min-width: 1200px) {
+  :where(.bs5) h1 { font-size: 2.5rem; }
+  :where(.bs5) h2 { font-size: 2rem; }
+  :where(.bs5) h3 { font-size: 1.75rem; }
+  :where(.bs5) h4 { font-size: 1.5rem; }
+}
+
+:where(.bs5) ol,
+:where(.bs5) ul {
+  padding-left: 2rem;
+}
+
+:where(.bs5) a {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+:where(.bs5) a:hover {
+  color: #0a58ca;
+}
+
+:where(.bs5) a:not([href]):not([class]),
+:where(.bs5) a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(.bs5) svg {
+  vertical-align: middle;
+}
+
+:where(.bs5) button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+:where(.bs5) button:not(:disabled) {
+  cursor: pointer;
+}
+
+:where(.bs5) iframe {
+  border: 0;
+}
+
+/* ===== Grid ===== */
+
+/* Bootstrap 4.0: 30px gutters, columns are position: relative */
+:where(.bs4) .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+:where(.bs4) .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+:where(.bs4) :is(.col, .col-1, .col-3, .col-5, .col-6, .col-7, .col-9, .col-11,
+  .col-12, .col-sm-3, .col-sm-4, .col-sm-6, .col-sm-9, .col-sm-10, .col-sm-12,
+  .col-md, .col-md-3, .col-md-4, .col-md-6, .col-md-8, .col-md-9, .col-lg-2,
+  .col-lg-4, .col-lg-8, .col-lg-10) {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+:where(.bs4) .col { flex-basis: 0; flex-grow: 1; max-width: 100%; }
+:where(.bs4) .col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+:where(.bs4) .col-3 { flex: 0 0 25%; max-width: 25%; }
+:where(.bs4) .col-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+:where(.bs4) .col-6 { flex: 0 0 50%; max-width: 50%; }
+:where(.bs4) .col-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+:where(.bs4) .col-9 { flex: 0 0 75%; max-width: 75%; }
+:where(.bs4) .col-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+:where(.bs4) .col-12 { flex: 0 0 100%; max-width: 100%; }
+
+@media (min-width: 576px) {
+  :where(.bs4) .col-sm-3 { flex: 0 0 25%; max-width: 25%; }
+  :where(.bs4) .col-sm-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  :where(.bs4) .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  :where(.bs4) .col-sm-9 { flex: 0 0 75%; max-width: 75%; }
+  :where(.bs4) .col-sm-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  :where(.bs4) .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+@media (min-width: 768px) {
+  :where(.bs4) .col-md { flex-basis: 0; flex-grow: 1; max-width: 100%; }
+  :where(.bs4) .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+  :where(.bs4) .col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  :where(.bs4) .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  :where(.bs4) .col-md-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  :where(.bs4) .col-md-9 { flex: 0 0 75%; max-width: 75%; }
+}
+
+@media (min-width: 992px) {
+  :where(.bs4) .col-lg-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  :where(.bs4) .col-lg-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  :where(.bs4) .col-lg-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  :where(.bs4) .col-lg-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+}
+
+/* Bootstrap 5.0.2: 24px gutters via --bs-gutter-x */
+:where(.bs5) .container-fluid {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+:where(.bs5) .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+:where(.bs5) .row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+:where(.bs5) .col { flex: 1 0 0%; }
+:where(.bs5) .col-5 { flex: 0 0 auto; width: 41.66666667%; }
+:where(.bs5) .col-6 { flex: 0 0 auto; width: 50%; }
+:where(.bs5) .col-7 { flex: 0 0 auto; width: 58.33333333%; }
+:where(.bs5) .col-12 { flex: 0 0 auto; width: 100%; }
+
+@media (min-width: 576px) {
+  :where(.bs5) .col-sm-4 { flex: 0 0 auto; width: 33.33333333%; }
+  :where(.bs5) .col-sm-6 { flex: 0 0 auto; width: 50%; }
+  :where(.bs5) .col-sm-12 { flex: 0 0 auto; width: 100%; }
+}
+
+@media (min-width: 768px) {
+  :where(.bs5) .col-md-3 { flex: 0 0 auto; width: 25%; }
+  :where(.bs5) .col-md-4 { flex: 0 0 auto; width: 33.33333333%; }
+  :where(.bs5) .col-md-6 { flex: 0 0 auto; width: 50%; }
+  :where(.bs5) .col-md-8 { flex: 0 0 auto; width: 66.66666667%; }
+}
+
+@media (min-width: 992px) {
+  :where(.bs5) .col-lg-4 { flex: 0 0 auto; width: 33.33333333%; }
+  :where(.bs5) .col-lg-6 { flex: 0 0 auto; width: 50%; }
+  :where(.bs5) .col-lg-8 { flex: 0 0 auto; width: 66.66666667%; }
+}
+
+/* Utilities */
+.align-items-center { align-items: center !important; }
+.ml-0 { margin-left: 0 !important; }
+.mr-0 { margin-right: 0 !important; }
+
+@media (min-width: 992px) {
+  .ml-lg-1 { margin-left: 0.25rem !important; }
+  .mr-lg-1 { margin-right: 0.25rem !important; }
+}
+
+/* Icon wrapper (replaces the Font Awesome 4.7 <i class="fa"> element) */
+.fa {
+  display: inline-block;
+  font-style: normal;
+  font-size: inherit;
+  line-height: 1;
+}
+
+/* ===== Site layout (former _layout.scss) ===== */
+
+* {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+body {
+  font-family: "Papyrus", var(--font-garamond), "Arial";
+  color: #fff;
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow-x: hidden;
+  letter-spacing: 0.07em;
+}
+
+body p {
+  font-size: 1.2rem;
+  line-height: 1.7em;
+  word-spacing: 0.05em;
+}
+
+body a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+body a:hover,
+body a:focus,
+body a span:hover,
+body a span:focus,
+body a i:hover,
+body a i:focus,
+body li a:hover,
+body li a:focus {
+  text-decoration: none;
+  color: rgb(165, 165, 165);
+  transition: color 0.3s ease;
+}
+
+body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.red {
+  color: var(--primary);
+}
+
+/* main content container with the blood background
+   (the element also keeps id="mainContent" for links like media.html#mainContent) */
+.mainContent {
+  padding: 2em;
+  height: auto;
+  background-repeat: no-repeat;
+  /* AVIF on top, JPG below for browsers without AVIF support */
+  background-image: url("../images/layoutPictures/bloodBg.avif"), url("../images/layoutPictures/Blut_6.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mainContentInner {
+  max-width: 1500px !important;
+  margin: auto;
+}

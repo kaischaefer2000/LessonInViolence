@@ -14,7 +14,8 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: ./
+  # Next.js static export (npm run build) writes the website into ./out
+  DEPLOYMENT_FOLDER: ./out
 
 jobs:
 # Please do not rename this job
@@ -24,8 +25,38 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          submodules: 'recursive'
+          node-version: lts/*
+          cache: npm
+
+      # optimized images are only re-created when a picture changes
+      - name: Cache optimized images
+        uses: actions/cache@v4
+        with:
+          path: |
+            public/nextImageExportOptimizer
+            images/next-image-export-optimizer-hashes.json
+          key: optimized-images-${{ hashFiles('images/**', 'next.config.mjs') }}
+          restore-keys: |
+            optimized-images-
+
+      # separate cache, so it is refreshed whenever the code changes (not only the pictures)
+      - name: Cache Next.js build
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: next-${{ hashFiles('package-lock.json') }}-${{ hashFiles('app/**', 'components/**', 'data/**', 'next.config.mjs') }}
+          restore-keys: |
+            next-${{ hashFiles('package-lock.json') }}-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
 
 # Please do not touch the following action
       - name: Store deployment content

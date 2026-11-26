@@ -1,0 +1,68 @@
+/* Download tiles: picture, on hover a dark layer with a DOWNLOAD link
+   (former download styles of downloads.scss / organizer.scss) */
+
+.downloadItem {
+  padding: 0;
+}
+
+.downloadItem a {
+  font-weight: bold;
+}
+
+.content {
+  margin: 1em;
+  background-size: cover;
+  background-position: center center;
+  height: 43vw;
+}
+
+.content:hover div,
+.content:active div {
+  visibility: visible;
+}
+
+.linkContainer {
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.801);
+  height: 100%;
+}
+
+.link {
+  margin-top: 17vw;
+}
+
+@media (min-width: 576px) {
+  .content {
+    height: 22vw;
+  }
+
+  .link {
+    margin-top: 9vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    height: 15vw;
+  }
+
+  /* organizer page: tile next to the audio players */
+  .centered .content {
+    margin: 30% 25% 0px 25%;
+  }
+
+  .link {
+    margin-top: 6.5vw;
+  }
+}
+
+@media (min-width: 1700px) {
+  .downloadItem {
+    height: 300px;
+  }
+
+  .content {
+    height: 250px;
+  }
+}

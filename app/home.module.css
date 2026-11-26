@@ -1,0 +1,144 @@
+/* Home page (former cssFiles/home.scss) */
+
+.heroBackground {
+  /* AVIF on top, JPG below for browsers without AVIF support */
+  background-image: url("../images/headers/header-home.avif"), url("../images/headers/header-home.jpg");
+}
+
+.heading {
+  padding-top: 9em;
+  padding-bottom: 2em;
+  text-align: left;
+  font-weight: 800;
+}
+
+@media (max-width: 350px) {
+  .heading h2,
+  .heading h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading {
+    padding-top: 6em;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContent {
+    padding: 1em;
+  }
+}
+
+/* "The Thrashfall of Mankind" box with the audio player */
+.tmmSection {
+  background: url("../images/homeAssets/StoneBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5em;
+  border-radius: 5px;
+}
+
+.tmmSection .playerContainer > div {
+  position: relative;
+}
+
+.tmmSection .tmmLeftSide {
+  padding-left: 2em;
+}
+
+.tmmSection .tmmRightSide {
+  padding: 2em;
+}
+
+.tmmSection .tmmRightSide img {
+  padding-bottom: 2em;
+}
+
+/* height of the player area (the card inside is positioned absolutely) */
+.playerContainer {
+  height: 55vw !important;
+}
+
+@media (min-width: 980px) {
+  .playerContainer {
+    height: 40vw !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .tmmLeftSide {
+    padding-left: 0em;
+    margin: -13em 0em -13em 0em;
+  }
+
+  .playerContainer {
+    height: 188vw !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tmmLeftSide {
+    padding-left: 0em;
+    margin: -9em 0em -9em 0em;
+  }
+
+  .tmmRightSide {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .playerContainer {
+    height: 30vw !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .tmmRightSide {
+    max-width: 900px !important;
+    margin-left: auto;
+  }
+}
+
+/* "This is Lesson in Violence" */
+.aboutUsRow {
+  background-color: rgb(14, 15, 17);
+}
+
+.aboutUsRow .rightHalfInner {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUsRow .rightHalfInner h4 {
+  text-align: center;
+  padding: 2em 0px 2em 0px;
+}
+
+.aboutUsRow .rightHalfInner .ctaAboutUs {
+  background-color: var(--primary);
+  border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  word-spacing: 0.5em;
+  margin-top: 3em;
+}
+
+/* "Concert pictures!" */
+.ctaMedia {
+  background-color: transparent;
+  border-radius: 3px;
+  border-width: medium;
+  border-color: var(--primary);
+  color: var(--primary);
+  padding: 1em 2em;
+  text-transform: uppercase;
+  word-spacing: 0.5em;
+  margin-top: 3em;
+}

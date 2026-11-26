@@ -1,0 +1,129 @@
+/* About us page (former cssFiles/about-us.scss) */
+
+/* heading and text */
+.aboutUsText {
+  padding: 4em 3em;
+}
+
+.aboutUsText h2 {
+  margin-top: 3em;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+.aboutUsText p {
+  margin-top: 3em;
+}
+
+.aboutUsText span {
+  word-spacing: 0.5em;
+  font-weight: 900;
+  font-size: 1.02em;
+}
+
+@media (max-width: 750px) {
+  .aboutUsText {
+    padding-top: 8em;
+  }
+}
+
+@media (max-width: 632px) {
+  .aboutUsText h2 {
+    font-size: 1.4rem;
+  }
+
+  .aboutUsText p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutUsText {
+    padding-top: 5em;
+  }
+}
+
+@media (max-width: 550px) {
+  .aboutUsText {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+/* band members: the picture changes to a live photo on hover */
+.members {
+  margin: 0px 0em 5em 0em;
+}
+
+.members p {
+  text-align: center;
+  font-weight: 800;
+  line-height: 3em;
+}
+
+.members span {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+.members > div {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.memberPicture {
+  height: 25vw;
+  background-size: cover;
+  transition: background-image 0.6s;
+  transition-timing-function: ease;
+  background-position: center;
+  background-image: var(--picture);
+}
+
+.memberPicture:hover,
+.memberPicture:active {
+  background-image: var(--picture-live);
+}
+
+.first {
+  margin-left: 1em;
+}
+
+.last {
+  margin-right: 1em;
+}
+
+@media (max-width: 1250px) {
+  .members p {
+    font-size: 0.8rem;
+  }
+
+  .members span {
+    font-size: 0.51em;
+  }
+}
+
+@media (max-width: 768px) {
+  .memberPicture {
+    height: 65vw;
+  }
+}
+
+@media (max-width: 835px) {
+  .members p {
+    font-size: 0.8em;
+  }
+
+  .members span {
+    font-size: 0.6em;
+  }
+}
+
+@media (min-width: 1600px) {
+  .memberPicture {
+    height: 400px;
+  }
+}

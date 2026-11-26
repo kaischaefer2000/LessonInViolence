@@ -1,0 +1,246 @@
+/* Product cards of the merch page (former cssFiles/merch.scss) */
+
+.products {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.products .product {
+  padding: 0;
+  margin: 2vw 4vw 8vw;
+}
+
+.products .product .prodContainer {
+  box-shadow: 0 0 10px #000000;
+  background-color: rgba(18, 22, 26, 0.815);
+}
+
+/* picture area */
+.products .product .prodContainer .prodImage {
+  border-radius: 2px 2px 0px 0px;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.products .product .prodContainer .prodImage .bgImages {
+  transition: transform 0.3s linear;
+}
+
+.products .product .prodContainer .prodImage .bgImages:hover {
+  transform: scale(1.05);
+}
+
+/* additional pictures (front, back, ...) are hidden until selected */
+.products .product .prodContainer .prodImage .alternative {
+  display: none;
+  position: absolute;
+}
+
+.products .product .prodContainer .prodImage .fullScreenIcon {
+  position: absolute;
+  width: 1.5em;
+  height: auto;
+  float: right;
+  right: 1em;
+  top: 1em;
+  z-index: 7;
+}
+
+.products .product .prodContainer .prodImage .fullScreenIcon:hover {
+  cursor: pointer;
+}
+
+/* "back" / "front" tabs at the right side of the picture */
+.products .product .prodContainer .prodImage button {
+  position: absolute;
+  left: 100%;
+  padding: 5% 3%;
+  line-height: 1em;
+  border-radius: 0px 5px 5px 0px;
+  background: rgb(29, 35, 41);
+  border: 2px solid black;
+  color: #fff;
+}
+
+.products .product .prodContainer .prodImage button:nth-of-type(1) {
+  top: 18%;
+}
+
+.products .product .prodContainer .prodImage button:focus {
+  border: none;
+  outline: none;
+}
+
+/* description */
+.products .product .prodContainer .prodDescription {
+  margin: 0;
+  padding: 1em 1em 5em;
+  height: fit-content;
+  align-content: flex-start;
+}
+
+.products .product .prodContainer .prodDescription hr {
+  background: rgba(161, 161, 161, 0.418);
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+}
+
+.products .product .prodContainer .prodDescription .prodTitle {
+  width: 100%;
+  height: fit-content;
+}
+
+.products .product .prodContainer .prodDescription .prodTitle h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  word-spacing: 0.3em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.products .product .prodContainer .prodDescription .details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.products .product .prodContainer .prodDescription .details .detailsColumn {
+  display: flex;
+  flex-direction: row;
+}
+
+.products .product .prodContainer .prodDescription .details .detailsColumn p {
+  font-size: 1rem !important;
+}
+
+/* size "buttons" */
+.products .product .prodContainer .prodDescription .details .detailsColumn button {
+  border: none;
+  margin: 0;
+  padding: 0px 10px 0px 0px;
+  font-size: 1em;
+  color: white;
+  width: auto;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.products .product .prodContainer .prodDescription .details .detailsColumn button:hover,
+.products .product .prodContainer .prodDescription .details .detailsColumn button:focus {
+  color: var(--primary);
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.products .product .prodContainer .prodDescription .orderBtn {
+  width: 90%;
+  padding: 10px;
+  height: fit-content;
+  position: absolute;
+  bottom: 1em;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-radius: 1px;
+  text-align: center;
+}
+
+.products .product .prodContainer .prodDescription .orderBtn:hover {
+  background: var(--primary);
+  color: black;
+  border-color: var(--primary);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.label {
+  width: 30%;
+}
+
+.value {
+  width: 70%;
+}
+
+.active {
+  background: rgb(50, 61, 71) !important;
+  z-index: 5;
+  display: block;
+}
+
+.shown {
+  display: block !important;
+  z-index: 6;
+}
+
+@media (max-width: 570px) {
+  .gridOnMobile {
+    display: grid;
+  }
+}
+
+/* lightbox */
+.lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+.lightbox ::selection {
+  background: none;
+}
+
+.lightboxImg {
+  position: fixed;
+  height: 60vw;
+  width: auto;
+  margin-top: 5vh;
+}
+
+.lightboxIcon {
+  position: fixed;
+  z-index: 10;
+  width: 5em;
+  height: auto;
+  fill: white;
+  cursor: pointer;
+}
+
+.prev {
+  left: 3vw;
+  padding: 2em 2em 2em 1em;
+}
+
+.next {
+  right: 3vw;
+  padding: 2em 1em 2em 2em;
+}
+
+@media (min-width: 1000px) {
+  .lightboxImg {
+    height: 600px;
+  }
+}
+
+@media (max-width: 570px) {
+  .lightboxIcon {
+    width: 4.5em;
+  }
+}

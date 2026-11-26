@@ -1,0 +1,132 @@
+/* Fullscreen lightbox for pictures and videos (former cssFiles/_lightbox.scss) */
+
+.lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox ::selection {
+  background: none;
+}
+
+.lightbox > * {
+  z-index: 99;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 0;
+}
+
+/* strip with all gallery pictures, moved with margin-left */
+.lightbox .inner {
+  position: relative;
+  height: 100vh;
+  transition: all 0.4s ease-in-out;
+  margin-left: 0;
+}
+
+.imageContainer {
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  border: none;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.lightbox img,
+.lightbox video {
+  background: #fff;
+  box-shadow: 0 0 30px #222;
+  max-height: 85vh;
+  min-width: auto;
+  max-width: 75vw;
+  width: auto;
+  height: auto;
+}
+
+.lightbox .youtube {
+  width: 75vw;
+  height: 42.1875vw; /* 16:9 */
+}
+
+.closeIcon {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 6em;
+  right: 15px;
+  transition: transform 0.2s linear;
+}
+
+.closeIcon:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.closeIcon svg,
+.arrow svg {
+  fill: white;
+}
+
+.prevContainer,
+.nextContainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  padding: 10px 5px 10px 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+}
+
+.nextContainer {
+  left: auto;
+  right: 0;
+}
+
+.prevContainer:hover,
+.nextContainer:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.arrow {
+  width: 35px;
+  height: 35px;
+}
+
+/* clickable thumbnails */
+.item:hover {
+  cursor: pointer;
+}
+
+.item {
+  padding-top: 1em;
+}
