@@ -10,6 +10,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+  /* crop the square cover instead of stretching it to the card's shape */
+  object-fit: cover;
   filter: blur(10px);
   z-index: -1;
 }

@@ -48,7 +48,8 @@
   display: none;
 }
 
-.header .socialIcon {
+.header .socialIcon,
+.header .socialItem {
   display: none;
 }
 
@@ -133,6 +134,13 @@
     padding: 10px 0;
     font-size: 22px;
     display: block;
+  }
+
+  /* social icons below the links, same spacing as before they were wrapped in a list item */
+  .header nav #menuToggle ul li.socialItem {
+    display: block;
+    padding: 0;
+    font-size: inherit;
   }
 
   /* the logo in the middle of the desktop navigation */

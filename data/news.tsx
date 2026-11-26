@@ -484,7 +484,7 @@ export const news: NewsItem[] = [
       <>
         Thanks a lot for the great support on our first show in our hometown!
         <br />
-        Click <a href="media.html#jugendhaus2019">here</a> for the pictures!
+        Have a look at the <a href="media.html#jugendhaus2019">pictures of the show</a>!
       </>
     ),
   },

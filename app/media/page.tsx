@@ -8,7 +8,7 @@ import { PictureGallery, VideoGallery } from "@/components/Gallery";
 import { gallery, videos } from "@/data/gallery";
 import { tracks } from "@/data/tracks";
 import { defaultKeywords } from "@/data/seo";
-import header from "@/images/headers/Noneedfordeath-header.jpg";
+import header from "@/images/headers/Noneedfordeath-header.webp";
 import styles from "./media.module.css";
 
 export const metadata: Metadata = {

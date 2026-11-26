@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import DownloadItem from "@/components/DownloadItem";
 import { downloads, organizerMaterialUrl } from "@/data/downloads";
 import { defaultKeywords } from "@/data/seo";
-import header from "@/images/headers/header-downloads-version-2.jpg";
+import header from "@/images/headers/header-downloads-version-2.webp";
 import styles from "./downloads.module.css";
 
 export const metadata: Metadata = {

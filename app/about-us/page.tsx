@@ -5,7 +5,7 @@ import Page from "@/components/Page";
 import Hero from "@/components/Hero";
 import NextShowBox from "@/components/NextShowBox";
 import { defaultKeywords } from "@/data/seo";
-import header from "@/images/headers/about-us-header.jpg";
+import header from "@/images/headers/about-us-header.webp";
 import floEins from "@/images/members/Flo-eins-freigestellt-min.png";
 import floEinsLive from "@/images/members/Flo-eins-live-min.jpg";
 import roli from "@/images/members/Roli-freigestellt.png";
