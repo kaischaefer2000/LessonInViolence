@@ -5,7 +5,7 @@ import NextShowBox from "@/components/NextShowBox";
 import ShowAccordion from "@/components/ShowAccordion";
 import { getShows, isOver } from "@/data/shows";
 import { defaultKeywords } from "@/data/seo";
-import header from "@/images/headers/header-lim-3-k.jpeg";
+import header from "@/images/headers/header-lim-3-k.webp";
 import styles from "./live.module.css";
 
 export const metadata: Metadata = {

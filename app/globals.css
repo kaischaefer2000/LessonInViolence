@@ -384,8 +384,7 @@ body img {
   padding: 2em;
   height: auto;
   background-repeat: no-repeat;
-  /* AVIF on top, JPG below for browsers without AVIF support */
-  background-image: url("../images/layoutPictures/bloodBg.avif"), url("../images/layoutPictures/Blut_6.jpg");
+  background-image: url("../images/layoutPictures/Blut_6.webp");
   background-attachment: fixed;
   background-size: cover;
 }

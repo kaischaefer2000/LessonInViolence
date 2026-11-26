@@ -12,3 +12,19 @@ Redirect 301 /phpFiles/media.php https://lessoninviolence.com/media.html
 Redirect 301 /phpFiles/downloads.php https://lessoninviolence.com/downloads.html
 Redirect 301 /phpFiles/organizer.php https://lessoninviolence.com/organizer.html
 Redirect 301 /phpFiles/legalNotice.php https://lessoninviolence.com/legal-notice.html
+
+# Browser caching
+<IfModule mod_headers.c>
+  # file names contain a content hash (they change whenever the file changes) – cache for a year
+  <If "%{REQUEST_URI} =~ m#^/(_next/static|nextImageExportOptimizer)/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  # other images, audio and downloads – cache for a week
+  <ElseIf "%{REQUEST_URI} =~ m#\.(png|jpe?g|webp|avif|svg|ico|mp3|mp4|pdf|zip)$#i">
+    Header set Cache-Control "public, max-age=604800"
+  </ElseIf>
+  # HTML pages – always ask the server, so new builds are visible immediately
+  <Else>
+    Header set Cache-Control "no-cache"
+  </Else>
+</IfModule>

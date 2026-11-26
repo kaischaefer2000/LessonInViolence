@@ -7,7 +7,7 @@ import DownloadItem from "@/components/DownloadItem";
 import Img from "@/components/Img";
 import { tracks } from "@/data/tracks";
 import { bandInfo } from "@/data/downloads";
-import header from "@/images/headers/header_about-us-min.jpg";
+import header from "@/images/headers/header_about-us-min.webp";
 import wordmark from "@/images/layoutPictures/LessonInViolence_Wortmarke_rot.png";
 import styles from "./organizer.module.css";
 

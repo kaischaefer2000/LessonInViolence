@@ -19,7 +19,8 @@ export default function Page({
 }) {
   return (
     <div className={cx(bootstrap === 5 ? "bs5" : "bs4", className)}>
-      {children}
+      {/* main landmark for screen readers – no styling of its own */}
+      <main>{children}</main>
       <Footer />
     </div>
   );

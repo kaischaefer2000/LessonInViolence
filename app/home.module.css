@@ -1,10 +1,5 @@
 /* Home page (former cssFiles/home.scss) */
 
-.heroBackground {
-  /* AVIF on top, JPG below for browsers without AVIF support */
-  background-image: url("../images/headers/header-home.avif"), url("../images/headers/header-home.jpg");
-}
-
 .heading {
   padding-top: 9em;
   padding-bottom: 2em;
@@ -33,7 +28,7 @@
 
 /* "The Thrashfall of Mankind" box with the audio player */
 .tmmSection {
-  background: url("../images/homeAssets/StoneBackground.jpg");
+  background-image: url("../images/homeAssets/StoneBackground.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,7 +115,8 @@
 }
 
 .aboutUsRow .rightHalfInner .ctaAboutUs {
-  background-color: var(--primary);
+  /* a bit darker than --primary so the white text has enough contrast (WCAG AA) */
+  background-color: rgb(210, 32, 32);
   border-radius: 3px;
   border: none;
   color: white;

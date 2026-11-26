@@ -50,13 +50,15 @@ export default function Header() {
                     </a>
                   </li>{" "}
                   {navRight.map(navItem)}
-                  {/* the social icons are direct children of the list (as in the original markup) */}
-                  <a className={styles.socialIcon} href={INSTAGRAM_URL} target="blank">
-                    <i className="fa" title="Instagram"><FaInstagram /></i>
-                  </a>{" "}
-                  <a className={styles.socialIcon} href={FACEBOOK_URL} target="blank">
-                    <i className="fa" title="Facebook"><FaFacebookF /></i>
-                  </a>
+                  {/* social icons, only visible in the mobile menu */}
+                  <li className={styles.socialItem}>
+                    <a className={styles.socialIcon} href={INSTAGRAM_URL} target="blank" aria-label="Instagram">
+                      <i className="fa" title="Instagram"><FaInstagram /></i>
+                    </a>{" "}
+                    <a className={styles.socialIcon} href={FACEBOOK_URL} target="blank" aria-label="Facebook">
+                      <i className="fa" title="Facebook"><FaFacebookF /></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </nav>

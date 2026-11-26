@@ -9,6 +9,7 @@ import LinkButton from "@/components/LinkButton";
 import Img from "@/components/Img";
 import { news } from "@/data/news";
 import { tracks } from "@/data/tracks";
+import headerHome from "@/images/headers/header-home.webp";
 import albumTitle from "@/images/homeAssets/TMM-Albumtitel.png";
 import bandPicture from "@/images/homeAssets/Band-black-white-sideways.png";
 import jugendhaus2 from "@/images/jugendhaus_pictures/Lesson in Violence_Jugendhaus_2019_2-min.jpg";
@@ -50,7 +51,7 @@ export default function HomePage() {
     <Page bootstrap={5}>
       <Hero
         title="HOME"
-        backgroundClassName={styles.heroBackground}
+        background={headerHome.src}
         titleStyle="padded"
       />
       <NextShowBox />
@@ -78,15 +79,17 @@ export default function HomePage() {
                 </div>
               </div>
               <div className={`col-md-6 col-lg-8 ${styles.tmmRightSide}`}>
-                <Img src={albumTitle} alt="The Trashfall of Mankind album title" sizes="(max-width: 767px) 90vw, 60vw" />
+                <Img src={albumTitle} alt="The Trashfall of Mankind album title" sizes="(max-width: 767px) 82vw, 60vw" />
                 <p>
                   Thrash Metal Mankind is one of the headbanging tracks of our debut album The Thrashfall of Mankind.
                   <br />
                   Listen to our other <a href="./media.html#mainContent">audio samples</a> from our album. Your
                   interested in booking us for a concert? Send us an E-Mail at{" "}
-                  <a href={`mailto:${BOOKING_EMAIL}`}>{BOOKING_EMAIL}</a> and look at our
-                  <span translate="no"> technical rider </span> and other information{" "}
-                  <a href="./downloads.html">here</a>.
+                  <a href={`mailto:${BOOKING_EMAIL}`}>{BOOKING_EMAIL}</a> and look at our{" "}
+                  <a href="./downloads.html">
+                    <span translate="no">technical rider</span> and other information
+                  </a>
+                  .
                 </p>
               </div>
             </div>
@@ -108,7 +111,7 @@ export default function HomePage() {
                   <Img
                     src={bandPicture}
                     alt="Lesson in Violence Band standing in front of scaffold"
-                    sizes="(max-width: 991px) 100vw, 50vw"
+                    sizes="(max-width: 991px) 92vw, 50vw"
                   />
                 </picture>
               </div>

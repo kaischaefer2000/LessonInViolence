@@ -68,9 +68,12 @@ export function NewsPicture({
   intrinsic?: { width: number; height: number };
 }) {
   const style = { "--width": width, "--mobile-min-width": mobileMinWidth } as CSSProperties;
+  // the picture takes `width` of the (almost full width) box on mobile – tell the browser so it picks a smaller file
+  const share = (value: string | undefined) => (value?.endsWith("%") ? parseFloat(value) / 100 : 0);
+  const mobileShare = Math.max(share(width), share(mobileMinWidth)) || 1;
   return (
     <picture className={styles.sized} style={style}>
-      <Img src={src} alt={alt} sizes="(max-width: 786px) 90vw, 40vw" {...intrinsic} />
+      <Img src={src} alt={alt} sizes={`(max-width: 786px) ${Math.round(90 * mobileShare)}vw, 40vw`} {...intrinsic} />
     </picture>
   );
 }

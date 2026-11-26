@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import MerchProduct, { MerchRow } from "@/components/MerchProduct";
 import { merchRows } from "@/data/merch";
 import { defaultKeywords } from "@/data/seo";
-import header from "@/images/headers/header-merch-min.jpg";
+import header from "@/images/headers/header-merch-min.webp";
 
 export const metadata: Metadata = {
   title: "Metal Merch",
