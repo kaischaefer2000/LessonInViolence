@@ -5,11 +5,17 @@ import { FaChevronDown } from "react-icons/fa";
 import Img from "./Img";
 import { cx } from "./cx";
 import type { Show } from "@/data/shows";
+import { isOver } from "@/data/showDates";
+import { useToday } from "./useToday";
 import styles from "./ShowAccordion.module.css";
 
-
-/** One concert: a clickable row that expands the details (location, bands, flyer, tickets). */
-export default function ShowAccordion({ show, over }: { show: Show; over: boolean }) {
+/**
+ * One concert: a clickable row that expands the details (location, bands, flyer, tickets).
+ * `over` is the build-time value; in the browser it is re-checked against today's date.
+ */
+export default function ShowAccordion({ show, over: overAtBuild }: { show: Show; over: boolean }) {
+  const today = useToday();
+  const over = today ? isOver(show, today) : overAtBuild;
   const [open, setOpen] = useState(false);
   const [flyerZoomed, setFlyerZoomed] = useState(false);
 

@@ -1,5 +1,8 @@
 import type { StaticImageData } from "next/image";
 import { plain } from "./image";
+import { isOver, pickNextShow, showDate } from "./showDates";
+
+export { isOver, showDate };
 
 /*
  * All concerts shown on the live page (newest first – the list is sorted by
@@ -7,8 +10,8 @@ import { plain } from "./image";
  *
  * To add a new show, copy one entry and adjust it. Put the flyer into
  * images/flyer/ and import it below. Whether a show is over (grey) and which
- * show appears in the "Next show" box is calculated from the date when the
- * site is built.
+ * show appears in the "Next show" box is calculated from the date – at build
+ * time and again in the visitor's browser, so no new build is needed.
  */
 
 export type Show = {
@@ -340,22 +343,6 @@ const shows: Show[] = [
   },
 ];
 
-/** Date of a show as Date object (local time, start of the day). */
-export function showDate(show: Show): Date {
-  const [day, month, year] = show.date.split(".").map(Number);
-  return new Date(year, month - 1, day);
-}
-
-function startOfToday(): Date {
-  const now = new Date();
-  return new Date(now.getFullYear(), now.getMonth(), now.getDate());
-}
-
-/** A show is over from the day after the concert on. */
-export function isOver(show: Show, today = startOfToday()): boolean {
-  return showDate(show) < today;
-}
-
 /** Shows up to this date keep the layout of the former page. */
 const LEGACY_LAYOUT_UNTIL = new Date(2022, 8, 3);
 
@@ -374,7 +361,5 @@ export function getShows(): Show[] {
 
 /** The next upcoming show – or the latest show if there is none planned. */
 export function getNextShow(): Show | undefined {
-  const visible = getShows();
-  const upcoming = visible.filter((show) => !isOver(show));
-  return upcoming.length > 0 ? upcoming[upcoming.length - 1] : visible[0];
+  return pickNextShow(getShows());
 }
