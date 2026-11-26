@@ -36,14 +36,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={garamond.variable}>
       <body>
         {children}
-        {/* Google Analytics: loaded when the browser is idle, so it doesn't slow down the page load */}
+        {/* Google Analytics: the gtag script (~170 KB, ~700 ms CPU on phones) is only loaded on the
+            first interaction or 5 s after the page load, so it doesn't block the page while it starts */}
         <Script id="ga-init" strategy="lazyOnload">
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${GA_ID}');`}
+gtag('config', '${GA_ID}');
+(function () {
+  var events = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
+  var timer;
+  function load() {
+    events.forEach(function (e) { removeEventListener(e, load); });
+    clearTimeout(timer);
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=${GA_ID}';
+    document.head.appendChild(s);
+  }
+  events.forEach(function (e) { addEventListener(e, load, { once: true, passive: true }); });
+  timer = setTimeout(load, 5000);
+})();`}
         </Script>
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="lazyOnload" />
       </body>
     </html>
   );
