@@ -18,7 +18,8 @@ const nextConfig = {
     nextImageExportOptimizer_quality: "75",
     nextImageExportOptimizer_storePicturesInWEBP: "true",
     nextImageExportOptimizer_exportFolderName: "nextImageExportOptimizer",
-    nextImageExportOptimizer_generateAndUseBlurImages: "true",
+    // blur placeholders are not used (see components/Img.tsx)
+    nextImageExportOptimizer_generateAndUseBlurImages: "false",
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
   },
   // `npm run dev`: make the .html links work like on the real server

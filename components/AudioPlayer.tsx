@@ -41,7 +41,26 @@ export default function AudioPlayer({ track, download = false }: { track: Track;
     update();
     const events = ["timeupdate", "loadedmetadata", "durationchange"];
     events.forEach((e) => el.addEventListener(e, update));
-    return () => events.forEach((e) => el.removeEventListener(e, update));
+
+    // load the metadata (duration) only once the page has finished loading,
+    // so the MP3 requests don't compete with the images and scripts
+    let idle: number | undefined;
+    const loadMetadata = () => {
+      idle = window.setTimeout(() => {
+        if (el.preload === "none") {
+          el.preload = "metadata";
+          el.load();
+        }
+      }, 1000);
+    };
+    if (document.readyState === "complete") loadMetadata();
+    else window.addEventListener("load", loadMetadata, { once: true });
+
+    return () => {
+      events.forEach((e) => el.removeEventListener(e, update));
+      window.removeEventListener("load", loadMetadata);
+      window.clearTimeout(idle);
+    };
   }, []);
 
   const togglePlay = () => {
@@ -63,7 +82,7 @@ export default function AudioPlayer({ track, download = false }: { track: Track;
       <audio
         ref={audio}
         src={track.src}
-        preload="metadata"
+        preload="none"
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
       ></audio>

@@ -3,11 +3,11 @@ import { plain } from "@/data/image";
 
 /**
  * Optimized image (WebP in several widths, lazy loading, width/height).
- * Photos (JPG) get a blurred placeholder while loading; PNG/SVG graphics
- * often have transparency, so they get none.
+ * No blurred placeholder: it is a separate 10px image per photo that the browser
+ * loads right away – even for pictures far below the fold – and on the HTTP/1.1
+ * server these extra requests delay the important ones.
  */
 export default function Img(props: ExportedImageProps) {
   const src = typeof props.src === "object" ? plain(props.src) : props.src;
-  const isPhoto = /\.jpe?g$/i.test(typeof src === "object" ? src.src : src);
-  return <ExportedImage placeholder={isPhoto ? "blur" : "empty"} {...props} src={src} />;
+  return <ExportedImage placeholder="empty" {...props} src={src} />;
 }
